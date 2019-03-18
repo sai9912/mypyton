@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{# from theme("security/_macros.html") import render_field_with_errors, render_field_with_errors4_help, render_field #}
+{# from theme("prefixes/range_macros.html") import render_range_breadcrumb #}
+{% block base_css %}
+    <link rel="stylesheet" href="{% static 'site/css/add_product.css' %}" />
+<style>
+.fieldset>legend{
+    border: none;
+    width: auto;
+    margin-bottom: auto;
+}
+</style>
+{% endblock %}
+{% block title %}
+    {% trans 'GS1 Activate' %}: {% trans 'Export products' %}
+{% endblock %}
+{% block breadcrumb %}
+    <ol class="breadcrumb" style="display:inline-block">
+        <li><a href="{% url 'users:profile' %}">{% trans 'Home' %}</a></li>
+        <li>{% trans 'Export' %}</li>
+    </ol>
+    <div class="active_range pull-right">
+        {% include 'prefixes/render_range_prefix.html' with prefix=prefix only %}
+        <a href="{% url 'prefixes:prefixes_list' %}"> [{% trans 'Change' %}]</a>
+    </div>
+{% endblock %}
+{% block page_title %}
+    {% trans 'Export products' %}
+{% endblock %}
+
+{% block page_content %}
+    <div class="row">
+        <div class="col-md-6">
+            <p>
+                {% trans 'Select type of export and the desired file type. All exports can be used for import back in the database.' %}
+            </p>
+            <form method="post">
+                {% csrf_token %}
+                {% for hidden in form.hidden_fields %}
+                    {{ hidden }}
+                {% endfor %}
+    {% include 'security/_macros.html' with func='render_field_with_errors4_help' field=form.export_type label=_('Type of export') only %}
+    {% include 'security/_macros.html' with func='render_field_with_errors4_help' field=form.available_templates label=_('Available templates') only %}
+                <input type="hidden" name="file_type" id="file_type" value="xlsx"/>
+                {% if user.advanced_tab %}
+    {% include 'security/_macros.html' with func='render_field_with_errors4_help' field=form.gepir_export label=_('GEPIR export') only %}
+                {% endif %}
+                <button type="submit" class="btn btn-primary">Export</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <div class="well">{% trans 'More information about exporting your products can be found' %} <a href="/article/82-exporting-product-information">{% trans 'here' %}</a>.</div>
+
+            <div class="well">{% blocktrans %}
+                Please note that only products or available numbers from the <b>active prefix</b> are exported.<br/>
+                Click <a href="/prefixes">here</a> to change the active prefix.<br/>
+                - Ranges with capacity bigger than <b>1000</b> will export to "csv" file type only.<br/>
+                - <strong>GEPIR export</strong> will always create <strong>xlsx</strong> file ignoring your selection.<br/>
+            {% endblocktrans %}</div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block page_scripts %}
+{% endblock %}

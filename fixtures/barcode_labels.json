@@ -1,0 +1,70 @@
+[
+{
+    "model": "barcodes.label",
+    "pk": 1,
+    "fields": {
+        "code": "L7161",
+        "short_desc": "A4, 18 labels per sheet, 63.5x46.6",
+        "description": "<li><b>Sheet size:</b> A4</li><li><b>Labels per sheet:</b> 18</li><li><b>Label size:</b> 63.5mm X 46.6mm</li><li><b>Best for:</b> EAN-13 </li><li><b>Avery&copy; compatible:</b> 3363, J8161, J8361, L6025, L7161, L7161X</li>",
+        "src": "/_themes/gs1ie/site/img/labels/L7161.jpg",
+        "template": "barcodes/labels/L7161.rml",
+        "rows": 6,
+        "cols": 3,
+        "has_gap": true,
+        "ratio": 1.363,
+        "width": 63.5,
+        "height": 46.6
+    }
+},
+{
+    "model": "barcodes.label",
+    "pk": 2,
+    "fields": {
+        "code": "L7159",
+        "short_desc": "A4, 24 labels per sheet, 63.5x33.9",
+        "description": "<li><b>Sheet size:</b> A4</li><li><b>Labels per sheet:</b> 24</li><li><b>Label size:</b> 63.5mm X 33.9mm</li><li><b>Best for:</b> EAN-13 </li><li><b>Avery&copy; compatible:</b> CL7059, E3230, J4773, J8159, J8359, J8559, L4773, L6032, L6033, L6034, L6035, L6141, L6146, L7159, L7159X, L7559, LR7159, M8359</li>",
+        "src": "/_themes/gs1ie/site/img/labels/L7159.jpg",
+        "template": "barcodes/labels/L7159.rml",
+        "rows": 8,
+        "cols": 3,
+        "has_gap": true,
+        "ratio": 1.873,
+        "width": 63.5,
+        "height": 33.9
+    }
+},
+{
+    "model": "barcodes.label",
+    "pk": 3,
+    "fields": {
+        "code": "L7162",
+        "short_desc": "A4, 16 labels per sheet, 99.1x34",
+        "description": "<li><b>Sheet size:</b> A4</li><li><b>Labels per sheet:</b> 16</li><li><b>Label size:</b> 99.1mm X 34mm</li><li><b>Best for:</b> ITF-14</li><li><b>Avery&copy; compatible:</b> J8162, J8362, J8562, L7162, L7162X, L7562, L7962, LR7162</li>",
+        "src": "/_themes/gs1ie/site/img/labels/L7162.jpg",
+        "template": "barcodes/labels/L7162.rml",
+        "rows": 8,
+        "cols": 2,
+        "has_gap": false,
+        "ratio": 2.923,
+        "width": 99.1,
+        "height": 33.9
+    }
+},
+{
+    "model": "barcodes.label",
+    "pk": 4,
+    "fields": {
+        "code": "DPS24",
+        "short_desc": "A4, 24 labels per sheet, 70x36",
+        "description": "<li><b>Sheet size:</b> A4</li><li><b>Labels per sheet:</b> 24</li><li><b>Label size:</b> 70mm X 36mm</li><li><b>Avery&copy; compatible:</b> 3475, 3490, 6122, DPS24, LR3475, M3490</li>",
+        "src": "/_themes/gs1ie/site/img/labels/DPS24.jpg",
+        "template": "barcodes/labels/DPS24.rml",
+        "rows": 8,
+        "cols": 3,
+        "has_gap": false,
+        "ratio": 1.937,
+        "width": 70.0,
+        "height": 36.12
+    }
+}
+]

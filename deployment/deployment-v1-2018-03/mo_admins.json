@@ -1,0 +1,492 @@
+{
+  "organisations": {
+    "gs1cz": [
+      {
+        "name": "Jan Konecny",
+        "user_role": "gs1cz-admin",
+        "email": "konecny@gs1cz.org",
+        "password": "dummy",
+        "country_prefix": "859"
+      }
+    ],
+    "gs1se": [
+      {
+        "name": "Deniss Dobrovol",
+        "user_role": "gs1se-admin",
+        "email": "deniss.dobrovolskis@gs1.se",
+        "password": "dummy",
+        "country_prefix": "735"
+      },
+      {
+        "name": "GS1SE Test Account",
+        "user_role": "gs1se-admin",
+        "email": "tester@gs1.se",
+        "password": "tester",
+        "country_prefix": "735"
+      }
+    ],
+    "gs1go": [
+      {
+        "name": "Mike Wehrs",
+        "user_role": "gs1go-admin",
+        "email": "mike.wehrs@gs1.org",
+        "password": "dummy",
+        "country_prefix": "950"
+      },
+      {
+        "name": "Michael James",
+        "user_role": "gs1go-admin",
+        "email": "michael.james@gs1.org",
+        "password": "dummy",
+        "country_prefix": "950"
+      },
+      {
+        "name": "Ryan Mastrolia",
+        "user_role": "gs1go-admin",
+        "email": "ryan.mastrolia@gs1.org",
+        "password": "dummy",
+        "country_prefix": "950"
+      },
+      {
+        "name": "Dipan Anarkat",
+        "user_role": "gs1go-admin",
+        "email": "dipan.anarkat@gs1.org",
+        "password": "dummy",
+        "country_prefix": "950"
+      },
+      {
+        "name": "Cameron Green",
+        "user_role": "gs1go-admin",
+        "email": "cameron.green@gs1.org",
+        "password": "dummy",
+        "country_prefix": "950"
+      },
+      {
+        "name": "Morgane Bastin",
+        "user_role": "gs1go-admin",
+        "email": "morgane.bastin@gs1.org",
+        "password": "dummy",
+        "country_prefix": "950"
+      },
+      {
+        "name": "Naoki Van Acker",
+        "user_role": "gs1go-admin",
+        "email": "naoki.van.acker@gs1.org",
+        "password": "dummy",
+        "country_prefix": "950"
+      },
+      {
+        "name": "Andrew Hearn",
+        "user_role": "gs1go-admin",
+        "email": "andrew.hearn@gs1.org",
+        "password": "dummy",
+        "country_prefix": "950"
+      },
+      {
+        "name": "steven@techwordsmith.com",
+        "user_role": "gs1go-admin",
+        "email": "steven@techwordsmith.com",
+        "password": "dummy",
+        "country_prefix": "950"
+      },
+      {
+        "name": "Rebecca Jalleh",
+        "user_role": "gs1go-admin",
+        "email": "rebecca.jalleh@gs1.org",
+        "password": "dummy",
+        "country_prefix": "950"
+      },
+      {
+        "name": "Birgit Mahler",
+        "user_role": "gs1go-admin",
+        "email": "birgit.mahler@gs1.org",
+        "password": "dummy",
+        "country_prefix": "950"
+      },
+      {
+        "name": "Alban Dhaskali",
+        "user_role": "gs1go-admin",
+        "email": "alban.dhaskali@gs1.org",
+        "password": "dummy",
+        "country_prefix": "950"
+      },
+      {
+        "name": "Sanjay Mandloi",
+        "user_role": "gs1go-admin",
+        "email": "sanjay.mandloi@gs1.org",
+        "password": "dummy",
+        "country_prefix": "950"
+      },
+      {
+        "name": "marianne.timmons@gs1.org",
+        "user_role": "gs1go-admin",
+        "email": "marianne.timmons@gs1.org",
+        "password": "dummy",
+        "country_prefix": "950"
+      },
+      {
+        "name": "Robert.Beideman@gs1.org",
+        "user_role": "gs1go-admin",
+        "email": "Robert.Beideman@gs1.org",
+        "password": "dummy",
+        "country_prefix": "950"
+      },
+      {
+        "name": "GS1GO Test Account",
+        "user_role": "gs1go-admin",
+        "email": "tester@gs1.org",
+        "password": "tester",
+        "country_prefix": "950"
+      }
+    ],
+    "gs1au": [
+      {
+        "name": "Tavita Maanaima",
+        "user_role": "gs1au-admin",
+        "email": "Tavita.Maanaima@gs1au.org",
+        "password": "dummy",
+        "country_prefix": "935"
+      },
+      {
+        "name": "Sue Schmid",
+        "user_role": "gs1au-admin",
+        "email": "sue.schmid@gs1au.org",
+        "password": "dummy",
+        "country_prefix": "935"
+      },
+      {
+        "name": "Mani Bajwa",
+        "user_role": "gs1au-admin",
+        "email": "Mani.Bajwa@gs1au.org",
+        "password": "dummy",
+        "country_prefix": "935"
+      }
+    ],
+    "gs1ch": [
+      {
+        "name": "beratung@gs1.ch",
+        "user_role": "gs1ch-admin",
+        "email": "beratung@gs1.ch",
+        "password": "dummy",
+        "country_prefix": "76"
+      },
+      {
+        "name": "m.ottiker@gs1.ch",
+        "user_role": "gs1ch-admin",
+        "email": "m.ottiker@gs1.ch",
+        "password": "dummy",
+        "country_prefix": "76"
+      }
+    ],
+    "gs1fi": [
+      {
+        "name": "asiakaspalvelu@gs1.fi",
+        "user_role": "gs1fi-admin",
+        "email": "asiakaspalvelu@gs1.fi",
+        "password": "dummy",
+        "country_prefix": "64"
+      }
+    ],
+    "gs1uk": [
+      {
+        "name": "Mark Gillot",
+        "user_role": "gs1uk-admin",
+        "email": "mark.gillott@gs1uk.org",
+        "password": "dummy",
+        "country_prefix": "50"
+      }
+    ],
+    "gs1eg": [
+      {
+        "name": "Alsherif Moustafa",
+        "user_role": "gs1eg-admin",
+        "email": "alsherif@gs1eg.org",
+        "password": "dummy",
+        "country_prefix": "622"
+      }
+    ],
+    "gs1za": [
+      {
+        "name": "Michele Francis Padayachee",
+        "user_role": "gs1za-admin",
+        "email": "Michelefp@cgcsa.co.za",
+        "password": "dummy",
+        "country_prefix": "600"
+      },
+      {
+        "name": "Prince Namane",
+        "user_role": "gs1za-admin",
+        "email": "prince.namane@gs1za.org",
+        "password": "dummy",
+        "country_prefix": "600"
+      },
+      {
+        "name": "Tarryn Daniels",
+        "user_role": "gs1za-admin",
+        "email": "td@cgcsa.co.za",
+        "password": "dummy",
+        "country_prefix": "600"
+      },
+      {
+        "name": "Martin Kairu",
+        "user_role": "gs1za-admin",
+        "email": "martin.kairu@gs1za.org",
+        "password": "dummy",
+        "country_prefix": "600"
+      },
+      {
+        "name": "Fiona Vanderlinde",
+        "user_role": "gs1za-admin",
+        "email": "fiona.vanderlinde@gs1za.org",
+        "password": "dummy",
+        "country_prefix": "600"
+      },
+      {
+        "name": "Michele Padayachee",
+        "user_role": "gs1za-admin",
+        "email": "michele.padayachee@gs1za.org",
+        "password": "dummy",
+        "country_prefix": "600"
+      }
+    ],
+    "gs1it": [
+      {
+        "name": "Vanessa Giulieri",
+        "user_role": "gs1it-admin",
+        "email": "vanessa.giulieri@gs1it.org",
+        "password": "dummy",
+        "country_prefix": "600"
+      },
+      {
+        "name": "Stefano Brentegani",
+        "user_role": "gs1it-admin",
+        "email": "stefano.brentegani@gs1it.org",
+        "password": "dummy",
+        "country_prefix": "600"
+      }
+    ],
+    "gs1belu": [
+      {
+        "name": "rgoossens@gs1belu.org",
+        "user_role": "gs1belu-admin",
+        "email": "rgoossens@gs1belu.org",
+        "password": "dummy",
+        "country_prefix": "54"
+      },
+      {
+        "name": "sderocker@gs1belu.org",
+        "user_role": "gs1belu-admin",
+        "email": "sderocker@gs1belu.org",
+        "password": "dummy",
+        "country_prefix": "54"
+      },
+      {
+        "name": "caelbrecht@gs1belu.org",
+        "user_role": "gs1belu-admin",
+        "email": "caelbrecht@gs1belu.org",
+        "password": "dummy",
+        "country_prefix": "54"
+      },
+      {
+        "name": "svandenbergh@gs1belu.org",
+        "user_role": "gs1belu-admin",
+        "email": "svandenbergh@gs1belu.org",
+        "password": "dummy",
+        "country_prefix": "54"
+      }
+    ],
+    "gs1hk": [
+      {
+        "name": "Anthony Chan",
+        "user_role": "gs1hk-admin",
+        "email": "AnthonyChan@gs1hk.org",
+        "password": "dummy",
+        "country_prefix": "489"
+      }
+    ],
+    "gs1de": [
+      {
+        "name": "ristow@gs1-germany.de",
+        "user_role": "gs1de-admin",
+        "email": "ristow@gs1-germany.de",
+        "password": "dummy",
+        "country_prefix": "276"
+      },
+      {
+        "name": "test@gs1-germany.de",
+        "user_role": "gs1de-admin",
+        "email": "test@gs1-germany.de",
+        "password": "dummy",
+        "country_prefix": "276"
+      }
+    ],
+    "gs1bih": [
+      {
+        "name": "adi@gs1bih.org",
+        "user_role": "gs1bih-admin",
+        "email": "adi@gs1bih.org",
+        "password": "dummy",
+        "country_prefix": "387"
+      },
+      {
+        "name": "GS1 Bosnia Test Account",
+        "user_role": "gs1bih-admin",
+        "email": "tester@gs1bih.org",
+        "password": "tester",
+        "country_prefix": "387"
+      }
+    ],
+    "gs1uk": [
+      {
+        "name": "alex.smith@gs1uk.org",
+        "user_role": "gs1uk-admin",
+        "email": "alex.smith@gs1uk.org",
+        "password": "dummy",
+        "country_prefix": "50"
+      },
+      {
+        "name": "laura.waters@gs1uk.org",
+        "user_role": "gs1uk-admin",
+        "email": "laura.waters@gs1uk.org",
+        "password": "dummy",
+        "country_prefix": "50"
+      },
+      {
+        "name": "Joe.kelly@gs1uk.org",
+        "user_role": "gs1uk-admin",
+        "email": "Joe.kelly@gs1uk.org",
+        "password": "dummy",
+        "country_prefix": "50"
+      },
+      {
+        "name": "robert.besford@gs1uk.org",
+        "user_role": "gs1uk-admin",
+        "email": "robert.besford@gs1uk.org",
+        "password": "dummy",
+        "country_prefix": "50"
+      }
+    ],
+    "gs1my": [
+      {
+        "name": "hanmy@gs1my.org",
+        "user_role": "gs1my-admin",
+        "email": "hanmy@gs1my.org",
+        "password": "dummy",
+        "country_prefix": "955"
+      },
+      {
+        "name": "kah_leon@GS1MY.ORG",
+        "user_role": "gs1my-admin",
+        "email": "kah_leon@GS1MY.ORG",
+        "password": "dummy",
+        "country_prefix": "955"
+      }
+    ],
+    "gs1gr": [
+      {
+        "name": "d.christou@gs1greece.org",
+        "user_role": "gs1uk-admin",
+        "email": "d.christou@gs1greece.org",
+        "password": "dummy",
+        "country_prefix": "520"
+      }
+    ],
+    "gs1ie": [
+      {
+        "name": "alan.gormley@gs1ie.org",
+        "user_role": "gs1ie-admin",
+        "email": "alan.gormley@gs1ie.org",
+        "password": "dummy",
+        "country_prefix": "539"
+      },
+      {
+        "name": "GS1IE Test Account",
+        "user_role": "gs1ie-admin",
+        "email": "tester@gs1ie.org",
+        "password": "tester",
+        "country_prefix": "539"
+      }
+    ],
+    "gs1si": [
+      {
+        "name": "janez.zaletel@gs1si.org",
+        "user_role": "gs1si-admin",
+        "email": "janez.zaletel@gs1si.org",
+        "password": "dummy",
+        "country_prefix": "383"
+      },
+      {
+        "name": "martin.kamensek@gs1si.org",
+        "user_role": "gs1si-admin",
+        "email": "martin.kamensek@gs1si.org",
+        "password": "dummy",
+        "country_prefix": "383"
+      }
+    ],
+    "gs1po": [
+      {
+        "name": "Marek.Strzelczyk@gs1pl.org",
+        "user_role": "gs1po-admin",
+        "email": "Marek.Strzelczyk@gs1pl.org",
+        "password": "dummy",
+        "country_prefix": "590"
+      }
+    ],
+    "gs1gh": [
+      {
+        "name": "kofi.essuman@gs1gh.org",
+        "user_role": "gs1gh-admin",
+        "email": "kofi.essuman@gs1gh.org",
+        "password": "dummy",
+        "country_prefix": "603"
+      }
+    ],
+    "gs1dk": [
+      {
+        "name": "jw@gs1.dk",
+        "user_role": "gs1dk-admin",
+        "email": "jw@gs1.dk",
+        "password": "dummy",
+        "country_prefix": "570"
+      },
+      {
+        "name": "rpe@gs1.dk",
+        "user_role": "gs1dk-admin",
+        "email": "rpe@gs1.dk",
+        "password": "dummy",
+        "country_prefix": "570"
+      }
+    ],
+    "gs1gt": [
+      {
+        "name": "ablasberg@gs1gt.org",
+        "user_role": "gs1gt-admin",
+        "email": "ablasberg@gs1gt.org",
+        "password": "dummy",
+        "country_prefix": "740"
+      }
+    ],
+    "gs1bg": [
+      {
+        "name": "Hristiana.Patseva@gs1bg.org",
+        "user_role": "gs1bg-admin",
+        "email": "Hristiana.Patseva@gs1bg.org",
+        "password": "dummy",
+        "country_prefix": "380"
+      }
+    ],
+    "gs1lv": [
+      {
+        "name": "nils@gs1lv.org",
+        "user_role": "gs1lv-admin",
+        "email": "nils@gs1lv.org",
+        "password": "dummy",
+        "country_prefix": "475"
+      }
+    ]
+  }
+}
+
+
+
+

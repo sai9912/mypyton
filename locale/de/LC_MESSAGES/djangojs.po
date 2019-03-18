@@ -1,0 +1,1643 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-18 09:54+0000\n"
+"PO-Revision-Date: 2018-05-02 13:43+0000\n"
+"Last-Translator: b'  <admin@activate.org>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+
+#: frontend/static/js/vendor.04b6d1e335e3778838c7.js:13
+msgid "&"
+msgstr ""
+
+#: frontend/static/js/vendor.04b6d1e335e3778838c7.js:13
+msgid "-enter"
+msgstr ""
+
+#: frontend/static/js/vendor.04b6d1e335e3778838c7.js:34
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Height"
+msgstr ""
+
+#: frontend/static/js/vendor.04b6d1e335e3778838c7.js:34
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Width"
+msgstr ""
+
+#: static/site/js/admin-dashboard.js:896
+#: static/site/standalone/standalone-components.js:794
+msgid "Data Import"
+msgstr ""
+
+#: static/site/js/admin-dashboard.js:896 static/site/js/dashboard.js:896
+#: static/site/js/product_create_form.js:376
+#: static/site/js/product_create_form.js:378
+#: static/site/js/product_edit_form.js:283
+#: static/site/js/product_edit_form.js:383
+#: static/site/js/product_edit_form.js:385
+#: static/site/js/product_edit_form.js:391
+#: static/site/standalone/standalone-components.js:470
+#: static/site/standalone/standalone-components.js:721
+#: static/site/standalone/standalone-components.js:724
+#: static/site/standalone/standalone-components.js:775
+#: static/site/standalone/standalone-components.js:781
+#: static/site/standalone/standalone-components.js:787
+#: static/site/standalone/standalone-components.js:795
+msgid "Close"
+msgstr ""
+
+#: static/site/js/admin-dashboard.js:896
+#: static/site/standalone/standalone-components.js:795
+msgid "Please select an .xlsx file to upload."
+msgstr ""
+
+#: static/site/js/admin-dashboard.js:896
+#: static/site/standalone/standalone-components.js:795
+msgid "Success count"
+msgstr ""
+
+#: static/site/js/admin-dashboard.js:896
+#: static/site/standalone/standalone-components.js:795
+msgid "Error count"
+msgstr ""
+
+#: static/site/js/admin-dashboard.js:896
+#: static/site/standalone/standalone-components.js:795
+msgid "Error messages"
+msgstr ""
+
+#: static/site/js/admin-dashboard.js:896 static/site/js/dashboard.js:896
+#: static/site/js/product_create_form.js:376
+#: static/site/js/product_edit_form.js:385
+#: static/site/js/product_edit_form.js:391
+#: static/site/standalone/standalone-components.js:470
+#: static/site/standalone/standalone-components.js:721
+#: static/site/standalone/standalone-components.js:781
+#: static/site/standalone/standalone-components.js:787
+#: static/site/standalone/standalone-components.js:795
+msgid "Cancel"
+msgstr ""
+
+#: static/site/js/admin-dashboard.js:896
+#: static/site/standalone/standalone-components.js:795
+msgid "Upload"
+msgstr ""
+
+#: static/site/js/admin-dashboard.js:900
+#: static/site/standalone/standalone-components.js:799
+msgid "Import Companies"
+msgstr ""
+
+#: static/site/js/admin-dashboard.js:900
+#: static/site/standalone/standalone-components.js:799
+msgid "Import Prefixes"
+msgstr ""
+
+#: static/site/js/admin-dashboard.js:900
+#: static/site/standalone/standalone-components.js:799
+msgid "Import Users"
+msgstr ""
+
+#: static/site/js/admin-dashboard.js:900
+#: static/site/standalone/standalone-components.js:800
+#: static/site/standalone/standalone-components.js:824
+msgid "Search"
+msgstr ""
+
+#: static/site/js/admin-dashboard.js:900
+#: static/site/standalone/standalone-components.js:800
+msgid "Companies"
+msgstr ""
+
+#: static/site/js/admin-dashboard.js:900
+#: static/site/standalone/standalone-components.js:800
+msgid "Prefixes"
+msgstr ""
+
+#: static/site/js/admin-dashboard.js:900
+#: static/site/standalone/standalone-components.js:800
+msgid "Users"
+msgstr ""
+
+#: static/site/js/admin-dashboard.js:900 static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+#: static/site/standalone/standalone-components.js:800
+msgid "Products"
+msgstr ""
+
+#: static/site/js/admin-dashboard.js:900
+#: static/site/standalone/standalone-components.js:800
+msgid "Report"
+msgstr ""
+
+#: static/site/js/admin-dashboard.js:900
+#: static/site/standalone/standalone-components.js:800
+msgid "Import Data"
+msgstr ""
+
+#: static/site/js/dashboard.js:896
+#: static/site/standalone/standalone-components.js:470
+msgid "Prefix activation confirmation"
+msgstr ""
+
+#: static/site/js/dashboard.js:896
+#: static/site/standalone/standalone-components.js:470
+msgid "You have chosen a default prefix."
+msgstr ""
+
+#: static/site/js/dashboard.js:896
+#: static/site/standalone/standalone-components.js:470
+msgid ""
+"Next time you click on \"Add a new product\" this prefix will be used for "
+"GTIN allocation."
+msgstr ""
+
+#: static/site/js/dashboard.js:896
+#: static/site/standalone/standalone-components.js:470
+msgid "Confirm choice of prefix"
+msgstr ""
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Active Prefix"
+msgstr ""
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "GCP"
+msgstr ""
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Allocated"
+msgstr ""
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Available"
+msgstr ""
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+#: static/site/standalone/standalone-components.js:827
+msgid "Add product"
+msgstr ""
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Allocate a new barcode from the Active Prefix"
+msgstr ""
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "View Products"
+msgstr ""
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "View allocated numbers from Active Prefix"
+msgstr ""
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Global Company Prefixes and GTIN Ranges"
+msgstr ""
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Prefix"
+msgstr ""
+
+#: static/site/js/dashboard.js:948 static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:545
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+#: static/site/standalone/standalone-components.js:823
+#: static/site/standalone/standalone-components.js:824
+#: static/site/standalone/standalone-components.js:827
+msgid "Description"
+msgstr ""
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Capacity"
+msgstr ""
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Block of __number__ GTINs"
+msgstr ""
+
+#: static/site/js/dashboard.js:948 static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:381
+#: static/site/standalone/standalone-components.js:545
+#: static/site/standalone/standalone-components.js:747
+msgid "Product"
+msgstr ""
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "No products"
+msgstr ""
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Account Summary"
+msgstr ""
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Symbol Credits"
+msgstr ""
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Points balance:"
+msgstr ""
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Company ID:"
+msgstr ""
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Company Name:"
+msgstr ""
+
+#: static/site/js/product_create_form.js:329
+#: static/site/standalone/standalone-components.js:658
+msgid "Packaging Level"
+msgstr "Packaging Level (de)"
+
+#: static/site/js/product_create_form.js:329
+#: static/site/standalone/standalone-components.js:658
+msgid ""
+"Products are packaged at different levels, and each level requires a "
+"specific type of barcode. Choose the option below that best describes the "
+"packaging of your product."
+msgstr ""
+
+#: static/site/js/product_create_form.js:329
+#: static/site/standalone/standalone-components.js:658
+msgid ""
+"Note: Packaging levels are heirarchical, which means that you define the "
+"lowest level (base unit/each) first before proceeding to a higher level e.g. "
+"a case."
+msgstr ""
+
+#: static/site/js/product_create_form.js:329
+#: static/site/standalone/standalone-components.js:658
+msgid "Level"
+msgstr ""
+
+#: static/site/js/product_create_form.js:329
+#: static/site/js/product_create_form.js:338
+#: static/site/standalone/standalone-components.js:658
+#: static/site/standalone/standalone-components.js:671
+#: static/site/standalone/standalone-components.js:827
+msgid "Next"
+msgstr ""
+
+#: static/site/js/product_create_form.js:338
+#: static/site/standalone/standalone-components.js:671
+msgid ""
+"The purpose of this step is to show you where to place the barcode on your "
+"products and select the appropriately sized barcode symbol. Barcode symbols "
+"are placed where they can be best scanned at point-of-sale as shown below by "
+"these general example pictures."
+msgstr ""
+
+#: static/site/js/product_create_form.js:338
+#: static/site/standalone/standalone-components.js:671
+msgid "PRODUCT AND PACKAGING TYPES"
+msgstr ""
+
+#: static/site/js/product_create_form.js:338
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:671
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Package type"
+msgstr ""
+
+#: static/site/js/product_create_form.js:338
+#: static/site/standalone/standalone-components.js:671
+msgid "Packaging example"
+msgstr ""
+
+#: static/site/js/product_create_form.js:338
+#: static/site/standalone/standalone-components.js:671
+msgid "Packaging definition"
+msgstr ""
+
+#: static/site/js/product_create_form.js:338
+#: static/site/js/product_create_form.js:393
+#: static/site/standalone/standalone-components.js:671
+#: static/site/standalone/standalone-components.js:741
+#: static/site/standalone/standalone-components.js:827
+msgid "Previous"
+msgstr ""
+
+#: static/site/js/product_create_form.js:352
+#: static/site/js/product_edit_form.js:287
+#: static/site/standalone/standalone-components.js:686
+msgid "entries"
+msgstr ""
+
+#: static/site/js/product_create_form.js:356
+#: static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:305
+#: static/site/js/product_edit_form.js:381
+#: static/site/standalone/standalone-components.js:691
+msgid "Global Product Classification"
+msgstr ""
+
+#: static/site/js/product_create_form.js:356
+#: static/site/js/product_edit_form.js:305
+#: static/site/standalone/standalone-components.js:691
+msgid "Please enter at least 3 characters"
+msgstr ""
+
+#: static/site/js/product_create_form.js:356
+#: static/site/js/product_edit_form.js:305
+#: static/site/standalone/standalone-components.js:691
+#: static/site/standalone/standalone-components.js:824
+msgid "Results not found"
+msgstr ""
+
+#: static/site/js/product_create_form.js:362
+#: static/site/js/product_edit_form.js:311
+#: static/site/standalone/standalone-components.js:700
+msgid "Unit qualifiers"
+msgstr ""
+
+#: static/site/js/product_create_form.js:362
+#: static/site/js/product_edit_form.js:311
+#: static/site/standalone/standalone-components.js:700
+msgid "Mandatory"
+msgstr ""
+
+#: static/site/js/product_create_form.js:362
+#: static/site/js/product_edit_form.js:311
+#: static/site/standalone/standalone-components.js:700
+msgid "(Select One)"
+msgstr ""
+
+#: static/site/js/product_create_form.js:362
+#: static/site/js/product_edit_form.js:311
+#: static/site/standalone/standalone-components.js:700
+msgid "Options: At least one option must be selected."
+msgstr ""
+
+#: static/site/js/product_create_form.js:362
+#: static/site/js/product_edit_form.js:311
+#: static/site/standalone/standalone-components.js:700
+msgid "Optional"
+msgstr ""
+
+#: static/site/js/product_create_form.js:366
+#: static/site/js/product_edit_form.js:315
+#: static/site/standalone/standalone-components.js:706
+msgid "Weights"
+msgstr ""
+
+#: static/site/js/product_create_form.js:366
+#: static/site/js/product_edit_form.js:315
+#: static/site/standalone/standalone-components.js:706
+msgid "Dimensions"
+msgstr ""
+
+#: static/site/js/product_create_form.js:366
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:315
+#: static/site/js/product_edit_form.js:381
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:706
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Net content"
+msgstr ""
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+#: static/site/standalone/standalone-components.js:712
+msgid "Product Image"
+msgstr ""
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+#: static/site/standalone/standalone-components.js:712
+msgid "Upload a picture of your product"
+msgstr ""
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+#: static/site/standalone/standalone-components.js:712
+msgid ""
+"Please upload an image of your product and/or a publicly-accessible Web URL "
+"of an image of the product. This URL should be for an image (jpg or png), "
+"not for a web page (html). This is a text field and the format will be, for "
+"example"
+msgstr ""
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+#: static/site/standalone/standalone-components.js:712
+msgid ""
+"Including a URL to an image of your product will ensure potential customers "
+"can access the image you want them to see and not something they just find "
+"on the internet. It can also help online market places to have an accurate "
+"representation of your product and help you increase sales."
+msgstr ""
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+#: static/site/standalone/standalone-components.js:712
+msgid "Accepted file types are: JPG, PNG, GIF with a size less than 2 MB"
+msgstr ""
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+msgid "Paste image Url"
+msgstr ""
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+msgid "Upload an image"
+msgstr ""
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+#: static/site/standalone/standalone-components.js:712
+msgid "Preview"
+msgstr ""
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+#: static/site/standalone/standalone-components.js:712
+msgid ""
+"The URL doesn't refer to an image or the image is not publicly accessible."
+msgstr ""
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+#: static/site/standalone/standalone-components.js:712
+msgid "Remove image"
+msgstr ""
+
+#: static/site/js/product_create_form.js:372
+#: static/site/js/product_edit_form.js:371
+#: static/site/standalone/standalone-components.js:715
+#: static/site/standalone/standalone-components.js:778
+msgid "Subproducts"
+msgstr ""
+
+#: static/site/js/product_create_form.js:372
+#: static/site/js/product_edit_form.js:371
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:715
+#: static/site/standalone/standalone-components.js:778
+#: static/site/standalone/standalone-components.js:790
+#: static/site/standalone/standalone-components.js:823
+#: static/site/standalone/standalone-components.js:824
+#: static/site/standalone/standalone-components.js:827
+msgid "GTIN"
+msgstr ""
+
+#: static/site/js/product_create_form.js:372
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:371
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:715
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:778
+#: static/site/standalone/standalone-components.js:789
+msgid "Package level"
+msgstr ""
+
+#: static/site/js/product_create_form.js:372
+#: static/site/js/product_edit_form.js:371
+#: static/site/standalone/standalone-components.js:715
+#: static/site/standalone/standalone-components.js:778
+msgid "Product description"
+msgstr ""
+
+#: static/site/js/product_create_form.js:372
+#: static/site/js/product_edit_form.js:371
+#: static/site/standalone/standalone-components.js:715
+#: static/site/standalone/standalone-components.js:778
+msgid "Quantity"
+msgstr ""
+
+#: static/site/js/product_create_form.js:374
+#: static/site/js/product_edit_form.js:369
+#: static/site/standalone/standalone-components.js:718
+msgid "Location information"
+msgstr ""
+
+#: static/site/js/product_create_form.js:374
+#: static/site/js/product_edit_form.js:369
+#: static/site/standalone/standalone-components.js:718
+msgid "Default GLN"
+msgstr ""
+
+#: static/site/js/product_create_form.js:376
+#: static/site/js/product_edit_form.js:385
+#: static/site/standalone/standalone-components.js:721
+msgid "Product activation confirmation"
+msgstr ""
+
+#: static/site/js/product_create_form.js:376
+#: static/site/js/product_edit_form.js:385
+#: static/site/standalone/standalone-components.js:721
+#: static/site/standalone/standalone-components.js:781
+msgid "I agree"
+msgstr ""
+
+#: static/site/js/product_create_form.js:376
+#: static/site/js/product_create_form.js:378
+#: static/site/js/product_edit_form.js:383
+#: static/site/js/product_edit_form.js:385
+#: static/site/js/product_edit_form.js:391
+#: static/site/standalone/standalone-components.js:721
+#: static/site/standalone/standalone-components.js:724
+#: static/site/standalone/standalone-components.js:781
+#: static/site/standalone/standalone-components.js:787
+msgid "OK"
+msgstr ""
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "Opted out from GS1 Cloud"
+msgstr ""
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "Opt out from GS1 Cloud"
+msgstr ""
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "Update"
+msgstr ""
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "Saved"
+msgstr ""
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "Update draft"
+msgstr ""
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "Saved as draft"
+msgstr ""
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "Save as draft"
+msgstr ""
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "Activated"
+msgstr ""
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "Activate barcode/GTIN"
+msgstr ""
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "This field is required for activation."
+msgstr ""
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:727
+msgid "Save as Draft"
+msgstr ""
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:727
+msgid "You can not activate this product."
+msgstr ""
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:727
+msgid "These fields should be filled:"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Company"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Label description"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+#: static/site/standalone/standalone-components.js:823
+#: static/site/standalone/standalone-components.js:824
+#: static/site/standalone/standalone-components.js:827
+msgid "Brand"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Sub brand"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Functional name"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Variant"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Point of sale"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Category"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Sku"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Is bunit"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Is cunit"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Is dunit"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Is vunit"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Is iunit"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Is ounit"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Country of origin"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Target market"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Language"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Gln of information provider"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Net weight"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Net weight uom"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Gross weight"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Gross weight uom"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Depth"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Depth uom"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Width uom"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Height uom"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Net content uom"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Image url"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Image upload"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Website URL"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Gs1 cloud state"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "DRAFT"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "ACTIVE"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "INACTIVE"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "OPTED_OUT"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:741
+#: static/site/standalone/standalone-components.js:790
+msgid "Product Identification"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:741
+#: static/site/standalone/standalone-components.js:790
+msgid "Fields marked with (*) are required."
+msgstr ""
+
+#: static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:381
+msgid "Print Product Summary"
+msgstr ""
+
+#: static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:381
+#: static/site/standalone/standalone-components.js:747
+msgid "GTIN-13 Number"
+msgstr ""
+
+#: static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:381
+#: static/site/standalone/standalone-components.js:747
+msgid "GS1 Company Prefix"
+msgstr ""
+
+#: static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:381
+#: static/site/js/product_edit_form.js:396
+msgid "Package Type"
+msgstr ""
+
+#: static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:381
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:747
+#: static/site/standalone/standalone-components.js:790
+msgid "Basic"
+msgstr ""
+
+#: static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:381
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:747
+#: static/site/standalone/standalone-components.js:790
+msgid "Measurements"
+msgstr ""
+
+#: static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:381
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:747
+#: static/site/standalone/standalone-components.js:790
+msgid "Picture"
+msgstr ""
+
+#: static/site/js/product_create_form.js:399
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:750
+#: static/site/standalone/standalone-components.js:790
+msgid "Summary"
+msgstr ""
+
+#: static/site/js/product_edit_form.js:283
+#: static/site/standalone/standalone-components.js:775
+msgid "Product delete confirmation"
+msgstr ""
+
+#: static/site/js/product_edit_form.js:283
+#: static/site/standalone/standalone-components.js:775
+msgid "Don't delete product"
+msgstr ""
+
+#: static/site/js/product_edit_form.js:283
+#: static/site/standalone/standalone-components.js:775
+msgid "Delete and set"
+msgstr ""
+
+#: static/site/js/product_edit_form.js:283
+#: static/site/standalone/standalone-components.js:775
+msgid "Delete only"
+msgstr ""
+
+#: static/site/js/product_edit_form.js:283
+#: static/site/standalone/standalone-components.js:775
+msgid ""
+"You are about to delete one of your products. Because this action will "
+"probably create a gap in your serial numbers you must choose what to do."
+msgstr ""
+
+#: static/site/js/product_edit_form.js:283
+#: static/site/standalone/standalone-components.js:775
+msgid "Delete product and set prefix's starting GTIN to deleted product's GTIN"
+msgstr ""
+
+#: static/site/js/product_edit_form.js:283
+#: static/site/standalone/standalone-components.js:775
+msgid "or"
+msgstr ""
+
+#: static/site/js/product_edit_form.js:283
+#: static/site/standalone/standalone-components.js:775
+msgid "Delete product and don't change the starting GTIN of this prefix"
+msgstr ""
+
+#: static/site/js/product_edit_form.js:283
+#: static/site/standalone/standalone-components.js:775
+msgid ""
+"Keep in mind that only products that are not part of a container can be "
+"deleted."
+msgstr ""
+
+#: static/site/js/product_edit_form.js:371
+#: static/site/standalone/standalone-components.js:778
+msgid "Add subproducts"
+msgstr ""
+
+#: static/site/js/product_edit_form.js:391
+#: static/site/standalone/standalone-components.js:787
+msgid "Make a pack of trade items using"
+msgstr ""
+
+#: static/site/js/product_edit_form.js:391
+#: static/site/standalone/standalone-components.js:787
+msgid "as a base"
+msgstr ""
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:789
+msgid "Gtin"
+msgstr ""
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:789
+msgid "Bar placement"
+msgstr ""
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:789
+msgid "Status"
+msgstr ""
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:789
+msgid "Date"
+msgstr ""
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:790
+msgid ""
+"When giving the barcode number for a product to your printer/graphic "
+"designer/packaging designer for the creation of a barcode symbol, please "
+"ignore the preceding 0 attached to the barcode number below if the package "
+"level is a base unit and inner case. Keep the 0 if the package level is an "
+"outer case or pallet."
+msgstr ""
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:790
+msgid "Advanced"
+msgstr ""
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:790
+msgid "Optional information"
+msgstr ""
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:790
+msgid "Symbols"
+msgstr ""
+
+#: static/site/js/product_edit_form.js:396
+msgid "Label Generator"
+msgstr ""
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:790
+msgid "Clone"
+msgstr ""
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:790
+msgid "Make a Pack"
+msgstr ""
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:790
+msgid "Message"
+msgstr ""
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:790
+msgid ""
+"You cannot edit a product field once activated. If the information is wrong "
+"place contact the"
+msgstr ""
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:790
+msgid "HELPDESK"
+msgstr ""
+
+#: static/site/js/profile_strength.js:9
+msgid "Strong"
+msgstr ""
+
+#: static/site/js/profile_strength.js:12
+msgid "Medium"
+msgstr ""
+
+#: static/site/js/profile_strength.js:15 static/site/js/profile_strength.js:18
+msgid "Weak"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:694
+msgid "Auto-Fill"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:709
+msgid "Choose file"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:709
+msgid "No file chosen"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:712
+msgid "Upload Image File"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:712
+msgid "Paste External Image Url"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:747
+msgid "Finish"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:783
+msgid "File type"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:783
+msgid "Image file type"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:783
+msgid "Printer resolution"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:783
+msgid "Postscript type"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:783
+msgid "Postscript (eps) image type"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:783
+msgid "Label type"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:783
+msgid "PDF label type"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:783
+#: static/site/standalone/standalone-components.js:784
+msgid "Magnification"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:783
+msgid "BWR"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:783
+msgid ""
+"BWR stands for bar-width reduction and compensates for the ink-spread during "
+"printing."
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:783
+msgid "Right quiet zone indicator"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:783
+msgid "Printing Marks"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:783
+msgid "Calibration (Debug)"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:783
+msgid "0.0015 (printer resolution 600 dpi)"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:783
+msgid "0.0035 (printer resolution 300 dpi)"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:784
+#: static/site/standalone/standalone-components.js:827
+msgid "Barcode"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Logistics Label Tool"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:784
+msgid ""
+"The family of EAN/UPC barcodes are used to represent GTINs on trade items so "
+"they can be scanned atPoint-of-Sale and distribution centers. They should "
+"only be printed on outer-cases if they are printedat 200% their size and the "
+"case will be scanned at the point of sale. A case of wine is an example of "
+"such a product"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:784
+msgid ""
+"The ITF 14 symbol is used for trade items not passing the point of sale and "
+"is ideal for use where thesymbol is to be pre-printed onto corrugated "
+"fibreboard/Kraftboard or onto labels attached outer cases."
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Barcodes for this package level are not supported"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Download raster image"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Image type"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Resolution"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Download postscript (eps) image"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Download postscript(eps) image"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Download PDF labels"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Image Options"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Update barcode preview"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Create and download a high resolution image of this barcode."
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:784
+msgid ""
+"Available formats are JPG, PNG and GIF raster images up to 2400dpi "
+"resolution,and postscript images which scale to your desired size."
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:784
+msgid ""
+"To create your barcode image you need to have at least 1 credit available in "
+"your balance."
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Create EAN13 barcode"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Agreement required"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Please contact us for the agreement text"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:787
+msgid "Choose one from the available GTINs"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:787
+msgid "Indicate hierarchy level"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:815
+msgid "Display shipper"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:815
+#: static/site/standalone/standalone-components.js:824
+msgid "Base Unit"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:815
+#: static/site/standalone/standalone-components.js:824
+msgid "Pack"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:815
+msgid "Case"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:815
+#: static/site/standalone/standalone-components.js:824
+msgid "Pallet"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:823
+#: static/site/standalone/standalone-components.js:824
+#: static/site/standalone/standalone-components.js:827
+msgid "SKU"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:823
+#: static/site/standalone/standalone-components.js:827
+#, fuzzy
+#| msgid "Packaging Level"
+msgid "Package Level"
+msgstr "Packaging Level (de)"
+
+#: static/site/standalone/standalone-components.js:823
+msgid "Created"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:823
+msgid "Updated"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:823
+msgid "Descending"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:823
+msgid "Ascending"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:824
+msgid "Filters"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:824
+msgid "Applied"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:824
+msgid "Target Market"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:824
+msgid "Case or mixed case"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:824
+msgid "Display unit"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:824
+msgid "Starred"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:824
+msgid "Sort by"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:824
+msgid "Reset"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:824
+msgid "Apply"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:827
+msgid "Edit your product catalogue"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:827
+msgid "GS1 Cloud"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:827
+msgid "No products found, please"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:827
+msgid "add product"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:827
+msgid " No products found, please change or reset filters."
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:827
+msgid "Products per page"
+msgstr ""

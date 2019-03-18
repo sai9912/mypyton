@@ -1,0 +1,335 @@
+[
+  {
+    "model": "BCM.country",
+    "pk": 1,
+    "fields": {
+      "name": "Belgium",
+      "slug": "BE"
+    }
+  },
+  {
+    "model": "BCM.country",
+    "pk": 2,
+    "fields": {
+      "name": "France",
+      "slug": "FR"
+    }
+  },
+  {
+    "model": "BCM.country",
+    "pk": 3,
+    "fields": {
+      "name": "Germany",
+      "slug": "DE"
+    }
+  },
+  {
+    "model": "BCM.country",
+    "pk": 4,
+    "fields": {
+      "name": "Australia",
+      "slug": "AU"
+    }
+  },
+  {
+    "model": "BCM.country",
+    "pk": 5,
+    "fields": {
+      "name": "Czech",
+      "slug": "CZ"
+    }
+  },
+  {
+    "model": "BCM.country",
+    "pk": 6,
+    "fields": {
+      "name": "Sweden",
+      "slug": "SE"
+    }
+  },
+  {
+    "model": "BCM.country",
+    "pk": 7,
+    "fields": {
+      "name": "Global",
+      "slug": "GO"
+    }
+  },
+  {
+    "model": "BCM.country",
+    "pk": 8,
+    "fields": {
+      "name": "Switzerland",
+      "slug": "CH"
+    }
+  },
+  {
+    "model": "BCM.country",
+    "pk": 9,
+    "fields": {
+      "name": "Finland",
+      "slug": "FI"
+    }
+  },
+  {
+    "model": "BCM.country",
+    "pk": 10,
+    "fields": {
+      "name": "United Kingdom",
+      "slug": "UK"
+    }
+  },
+  {
+    "model": "BCM.country",
+    "pk": 11,
+    "fields": {
+      "name": "Egypt",
+      "slug": "EG"
+    }
+  },
+  {
+    "model": "BCM.country",
+    "pk": 12,
+    "fields": {
+      "name": "South Africa",
+      "slug": "ZA"
+    }
+  },
+  {
+    "model": "BCM.country",
+    "pk": 13,
+    "fields": {
+      "name": "Italy",
+      "slug": "IT"
+    }
+  },
+  {
+    "model": "BCM.country",
+    "pk": 14,
+    "fields": {
+      "name": "Hong Kong",
+      "slug": "HK"
+    }
+  },
+  {
+    "model": "BCM.country",
+    "pk": 15,
+    "fields": {
+      "name": "Bosnia and Herzegovina",
+      "slug": "BA"
+    }
+  },
+  {
+    "model": "BCM.country",
+    "pk": 16,
+    "fields": {
+      "name": "Ireland",
+      "slug": "IR"
+    }
+  },
+  {
+    "model": "BCM.country",
+    "pk": 17,
+    "fields": {
+      "name": "Greece",
+      "slug": "GR"
+    }
+  },
+  {
+    "model": "BCM.country",
+    "pk": 18,
+    "fields": {
+      "name": "Malaysia",
+      "slug": "MY"
+    }
+  },
+  {
+    "model": "BCM.language",
+    "pk": 1,
+    "fields": {
+      "name": "German",
+      "slug": "de"
+    }
+  },
+  {
+    "model": "BCM.language",
+    "pk": 2,
+    "fields": {
+      "name": "French",
+      "slug": "fr"
+    }
+  },
+  {
+    "model": "BCM.language",
+    "pk": 3,
+    "fields": {
+      "name": "Dutch",
+      "slug": "nl"
+    }
+  },
+  {
+    "model": "BCM.language",
+    "pk": 4,
+    "fields": {
+      "name": "English",
+      "slug": "en"
+    }
+  },
+  {
+    "model": "BCM.language",
+    "pk": 5,
+    "fields": {
+      "name": "Czech",
+      "slug": "cs"
+    }
+  },
+  {
+    "model": "BCM.language",
+    "pk": 6,
+    "fields": {
+      "name": "Swedish",
+      "slug": "sv"
+    }
+  },
+  {
+    "model": "BCM.language",
+    "pk": 7,
+    "fields": {
+      "name": "Sami",
+      "slug": "se"
+    }
+  },
+  {
+    "model": "BCM.language",
+    "pk": 8,
+    "fields": {
+      "name": "\u03b5\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac",
+      "slug": "el"
+    }
+  },
+  {
+    "model": "BCM.language",
+    "pk": 9,
+    "fields": {
+      "name": "bahasa Melayu, \u0628\u0647\u0627\u0633 \u0645\u0644\u0627\u064a\u0648\u200e",
+      "slug": "ms"
+    }
+  },
+  {
+    "model": "BCM.languagebycountry",
+    "pk": 1,
+    "fields": {
+      "country": 1,
+      "language": 2,
+      "default": true
+    }
+  },
+  {
+    "model": "BCM.languagebycountry",
+    "pk": 2,
+    "fields": {
+      "country": 1,
+      "language": 3,
+      "default": false
+    }
+  },
+  {
+    "model": "BCM.languagebycountry",
+    "pk": 3,
+    "fields": {
+      "country": 1,
+      "language": 1,
+      "default": false
+    }
+  },
+  {
+    "model": "BCM.languagebycountry",
+    "pk": 4,
+    "fields": {
+      "country": 2,
+      "language": 2,
+      "default": false
+    }
+  },
+  {
+    "model": "BCM.languagebycountry",
+    "pk": 5,
+    "fields": {
+      "country": 3,
+      "language": 1,
+      "default": false
+    }
+  },
+  {
+    "model": "BCM.languagebycountry",
+    "pk": 6,
+    "fields": {
+      "country": 4,
+      "language": 4,
+      "default": true
+    }
+  },
+  {
+    "model": "BCM.languagebycountry",
+    "pk": 7,
+    "fields": {
+      "country": 5,
+      "language": 5,
+      "default": true
+    }
+  },
+  {
+    "model": "BCM.languagebycountry",
+    "pk": 8,
+    "fields": {
+      "country": 6,
+      "language": 6,
+      "default": true
+    }
+  },
+  {
+    "model": "BCM.languagebycountry",
+    "pk": 9,
+    "fields": {
+      "country": 6,
+      "language": 7,
+      "default": false
+    }
+  },
+  {
+    "model": "BCM.languagebycountry",
+    "pk": 10,
+    "fields": {
+      "country": 7,
+      "language": 4,
+      "default": true
+    }
+  },
+  {
+    "model": "BCM.languagebycountry",
+    "pk": 11,
+    "fields": {
+      "country": 16,
+      "language": 4,
+      "default": false
+    }
+  },
+  {
+    "model": "BCM.languagebycountry",
+    "pk": 12,
+    "fields": {
+      "country": 17,
+      "language": 8,
+      "default": false
+    }
+  },
+  {
+    "model": "BCM.languagebycountry",
+    "pk": 13,
+    "fields": {
+      "country": 18,
+      "language": 9,
+      "default": false
+    }
+  }
+]

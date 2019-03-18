@@ -1,0 +1,42 @@
+{% extends 'base_bs4.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans 'GS1 Activate: Dashboard' %}{% endblock %}
+
+{% block breadcrumb %}
+    <ol class="breadcrumb col-auto mr-auto">
+        <li><a href="{% url 'users:profile' %}">{{ _("Home") }}</a></li>
+        <li>{{ title }}</li>
+    </ol>
+    {% comment %}
+    <div class="active_range col-auto">
+        {% include 'prefixes/render_range_prefix.html' with prefix=prefix only %}
+        <a href="{% url 'prefixes:prefixes_list' %}"> [{% trans 'Change' %}]</a>
+    </div>
+    {% endcomment %}
+{% endblock %}
+
+{% block site_content %}
+    <div class="site-content">
+        <h2>{% block page_title %} {% trans 'Dashboard ' %} {% endblock %}</h2>
+
+        {% block page_content %}
+            <div class="site-content-padder">
+                <div id="dashboard">
+                    <!-- vue component container -->
+                </div>
+            </div>
+        {% endblock page_content %}
+    </div>
+{% endblock site_content %}
+
+{% block base_scripts %}
+    <script type="text/javascript" src="{% url 'javascript-i18n' %}"></script>
+
+    <script src="{% static 'site/standalone/standalone-components.js' %}"></script>
+{% endblock %}
+
+{% block base_css %}
+    <link href="{% static 'site/standalone/standalone-components.css' %}" rel="stylesheet">
+{% endblock %}

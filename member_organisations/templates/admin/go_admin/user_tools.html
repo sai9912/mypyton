@@ -1,0 +1,11 @@
+{% load i18n %}
+<div id="user-tools">
+    {% block welcome-msg %}
+        {% trans 'Welcome,' %}
+        <strong>{% firstof user.get_short_name user.get_username %} ({{ user.username }})</strong>.
+    {% endblock %}
+    {% if site_url %}
+        <a href="{{ site_url }}">{% trans 'View site' %}</a> /
+    {% endif %}
+    {% if request.user.is_authenticated %}<a href="{% url 'BCM:logout' %}">{% trans 'Log out' %}</a>{% endif %}
+</div>

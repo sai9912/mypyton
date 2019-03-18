@@ -1,0 +1,497 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load static %}
+{% load product_tags %}
+
+{# from theme("prefixes/range_macros.html") import render_range_breadcrumb, render_gtin, render_package_level #}
+{# from theme("security/_macros.html") import render_field_with_errors, render_field_with_errors4 #}
+
+{% block base_css %}
+    <link href="{% static 'products/site/css/add_product.css' %}" rel="stylesheet"/>
+    <style>
+        .fieldset > legend {
+            border: none;
+            width: auto;
+            margin-bottom: auto;
+        }
+    </style>
+    <link rel="stylesheet" href="{% static 'products/site/css/star-rating-svg.css' %}"/>
+{% endblock %}
+{% block title %}{% trans 'GS1 Activate: My products' %}{% endblock %}
+{% block breadcrumb %}
+    <ol class="breadcrumb" style="display:inline-block">
+        <li><a href="{% url 'users:profile' %}">{{ _("Home") }}</a></li>
+        <li>{% trans 'My products' %}</li>
+    </ol>
+    <div class="active_range pull-right">
+        {% include 'prefixes/render_range_prefix.html' with prefix=prefix only %}
+        <a href="{% url 'prefixes:prefixes_list' %}"> {% trans '[Change]' %}</a>
+    </div>
+{% endblock %}
+{% block site_content %}
+    <div class="site-content">
+
+        <div>
+            <h2>
+                {% block page_title %} {% trans 'My Products' %} {% endblock %}
+            </h2>
+            <div style="position: absolute; right: 10px; top: 10px; text-align: right;">
+                <a href="{{ request.user.profile.member_organisation.gs1_help_url_3 }}">
+                    <b>{{ request.user.profile.member_organisation.gs1_help_label_3 }}</b>
+                    <img src="{% static 'site/img/training_button_2.png' %}" alt="{% trans 'Help' %}"
+                         style="width: auto;height: 30px;">
+                </a>
+            </div>
+        </div>
+
+        {% block page_content %}
+            <div class="site-content-padder">
+
+                <h3>{% trans 'Edit your product catalogue' %}
+                    {% if prefix.is_special != 'READ-ONLY' %}
+                        <a class="btn btn-primary pull-right"
+                           href="{% url 'products:add_product_js' %}">{% trans 'Add product' %}</a>
+                        {#                        <a class="btn btn-gs1ie-orange pull-right" href="/products/add?express=1"#}
+                        {#                           style="margin-right:10px;">{% trans 'Express Allocation' %}</a>#}
+                    {% endif %}
+                </h3>
+                <br/>
+
+                <form method="post" action="{% url 'products:products_list' %}" id="filterForm">
+                    {% csrf_token %}
+                    {% for hidden in form.hidden_fields %}
+                        {{ hidden }}
+                    {% endfor %}
+                    <div class="panel panel-default">
+                        <div class="panel-heading orange-panel-heading">
+                            <h4 class="panel-title" style="display: inline">
+                                {% if session.list_filter %}
+                                    <a data-toggle="collapse" href="#collapseOne" class="btn grey-button">
+                                        {% trans 'List filtered' %}
+                                    </a>
+                                {% else %}
+                                    <a data-toggle="collapse" href="#collapseOne" class="btn btn-primary">
+                                        {% trans 'Search' %}
+                                    </a>
+                                {% endif %}
+                            </h4>
+                            <div class="pull-right" style="margin-top:5px">
+                                {% trans 'Sorted' %}: {{ sorted.field }} ({{ sorted.mode }})
+                            </div>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class='row' style="margin-bottom: 10px">
+                                    <div class="col-xs-12">
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <div class="row">
+                                                    {% if templates.70 %}
+                                                        <div class="col-xs-6">
+                                                            <div class="checkbox">
+                                                                {% include 'security/_macros.html' with func='render_field_with_errors' field=form.base label=_('Base unit') only %}
+                                                            </div>
+                                                        </div>
+                                                    {% endif %}
+                                                    {% if templates.60 %}
+                                                        <div class="col-xs-6">
+                                                            <div class="checkbox">
+                                                                {% include 'security/_macros.html' with func='render_field_with_errors' field=form.pack label=_('Inner pack') only %}
+                                                            </div>
+                                                        </div>
+                                                    {% endif %}
+                                                </div>
+
+                                                <div class="row">
+                                                    {% if templates.50 %}
+                                                        <div class="col-xs-6">
+                                                            <div class="checkbox">
+                                                                {% include 'security/_macros.html' with func='render_field_with_errors' field=form.case label=_('Case') only %}
+                                                            </div>
+                                                        </div>
+                                                    {% endif %}
+                                                    {% if templates.30 %}
+                                                        <div class="col-xs-6">
+                                                            <div class="checkbox">
+                                                                {% include 'security/_macros.html' with func='render_field_with_errors' field=form.pallet label=_('Pallet') only %}
+                                                            </div>
+                                                        </div>
+                                                    {% endif %}
+                                                </div>
+
+                                                <div class="row">
+                                                    {% if templates.40 %}
+                                                        <div class="col-xs-6">
+                                                            <div class="checkbox">
+                                                                {% include 'security/_macros.html' with func='render_field_with_errors' field=form.display_shipper label=_('Display shipper') only %}
+                                                            </div>
+                                                        </div>
+                                                    {% endif %}
+                                                    <div class="col-xs-6">
+                                                        <div class="checkbox">
+                                                            {% include 'security/_macros.html' with func='render_field_with_errors' field=form.mark label=_('Starred') only %}
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <div class="form-group">
+                                                            {{ form.brand }}
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <div class="form-group">
+                                                            {{ form.gtin }}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <div class="form-group">
+                                                            {{ form.description }}
+                                                        </div>
+                                                    </div>
+                                                    {% if request.user.profile.member_organisation.slug != 'gs1se' %}
+                                                        <div class="col-xs-6">
+                                                            <div class="form-group">
+                                                                {{ form.sku }}
+                                                            </div>
+                                                        </div>
+                                                    {% endif %}
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-6" style="padding-right:0px;">
+                                                        <div class="form-group"
+                                                             style="text-align:right; padding-top:5px;">
+                                                            {% trans 'Select Target Market:' %}
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <div class="form-group">
+                                                            {{ form.target_market }}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr/>
+                                        <div class="row">
+                                            <div class="col-xs-3">
+                                                <button type="submit" class="btn btn-primary">{% trans 'OK' %}</button>
+                                                <a class="btn btn-default"
+                                                   href="{% url 'products:products_list' %}?clear_filter=1">{% trans 'Reset' %}</a>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                <div class="pull-right" style="margin-top:5px">
+                                                    {% trans 'Sort by' %}:
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                {{ form.sort_field }}
+                                            </div>
+                                            <div class="col-xs-3">
+                                                {{ form.sort_mode }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                {% if current_user.enable_leading %}
+                    <div class="well">
+                        <p>{% blocktrans %}
+                            When giving the barcode number for a product to your printer/graphic designer/packaging
+                            designer for the creation of a barcode symbol, please ignore the preceding 0 attached
+                            to the barcode number below if the package level is a base unit and inner case. Keep
+                            the 0 if the package level is an outer case or pallet.
+                        {% endblocktrans %}</p>
+                    </div>
+                {% endif %}
+
+                <div id='pdt-list'>
+                    {% if latest_product_list %}
+                        <table class="table table-striped" id="pdt-table">
+                            <thead>
+                            <th></th>
+                            <th>&nbsp;</th>
+                            <th>{% trans 'Package Level' %}</th>
+                            <th>{% trans 'Brand' %}</th>
+                            <th>{% trans 'Description' %}</th>
+                            {% if request.user.profile.member_organisation.slug != 'gs1se' %}
+                                <th>{% trans 'SKU' %}</th>
+                            {% endif %}
+                            <th>{% trans 'GTIN' %}</th>
+                            <th style="text-align: center">{% trans 'Barcode' %}</th>
+                            <th style="text-align: center">{% trans 'GS1 Cloud' %}</th>
+                            </thead>
+                            <tbody>
+                            {% for p in latest_product_list %}
+                                <tr>
+                                    <td>
+                                        <div id="star_{{ p.id }}" data-rating="{{ p.mark }}" class="star"></div>
+                                    </td>
+                                    <td>
+                                        {% for subproducts in assoc_products %}
+                                            {% if subproducts.p_id == p.id %}
+                                                <a href="javascript:void(0)"
+                                                   onclick="return togglesub(this, '.sub_{{ p.id }}')">
+                                                    <span class="glyphicon glyphicon-chevron-down"></span>
+                                                </a>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </td>
+                                    <td style="vertical-align:middle; text-align:center;">
+                                        {% include 'prefixes/range_macros.html' with func='render_package_level' product=p only %}
+                                    </td>
+                                    <td>
+                                        {% get_localized_product_field p 'brand' as brand_i18n %}
+                                        {{ brand_i18n|default:'--' }}
+                                    </td>
+                                    <td>
+                                        {% get_localized_product_field p 'description' as description_i18n %}
+
+                                        <a href="/products/{{ p.id }}/fulledit_js"
+                                           data-toggle="tooltip"
+                                           title="{{ description_i18n }}">{{ description_i18n|default:''|slice:":30" }}</a>
+                                    </td>
+                                    {% if request.user.profile.member_organisation.slug != 'gs1se' %}
+                                        <td>
+                                            {{ p.sku|default:''|slice:":30" }}
+                                        </td>
+                                    {% endif %}
+                                    <td style="white-space:nowrap;color:#002C6C;text-align:right;">
+                                        {% include 'prefixes/range_macros.html' with func='render_gtin' gtin=p.gtin plength=p.gs1_company_prefix|length kind=p.bar_type enable_leading=enable_leading only %}
+                                    </td>
+                                    <td style="text-align: center">
+                                        <a href="/products/{{ p.id }}/fulledit_js#symbols"><span
+                                            class="glyphicon glyphicon-barcode"></span></a>
+                                    </td>
+                                    <td style="text-align: center">
+                                        {% if p.package_level_id == 70 %}
+                                            <a href="/products/{{ p.id }}/fulledit_js?cloud=1"><span
+                                                class="glyphicon glyphicon-cloud"
+                                                {% if p.gs1_cloud_state == 'ACTIVE' %}
+                                                style="color:blue"
+                                                {% else %}
+                                                style="color:darkgrey"
+                                                {% endif %}
+                                            ></span></a>
+                                        {% else %}
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                                {% for subproducts in assoc_products %}
+                                    {% if subproducts.p_id == p.id %}
+                                        {% for sub_p in subproducts.sub_p %}
+                                            <tr class="warning sub_lines sub_{{ p.id }}">
+                                                <td>&nbsp;</td>
+                                                <td><span class="glyphicon glyphicon-minus"></span></td>
+                                                <td style="vertical-align:middle; text-align:center;">
+                                                    {% include 'prefixes/range_macros.html' with func='render_package_level' product=sub_p only %}
+                                                </td>
+                                                <td>{{ sub_p.brand }}</td>
+                                                <td>
+                                                    <!-- a href="/products/{{ sub_p.sub_product.id }}/fulledit" -->
+                                                    <a href="/products/{{ sub_p.id }}/fulledit_js">
+                                                        {{ sub_p.description|slice:":30" }}
+                                                    </a>
+                                                </td>
+                                                {% if request.user.profile.member_organisation.slug != 'gs1se' %}
+                                                    <td>
+                                                        {{ sub_p.sku|default:'' }}
+                                                    </td>
+                                                {% endif %}
+                                                <td style="color:#002C6C; text-align:right;">
+                                                    {% include 'prefixes/range_macros.html' with func='render_gtin' gtin=sub_p.gtin plength=sub_p.gs1_company_prefix|length kind=sub_p.bar_type enable_leading=enable_leading only %}
+                                                </td>
+                                                <td style="text-align: center">
+                                                    {{ sub_p.quantity }}
+                                                </td>
+                                            </tr>
+                                        {% endfor %}
+                                    {% endif %}
+                                {% endfor %}
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    {% else %}
+                        <div id="pdt-add-new">{% trans 'No products found, please' %}
+                            <a id="add-book" href="/products/add">{% trans 'add product' %}</a>.
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ul class="pager">
+                            {% if pagination.has_previous %}
+                                <li class="previous">
+                                    <a href="{% url 'products:products_list' %}?page={{ pagination.previous_page_number }}">
+                                        &larr; {% trans 'Previous' %}
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="previous disabled">
+                                    <a href="javascript:void(0)">
+                                        &larr; {% trans 'Previous' %}
+                                    </a>
+                                </li>
+                            {% endif %}
+                            <li style="margin-right: 20px;vertical-align: middle;">{% trans 'Page' %} {{ pagination.number }}
+                                {% trans 'of' %} {{ pagination.paginator.num_pages }}</li>
+                            <li style="margin-left: 20px;vertical-align: middle;">{% trans 'Products per Page' %}:
+                                <select name="per_page" id="per_page">
+                                    <option value="{{ ppp }}"
+                                            {% if per_page == ppp %}selected{% endif %}>{{ ppp }}</option>
+                                    <option value="{{ ppp|mul:2 }}"
+                                            {% if per_page == ppp|mul:2 %}selected{% endif %}>{{ ppp|mul:2 }}</option>
+                                    <option value="{{ ppp|mul:5 }}"
+                                            {% if per_page == ppp|mul:5 %}selected{% endif %}>{{ ppp|mul:5 }}</option>
+                                    <option value="{{ ppp|mul:10 }}"
+                                            {% if per_page == ppp|mul:10 %}selected{% endif %}>{{ ppp|mul:10 }}</option>
+                                </select>
+                            </li>
+                            {% if pagination.has_next %}
+                                <li class="next">
+                                    <a href="{% url 'products:products_list' %}?page={{ pagination.next_page_number }}">
+                                        {% trans 'Next' %} &rarr;
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="next disabled">
+                                    <a href="javascript:void(0)">
+                                        {% trans 'Next' %} &rarr;
+                                    </a>
+                                </li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        {% endblock page_content %}
+    </div>
+{% endblock site_content %}
+
+{% block legend %}
+    <ul style="margin-top: 36px">
+        <span style="    color: #002C6C;
+    font-weight: 700;">{% trans 'Legend' %}</span>
+
+        <ul id="legend">
+            {% if templates.70 %}
+                <li>
+                    <img src="{% static 'products/site/wizard/pos.png' %}" alt="Each"/>
+                    &nbsp;{% trans 'Base Unit' %}
+                </li>
+            {% endif %}
+            {% if templates.60 %}
+                <li>
+                    <img src="{% static 'products/site/wizard/pack.png' %}" alt="Pack"/>
+                    &nbsp;{% trans 'Pack' %}
+                </li>
+            {% endif %}
+            {% if templates.50 %}
+                <li>
+                    <img src="{% static 'products/site/wizard/case.png' %}" alt="Case"/>
+                    &nbsp;{% trans 'Case or mixed case' %}
+                </li>
+            {% endif %}
+            {% if templates.40 %}
+                <li>
+                    <img src="{% static 'products/site/wizard/shipper.png' %}" alt="Display unit"/>
+                    &nbsp;{% trans 'Display unit' %}
+                </li>
+            {% endif %}
+            {% if templates.30 %}
+                <li>
+                    <img src="{% static 'products/site/wizard/pallet.png' %}" alt="Pallet"/>
+                    &nbsp;{% trans 'Pallet' %}
+                </li>
+            {% endif %}
+        </ul>
+    </ul>
+{% endblock %}
+
+{% block completeness %}
+    <ul>
+        <li>{% trans 'Data Completeness' %}</li>
+    </ul>
+    <div style="position:absolute; margin-right: 10px; margin-top: 10px; margin-bottom: 40px; ">
+        <div class="fill"></div>
+        <img class="mask" src="{% static 'site/img/pic_profile_strength_mask_90x90_v2.png' %}">
+        <div class='line'>
+            <div class="profile_strength_txt">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block base_scripts %}
+    <script type="text/javascript" src="{% url 'javascript-i18n' %}"></script>
+    <script src="{% static 'site/js/profile_strength.js' %}"></script>
+    <script type='text/javascript'>
+        function togglesub(o, c) {
+            if ($(o).hasClass('sub_opened')) {
+                $(c).toggle();
+                $(o).html('<span class="glyphicon glyphicon-chevron-down"></span>');
+                $(o).removeClass('sub_opened');
+            } else {
+                $(c).toggle();
+                $(o).html('<span class="glyphicon glyphicon-chevron-up"></span>');
+                $(o).addClass('sub_opened');
+            }
+        }
+
+        function clearform() {
+            $('#filterForm').find('input[type="text"]').each(function () {
+                $(this).val('');
+            });
+            $('#filterForm').find('input[type="checkbox"]').each(function () {
+                $(this).prop('checked', true);
+            });
+            return false;
+        }
+
+        $(document).ready(function () {
+            $('.sub_lines').hide();
+            $('#per_page').on('change', function () {
+                window.location = "{% url 'products:products_list' %}?per_page=" + $("#per_page").val();
+            })
+            fillMeter("{{ completeness }}");
+        })
+    </script>
+    <script type='text/javascript' src="{% static 'site/js/jquery.star-rating-svg.js' %}"></script>
+    <script type='text/javascript'>
+        $(".star").starRating({
+            starSize: 20,
+            totalStars: 1,
+            useFullStars: true,
+            disableAfterRate: false,
+            callback: function (currentRating, $el) {
+                // make a server call here
+                var prod_id = $el.attr('id').split('_')[1];
+                if (currentRating == 0) {
+                    $.post('/products/ajax/' + prod_id + '/unmark/',
+                        {'csrfmiddlewaretoken': '{{ csrf_token }}'},
+                        function (data) {
+                            console.log(data);
+                        })
+                }
+                else {
+                    $.post('/products/ajax/' + prod_id + '/mark/',
+                        {'csrfmiddlewaretoken': '{{ csrf_token }}'},
+                        function (data) {
+                            console.log(data);
+                        })
+                }
+            }
+        });
+    </script>
+{% endblock base_scripts %}

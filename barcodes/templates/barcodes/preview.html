@@ -1,0 +1,306 @@
+{% load static %}
+
+<!-- link href="{% static 'bootstrap-3/css/bootstrap.min.css' %}" rel="stylesheet" -->
+<style>
+.panel {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.panel-heading + .list-group .list-group-item:first-child {
+  border-top-width: 0;
+}
+
+.panel > .table {
+  margin-bottom: 0;
+}
+
+.panel > .panel-body + .table {
+  border-top: 1px solid #dddddd;
+}
+
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.panel-title > a {
+  color: inherit;
+}
+
+.panel-footer {
+  padding: 10px 15px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #dddddd;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.panel-group .panel {
+  margin-bottom: 0;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.panel-group .panel + .panel {
+  margin-top: 5px;
+}
+
+.panel-group .panel-heading {
+  border-bottom: 0;
+}
+
+.panel-group .panel-heading + .panel-collapse .panel-body {
+  border-top: 1px solid #dddddd;
+}
+
+.panel-group .panel-footer {
+  border-top: 0;
+}
+
+.panel-group .panel-footer + .panel-collapse .panel-body {
+  border-bottom: 1px solid #dddddd;
+}
+
+.panel-default {
+  border-color: #dddddd;
+}
+
+.panel-default > .panel-heading {
+  color: #333333;
+  background-color: #f5f5f5;
+  border-color: #dddddd;
+}
+
+.panel-default > .panel-heading + .panel-collapse .panel-body {
+  border-top-color: #dddddd;
+}
+
+.panel-default > .panel-footer + .panel-collapse .panel-body {
+  border-bottom-color: #dddddd;
+}
+
+.well-bs3 {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f8f8f8;
+  border-radius: 0px;
+  border: 1px solid #888B8D;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.well-sm-bs3 {
+  padding: 9px;
+  border-radius: 3px;
+}
+</style>
+
+<div class="disclaimer" style="width: 550px;
+                              border: 2px solid black;
+                              box-shadow: darkgray;
+                              position: fixed;
+                              height: 250px;
+                              background-color: white;
+                              z-index: 10;
+                              display: none;">
+    <table style="width:100%; height:100%;">
+        <tr style="height:200px; border-bottom:1px solid black">
+            <td style="background-color:white">
+                <div style="margin:10px">
+                    <p>
+                        {{ request.user.profile.member_organisation.gs1_barcode_production_disclaimer }}
+                    </p>
+                    <input type="checkbox"
+                           id="disclaimer_agree"> Agree
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:right">
+                <button type="button"
+                        class="btn btn-primary"
+                        style="margin-left: 10px;"
+                        onclick="close_disclaimer()">Continue</button>
+                <button type="button"
+                        class="btn btn-primary"
+                        style="margin-left:10px; margin-right:10px;"
+                        onclick="cancel_disclaimer()">Cancel</button>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="disclaimer" style="width: 100%;
+                               height: 100%;
+                               position: fixed;
+                               top: 0px;
+                               background-color: black;
+                               left: 0px;
+                               z-index: 5;
+                               opacity: 0.5;
+                               display: none;"></div>
+
+<div id="preview">
+    <br/>
+
+    <h3>Barcode {{ kind }}: <span
+            style="text-decoration: underline">{# render_gtin(gtin, prefix.prefix|length, kind) #}</span></h3>
+    <br/>
+
+    {% if kind == 'ITF14' %}
+        {# explanation 200 prc #}
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="well-bs3">
+                    The ITF 14 symbol is used for trade items not passing the point of sale and is ideal for use where the
+                    symbol is to be pre-printed onto corrugated fibreboard/Kraftboard or onto labels attached outer cases.
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+    {% if kind == 'EAN13' %}
+        {# explanation 200 prc #}
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="well-bs3">
+                    The family of EAN/UPC barcodes are used to represent GTINs on trade items so they can be scanned at
+                    Point-of-Sale and distribution centers. They should only be printed on outer-cases if they are printed
+                    at 200% their size and the case will be scanned at the point of sale. A case of wine is an example of
+                    such a product
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+    <div class="row">
+        <div style="width:50%">
+            <a href="{% static image %}">
+                <img class="centre" src="{% static image %}" style="max-width: 80%;width:80%"/>
+            </a>
+        </div>
+        <div style="width:50%">
+            {% if barcode_credits %}
+            <div class="well-bs3 well-sm-bs3">
+                Available credits: <b>{{ points }}</b><br/>
+                <a href="/profile/Apply-for-Licences/">
+                    Purchase barcode image credits now.
+                </a>
+            </div>
+            <hr/>
+            {% endif %}
+            <p><b>Create and download a high resolution image of this barcode.</b> Available formats are JPG, PNG and GIF
+                raster images up to 2400dpi resolution, and postscript images
+                which scale to your desired size.
+            </p>
+
+            <p>
+                To create your barcode image you need to have at least 1 credit available in your balance.
+            </p>
+            <!-- a href="#" data-toggle="modal" data-target="#BarcodeCreationModal" onclick="barcode='{{ kind }}'"
+               class="btn btn-primary">Create {{ kind }} barcode</a -->
+            <a href="#" data-toggle="modal" onclick="check_disclaimer()" class="btn btn-primary">Create {{ kind }} barcode</a>
+        </div>
+    </div>
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="BarcodeCreationModal"
+         aria-hidden="true" id="BarcodeCreationModal">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span
+                                aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="BarcodeCreationTitle">Barcode creation</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        {# if data_complete #}
+                        {% if True %}
+                            <p>
+                                You are about to create a new barcode symbol for this product. This will deduct a point from
+                                your available credits.
+                            </p>
+                        {% else %}
+                            <div class="alert alert-danger">
+                                <p>
+                                    Please complete entering the mandatory attributes (basic tab) before creating the
+                                    barcode.
+                                </p>
+                            </div>
+                        {% endif %}
+
+                    </div>
+
+                    {# if data_complete #}
+                    {% if True %}
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="return createbc();">
+                                Create barcode
+                            </button>
+                        </div>
+
+                    {% else %}
+                        <div class="modal-footer">
+                            <a href="#" class="btn btn-primary" data-dismiss="modal" role="button">
+                                Close
+                            </a>
+                        </div>
+                    {% endif %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="{{ kind | lower }}"></div>
+<script type="text/javascript">
+    var barcode;
+    function createbc() {
+        var req_data = {
+            gtin: "{{ gtin }}",
+            kind: "{{ kind }}"
+        };
+        $.get('{% url "barcodes:barcodes_generate" gtin=gtin bc_kind=kind %}',
+              function (data) {
+                    $('#preview').hide()
+                    $('#{{ kind | lower }}').html(data)
+                    // window.location = window.location.pathname + "?barcodes=1";
+        })
+        return true;
+    }
+
+    function check_disclaimer() {
+        var False = false
+        var True = true
+        if ( {{ request.user.profile.agreed_barcode_disclaimer }} ) {
+            createbc()
+        } else {
+            $('.disclaimer').css('display','block')
+        }
+    }
+
+    function close_disclaimer() {
+        $('.disclaimer').css('display','none')
+        if ($('#disclaimer_agree').prop('checked')) {
+            createbc()
+        }
+    }
+
+    function cancel_disclaimer() {
+        $('.disclaimer').css('display','none')
+    }
+</script>

@@ -1,0 +1,47 @@
+[
+{
+    "model": "prefixes.prefixstatus",
+    "pk": 1,
+    "fields": {
+        "name": "ACTIVE"
+    }
+},
+{
+    "model": "prefixes.prefixstatus",
+    "pk": 2,
+    "fields": {
+        "name": "INACTIVE",
+        "is_suspended": true
+    }
+},
+{
+    "model": "prefixes.prefixstatus",
+    "pk": 3,
+    "fields": {
+        "name": "EXPIRED",
+        "is_suspended": true
+    }
+},
+{
+    "model": "prefixes.prefixstatus",
+    "pk": 4,
+    "fields": {
+        "name": "TRANSFERRED",
+        "is_transferred": true
+    }
+},
+{
+    "model": "prefixes.prefixstatus",
+    "pk": 5,
+    "fields": {
+        "name": "SPLIT"
+    }
+},
+{
+    "model": "prefixes.prefixstatus",
+    "pk": 6,
+    "fields": {
+        "name": "FROZEN"
+    }
+}
+]

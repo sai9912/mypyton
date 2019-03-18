@@ -1,0 +1,141 @@
+{% extends "_getbase.html" %}
+{% load extra_templates %}
+
+{% block title %}
+    BarcodeRobot Order:  | BarCodeRobot.com
+{% endblock %}
+
+{% block content %}
+
+<h1>BarcodeRobot Order:</h1>
+
+{% if order %}
+
+{% if order.payed %}
+
+<!--tracking-->
+<img src="/django-lean/goal/purchase" alt="" height="1" width="1" />
+
+{% ifequal order.kind "SS-00" %}
+    <p>Generated bar-code images can be downloaded below:</p>
+{% endifequal %}
+
+{% ifequal order.kind "SS-01" %}
+    <p>10 Barcode credit points. Links to the actual barcodes will appear below once you generate and download them.</p>
+	<h3>Generate bar codes:</h3>
+	<ul>
+	    <li><a href="/upc-a.html">UPC-A</a></li>
+	    <li><a href="/ean-13.html">EAN-13</a></li>
+	    <li><a href="/isbn-13.html">ISBN-13</a></li>
+	</ul>
+
+{% endifequal %}
+
+{% ifequal order.kind "SS-02" %}
+    <p>You have successfully purchased monthly subscription plan. 
+	You can freely generate and download barcodes anytime. Please make sure that you are logged-in or registered.</p>
+{% endifequal %}
+
+{% else %}
+<p>
+
+{% if barcodes %}
+This order has not been payed yet.
+{% else %}
+This order is empty. 
+{% endif %}
+
+</p>
+{% endif %}
+
+<h3>Generated bar codes</h3>
+
+<ul>
+
+
+    {% for barcode in barcodes %}
+
+    {% if barcode.payed %}
+    
+    <!-- GA tracking is here! -->
+    <script type="text/javascript">
+    {% if forloop.first %}
+    var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-335494-7']);
+      _gaq.push(['_trackPageview']);
+      _gaq.push(['_addTrans',
+        '{{ order.id }}',           // order ID - required
+        '{{ order.kind }}',  // affiliation or store name
+        '{{ payment.mc_gross }}',          // total - required
+        '0',            // tax
+        '0',            // shipping
+        '',             // city
+        '',             // state or province
+        ''              // country
+      ]);
+    {% endif %}
+    
+    _gaq.push(['_addItem',
+        '{{ order.id }}',           // order ID - required
+        '{{ barcode.kind }}',           // SKU/code - required
+        '{{ barcode.kind }}',        // product name
+        '',   // category or variation
+        '10.00',          // unit price - required
+        '1'               // quantity - required
+      ]);
+      
+    {% if forloop.last %}
+    _gaq.push(['_trackTrans']); //submits transaction to the Analytics servers
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    {% endif %}
+    </script>
+    <!-- end of GA tracking is here! -->
+    
+    <li><b>Download {{ barcode.get_kind_display }} images for the item # </b>&nbsp;<a class="getbc" href="/getbarcode/{{order.invoice}}/{{barcode.id}}/">{{barcode.gtin}}</a></li>
+    
+    {% else %}
+    
+    <li><b>{{ barcode.get_kind_display }} barcode images for the item # </b>&nbsp;<a href="{{barcode.get_absolute_url}}">{{barcode.gtin}}</a>&nbsp;<form id="removeBC{{barcode.id}}" action="/unorder/{{barcode.id}}/">
+        <a href="javascript:{}" onclick="document.getElementById('removeBC{{barcode.id}}').submit(); return false;">Remove</a>
+    </form>
+
+    {% endif %}
+    {% endfor %}
+    
+    {% if not order.payed %}
+    <p>
+    <a href="/">Continue shopping?</a>
+    </p>
+
+    
+    {% if barcodes %}    
+    <h3>Checkout with PayPal</h3>
+    <p>
+        {% autoescape off %} 
+          {{ order|paypal_links:"USD" }}
+        {% endautoescape %}
+    </p>
+    {% endif %}
+    
+    {% endif %}
+    
+</ul>
+
+{% else %}
+
+<p> No order has been found.</p>
+
+{% endif %}
+
+
+<!-- mxpanel -->
+<script type="text/javascript">
+mpq.push(["track", "order", {}]);
+</script>
+<!-- end mxpanel -->
+
+{% endblock %}

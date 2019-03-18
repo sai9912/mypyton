@@ -1,0 +1,75 @@
+{% load i18n %}
+{% load static %}
+<div class="row">
+    <div class="col-xs-12">
+
+        <fieldset class='fieldset' id="image_fs">
+            <legend>Product Image
+                <span style="font-size: 0.6em;vertical-align: middle;">(Upload a picture of your product)&nbsp;</span>
+            </legend>
+
+            {% if form.image_fields.errors %}
+                <span class="help-block">
+                    {% for error in form.image_fields.errors %}
+                        <small>{{ error }}</small><br/>
+                    {% endfor %}
+                </span>
+            {% endif %}
+
+            <div class="well">
+                <p>
+                    Please upload an image of your product and/or a publicly-accessible Web URL of an image of the
+                    product. This URL should be for an image (jpg or png), not for a web page (html). This is a text
+                    field and the format will be, for example:
+                </p>
+                <p>
+                    https://www.gs1.org/docs/gs1-cloud/0950400059231.JPG</p>
+                <p>
+                    Including a URL to an image of your product will ensure potential customers can access the image you
+                    want them to see and not something they just find on the internet. It can also help online market
+                    places to have an accurate representation of your product and help you increase sales.
+                </p>
+            </div>
+
+            <div class="form-control">
+                <input type="file" name="upload" id="img-file" onchange="preview_image(this)" />
+            </div>
+
+            <div class="thumbnail">
+                {% if product.image %}
+
+                    <img src="{% static 'product_images' %}/{{ product.image }}"
+                         style="height:300px"
+                         id="img-preview">
+                {% else %}
+                    <img src="{% static 'site/img/no-image.gif' %}"
+                         alt="No image"
+                         style="height:300px"
+                         id="img-preview">
+
+                {% endif %}
+            </div>
+
+            <div class="well well-sm">
+                Accepted file types are: JPG, PNG, GIF with a size less than 2 MB
+            </div>
+
+            <div class="well well-sm">
+                {% include 'security/_macros.html' with func='render_field_with_errors4_help' field=form.website_url label='External image URL (if hosted)' only %}
+            </div>
+
+        </fieldset>
+    </div>
+</div>
+<script type="text/javascript">
+    function preview_image(t) {
+        if (t.files && t.files[0] && t.files[0].type.match('image.*')) {
+            var reader = new FileReader()
+            reader.onload = function(e) {
+                var img_preview = document.getElementById('img-preview')
+                img_preview.src = e.target.result
+            }
+            reader.readAsDataURL(t.files[0])
+        }
+    }
+</script>

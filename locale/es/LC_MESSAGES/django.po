@@ -1,0 +1,2249 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-22 21:29+0200\n"
+"PO-Revision-Date: 2018-07-10 09:35+0000\n"
+"Last-Translator: b'  <admin@activate.org>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+
+#: BCM/forms.py:30 BCM/forms.py:78
+#: activate/templates/activate/AccountCreateOrUpdate.html:29
+#: products/templates/products/product_print_summary.rml:175
+msgid "Email"
+msgstr ""
+
+#: BCM/forms.py:34
+msgid "Member Organisation"
+msgstr ""
+
+#: BCM/helpers/pdf_export.py:42
+#: products/templates/products/product_print_summary.rml:147
+#: products/templates/products/product_print_summary.rml:150
+#: products/templates/products/product_print_summary.rml:153
+#: products/templates/products/product_print_summary.rml:156
+#: products/templates/products/product_print_summary.rml:159
+msgid "Yes"
+msgstr ""
+
+#: BCM/helpers/pdf_export.py:42
+msgid "No"
+msgstr ""
+
+#: BCM/models.py:13
+msgid "Countries"
+msgstr ""
+
+#: BCM/models.py:41
+msgid "Languages by countries"
+msgstr ""
+
+#: BCM/templates/bcm/base.html:12
+msgid "Django translations"
+msgstr ""
+
+#: BCM/templates/bcm/base.html:14
+msgid "Profile"
+msgstr ""
+
+#: BCM/templates/bcm/base.html:15 BCM/templates/bcm/new_base.html:53
+msgid "Logout"
+msgstr ""
+
+#: BCM/templates/bcm/base.html:17
+msgid "Login"
+msgstr ""
+
+#: BCM/templates/bcm/base.html:18
+msgid "Register"
+msgstr ""
+
+#: BCM/templates/bcm/generic.html:28
+msgid "Staff & Demo login: (Username / Password)"
+msgstr ""
+
+#: BCM/templates/bcm/generic.html:35
+#: products/templates/products/product_fulledit_form.html:342
+#: templates/base.html:210 templates/base.html:221 templates/base_bs4.html:192
+#: templates/base_bs4.html:205 users/templates/user/profile.html:15
+#: users/templates/user/settings.html:5
+msgid "Dashboard"
+msgstr ""
+
+#: BCM/templates/bcm/index.html:6
+msgid "Choose your language"
+msgstr ""
+
+#: BCM/templates/bcm/new_base.html:40 templates/base.html:129
+#: templates/base_bs4.html:120
+msgid "Languages"
+msgstr ""
+
+#: BCM/templates/bcm/profile.html:4
+msgid "User profile"
+msgstr ""
+
+#: BCM/templates/bcm/profile.html:8
+#: BCM/templates/bcm/registration/staff_login.html:48
+#: BCM/templates/bcm/registration/staff_registration.html:47
+#: users/templates/user/user_agreement_required.html:61
+msgid "Submit"
+msgstr ""
+
+#: BCM/templates/bcm/registration/staff_login.html:5
+msgid "Staff login"
+msgstr ""
+
+#: BCM/templates/bcm/registration/staff_login.html:10
+#: BCM/templates/bcm/registration/staff_registration.html:9
+msgid ""
+"Your account doesn't have access to this page. To proceed, please login with "
+"an account that has access."
+msgstr ""
+
+#: BCM/templates/bcm/registration/staff_login.html:12
+#: BCM/templates/bcm/registration/staff_registration.html:11
+msgid "Please login to see this page."
+msgstr ""
+
+#: BCM/templates/bcm/registration/staff_registration.html:4
+msgid "Staff registration"
+msgstr ""
+
+#: BCM_multihosted/settings/components/base.py:196
+msgid "English"
+msgstr ""
+
+#: BCM_multihosted/settings/components/base.py:197
+#: BCM_multihosted/settings/components/base.py:205
+msgid "Czech"
+msgstr ""
+
+#: BCM_multihosted/settings/components/base.py:198
+msgid "German"
+msgstr ""
+
+#: BCM_multihosted/settings/components/base.py:199
+msgid "French"
+msgstr ""
+
+#: BCM_multihosted/settings/components/base.py:200
+msgid "Italian"
+msgstr ""
+
+#: BCM_multihosted/settings/components/base.py:201
+msgid "Dutch"
+msgstr ""
+
+#: BCM_multihosted/settings/components/base.py:202
+msgid "Swedish"
+msgstr ""
+
+#: BCM_multihosted/settings/components/base.py:203
+msgid "Bosnian"
+msgstr ""
+
+#: BCM_multihosted/settings/components/base.py:204
+msgid "Spanish"
+msgstr ""
+
+#: activate/forms.py:16 api/serializers/account_serializers.py:14
+msgid "Unique User Id"
+msgstr ""
+
+#: activate/forms.py:20 api/serializers/account_serializers.py:15
+msgid "User Email"
+msgstr ""
+
+#: activate/forms.py:24 api/serializers/account_serializers.py:17
+msgid "Company Prefix"
+msgstr ""
+
+#: activate/forms.py:28
+#: activate/templates/activate/AccountCreateOrUpdate.html:45
+#: api/serializers/account_serializers.py:19
+msgid "Company Name"
+msgstr ""
+
+#: activate/forms.py:33 api/serializers/account_serializers.py:20
+msgid "Credit Points"
+msgstr ""
+
+#: activate/forms.py:38 api/serializers/account_serializers.py:22
+msgid "Unique Transaction Reference"
+msgstr ""
+
+#: activate/forms.py:43
+#: activate/templates/activate/AccountCreateOrUpdate.html:69
+#: api/serializers/account_serializers.py:23
+msgid "GS1 MO"
+msgstr ""
+
+#: activate/forms.py:49
+#: activate/templates/activate/AccountCreateOrUpdate.html:77
+msgid "m2m_token"
+msgstr ""
+
+#: activate/templates/activate/AccountCreateOrUpdate.html:5
+#: activate/templates/activate/AccountCreateOrUpdate.html:16
+msgid "Account API"
+msgstr ""
+
+#: activate/templates/activate/AccountCreateOrUpdate.html:37
+msgid "Prefix"
+msgstr ""
+
+#: activate/templates/activate/AccountCreateOrUpdate.html:53
+msgid "Credits"
+msgstr ""
+
+#: activate/templates/activate/AccountCreateOrUpdate.html:61
+msgid "TXN Ref"
+msgstr ""
+
+#: activate/templates/activate/AccountCreateOrUpdate.html:93
+msgid "Send"
+msgstr ""
+
+#: activate/templates/activate/token_expired.html:5
+msgid "Token expired"
+msgstr ""
+
+#: activate/templates/activate/token_expired.html:12
+msgid "This token has expired"
+msgstr ""
+
+#: activate/templates/activate/user_not_found.html:5
+#: activate/templates/activate/user_not_found.html:12
+msgid "User not found"
+msgstr ""
+
+#: api/authentication.py:19
+msgid "The API Key is not valid"
+msgstr ""
+
+#: api/filters.py:35
+msgid "Multiple MOs were specified, please specify only one"
+msgstr ""
+
+#: api/filters.py:37
+msgid "Wrong MO slug specified"
+msgstr ""
+
+#: api/filters.py:71
+msgid "Multiple languages were specified, please specify only one"
+msgstr ""
+
+#: api/filters.py:73
+msgid "Wrong language code specified"
+msgstr ""
+
+#: api/models.py:20 products/templates/products/list.html:227
+#: products/templates/products/product_print_summary.rml:193
+#: products/templates/products/product_summary_base.html:202
+#: products/templates/products/subproduct_add_case.html:170
+#: products/templates/products/subproduct_add_case_edit.html:171
+msgid "Description"
+msgstr ""
+
+#: api/models.py:25
+msgid "API Key"
+msgstr ""
+
+#: api/models.py:26
+msgid "API Keys"
+msgstr ""
+
+#: api/serializers/account_serializers.py:16
+msgid "User Password"
+msgstr ""
+
+#: api/serializers/account_serializers.py:30
+msgid "defined member_organisation does not exist."
+msgstr ""
+
+#: api/serializers/account_serializers.py:39
+msgid "defined member_organisation does not exist for validate company_prefix."
+msgstr ""
+
+#: api/serializers/account_serializers.py:48
+msgid "invalid prefix"
+msgstr ""
+
+#: api/serializers/gpc_serializer.py:10
+msgid "Segment"
+msgstr ""
+
+#: api/serializers/gpc_serializer.py:11
+msgid "Segment code"
+msgstr ""
+
+#: api/serializers/gpc_serializer.py:13
+msgid "Familly"
+msgstr ""
+
+#: api/serializers/gpc_serializer.py:14
+msgid "Familly code"
+msgstr ""
+
+#: api/serializers/gpc_serializer.py:16
+msgid "Class"
+msgstr ""
+
+#: api/serializers/gpc_serializer.py:17
+msgid "Class code"
+msgstr ""
+
+#: api/serializers/gpc_serializer.py:18
+msgid "Brick"
+msgstr ""
+
+#: api/serializers/gpc_serializer.py:19
+msgid "Brick code"
+msgstr ""
+
+#: api/serializers/gpc_serializer.py:20
+msgid "Attribute"
+msgstr ""
+
+#: api/serializers/prefix_serializer.py:101
+msgid "Company with this uuid does not exist"
+msgstr ""
+
+#: api/serializers/prefix_serializer.py:104
+msgid "More than one company found for this uuid"
+msgstr ""
+
+#: api/serializers/prefix_serializer.py:110
+msgid "Prefix not valid"
+msgstr ""
+
+#: api/serializers/product_serializers.py:39
+msgid "this field is read-only for Company organisation."
+msgstr ""
+
+#: api/serializers/product_serializers.py:109
+#: api/serializers/product_serializers.py:111
+msgid "Callable error"
+msgstr ""
+
+#: api/serializers/product_serializers.py:257
+msgid "this field is not editable."
+msgstr ""
+
+#: api/serializers/product_serializers.py:262
+msgid "given prefix does not exist."
+msgstr ""
+
+#: api/serializers/product_serializers.py:312
+#, python-brace-format
+msgid "Maximum image size is {self._max_upload_size} bytes"
+msgstr ""
+
+#: api/serializers/product_serializers.py:332
+msgid "You can't change this status, please ask for a support."
+msgstr ""
+
+#: api/serializers/product_serializers.py:350
+msgid "Prefix is not in ACTIVE state"
+msgstr ""
+
+#: api/serializers/product_serializers.py:355
+msgid "not allowed to create products for this prefix."
+msgstr ""
+
+#: api/serializers/product_serializers.py:362
+msgid "generated GTIN invalid."
+msgstr ""
+
+#: api/serializers/product_serializers.py:369
+msgid "Generated GTIN is already used, please check your prefixes."
+msgstr ""
+
+#: api/serializers/subproduct_serializer.py:16
+msgid "Quantity should be greater than 0"
+msgstr ""
+
+#: api/serializers/subproduct_serializer.py:23
+msgid "Invalid product gtin"
+msgstr ""
+
+#: api/serializers/subproduct_serializer.py:28
+msgid "Invalid subproduct gtin"
+msgstr ""
+
+#: api/serializers/subproduct_serializer.py:33
+msgid "Product have no subproduct"
+msgstr ""
+
+#: api/serializers/user_serializer.py:193
+msgid "You can't select this prefix."
+msgstr ""
+
+#: api/validators/product_validators.py:39
+msgid "This field must be an integer."
+msgstr ""
+
+#: api/validators/product_validators.py:60
+msgid "This field must be a number."
+msgstr ""
+
+#: api/validators/product_validators.py:82
+msgid "This field must be a positive number."
+msgstr ""
+
+#: api/validators/product_validators.py:114
+msgid "Please specify both value and unit or leave them blank"
+msgstr ""
+
+#: api/validators/product_validators.py:118
+msgid "Value can not be converted to a number"
+msgstr ""
+
+#: api/validators/product_validators.py:122
+msgid "Value should be a positive number"
+msgstr ""
+
+#: company_organisations/models.py:18
+msgid "The name of the organization"
+msgstr ""
+
+#: company_organisations/models.py:66
+#, python-brace-format
+msgid "User can't have multiple companies, assigned companies: {companies}"
+msgstr ""
+
+#: excel/spreadsheet.py:97
+msgid "File save error"
+msgstr ""
+
+#: excel/spreadsheet.py:107 excel/spreadsheet.py:112
+msgid "file structure error"
+msgstr ""
+
+#: excel/spreadsheet.py:108
+msgid "File doesn't contain template information"
+msgstr ""
+
+#: excel/spreadsheet.py:113
+msgid "File does contain incorrect template name"
+msgstr ""
+
+#: excel/templates/excel/export_select.html:18
+#: excel/templates/excel/import_file.html:18
+#: products/templates/products/product_summary.html:6 templates/base.html:12
+#: templates/base.html:80 templates/base_bs4.html:13
+#: users/templates/user/user_agreement_required.html:6
+msgid "GS1 Activate"
+msgstr ""
+
+#: excel/templates/excel/export_select.html:18
+#: excel/templates/excel/export_select.html:31 templates/base.html:258
+#: templates/base_bs4.html:243
+msgid "Export products"
+msgstr ""
+
+#: excel/templates/excel/export_select.html:22
+#: excel/templates/excel/import_file.html:22
+#: member_organisations/templates/admin/go_admin/change_form.html:18
+#: member_organisations/templates/admin/go_admin/change_list.html:31
+#: member_organisations/templates/admin/go_admin/delete_confirmation.html:15
+#: member_organisations/templates/admin/go_admin/delete_selected_confirmation.html:14
+#: member_organisations/templates/admin/mo_admin/change_form.html:18
+#: member_organisations/templates/admin/mo_admin/change_list.html:31
+#: member_organisations/templates/admin/mo_admin/delete_confirmation.html:15
+#: member_organisations/templates/admin/mo_admin/delete_selected_confirmation.html:14
+#: member_organisations/templates/admin/pending_users/change_form.html:18
+#: member_organisations/templates/admin/pending_users/change_list.html:31
+#: prefixes/templates/prefixes/prefix_exhausted.html:7
+#: prefixes/templates/prefixes/prefixes_list.html:13
+#: prefixes/templates/prefixes/set_starting.html:7
+#: products/templates/products/custom_forms.html:10
+#: products/templates/products/list.html:24
+#: products/templates/products/list_js.html:26
+#: products/templates/products/package_level_form.html:11
+#: products/templates/products/package_type_form.html:8
+#: products/templates/products/product_add_js.html:8
+#: products/templates/products/product_details_form.html:10
+#: products/templates/products/product_fulledit_form.html:10
+#: products/templates/products/product_fulledit_form_js.html:12
+#: products/templates/products/product_summary.html:9
+#: products/templates/products/subproduct_add_case.html:15
+#: products/templates/products/subproduct_add_case_edit.html:15
+#: products_react/templates/products_react/product_react_fulledit_form.html:9
+#: templates/admin/base.html:66 templates/base.html:109 templates/base.html:164
+#: templates/base_bs4.html:100 templates/base_bs4.html:151
+#: users/templates/admin/profile_js.html:9 users/templates/user/profile.html:10
+#: users/templates/user/profile_js.html:9 users/templates/user/settings.html:9
+#: users/templates/user/user_agreement_required.html:10
+msgid "Home"
+msgstr ""
+
+#: excel/templates/excel/export_select.html:23
+msgid "Export"
+msgstr ""
+
+#: excel/templates/excel/export_select.html:27
+#: excel/templates/excel/import_file.html:28
+#: member_organisations/templates/admin/go_admin/index.html:47
+#: member_organisations/templates/admin/mo_admin/index.html:46
+#: products/templates/products/list_js.html:31
+#: products/templates/products/product_add_js.html:13
+#: products/templates/products/product_fulledit_form.html:15
+#: products/templates/products/product_fulledit_form_js.html:17
+#: products/templates/products/product_summary.html:14
+#: products/templates/products/subproduct_add_case.html:20
+#: products/templates/products/subproduct_add_case_edit.html:20
+#: products_react/templates/products_react/product_react_fulledit_form.html:14
+#: templates/admin/base.html:108 templates/admin/index.html:37
+msgid "Change"
+msgstr ""
+
+#: excel/templates/excel/export_select.html:38
+msgid ""
+"Select type of export and the desired file type. All exports can be used for "
+"import back in the database."
+msgstr ""
+
+#: excel/templates/excel/export_select.html:45
+msgid "Type of export"
+msgstr ""
+
+#: excel/templates/excel/export_select.html:46
+msgid "Available templates"
+msgstr ""
+
+#: excel/templates/excel/export_select.html:49
+msgid "GEPIR export"
+msgstr ""
+
+#: excel/templates/excel/export_select.html:55
+msgid "More information about exporting your products can be found"
+msgstr ""
+
+#: excel/templates/excel/export_select.html:55
+#: excel/templates/excel/import_file.html:53
+msgid "here"
+msgstr ""
+
+#: excel/templates/excel/export_select.html:57
+msgid ""
+"\n"
+"                Please note that only products or available numbers from the "
+"<b>active prefix</b> are exported.<br/>\n"
+"                Click <a href=\"/prefixes\">here</a> to change the active "
+"prefix.<br/>\n"
+"                - Ranges with capacity bigger than <b>1000</b> will export "
+"to \"csv\" file type only.<br/>\n"
+"                - <strong>GEPIR export</strong> will always create "
+"<strong>xlsx</strong> file ignoring your selection.<br/>\n"
+"            "
+msgstr ""
+
+#: excel/templates/excel/import_file.html:18
+#: excel/templates/excel/import_file.html:32 templates/base.html:265
+#: templates/base_bs4.html:250
+msgid "Import products"
+msgstr ""
+
+#: excel/templates/excel/import_file.html:23
+#: excel/templates/excel/import_file.html:48
+msgid "Import"
+msgstr ""
+
+#: excel/templates/excel/import_file.html:26
+#: prefixes/templates/prefixes/render_range_prefix.html:3
+#: users/templates/user/profile.html:115
+msgid "Range"
+msgstr ""
+
+#: excel/templates/excel/import_file.html:39
+msgid ""
+"Select a file to upload and import products. Accepted file types are xls, "
+"xlsx, ods, csv"
+msgstr ""
+
+#: excel/templates/excel/import_file.html:47
+msgid "File to import"
+msgstr ""
+
+#: excel/templates/excel/import_file.html:52
+msgid "More information about importing your products can be found"
+msgstr ""
+
+#: excel/templates/excel/import_file.html:55
+msgid ""
+"\n"
+"                Please note that imported product details must belong to the "
+"<b>active prefix</b> only.\n"
+"                Click <a href=\"/prefixes\">here</a> to change the active "
+"prefix.\n"
+"            "
+msgstr ""
+
+#: excel/templates/excel/import_file.html:64
+msgid "Processed rows"
+msgstr ""
+
+#: excel/templates/excel/import_file.html:68
+msgid "where successfully imported"
+msgstr ""
+
+#: excel/templates/excel/import_file.html:74
+msgid "had warnings and imported partially"
+msgstr ""
+
+#: excel/templates/excel/import_file.html:85
+msgid "had errors and failed to import"
+msgstr ""
+
+#: member_organisations/custom_admin/modified_model_admin.py:158
+#, python-brace-format
+msgid ""
+"The {name} \"{obj}\" was added successfully. You may edit it again below."
+msgstr ""
+
+#: member_organisations/custom_admin/modified_model_admin.py:172
+#, python-brace-format
+msgid ""
+"The {name} \"{obj}\" was added successfully. You may add another {name} "
+"below."
+msgstr ""
+
+#: member_organisations/custom_admin/modified_model_admin.py:184
+#, python-brace-format
+msgid "The {name} \"{obj}\" was added successfully."
+msgstr ""
+
+#: member_organisations/custom_admin/modified_model_admin.py:231
+#, python-format
+msgid "The %(name)s \"%(obj)s\" was deleted successfully."
+msgstr ""
+
+#: member_organisations/models.py:77
+msgid "GS1 Cloud Disclaimer"
+msgstr ""
+
+#: member_organisations/models.py:80
+msgid "GS1 Barcode Production Disclaimer"
+msgstr ""
+
+#: member_organisations/models.py:104
+msgid "GS1 Dashboard"
+msgstr ""
+
+#: member_organisations/models.py:154
+#, python-brace-format
+msgid ""
+"User can't have multiple organizations, assigned organizations: "
+"{organizations}"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/change_form.html:21
+#: member_organisations/templates/admin/go_admin/change_list.html:58
+#: member_organisations/templates/admin/mo_admin/change_form.html:21
+#: member_organisations/templates/admin/mo_admin/change_list.html:58
+#: member_organisations/templates/admin/pending_users/change_form.html:21
+#: member_organisations/templates/admin/pending_users/change_list.html:61
+#, python-format
+msgid "Add %(name)s"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/change_form.html:63
+#: member_organisations/templates/admin/go_admin/change_list.html:67
+#: member_organisations/templates/admin/mo_admin/change_form.html:64
+#: member_organisations/templates/admin/mo_admin/change_list.html:67
+#: member_organisations/templates/admin/pending_users/change_form.html:63
+#: member_organisations/templates/admin/pending_users/change_list.html:70
+msgid "Please correct the error below."
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/change_form.html:63
+#: member_organisations/templates/admin/go_admin/change_list.html:67
+#: member_organisations/templates/admin/mo_admin/change_form.html:64
+#: member_organisations/templates/admin/mo_admin/change_list.html:67
+#: member_organisations/templates/admin/pending_users/change_form.html:63
+#: member_organisations/templates/admin/pending_users/change_list.html:70
+msgid "Please correct the errors below."
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/change_form.html:106
+#: member_organisations/templates/admin/mo_admin/change_form.html:107
+#: templates/admin/custom_change_view.html:21 templates/admin/index.html:56
+msgid "Administration sections"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/change_list.html:78
+#: member_organisations/templates/admin/mo_admin/change_list.html:78
+#: member_organisations/templates/admin/pending_users/change_list.html:81
+msgid "Filter"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/delete_confirmation.html:18
+#: member_organisations/templates/admin/go_admin/delete_selected_confirmation.html:16
+#: member_organisations/templates/admin/go_admin/submit_line.html:7
+#: member_organisations/templates/admin/mo_admin/delete_confirmation.html:18
+#: member_organisations/templates/admin/mo_admin/delete_selected_confirmation.html:16
+#: member_organisations/templates/admin/mo_admin/submit_line.html:7
+#: member_organisations/templates/admin/pending_users/submit_line.html:7
+#: products/templates/products/product_fulledit_form.html:368
+#: products/templates/products/product_fulledit_form.html:504
+#: products/templates/products/product_fulledit_form_js.html:146
+msgid "Delete"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/delete_confirmation.html:32
+#: member_organisations/templates/admin/mo_admin/delete_confirmation.html:32
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '\n"
+"            %(escaped_object)s' would result in deleting related objects, "
+"but your account doesn't\n"
+"            have permission to delete the following types of objects:"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/delete_confirmation.html:41
+#: member_organisations/templates/admin/mo_admin/delete_confirmation.html:41
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '\n"
+"            %(escaped_object)s' would require deleting the following "
+"protected related\n"
+"            objects:"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/delete_confirmation.html:50
+#: member_organisations/templates/admin/mo_admin/delete_confirmation.html:50
+#, python-format
+msgid ""
+"Are you sure you want to delete the\n"
+"            %(object_name)s \"%(escaped_object)s\"? All of the following "
+"related items will be\n"
+"            deleted:"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/delete_confirmation.html:54
+#: member_organisations/templates/admin/go_admin/delete_selected_confirmation.html:46
+#: member_organisations/templates/admin/mo_admin/delete_confirmation.html:54
+#: member_organisations/templates/admin/mo_admin/delete_selected_confirmation.html:46
+msgid "Objects"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/delete_confirmation.html:63
+#: member_organisations/templates/admin/go_admin/delete_selected_confirmation.html:57
+#: member_organisations/templates/admin/mo_admin/delete_confirmation.html:63
+#: member_organisations/templates/admin/mo_admin/delete_selected_confirmation.html:57
+msgid "Yes, I'm sure"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/delete_confirmation.html:64
+#: member_organisations/templates/admin/go_admin/delete_selected_confirmation.html:58
+#: member_organisations/templates/admin/mo_admin/delete_confirmation.html:64
+#: member_organisations/templates/admin/mo_admin/delete_selected_confirmation.html:58
+msgid "No, take me back"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/delete_selected_confirmation.html:30
+#: member_organisations/templates/admin/mo_admin/delete_selected_confirmation.html:30
+#, python-format
+msgid ""
+"Deleting the selected %(objects_name)s would result in deleting related "
+"objects, but your account doesn't have permission to delete the following "
+"types of objects:"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/delete_selected_confirmation.html:37
+#: member_organisations/templates/admin/mo_admin/delete_selected_confirmation.html:37
+#, python-format
+msgid ""
+"Deleting the selected %(objects_name)s would require deleting the following "
+"protected related objects:"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/delete_selected_confirmation.html:44
+#: member_organisations/templates/admin/mo_admin/delete_selected_confirmation.html:44
+#, python-format
+msgid ""
+"Are you sure you want to delete the selected %(objects_name)s? All of the "
+"following objects and their related items will be deleted:"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/index.html:30
+#: member_organisations/templates/admin/mo_admin/index.html:29
+#: templates/admin/index.html:20
+#, python-format
+msgid "Models in the %(name)s application"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/index.html:41
+#: member_organisations/templates/admin/mo_admin/index.html:40
+#: templates/admin/index.html:31
+msgid "Add"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/index.html:57
+#: member_organisations/templates/admin/mo_admin/index.html:56
+#: templates/admin/index.html:47
+msgid "You don't have permission to edit anything."
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/index.html:58
+msgid ""
+"If you just registered please ask a super administrator to activate your "
+"account."
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/index.html:67
+#: member_organisations/templates/admin/mo_admin/index.html:67
+msgid "Administration section"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/index.html:73
+#: member_organisations/templates/admin/go_admin/user_tools.html:8
+#: member_organisations/templates/admin/mo_admin/index.html:73
+#: member_organisations/templates/admin/mo_admin/user_tools.html:8
+#: templates/admin/base.html:45
+msgid "View site"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/index.html:81
+#: member_organisations/templates/admin/mo_admin/index.html:89
+#: templates/admin/index.html:97
+msgid "Translations"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/index.html:98
+#: templates/admin/index.html:67
+msgid "Member organizations"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/index.html:103
+msgid "GS1 Member Organization Admin"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/submit_line.html:3
+#: member_organisations/templates/admin/mo_admin/submit_line.html:3
+#: member_organisations/templates/admin/pending_users/submit_line.html:3
+msgid "Save"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/submit_line.html:9
+#: member_organisations/templates/admin/mo_admin/submit_line.html:9
+#: member_organisations/templates/admin/pending_users/submit_line.html:9
+msgid "Save as new"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/submit_line.html:10
+#: member_organisations/templates/admin/mo_admin/submit_line.html:10
+#: member_organisations/templates/admin/pending_users/submit_line.html:10
+msgid "Save and add another"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/submit_line.html:11
+#: member_organisations/templates/admin/mo_admin/submit_line.html:11
+#: member_organisations/templates/admin/pending_users/submit_line.html:11
+msgid "Save and continue editing"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/user_tools.html:4
+#: member_organisations/templates/admin/mo_admin/user_tools.html:4
+#: templates/admin/base.html:40
+msgid "Welcome,"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/user_tools.html:10
+#: member_organisations/templates/admin/mo_admin/user_tools.html:10
+#: member_organisations/templates/admin/pending_users/change_form.html:33
+#: member_organisations/templates/admin/pending_users/change_list.html:46
+#: templates/admin/base.html:56 templates/base.html:98
+#: templates/base_bs4.html:88
+msgid "Log out"
+msgstr ""
+
+#: member_organisations/templates/admin/mo_admin/index.html:57
+msgid ""
+"If you just registered please ask a GO administrator to activate your "
+"account."
+msgstr ""
+
+#: member_organisations/templates/admin/mo_admin/index.html:97
+msgid "GS1 Member Organisation"
+msgstr ""
+
+#: member_organisations/templates/admin/mo_admin/index.html:102
+msgid "GS1 Member Organisation Admin"
+msgstr ""
+
+#: member_organisations/tests/test_staff_registration.py:138
+#: member_organisations/tests/test_staff_registration.py:144
+msgid ""
+"User must be redirected to main GO admin page with \"user is not activated\" "
+"notification"
+msgstr ""
+
+#: member_organisations/tests/test_staff_registration.py:153
+msgid "GO admin user must be created with .is_active=False"
+msgstr ""
+
+#: member_organisations/tests/test_staff_registration.py:161
+msgid "Login failed for {self.users_credentials[\"goadmin\"]}"
+msgstr ""
+
+#: member_organisations/tests/test_staff_registration.py:174
+#: member_organisations/tests/test_staff_registration.py:232
+#, python-brace-format
+msgid "User must have an access to the following apps: {required_apps}"
+msgstr ""
+
+#: member_organisations/tests/test_staff_registration.py:197
+#: member_organisations/tests/test_staff_registration.py:203
+msgid ""
+"User must be redirected to main MO admin page with \"user is not activated\" "
+"notification"
+msgstr ""
+
+#: member_organisations/tests/test_staff_registration.py:212
+msgid "MO admin user must be created with .is_active=False"
+msgstr ""
+
+#: member_organisations/tests/test_staff_registration.py:220
+msgid "Login failed for {self.users_credentials[\"moadmin\"]}"
+msgstr ""
+
+#: member_organisations/tests/test_staff_registration.py:264
+#, python-brace-format
+msgid "Signup failed for {credentials}"
+msgstr ""
+
+#: member_organisations/tests/test_staff_registration.py:273
+msgid ""
+"Login failed for GO Admin with credentials: {self.users_credentials[\"goadmin"
+"\"]}"
+msgstr ""
+
+#: member_organisations/tests/test_staff_registration.py:281
+msgid "MO Admin must not be activated here"
+msgstr ""
+
+#: member_organisations/tests/test_staff_registration.py:286
+msgid "MO Admin must be activated here"
+msgstr ""
+
+#: member_organisations/tests/test_staff_registration.py:307
+msgid "User must be redirected to main GO admin page"
+msgstr ""
+
+#: member_organisations/tests/test_staff_registration.py:312
+#, python-brace-format
+msgid ""
+"Login failed for {credentials}, must be allowed with a randomized case "
+"username"
+msgstr ""
+
+#: prefixes/templates/admin/drop_down_filters.html:3
+#, python-format
+msgid " By %(filter_title)s "
+msgstr ""
+
+#: prefixes/templates/prefixes/_location_prefix_list.html:49
+msgid "Enter a new location in selected range"
+msgstr ""
+
+#: prefixes/templates/prefixes/_location_prefix_list.html:52
+msgid "Set selected range as active and go to My Locations"
+msgstr ""
+
+#: prefixes/templates/prefixes/_location_prefix_list.html:55
+msgid "Set starting GLN in selected range manually"
+msgstr ""
+
+#: prefixes/templates/prefixes/_location_prefix_list.html:58
+msgid "Set starting GLN to first available number"
+msgstr ""
+
+#: prefixes/templates/prefixes/_location_prefix_list.html:61
+msgid "Export available GLNs in this range"
+msgstr ""
+
+#: prefixes/templates/prefixes/_location_prefix_list.html:65
+#: prefixes/templates/prefixes/_product_prefix_list.html:74
+msgid "Continue"
+msgstr ""
+
+#: prefixes/templates/prefixes/_product_prefix_list.html:57
+msgid "Enter a new product in selected range"
+msgstr ""
+
+#: prefixes/templates/prefixes/_product_prefix_list.html:61
+msgid "Set selected range as active and go to My Products"
+msgstr ""
+
+#: prefixes/templates/prefixes/_product_prefix_list.html:64
+msgid "Set starting GTIN in selected range manually"
+msgstr ""
+
+#: prefixes/templates/prefixes/_product_prefix_list.html:67
+msgid "Set starting GTIN to first available number"
+msgstr ""
+
+#: prefixes/templates/prefixes/_product_prefix_list.html:70
+msgid "Export available GTINs in this range"
+msgstr ""
+
+#: prefixes/templates/prefixes/prefix_exhausted.html:3
+#: prefixes/templates/prefixes/prefix_exhausted.html:12
+#: prefixes/templates/prefixes/prefixes_list.html:3
+#: prefixes/templates/prefixes/prefixes_list.html:18 templates/base.html:215
+#: templates/base_bs4.html:199
+msgid "Prefix management"
+msgstr ""
+
+#: prefixes/templates/prefixes/render_range_prefix.html:6
+msgid "GS1 Prefix"
+msgstr ""
+
+#: prefixes/templates/prefixes/set_starting.html:3
+msgid "Set Starting number"
+msgstr ""
+
+#: prefixes/templates/prefixes/set_starting.html:12
+msgid "Set starting number for a range"
+msgstr ""
+
+#: prefixes/templates/prefixes/set_starting.html:20
+msgid "New starting number"
+msgstr ""
+
+#: products/forms.py:655
+msgid "Ascending"
+msgstr ""
+
+#: products/forms.py:656
+msgid "Descending"
+msgstr ""
+
+#: products/models/product.py:844
+msgid "Image"
+msgstr ""
+
+#: products/templates/products/_product_cloud.html:7
+msgid "Product properties"
+msgstr ""
+
+#: products/templates/products/_product_cloud.html:8
+msgid "Must be present for the upload"
+msgstr ""
+
+#: products/templates/products/_product_cloud.html:12
+msgid ""
+"Please note that the following attributes must be present for the product "
+"upload:"
+msgstr ""
+
+#: products/templates/products/_product_cloud.html:15
+msgid "gtin"
+msgstr ""
+
+#: products/templates/products/_product_cloud.html:18
+msgid "target market"
+msgstr ""
+
+#: products/templates/products/_product_cloud.html:21
+msgid "brand"
+msgstr ""
+
+#: products/templates/products/_product_cloud.html:24
+msgid "label description"
+msgstr ""
+
+#: products/templates/products/_product_cloud.html:27
+msgid "company name"
+msgstr ""
+
+#: products/templates/products/_product_cloud.html:30
+msgid "category code"
+msgstr ""
+
+#: products/templates/products/_product_cloud.html:33
+msgid "image"
+msgstr ""
+
+#: products/templates/products/_product_cloud.html:36
+msgid "language"
+msgstr ""
+
+#: products/templates/products/_product_cloud.html:39
+msgid "To find out more click here"
+msgstr ""
+
+#: products/templates/products/_product_cloud.html:48
+msgid "GS1 Cloud state"
+msgstr ""
+
+#: products/templates/products/_product_cloud.html:49
+msgid "Must be active for synchronisation to take place"
+msgstr ""
+
+#: products/templates/products/_product_cloud.html:54
+msgid "Current state"
+msgstr ""
+
+#: products/templates/products/_product_cloud.html:73
+msgid "Last Status"
+msgstr ""
+
+#: products/templates/products/_product_cloud.html:92
+msgid "GS1 Cloud audit"
+msgstr ""
+
+#: products/templates/products/_product_cloud.html:94
+msgid "Log of the last operations"
+msgstr ""
+
+#: products/templates/products/_product_cloud.html:101
+msgid "Status"
+msgstr ""
+
+#: products/templates/products/_product_cloud.html:102
+msgid "Date"
+msgstr ""
+
+#: products/templates/products/list.html:21
+#: products/templates/products/list_js.html:23
+msgid "GS1 Activate: My products"
+msgstr ""
+
+#: products/templates/products/list.html:25
+msgid "My products"
+msgstr ""
+
+#: products/templates/products/list.html:29
+msgid "[Change]"
+msgstr ""
+
+#: products/templates/products/list.html:37
+#: products/templates/products/list_js.html:43 templates/base.html:248
+#: templates/base_bs4.html:233
+msgid "My Products"
+msgstr ""
+
+#: products/templates/products/list.html:42
+#: products/templates/products/list_js.html:48
+#: products/templates/products/product_fulledit_form.html:29
+#: products/templates/products/product_fulledit_form_js.html:46
+#: products_react/templates/products_react/product_react_fulledit_form.html:28
+#: templates/base.html:316 templates/base_bs4.html:289
+msgid "Help"
+msgstr ""
+
+#: products/templates/products/list.html:51
+msgid "Edit your product catalogue"
+msgstr ""
+
+#: products/templates/products/list.html:54
+#: users/templates/user/profile.html:88
+msgid "Add product"
+msgstr ""
+
+#: products/templates/products/list.html:71
+#: products/templates/products/subproduct_add_case.html:43
+#: products/templates/products/subproduct_add_case_edit.html:43
+msgid "List filtered"
+msgstr ""
+
+#: products/templates/products/list.html:75
+msgid "Search"
+msgstr ""
+
+#: products/templates/products/list.html:80
+msgid "Sorted"
+msgstr ""
+
+#: products/templates/products/list.html:93
+#: products/templates/products/subproduct_add_case.html:68
+#: products/templates/products/subproduct_add_case_edit.html:68
+msgid "Base unit"
+msgstr ""
+
+#: products/templates/products/list.html:100
+#: products/templates/products/subproduct_add_case.html:75
+#: products/templates/products/subproduct_add_case_edit.html:75
+msgid "Inner pack"
+msgstr ""
+
+#: products/templates/products/list.html:110
+#: products/templates/products/subproduct_add_case.html:84
+#: products/templates/products/subproduct_add_case_edit.html:84
+msgid "Case"
+msgstr ""
+
+#: products/templates/products/list.html:117
+#: products/templates/products/list.html:415
+#: products/templates/products/list_js.html:102
+msgid "Pallet"
+msgstr ""
+
+#: products/templates/products/list.html:127
+msgid "Display shipper"
+msgstr ""
+
+#: products/templates/products/list.html:133
+msgid "Starred"
+msgstr ""
+
+#: products/templates/products/list.html:171
+#: products/templates/products/subproduct_add_case.html:124
+#: products/templates/products/subproduct_add_case_edit.html:124
+msgid "Select Target Market:"
+msgstr ""
+
+#: products/templates/products/list.html:185
+msgid "OK"
+msgstr ""
+
+#: products/templates/products/list.html:187
+msgid "Reset"
+msgstr ""
+
+#: products/templates/products/list.html:191
+msgid "Sort by"
+msgstr ""
+
+#: products/templates/products/list.html:210
+msgid ""
+"\n"
+"                            When giving the barcode number for a product to "
+"your printer/graphic designer/packaging\n"
+"                            designer for the creation of a barcode symbol, "
+"please ignore the preceding 0 attached\n"
+"                            to the barcode number below if the package level "
+"is a base unit and inner case. Keep\n"
+"                            the 0 if the package level is an outer case or "
+"pallet.\n"
+"                        "
+msgstr ""
+
+#: products/templates/products/list.html:225
+msgid "Package Level"
+msgstr ""
+
+#: products/templates/products/list.html:226
+#: products/templates/products/product_print_summary.rml:106
+#: products/templates/products/product_summary_base.html:52
+#: products/templates/products/subproduct_add_case.html:169
+#: products/templates/products/subproduct_add_case_edit.html:170
+msgid "Brand"
+msgstr ""
+
+#: products/templates/products/list.html:229
+#: products/templates/products/subproduct_add_case.html:172
+#: products/templates/products/subproduct_add_case_edit.html:173
+msgid "SKU"
+msgstr ""
+
+#: products/templates/products/list.html:231
+#: products/templates/products/product_fulledit_form.html:82
+#: products/templates/products/product_fulledit_form.html:204
+#: products/templates/products/product_fulledit_form.html:404
+#: products/templates/products/product_fulledit_form_js.html:76
+#: products/templates/products/product_print_summary.rml:97
+#: products/templates/products/product_summary_base.html:201
+#: products/templates/products/subproduct_add_case.html:174
+#: products/templates/products/subproduct_add_case_edit.html:175
+msgid "GTIN"
+msgstr ""
+
+#: products/templates/products/list.html:232
+msgid "Barcode"
+msgstr ""
+
+#: products/templates/products/list.html:233
+#: products/templates/products/product_fulledit_form.html:58
+msgid "GS1 Cloud"
+msgstr ""
+
+#: products/templates/products/list.html:326
+#: products/templates/products/subproduct_add_case.html:252
+#: products/templates/products/subproduct_add_case_edit.html:253
+msgid "No products found, please"
+msgstr ""
+
+#: products/templates/products/list.html:327
+#: products/templates/products/subproduct_add_case.html:254
+#: products/templates/products/subproduct_add_case_edit.html:255
+msgid "add product"
+msgstr ""
+
+#: products/templates/products/list.html:337
+#: products/templates/products/list.html:343
+#: products/templates/products/subproduct_add_case.html:265
+#: products/templates/products/subproduct_add_case.html:270
+#: products/templates/products/subproduct_add_case_edit.html:266
+#: products/templates/products/subproduct_add_case_edit.html:271
+msgid "Previous"
+msgstr ""
+
+#: products/templates/products/list.html:347
+#: products/templates/products/subproduct_add_case.html:273
+#: products/templates/products/subproduct_add_case_edit.html:274
+msgid "Page"
+msgstr ""
+
+#: products/templates/products/list.html:348
+#: products/templates/products/subproduct_add_case.html:274
+#: products/templates/products/subproduct_add_case_edit.html:275
+msgid "of"
+msgstr ""
+
+#: products/templates/products/list.html:349
+#: products/templates/products/subproduct_add_case.html:275
+#: products/templates/products/subproduct_add_case_edit.html:276
+msgid "Products per Page"
+msgstr ""
+
+#: products/templates/products/list.html:364
+#: products/templates/products/list.html:370
+#: products/templates/products/subproduct_add_case.html:290
+#: products/templates/products/subproduct_add_case.html:295
+#: products/templates/products/subproduct_add_case_edit.html:291
+#: products/templates/products/subproduct_add_case_edit.html:296
+msgid "Next"
+msgstr ""
+
+#: products/templates/products/list.html:385
+#: products/templates/products/list_js.html:72
+msgid "Legend"
+msgstr ""
+
+#: products/templates/products/list.html:391
+#: products/templates/products/list_js.html:78
+msgid "Base Unit"
+msgstr ""
+
+#: products/templates/products/list.html:397
+#: products/templates/products/list_js.html:84
+msgid "Pack"
+msgstr ""
+
+#: products/templates/products/list.html:403
+#: products/templates/products/list_js.html:90
+msgid "Case or mixed case"
+msgstr ""
+
+#: products/templates/products/list.html:409
+#: products/templates/products/list_js.html:96
+msgid "Display unit"
+msgstr ""
+
+#: products/templates/products/list.html:424
+#: products/templates/products/list_js.html:111
+msgid "Data Completeness"
+msgstr ""
+
+#: products/templates/products/list_js.html:27
+#: products/templates/products/product_fulledit_form.html:11
+#: products/templates/products/product_fulledit_form.html:23
+#: products/templates/products/product_fulledit_form_js.html:13
+#: products/templates/products/product_fulledit_form_js.html:31
+#: products_react/templates/products_react/product_react_fulledit_form.html:10
+#: products_react/templates/products_react/product_react_fulledit_form.html:22
+msgid "Edit product"
+msgstr ""
+
+#: products/templates/products/package_type_form.html:9
+#: products/templates/products/product_details_form.html:11
+#: products/templates/products/subproduct_add_case.html:16
+#: products/views/products_js.py:71
+msgid "New Product"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:45
+msgid "Basic"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:47
+msgid "Measurements"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:49
+msgid "Advanced"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:52
+msgid "Picture"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:54
+msgid "Symbols"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:55
+#: products/templates/products/product_print_summary.rml:19
+msgid "Summary"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:68
+msgid "Product Identification"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:70
+msgid ""
+"\n"
+"                                            When giving the barcode number "
+"for a product to your printer/graphic\n"
+"                                            designer/packaging designer for "
+"the creation of a barcode symbol,\n"
+"                                            please ignore the preceding 0 "
+"attached to the barcode number\n"
+"                                            below if the package level is a "
+"base unit and inner case. Keep the 0 if\n"
+"                                            the package level is an outer "
+"case or pallet.\n"
+"                                        "
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:118
+msgid "Options"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:119
+msgid "(Tick if yes)"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:129
+msgid "The item is a Consumer Unit"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:130
+msgid "The item is a Dispatch Unit"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:131
+msgid "The item is a Variable Weight Product"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:132
+msgid "The item is an Invoice Unit"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:133
+msgid "The item is an Orderable Unit"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:140
+msgid "Base unit indicator"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:141
+msgid "The item is a Base Unit"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:147
+#: products/templates/products/product_summary_base.html:87
+msgid "Country Of Origin"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:148
+#: products/templates/products/product_summary_base.html:92
+msgid "Target Market"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:163
+#: products/templates/products/product_summary_base.html:97
+msgid "Language"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:167
+msgid "GLN of Information provider"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:172
+msgid "Default GLN"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:180
+msgid "Package Type"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:189
+msgid "Fields marked with (*) are required."
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:197
+msgid "Subproducts"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:198
+msgid "subproducts contained in this item"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:205
+#: products/templates/products/product_fulledit_form.html:405
+#: products/templates/products/product_fulledit_form_js.html:77
+#: products/templates/products/product_summary_base.html:203
+#: products/templates/products/subproduct_add_case.html:168
+#: products/templates/products/subproduct_add_case_edit.html:169
+msgid "Package level"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:206
+#: products/templates/products/product_fulledit_form.html:406
+#: products/templates/products/product_fulledit_form_js.html:78
+msgid "Product description"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:207
+msgid "Quantity"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:215
+#: products/templates/products/product_fulledit_form.html:395
+#: products/templates/products/product_fulledit_form_js.html:67
+msgid "Add subproducts"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:231
+#: products/templates/products/product_fulledit_form.html:234
+#: products/templates/products/product_print_summary.rml:121
+#: products/templates/products/product_summary_base.html:115
+msgid "Net Content"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:237
+msgid "Net Content Measurement Unit"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:252
+msgid "Optional information"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:310
+msgid "Barcode images of pallets are not yet available."
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:331
+msgid "Agreement needed"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:333
+#: users/templates/user/profile.html:36
+#: users/templates/user/user_agreement_required.html:34
+msgid "You must agree to our"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:338
+#: users/templates/user/profile.html:38
+#: users/templates/user/user_agreement_required.html:36
+msgid "Terms and Conditions"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:339
+#: users/templates/user/profile.html:40
+msgid "in order to be able to download barcode images."
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:341
+msgid "You can set your agreement at your"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:371
+msgid "Clone"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:375
+msgid "Make a Pack"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:380
+msgid "Update"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:394
+#: products/templates/products/product_fulledit_form.html:427
+#: products/templates/products/product_fulledit_form.html:462
+#: products/templates/products/product_fulledit_form.html:492
+#: products/templates/products/product_fulledit_form.html:519
+#: products/templates/products/product_fulledit_form_js.html:66
+#: products/templates/products/product_fulledit_form_js.html:99
+#: products/templates/products/product_fulledit_form_js.html:134
+#: products/templates/products/product_fulledit_form_js.html:161
+msgid "Close"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:399
+#: products/templates/products/product_fulledit_form_js.html:71
+msgid "Available subproducts"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:428
+#: products/templates/products/product_fulledit_form_js.html:100
+msgid "Product delete confirmation"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:431
+#: products/templates/products/product_fulledit_form_js.html:103
+msgid ""
+"\n"
+"                            You are about to delete one of your products. "
+"Because this action will probably create a gap\n"
+"                            in your serial numbers you must choose what to "
+"do.\n"
+"                        "
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:436
+#: products/templates/products/product_fulledit_form_js.html:108
+msgid "Delete product and set prefix's starting GTIN to deleted product's GTIN"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:437
+#: products/templates/products/product_fulledit_form_js.html:109
+msgid "or"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:438
+#: products/templates/products/product_fulledit_form_js.html:110
+msgid "Delete product and don't change the starting GTIN of this prefix"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:440
+#: products/templates/products/product_fulledit_form_js.html:112
+msgid ""
+"Keep in mind that only products that are not part of a container can be "
+"deleted."
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:444
+#: products/templates/products/product_fulledit_form_js.html:116
+msgid "Don't delete product"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:446
+#: products/templates/products/product_fulledit_form_js.html:118
+msgid "Delete and set"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:448
+#: products/templates/products/product_fulledit_form_js.html:120
+msgid "Delete only"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:464
+msgid "Target Market delete confirmation"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:468
+msgid "You are about to delete"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:471
+msgid "Target Market of your product"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:476
+msgid "Don't delete Target Market"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:478
+msgid "Delete Target Market"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:494
+#: products/templates/products/product_fulledit_form_js.html:136
+msgid "Sub-product delete confirmation"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:497
+#: products/templates/products/product_fulledit_form_js.html:139
+msgid ""
+"\n"
+"                            You are about to delete one of sub-products. "
+"Subproduct would be kept in the database,\n"
+"                            just the link between parent and child products "
+"would be removed.\n"
+"                        "
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:522
+#: products/templates/products/product_fulledit_form_js.html:164
+msgid "Make a pack of trade items using"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:524
+#: products/templates/products/product_fulledit_form_js.html:166
+msgid "as a base"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:534
+#: products/templates/products/product_fulledit_form_js.html:176
+msgid "Choose one from the available GTINs"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:544
+#: products/templates/products/product_fulledit_form_js.html:186
+msgid "Indicate hierarchy level"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:549
+#: products/templates/products/product_fulledit_form_js.html:191
+msgid "Pack or inner pack e.g. six pack of beer bottles"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:552
+#: products/templates/products/product_fulledit_form_js.html:194
+msgid "Outer Case e.g. case of beer (bottles or packs)"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:553
+#: products/templates/products/product_fulledit_form_js.html:195
+msgid "Pallet e.g. pallet of cases of beer"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:560
+#: products/templates/products/product_fulledit_form_js.html:202
+msgid "Cancel"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:562
+#: products/templates/products/product_fulledit_form_js.html:204
+msgid "Create"
+msgstr ""
+
+#: products/templates/products/product_print_summary.rml:11
+msgid "Summary of"
+msgstr ""
+
+#: products/templates/products/product_print_summary.rml:100
+#: products/templates/products/product_summary_base.html:35
+msgid "GS1 Company Prefix"
+msgstr ""
+
+#: products/templates/products/product_print_summary.rml:103
+msgid "Product packaging"
+msgstr ""
+
+#: products/templates/products/product_print_summary.rml:109
+#: products/templates/products/product_summary_base.html:57
+msgid "Sub Brand"
+msgstr ""
+
+#: products/templates/products/product_print_summary.rml:112
+msgid "Functional Name"
+msgstr ""
+
+#: products/templates/products/product_print_summary.rml:115
+#: products/templates/products/product_summary_base.html:67
+msgid "Variant"
+msgstr ""
+
+#: products/templates/products/product_print_summary.rml:118
+#: products/templates/products/product_summary_base.html:82
+msgid "Internal Product Code"
+msgstr ""
+
+#: products/templates/products/product_print_summary.rml:123
+#: products/templates/products/product_summary_base.html:104
+msgid "Number of products"
+msgstr ""
+
+#: products/templates/products/product_print_summary.rml:125
+#: products/templates/products/product_summary_base.html:109
+msgid "Base Unit/Inner GTIN"
+msgstr ""
+
+#: products/templates/products/product_print_summary.rml:125
+msgid "Not available"
+msgstr ""
+
+#: products/templates/products/product_print_summary.rml:128
+#: products/templates/products/product_summary_base.html:123
+msgid "Product depth"
+msgstr ""
+
+#: products/templates/products/product_print_summary.rml:131
+#: products/templates/products/product_summary_base.html:130
+msgid "Product width"
+msgstr ""
+
+#: products/templates/products/product_print_summary.rml:134
+#: products/templates/products/product_summary_base.html:137
+msgid "Product height"
+msgstr ""
+
+#: products/templates/products/product_print_summary.rml:137
+#: products/templates/products/product_summary_base.html:144
+msgid "Product gross weight"
+msgstr ""
+
+#: products/templates/products/product_print_summary.rml:140
+#: products/templates/products/product_summary_base.html:152
+#: products/templates/products/product_summary_base.html:159
+msgid "Product net weight"
+msgstr ""
+
+#: products/templates/products/product_print_summary.rml:147
+msgid "Is Consumer Unit"
+msgstr ""
+
+#: products/templates/products/product_print_summary.rml:150
+msgid "Is Despatch Unit"
+msgstr ""
+
+#: products/templates/products/product_print_summary.rml:153
+msgid "Is Variable Weight Unit"
+msgstr ""
+
+#: products/templates/products/product_print_summary.rml:156
+msgid "Is Invoice Unit"
+msgstr ""
+
+#: products/templates/products/product_print_summary.rml:159
+msgid "Is Orderable Unit"
+msgstr ""
+
+#: products/templates/products/product_print_summary.rml:167
+msgid "Country of origin"
+msgstr ""
+
+#: products/templates/products/product_print_summary.rml:171
+msgid "Website"
+msgstr ""
+
+#: products/templates/products/product_print_summary.rml:182
+msgid "Barcode placement"
+msgstr ""
+
+#: products/templates/products/product_print_summary.rml:182
+#: products/templates/products/product_summary_base.html:248
+msgid "Product image"
+msgstr ""
+
+#: products/templates/products/product_print_summary.rml:190
+msgid "Contained Items"
+msgstr ""
+
+#: products/templates/products/product_print_summary.rml:193
+msgid "Package level "
+msgstr ""
+
+#: products/templates/products/product_summary.html:30
+#: products/templates/products/product_summary.html:39
+#: products/templates/products/product_summary_xhr.html:7
+#: products/templates/products/product_summary_xhr.html:16
+msgid "Print Product Summary"
+msgstr ""
+
+#: products/templates/products/product_summary_base.html:9
+msgid "Owner"
+msgstr ""
+
+#: products/templates/products/product_summary_base.html:14
+msgid "Company"
+msgstr ""
+
+#: products/templates/products/product_summary_base.html:19
+msgid "Label description"
+msgstr ""
+
+#: products/templates/products/product_summary_base.html:26
+msgid "GTIN-13 Number"
+msgstr ""
+
+#: products/templates/products/product_summary_base.html:29
+msgid "GTIN Number"
+msgstr ""
+
+#: products/templates/products/product_summary_base.html:41
+msgid "Product/Packaging"
+msgstr ""
+
+#: products/templates/products/product_summary_base.html:47
+msgid "GLN of information provider"
+msgstr ""
+
+#: products/templates/products/product_summary_base.html:62
+msgid "Product Type/Functional Name"
+msgstr ""
+
+#: products/templates/products/product_summary_base.html:72
+msgid "Product/Trade item description"
+msgstr ""
+
+#: products/templates/products/product_summary_base.html:77
+msgid "Global Product Classification"
+msgstr ""
+
+#: products/templates/products/product_summary_base.html:110
+msgid "Not Available"
+msgstr ""
+
+#: products/templates/products/product_summary_base.html:167
+msgid "External image URL"
+msgstr ""
+
+#: products/templates/products/product_summary_base.html:172
+msgid "GS1 cloud state"
+msgstr ""
+
+#: products/templates/products/product_summary_base.html:198
+msgid "Contained items"
+msgstr ""
+
+#: products/templates/products/product_summary_base.html:204
+msgid "Count"
+msgstr ""
+
+#: products/templates/products/product_summary_base.html:238
+msgid "Barcode Placement"
+msgstr ""
+
+#: products/templates/products/subproduct_add_case.html:12
+#: products/templates/products/subproduct_add_case_edit.html:12
+msgid "GS1 Activate: New product"
+msgstr ""
+
+#: products/templates/products/subproduct_add_case.html:26
+msgid "Create an item"
+msgstr ""
+
+#: products/templates/products/subproduct_add_case.html:32
+#: products/templates/products/subproduct_add_case_edit.html:32
+msgid "Available products"
+msgstr ""
+
+#: products/templates/products/subproduct_add_case.html:33
+msgid ""
+"\n"
+"                        Select the products contained in this item and click "
+"the \"Next step\" button.<br/>\n"
+"                        Or click <a href=\"/products/subproduct/add/case/"
+"skip/\">here</a>\n"
+"                        if contained products are not in your allocated "
+"prefixes.\n"
+"                    "
+msgstr ""
+
+#: products/templates/products/subproduct_add_case.html:47
+#: products/templates/products/subproduct_add_case_edit.html:47
+msgid "Filter Product List"
+msgstr ""
+
+#: products/templates/products/subproduct_add_case.html:141
+#: products/templates/products/subproduct_add_case_edit.html:141
+msgid "Clear filter"
+msgstr ""
+
+#: products/templates/products/subproduct_add_case.html:146
+#: products/templates/products/subproduct_add_case_edit.html:146
+msgid "Prefixes"
+msgstr ""
+
+#: products/templates/products/subproduct_add_case.html:175
+#: products/templates/products/subproduct_add_case_edit.html:176
+msgid "Select"
+msgstr ""
+
+#: products/templates/products/subproduct_add_case.html:307
+msgid "Previous step"
+msgstr ""
+
+#: products/templates/products/subproduct_add_case.html:310
+msgid "Next step"
+msgstr ""
+
+#: products/templates/products/subproduct_add_case_edit.html:16
+#: products/templates/products/subproduct_add_case_edit.html:26
+msgid "Edit product - add new subproducts"
+msgstr ""
+
+#: products/templates/products/subproduct_add_case_edit.html:33
+msgid ""
+"\n"
+"                        Select the products contained in this item and click "
+"the \"Next step\" button.<br/>\n"
+"                        Or click <a href=\"/products/subproduct/add/"
+"case_edit/skip/\">here</a>\n"
+"                        if contained products are not in your allocated "
+"prefixes.\n"
+"                    "
+msgstr ""
+
+#: products/templates/products/subproduct_add_case_edit.html:308
+msgid "Continue edit product"
+msgstr ""
+
+#: templates/admin/base.html:50
+msgid "Documentation"
+msgstr ""
+
+#: templates/admin/base.html:54
+msgid "Change password"
+msgstr ""
+
+#: templates/admin/index.html:57 templates/admin/index.html:61
+msgid "RQ tasks management"
+msgstr ""
+
+#: templates/admin/index.html:71
+msgid "GO Admin"
+msgstr ""
+
+#: templates/admin/index.html:79
+msgid "MO Admin"
+msgstr ""
+
+#: templates/admin/index.html:106
+msgid "Recent actions"
+msgstr ""
+
+#: templates/admin/index.html:107
+msgid "My actions"
+msgstr ""
+
+#: templates/admin/index.html:111
+msgid "None available"
+msgstr ""
+
+#: templates/admin/index.html:125
+msgid "Unknown content"
+msgstr ""
+
+#: templates/admin_footer/footer.html:4
+msgid "Copyright"
+msgstr ""
+
+#: templates/base.html:93 templates/base_bs4.html:83
+msgid "Stop impersonate"
+msgstr ""
+
+#: templates/base.html:145 templates/base_bs4.html:135
+msgid "Company name"
+msgstr ""
+
+#: templates/base.html:147 templates/base_bs4.html:137
+msgid "User"
+msgstr ""
+
+#: templates/base.html:179 templates/base_bs4.html:166
+msgid "Instant flash message"
+msgstr ""
+
+#: templates/base.html:205 templates/base_bs4.html:187
+msgid "My Account"
+msgstr ""
+
+#: templates/base.html:233 templates/base_bs4.html:219
+#: users/templates/user/settings.html:14
+msgid "Settings"
+msgstr ""
+
+#: templates/base.html:242 templates/base_bs4.html:227
+msgid "Product Manager"
+msgstr ""
+
+#: templates/base.html:277 templates/base_bs4.html:259
+msgid "Location Manager"
+msgstr ""
+
+#: templates/base.html:283 templates/base_bs4.html:265
+msgid "My Locations"
+msgstr ""
+
+#: templates/base.html:311 templates/base_bs4.html:284
+msgid "Create GS1 Barcodes"
+msgstr ""
+
+#: templates/base.html:343 templates/base_bs4.html:311
+msgid "Terms of Use"
+msgstr ""
+
+#: templates/base.html:347 templates/base_bs4.html:315
+msgid "Privacy Policy"
+msgstr ""
+
+#: users/admin.py:144
+msgid "Personal info"
+msgstr ""
+
+#: users/admin.py:145
+msgid "Permissions"
+msgstr ""
+
+#: users/admin.py:147
+msgid "Important dates"
+msgstr ""
+
+#: users/helpers.py:75
+msgid "You don't have required permissions to view this page"
+msgstr ""
+
+#: users/templates/admin/profile_js.html:5 users/templates/user/profile.html:6
+#: users/templates/user/profile_js.html:5
+msgid "GS1 Activate: Dashboard"
+msgstr ""
+
+#: users/templates/admin/profile_js.html:16
+msgid "Admin Dashboard "
+msgstr ""
+
+#: users/templates/user/profile.html:32
+#: users/templates/user/user_agreement_required.html:31
+msgid "Alerts"
+msgstr ""
+
+#: users/templates/user/profile.html:49
+msgid "I agree to the Terms and Conditions:"
+msgstr ""
+
+#: users/templates/user/profile.html:50
+#: users/templates/user/user_agreement_required.html:54
+msgid "version"
+msgstr ""
+
+#: users/templates/user/profile.html:71
+msgid "Active Prefix"
+msgstr ""
+
+#: users/templates/user/profile.html:74 users/templates/user/profile.html:117
+msgid "Products"
+msgstr ""
+
+#: users/templates/user/profile.html:75 users/templates/user/profile.html:79
+msgid "Allocated"
+msgstr ""
+
+#: users/templates/user/profile.html:76 users/templates/user/profile.html:80
+msgid "Available"
+msgstr ""
+
+#: users/templates/user/profile.html:78
+msgid "Locations"
+msgstr ""
+
+#: users/templates/user/profile.html:92
+msgid "Allocate a new barcode from the Active Prefix"
+msgstr ""
+
+#: users/templates/user/profile.html:96
+msgid "View Products"
+msgstr ""
+
+#: users/templates/user/profile.html:99
+msgid "View allocated numbers from Active Prefix"
+msgstr ""
+
+#: users/templates/user/profile.html:108
+msgid "Global Company Prefixes and GTIN Ranges"
+msgstr ""
+
+#: users/templates/user/profile.html:114
+msgid "Prefix Description"
+msgstr ""
+
+#: users/templates/user/profile.html:116
+msgid "Next number"
+msgstr ""
+
+#: users/templates/user/profile.html:129
+msgid "Block of"
+msgstr ""
+
+#: users/templates/user/profile.html:136
+msgid "No products"
+msgstr ""
+
+#: users/templates/user/profile.html:139
+msgid "Product"
+msgstr ""
+
+#: users/templates/user/profile.html:154
+msgid "Account Summary"
+msgstr ""
+
+#: users/templates/user/profile.html:160
+msgid "Symbol Credits"
+msgstr ""
+
+#: users/templates/user/profile.html:162
+msgid "Points balance:"
+msgstr ""
+
+#: users/templates/user/profile.html:167
+msgid "Purchase barcode image credits now"
+msgstr ""
+
+#: users/templates/user/profile.html:173
+msgid "Company ID:"
+msgstr ""
+
+#: users/templates/user/profile.html:178 users/templates/user/profile.html:180
+msgid "Company Name:"
+msgstr ""
+
+#: users/templates/user/profile.html:196
+#: users/templates/user/user_agreement_required.html:78
+msgid "Account disabled"
+msgstr ""
+
+#: users/templates/user/profile.html:199
+msgid "Please contact GS1 Helpdesk to enable your account."
+msgstr ""
+
+#: users/templates/user/profile.html:203
+msgid "Org. account active?"
+msgstr ""
+
+#: users/templates/user/profile.html:206
+#: users/templates/user/user_agreement_required.html:88
+msgid "Organisation Admin"
+msgstr ""
+
+#: users/templates/user/profile.html:209
+msgid "User account active?"
+msgstr ""
+
+#: users/templates/user/profile.html:210
+#: users/templates/user/user_agreement_required.html:92
+msgid "User Admin"
+msgstr ""
+
+#: users/templates/user/profile_js.html:23
+msgid "Dashboard "
+msgstr ""
+
+#: users/templates/user/user_agreement_required.html:6
+#: users/templates/user/user_agreement_required.html:15
+msgid "Agreement required"
+msgstr ""
+
+#: users/templates/user/user_agreement_required.html:38
+msgid "in order to be able to download barcode images"
+msgstr ""
+
+#: users/templates/user/user_agreement_required.html:53
+msgid "I agree to the Terms and Conditions"
+msgstr ""
+
+#: users/templates/user/user_agreement_required.html:81
+msgid "Please contact GS1 Helpdesk to enable your account"
+msgstr ""
+
+#: users/templates/user/user_agreement_required.html:85
+msgid "Org. account active"
+msgstr ""
+
+#: users/templates/user/user_agreement_required.html:91
+msgid "User account active"
+msgstr ""

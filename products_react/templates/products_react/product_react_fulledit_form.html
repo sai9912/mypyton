@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}GS1 Activate: Edit product{% endblock %}
+
+{% block breadcrumb %}
+    <ol class="breadcrumb" style="display:inline-block">
+        <li><a href="{% url 'users:profile' %}">{% trans 'Home' %}</a></li>
+        <li>{% trans 'Edit product' %}</li>
+    </ol>
+    <div class="active_range pull-right">
+        {% include 'prefixes/range_macros.html' with func='render_range_breadcrumb' prefix=prefix only %}
+        <a href="{% url 'prefixes:prefixes_list' %}"> [{% trans 'Change' %}]</a>
+    </div>
+{% endblock %}
+
+{% block site_content %}
+    <div class="site-content">
+        <div>
+            <h2>
+                {% block page_title %}{% trans 'Edit product' %}{% endblock %}
+            </h2>
+
+            <div style="position: absolute; right: 10px; top: 10px; text-align: right;">
+                <a href="{{ request.user.profile.member_organisation.gs1_help_url_3 }}">
+                    <b>{{ request.user.profile.member_organisation.gs1_help_label_3 }}</b>
+                    <img src="{% static 'site/img/training_button_2.png' %}" alt="{% trans 'Help' %}"
+                         style="width: auto;height: 30px;">
+                </a>
+            </div>
+        </div>
+
+        {% block page_content %}
+            <div class="site-content-padder">
+                React form here
+                <script type="text/javascript">
+                    console.log('{{ product_id }}');
+                </script>
+            </div>
+        {% endblock page_content %}
+    </div>
+{% endblock site_content %}
+
+{% block base_scripts %}
+    <script src="{% static 'react/product-fulledit-form.js' %}"></script>
+{% endblock %}

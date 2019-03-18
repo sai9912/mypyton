@@ -1,0 +1,50 @@
+{% extends "_getbase.html" %}
+{% load extra_templates %}
+
+{% block title %}
+{% if not manufacturer %}
+    {{ symbol|upper }} {{ meta_barcode.data }}  | BarCodeRobot.com
+    
+{% else %}
+    {{ symbol|upper }} {{ meta_barcode.data }} | {{ manufacturer}} | BarCodeRobot.com
+{% endif %}
+{% endblock %}
+
+{% block header %} {% include "_header3.html" %}{% endblock %}
+
+
+{% block content %}
+
+{% if manufacturer %}
+    <h2>{{ symbol|upper }} : {{ meta_barcode.data }} : {{manufacturer}}</h2>
+{% else %}
+    <h2 id="manufacturer">{{ symbol|upper }} : {{ meta_barcode.data }}</h2>
+{% endif %}
+
+<p>
+    <div id="resImage">
+    <img id="resImg" alt="" src="{{ src }}"/>
+    </div>
+</p>
+
+<!-- order -->
+<script type="text/javascript">
+function submitform(){
+    document.forms["orderBC"].submit();
+    clicky.log('#add-to-cart','Add to cart');
+    return false;
+}
+</script>
+<form id="orderBC" action="/order/{{ barcode.id }}/">
+    <a href="javascript:submitform()"></a>
+</form>
+
+<p>This image has been produced with the resolution of 150 dpi which is too low for guaranteed scanning! You need to <a onclick="submitform();"  href="#"> buy barcode images</a> to be able to download them in various formats.</p>
+
+<!-- mxpanel -->
+<script type="text/javascript">
+mpq.push(["track", "order", {}]);
+</script>
+<!-- end mxpanel -->
+
+{% endblock %}

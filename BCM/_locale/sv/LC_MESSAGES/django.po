@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-03 11:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: BCM/forms.py:30 BCM/forms.py:78
+msgid "Email"
+msgstr ""
+
+#: BCM/forms.py:34
+msgid "Member Organisation"
+msgstr ""
+
+#: BCM/models.py:56
+msgid "Countries"
+msgstr ""
+
+#: BCM/models.py:84
+msgid "Languages by countries"
+msgstr ""
+
+#: BCM/templates/bcm/base.html:12
+msgid "Django translations"
+msgstr ""
+
+#: BCM/templates/bcm/base.html:14
+msgid "Profile"
+msgstr ""
+
+#: BCM/templates/bcm/base.html:15 BCM/templates/bcm/new_base.html:53
+msgid "Logout"
+msgstr ""
+
+#: BCM/templates/bcm/base.html:17
+msgid "Login"
+msgstr ""
+
+#: BCM/templates/bcm/base.html:18
+msgid "Register"
+msgstr ""
+
+#: BCM/templates/bcm/generic.html:7
+msgid "Welcome"
+msgstr ""
+
+#: BCM/templates/bcm/generic.html:15
+msgid "Staff Profile"
+msgstr ""
+
+#: BCM/templates/bcm/generic.html:17
+msgid "Admin Login"
+msgstr ""
+
+#: BCM/templates/bcm/generic.html:18
+msgid "Staff Login"
+msgstr ""
+
+#: BCM/templates/bcm/generic.html:19
+msgid "Staff Register"
+msgstr ""
+
+#: BCM/templates/bcm/generic.html:20
+msgid "Account API"
+msgstr ""
+
+#: BCM/templates/bcm/index.html:6
+msgid "Choose your language"
+msgstr ""
+
+#: BCM/templates/bcm/new_base.html:40
+msgid "Languages"
+msgstr ""
+
+#: BCM/templates/bcm/profile.html:4
+msgid "User profile"
+msgstr ""
+
+#: BCM/templates/bcm/profile.html:8
+#: BCM/templates/bcm/registration/staff_login.html:48
+#: BCM/templates/bcm/registration/staff_registration.html:47
+msgid "Submit"
+msgstr ""
+
+#: BCM/templates/bcm/registration/staff_login.html:5
+msgid "Staff login"
+msgstr ""
+
+#: BCM/templates/bcm/registration/staff_login.html:10
+#: BCM/templates/bcm/registration/staff_registration.html:9
+msgid ""
+"Your account doesn't have access to this page. To proceed, please login with "
+"an account that has access."
+msgstr ""
+
+#: BCM/templates/bcm/registration/staff_login.html:12
+#: BCM/templates/bcm/registration/staff_registration.html:11
+msgid "Please login to see this page."
+msgstr ""
+
+#: BCM/templates/bcm/registration/staff_registration.html:4
+msgid "Staff registration"
+msgstr ""

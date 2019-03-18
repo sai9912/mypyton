@@ -1,0 +1,254 @@
+{% load static %}
+
+{# from theme("prefixes/range_macros.html") import  render_gtin #}
+<style>
+    .file-type-li {
+        list-style-type: none;
+    }
+</style>
+<br/>
+
+<h3>Barcode {{ kind }}: <span
+        style="text-decoration: underline">{# render_gtin(gtin, prefix.prefix|length, kind) #}</span></h3>
+
+<br/>
+
+{% if kind == 'ITF14' %}
+    {# explanation 200 prc #}
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="well">
+                The ITF 14 symbol is used for trade items not passing the point of sale and is ideal for use where the
+                symbol is to be pre-printed onto corrugated fibreboard/Kraftboard or onto labels attached outer cases.
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+{% if kind == 'EAN13' %}
+    {# explanation 200 prc #}
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="well">
+                The family of EAN/UPC barcodes are used to represent GTINs on trade items so they can be scanned at
+                Point-of-Sale and distribution centers. They should only be printed on outer-cases if they are printed
+                at 200% their size and the case will be scanned at the point of sale. A case of wine is an example of
+                such a product
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+<div class="row">
+    <div class="col-xs-6" style="width:50%; padding-right:10px">
+        <a href="{% static image %}?preview=False">
+            <img class="centre" src="{% static image %}?preview=False"
+                 style="max-width: 100%; width:100%"/>
+        </a>
+        <br/>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#collapseOne{{ kind }}">
+                        Image Options
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne{{ kind }}" class="panel-collapse collapse">
+                <div class="panel-body">
+                    {% csrf_token %}
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <label for="size">Magnification:</label>
+                            {{ form.size }}
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <!-- BWR -->
+                        <div class="form-group">
+                            <label for="bwr" class="control-label">BWR:</label>
+                            {{ form.bwr }}
+
+                        </div>
+                    </div>
+                    <p class="help-block">
+                        <small>BWR stands for bar-width reduction<br/>
+                            and compensates for the ink-spread during printing.
+                        </small>
+                    </p>
+                    <!-- RQZ, Marks, Debug -->
+                    <div class="form-group">
+                        <label for="checkboxes" class="control-label">Options:</label>
+                        {% if kind == 'EAN13' %}
+                            <div>
+                                {{ form.rqz }} Right quiet zone indicator.
+                            </div>
+                            <div>
+                                {{ form.marks }} Printing Marks
+                            </div>
+                        {% endif %}
+                        <div>
+                            {{ form.debug }} Calibration (Debug)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <a href="javascript:void(0)" class="btn btn-primary pull right"
+                           onclick="return submitOptions_{{ kind }}('{{ kind|lower }}')">Update</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-6" style="width:50%">
+        <p><a target="_blank" href="/article/92-digital-barcode-file-types">Tell me
+            more about image types</a>
+        </p>
+        <div class="panel-group" id="accordionDownloads{{ kind }}">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordionDownloads{{ kind }}"
+                           href="#collapseTwo{{ kind }}">
+                            Download raster image
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo{{ kind }}" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label for="form_raster-{{ kind }}-file_type">File type:</label>
+                            {{ form_raster.file_type }}
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form_raster-{{ kind }}-resolution">Printer Resolution:</label>
+                            {{ form_raster.resolution }}
+                        </div>
+                        <div class="form-group">
+                            <a href="javascript:void(0)" class="btn btn-primary clicky_log_download"
+                               onclick="return downloadImage_{{ kind }}('{{ kind|lower }}', 'raster', $(this))">Download
+                                raster image</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordionDownloads{{ kind }}"
+                           href="#collapseThree{{ kind }}">
+                            Download postscript (eps) image
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseThree{{ kind }}" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="form-group">
+                            {{ form_ps.ps_type }}
+                        </div>
+                        <div class="form-group">
+                            <a href="javascript:void(0)" class="btn btn-primary clicky_log_download"
+                               onclick="return downloadImage_{{ kind }}('{{ kind|lower }}', 'ps', $(this))">Download
+                                postscript (eps) image</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordionDownloads{{ kind }}"
+                           href="#collapseFour{{ kind }}">
+                            Download PDF labels
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseFour{{ kind }}" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group" style="margin-right:0;margin-left:0">
+                                    <label for="form_label-{{ kind|lower }}-label_type">Label type:</label><br/>
+                                    {{ form_labels.label_type }}
+                                </div>
+                                <div class="form-group" style="margin-right:0;margin-left:0">
+                                    <a href="javascript:void(0)" class="btn btn-primary clicky_log_download"
+                                       onclick="return downloadImage_{{ kind }}('{{ kind|lower }}', 'label', $(this))">Download
+                                        pdf labels</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h4>Sample</h4>
+                                <img style="padding:10px;background-color: #d0d0d0;" id="{{ kind|lower }}-label-image"
+                                     src="{% static 'barcodes/img/labels/L7161.jpg' %}"/>
+                                <ul class="list-unstyled" id="{{ kind|lower }}-label-description">
+                                    <li><b>Sheet size:</b> A4</li>
+                                    <li><b>Labels per sheet:</b> 18</li>
+                                    <li><b>Label size:</b> 63.5mm X 46.6mm</li>
+                                    <li><b>Best for:</b> EAN-13, UPC-A, ISBN13</li>
+                                    <li><b>Avery&copy; compatible:</b> 3363, J8161, J8361,<br/> L6025, L7161, L7161X</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+    function submitOptions_{{ kind }}(kind) {
+        var url = "{% url 'barcodes:barcodes_generate' bc_kind=kind gtin=gtin %}"
+        var $kind = $('#' + kind);
+        var req_data = {
+            csrfmiddlewaretoken: '{{ csrf_token }}',
+            size: $kind.find('#size').val(),
+            bwr: $kind.find('#bwr').val()
+        };
+        if ($kind.find('#rqz:checked').length == 1) req_data['rqz'] = 'y';
+        if ($kind.find('#marks:checked').length == 1) req_data['marks'] = 'y';
+        if ($kind.find('#debug:checked').length == 1) req_data['debug'] = 'y';
+        $kind.load(url, req_data);
+    }
+    function downloadImage_{{ kind }}(kind, type, o) {
+        var $kind = $('#' + kind);
+        var req_data = {
+            size: $kind.find('#size').val(),
+            bwr: $kind.find('#bwr').val(),
+            resolution: $kind.find('#resolution').val(),
+            file_type: $kind.find('input[name="file_type"]:checked').val(),
+            ps_type: $kind.find('input[name="ps_type"]:checked').val(),
+            label_type: $kind.find('#label_type').val()
+        };
+        if ($kind.find('#rqz:checked').length == 1) req_data['rqz'] = 'y';
+        if ($kind.find('#marks:checked').length == 1) req_data['marks'] = 'y';
+        if ($kind.find('#debug:checked').length == 1) req_data['debug'] = 'y';
+        var href;
+        if (type == 'raster') {
+            href = '{% url "barcodes:barcodes_image_download" bc_kind=kind gtin=gtin dl_type='raster' %}' + '?' + $.param(req_data);
+        } else if (type == 'ps') {
+            href = '{% url "barcodes:barcodes_image_download" bc_kind=kind gtin=gtin dl_type='ps' %}' + '?' + $.param(req_data);
+        } else {
+            href = '{% url "barcodes:barcodes_image_download" bc_kind=kind gtin=gtin dl_type='label' %}' + '?' + $.param(req_data);
+        }
+        o.attr('href', href);
+        return true;
+    }
+    if (labels == undefined) {
+        var labels = {
+            {% for label in labels %}
+                '{{ label.code }}': ['{{ label.src }}', '{{ label.description | safe}}'],
+            {% endfor %}
+        }
+    }
+    function label_builder_{{ kind }}() {
+        $('[name$="form_label-{{ kind|lower }}-label_type"]').on('change', function (event) {
+            $("#{{ kind|lower }}-label-image").attr({src: labels[$(event.target).val()][0]});
+            $("#{{ kind|lower }}-label-description").html(labels[$(event.target).val()][1]);
+        })
+    }
+    $(document).ready(label_builder_{{ kind }}())
+</script>

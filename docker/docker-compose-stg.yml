@@ -1,0 +1,61 @@
+version: "3"
+services:
+  web:
+    # replace username/repo:tag with your name and image details
+    image: gs1go.azurecr.io/gs1go-activate-stg:1
+    environment:
+      - DJANGO_ENV=azure_swarm-stg
+      - WEB_CONCURRENCY=3
+      - DB_PASS=FIXME
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 1240M
+    ports:
+      - "80:5000"
+      - "443:5443"
+      - "2222:2222"
+    networks:
+      - webnet
+    volumes: [ "data:/var/lib/activate/data",  "config:/var/lib/activate/config" ]
+
+  redis:
+    image: "redis:alpine"
+    #volumes:
+    #  - /root/data:/data
+    networks:
+      - webnet
+    command: ["redis-server", "--appendonly", "yes"]
+    hostname: redis
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+
+  visualizer:
+    image: dockersamples/visualizer:stable
+    ports:
+      - "5000:8080"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+    networks:
+      - webnet
+networks:
+  webnet:
+volumes:
+  data:
+    driver: cloudstor:azure
+    driver_opts:
+      share: data
+      filemode: 0600
+  config:
+    driver: cloudstor:azure
+    driver_opts:
+      share: config
+      filemode: 0600

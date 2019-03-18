@@ -1,0 +1,8 @@
+{% load i18n %}
+{% if prefix.member_organisation.display_prefix_as_range %}
+       {% trans 'Range' %}: {# render_range_breadcrumb(prefix) #}
+       {% include 'prefixes/range_macros.html' with func='render_range_breadcrumb' prefix=prefix only %}
+{% else %}
+     {% trans 'GS1 Prefix' %}: {# render_range_breadcrumb(prefix) #}
+     <b>{% include 'prefixes/range_macros.html' with func='render_prefix' prefix=prefix only %} </b>
+{% endif %}

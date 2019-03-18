@@ -1,0 +1,1928 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-18 09:54+0000\n"
+"PO-Revision-Date: 2018-07-25 11:34+0000\n"
+"Last-Translator: b'GS1 Bosnia Test Account <tester@gs1bih.org>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"#-#-#-#-#  djangojs.po (PACKAGE VERSION)  #-#-#-#-#\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+
+#: frontend/static/js/vendor.04b6d1e335e3778838c7.js:13
+msgid "&"
+msgstr "&"
+
+#: frontend/static/js/vendor.04b6d1e335e3778838c7.js:13
+msgid "-enter"
+msgstr "-enter"
+
+#: frontend/static/js/vendor.04b6d1e335e3778838c7.js:34
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Height"
+msgstr "Visina"
+
+#: frontend/static/js/vendor.04b6d1e335e3778838c7.js:34
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Width"
+msgstr "Širina"
+
+#: static/site/js/admin-dashboard.js:896
+#: static/site/standalone/standalone-components.js:794
+msgid "Data Import"
+msgstr "Uvoz podataka"
+
+#: static/site/js/admin-dashboard.js:896 static/site/js/dashboard.js:896
+#: static/site/js/product_create_form.js:376
+#: static/site/js/product_create_form.js:378
+#: static/site/js/product_edit_form.js:283
+#: static/site/js/product_edit_form.js:383
+#: static/site/js/product_edit_form.js:385
+#: static/site/js/product_edit_form.js:391
+#: static/site/standalone/standalone-components.js:470
+#: static/site/standalone/standalone-components.js:721
+#: static/site/standalone/standalone-components.js:724
+#: static/site/standalone/standalone-components.js:775
+#: static/site/standalone/standalone-components.js:781
+#: static/site/standalone/standalone-components.js:787
+#: static/site/standalone/standalone-components.js:795
+msgid "Close"
+msgstr "Zatvori"
+
+#: static/site/js/admin-dashboard.js:896
+#: static/site/standalone/standalone-components.js:795
+msgid "Please select an .xlsx file to upload."
+msgstr "Molimo odaberite .xlsx datoteku za prijenos."
+
+#: static/site/js/admin-dashboard.js:896
+#: static/site/standalone/standalone-components.js:795
+#, fuzzy
+#| msgid "success"
+msgid "Success count"
+msgstr "Brojilo uspješnih"
+
+#: static/site/js/admin-dashboard.js:896
+#: static/site/standalone/standalone-components.js:795
+msgid "Error count"
+msgstr "Brojilo pogreški"
+
+#: static/site/js/admin-dashboard.js:896
+#: static/site/standalone/standalone-components.js:795
+msgid "Error messages"
+msgstr "Poruke pogreški"
+
+#: static/site/js/admin-dashboard.js:896 static/site/js/dashboard.js:896
+#: static/site/js/product_create_form.js:376
+#: static/site/js/product_edit_form.js:385
+#: static/site/js/product_edit_form.js:391
+#: static/site/standalone/standalone-components.js:470
+#: static/site/standalone/standalone-components.js:721
+#: static/site/standalone/standalone-components.js:781
+#: static/site/standalone/standalone-components.js:787
+#: static/site/standalone/standalone-components.js:795
+msgid "Cancel"
+msgstr "Otkaži"
+
+#: static/site/js/admin-dashboard.js:896
+#: static/site/standalone/standalone-components.js:795
+msgid "Upload"
+msgstr "Prijenos"
+
+#: static/site/js/admin-dashboard.js:900
+#: static/site/standalone/standalone-components.js:799
+msgid "Import Companies"
+msgstr "Uvoz kompanija"
+
+#: static/site/js/admin-dashboard.js:900
+#: static/site/standalone/standalone-components.js:799
+msgid "Import Prefixes"
+msgstr "Uvoz prefiksa"
+
+#: static/site/js/admin-dashboard.js:900
+#: static/site/standalone/standalone-components.js:799
+msgid "Import Users"
+msgstr "Uvoz korisnika"
+
+#: static/site/js/admin-dashboard.js:900
+#: static/site/standalone/standalone-components.js:800
+#: static/site/standalone/standalone-components.js:824
+msgid "Search"
+msgstr "Pretraga"
+
+#: static/site/js/admin-dashboard.js:900
+#: static/site/standalone/standalone-components.js:800
+#, fuzzy
+#| msgid "Company"
+msgid "Companies"
+msgstr "Kompanije"
+
+#: static/site/js/admin-dashboard.js:900
+#: static/site/standalone/standalone-components.js:800
+#, fuzzy
+#| msgid "Prefix"
+msgid "Prefixes"
+msgstr "Prefiksi"
+
+#: static/site/js/admin-dashboard.js:900
+#: static/site/standalone/standalone-components.js:800
+msgid "Users"
+msgstr "Korisnici"
+
+#: static/site/js/admin-dashboard.js:900 static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+#: static/site/standalone/standalone-components.js:800
+msgid "Products"
+msgstr "Proizvoda"
+
+#: static/site/js/admin-dashboard.js:900
+#: static/site/standalone/standalone-components.js:800
+#, fuzzy
+#| msgid "import"
+msgid "Report"
+msgstr "Izvještaj"
+
+#: static/site/js/admin-dashboard.js:900
+#: static/site/standalone/standalone-components.js:800
+msgid "Import Data"
+msgstr "Uvoz podataka"
+
+#: static/site/js/dashboard.js:896
+#: static/site/standalone/standalone-components.js:470
+msgid "Prefix activation confirmation"
+msgstr "Potvrda aktivacije prefiksa"
+
+#: static/site/js/dashboard.js:896
+#: static/site/standalone/standalone-components.js:470
+msgid "You have chosen a default prefix."
+msgstr "Odabrali ste zadani prefiks."
+
+#: static/site/js/dashboard.js:896
+#: static/site/standalone/standalone-components.js:470
+msgid ""
+"Next time you click on \"Add a new product\" this prefix will be used for "
+"GTIN allocation."
+msgstr ""
+"Sljedeći put kada kliknete na \"Dodaj novi proizvod\", ovaj prefiks će se "
+"koristiti za dodjelu GTIN-a"
+
+#: static/site/js/dashboard.js:896
+#: static/site/standalone/standalone-components.js:470
+msgid "Confirm choice of prefix"
+msgstr "Potvrdi izbor prefiksa"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Active Prefix"
+msgstr "Aktivni prefiks"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "GCP"
+msgstr "GCP"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Allocated"
+msgstr "Dodijeljeno"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Available"
+msgstr "Raspoloživo"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+#: static/site/standalone/standalone-components.js:827
+msgid "Add product"
+msgstr "Dodaj proizvod"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Allocate a new barcode from the Active Prefix"
+msgstr "Dodijeli novi barkod iz aktivnog prefiksa"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "View Products"
+msgstr "Pregled proizvoda"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "View allocated numbers from Active Prefix"
+msgstr "Pregled dodijeljenih brojeva iz aktivnog prefiksa"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Global Company Prefixes and GTIN Ranges"
+msgstr "Globalni prefiksi kompanije i GTIN intervali"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Prefix"
+msgstr "Prefiks"
+
+#: static/site/js/dashboard.js:948 static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:545
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+#: static/site/standalone/standalone-components.js:823
+#: static/site/standalone/standalone-components.js:824
+#: static/site/standalone/standalone-components.js:827
+msgid "Description"
+msgstr "Opis"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Capacity"
+msgstr "Kapacitet"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Block of __number__ GTINs"
+msgstr "Blok od __number__ GTIN-ova"
+
+#: static/site/js/dashboard.js:948 static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:381
+#: static/site/standalone/standalone-components.js:545
+#: static/site/standalone/standalone-components.js:747
+msgid "Product"
+msgstr "Proizvod"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "No products"
+msgstr "Nema proizvoda"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Account Summary"
+msgstr "Sažetak naloga"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Symbol Credits"
+msgstr "Krediti za simbole"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Points balance:"
+msgstr "Broj bodova:"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Company ID:"
+msgstr "ID kompanije:"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Company Name:"
+msgstr "Naziv kompanije:"
+
+#: static/site/js/product_create_form.js:329
+#: static/site/standalone/standalone-components.js:658
+msgid "Packaging Level"
+msgstr "Nivo pakovanja"
+
+#: static/site/js/product_create_form.js:329
+#: static/site/standalone/standalone-components.js:658
+msgid ""
+"Products are packaged at different levels, and each level requires a "
+"specific type of barcode. Choose the option below that best describes the "
+"packaging of your product."
+msgstr ""
+"Proizvodi se pakuju na različitim nivoima, a svaki nivo zahtijeva specifičnu "
+"vrstu barkoda. Odaberite opciju ispod koja najbolje opisuje pakovanje vašeg "
+"proizvoda."
+
+#: static/site/js/product_create_form.js:329
+#: static/site/standalone/standalone-components.js:658
+msgid ""
+"Note: Packaging levels are heirarchical, which means that you define the "
+"lowest level (base unit/each) first before proceeding to a higher level e.g. "
+"a case."
+msgstr ""
+"Napomena: Nivoi pakovanja su uređeni hijerarhijski, što znači da vi prvo "
+"definirate najniži nivo (osnovna jedinica), prije no što pređete na viši "
+"nivo, npr. kutiju."
+
+#: static/site/js/product_create_form.js:329
+#: static/site/standalone/standalone-components.js:658
+msgid "Level"
+msgstr "Nivo"
+
+#: static/site/js/product_create_form.js:329
+#: static/site/js/product_create_form.js:338
+#: static/site/standalone/standalone-components.js:658
+#: static/site/standalone/standalone-components.js:671
+#: static/site/standalone/standalone-components.js:827
+msgid "Next"
+msgstr "Sljedeći"
+
+#: static/site/js/product_create_form.js:338
+#: static/site/standalone/standalone-components.js:671
+msgid ""
+"The purpose of this step is to show you where to place the barcode on your "
+"products and select the appropriately sized barcode symbol. Barcode symbols "
+"are placed where they can be best scanned at point-of-sale as shown below by "
+"these general example pictures."
+msgstr ""
+"Svrha ovog koraka je pokazati vam gdje da postavite barkod na vašim "
+"proizvodima i odaberete barkod simbol odgovarajuće veličine. Barkod simboli "
+"su postavljeni tamo gdje se mogu najbolje očitati na prodajnom mjestu, kao "
+"što je prikazano ispod na ovim slikama sa uopćenim primjerima."
+
+#: static/site/js/product_create_form.js:338
+#: static/site/standalone/standalone-components.js:671
+msgid "PRODUCT AND PACKAGING TYPES"
+msgstr "VRSTE PROIZVODA I PAKOVANJA"
+
+#: static/site/js/product_create_form.js:338
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:671
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Package type"
+msgstr "Vrsta pakovanja"
+
+#: static/site/js/product_create_form.js:338
+#: static/site/standalone/standalone-components.js:671
+msgid "Packaging example"
+msgstr "Primjer pakovanja"
+
+#: static/site/js/product_create_form.js:338
+#: static/site/standalone/standalone-components.js:671
+msgid "Packaging definition"
+msgstr "Definicija pakovanja"
+
+#: static/site/js/product_create_form.js:338
+#: static/site/js/product_create_form.js:393
+#: static/site/standalone/standalone-components.js:671
+#: static/site/standalone/standalone-components.js:741
+#: static/site/standalone/standalone-components.js:827
+msgid "Previous"
+msgstr "Prethodni"
+
+#: static/site/js/product_create_form.js:352
+#: static/site/js/product_edit_form.js:287
+#: static/site/standalone/standalone-components.js:686
+msgid "entries"
+msgstr "unosi"
+
+#: static/site/js/product_create_form.js:356
+#: static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:305
+#: static/site/js/product_edit_form.js:381
+#: static/site/standalone/standalone-components.js:691
+msgid "Global Product Classification"
+msgstr "Globalna klasifikacija proizvoda"
+
+#: static/site/js/product_create_form.js:356
+#: static/site/js/product_edit_form.js:305
+#: static/site/standalone/standalone-components.js:691
+msgid "Please enter at least 3 characters"
+msgstr "Molimo unesite najmanje 3 karaktera"
+
+#: static/site/js/product_create_form.js:356
+#: static/site/js/product_edit_form.js:305
+#: static/site/standalone/standalone-components.js:691
+#: static/site/standalone/standalone-components.js:824
+msgid "Results not found"
+msgstr "Rezultati nisu pronađeni"
+
+#: static/site/js/product_create_form.js:362
+#: static/site/js/product_edit_form.js:311
+#: static/site/standalone/standalone-components.js:700
+msgid "Unit qualifiers"
+msgstr "Kvalifikatori jedinica"
+
+#: static/site/js/product_create_form.js:362
+#: static/site/js/product_edit_form.js:311
+#: static/site/standalone/standalone-components.js:700
+msgid "Mandatory"
+msgstr "Obavezno"
+
+#: static/site/js/product_create_form.js:362
+#: static/site/js/product_edit_form.js:311
+#: static/site/standalone/standalone-components.js:700
+msgid "(Select One)"
+msgstr "(Odaberite jedan)"
+
+#: static/site/js/product_create_form.js:362
+#: static/site/js/product_edit_form.js:311
+#: static/site/standalone/standalone-components.js:700
+msgid "Options: At least one option must be selected."
+msgstr "Opcije: Mora se odabrati bar jedna opcija."
+
+#: static/site/js/product_create_form.js:362
+#: static/site/js/product_edit_form.js:311
+#: static/site/standalone/standalone-components.js:700
+msgid "Optional"
+msgstr "Opcionalno"
+
+#: static/site/js/product_create_form.js:366
+#: static/site/js/product_edit_form.js:315
+#: static/site/standalone/standalone-components.js:706
+msgid "Weights"
+msgstr "Težine"
+
+#: static/site/js/product_create_form.js:366
+#: static/site/js/product_edit_form.js:315
+#: static/site/standalone/standalone-components.js:706
+msgid "Dimensions"
+msgstr "Dimenzije"
+
+#: static/site/js/product_create_form.js:366
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:315
+#: static/site/js/product_edit_form.js:381
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:706
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Net content"
+msgstr "Neto sadržaj"
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+#: static/site/standalone/standalone-components.js:712
+msgid "Product Image"
+msgstr "Slika proizvoda"
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+#: static/site/standalone/standalone-components.js:712
+msgid "Upload a picture of your product"
+msgstr "Učitajte sliku vašeg proizvoda"
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+#: static/site/standalone/standalone-components.js:712
+msgid ""
+"Please upload an image of your product and/or a publicly-accessible Web URL "
+"of an image of the product. This URL should be for an image (jpg or png), "
+"not for a web page (html). This is a text field and the format will be, for "
+"example"
+msgstr ""
+"Molimo učitajte sliku vašeg proizvoda i/ili javno dostupan Web URL slike "
+"proizvoda. Ovaj URL bi trebao biti za sliku (jpg ili png), ne za web "
+"stranicu (html). Ovo je tekstualno polje i format će biti naprimjer"
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+#: static/site/standalone/standalone-components.js:712
+msgid ""
+"Including a URL to an image of your product will ensure potential customers "
+"can access the image you want them to see and not something they just find "
+"on the internet. It can also help online market places to have an accurate "
+"representation of your product and help you increase sales."
+msgstr ""
+"Postavljanje URL-a za sliku vašeg proizvoda će osigurati da potencijalni "
+"kupci mogu pristupiti slici koju želite da vide, a ne nečemu što su samo "
+"pronašli na Internetu. To također može pomoći online trgovinama da posjeduju "
+"tačan izgled vašeg proizvoda i može vama pomoći da povećate prodaju."
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+#: static/site/standalone/standalone-components.js:712
+msgid "Accepted file types are: JPG, PNG, GIF with a size less than 2 MB"
+msgstr "Prihvatljive vrste datoteka su: JPG, PNG, GIF veličine do 2 MB"
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+msgid "Paste image Url"
+msgstr "Zalijepi Url slike"
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+msgid "Upload an image"
+msgstr "Učitaj sliku"
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+#: static/site/standalone/standalone-components.js:712
+#, fuzzy
+#| msgid "Previous"
+msgid "Preview"
+msgstr "Pregled"
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+#: static/site/standalone/standalone-components.js:712
+msgid ""
+"The URL doesn't refer to an image or the image is not publicly accessible."
+msgstr "URL ne odgovara slici ili slika nije javno dostupna."
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+#: static/site/standalone/standalone-components.js:712
+msgid "Remove image"
+msgstr "Ukloni sliku"
+
+#: static/site/js/product_create_form.js:372
+#: static/site/js/product_edit_form.js:371
+#: static/site/standalone/standalone-components.js:715
+#: static/site/standalone/standalone-components.js:778
+msgid "Subproducts"
+msgstr "Podproizvodi"
+
+#: static/site/js/product_create_form.js:372
+#: static/site/js/product_edit_form.js:371
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:715
+#: static/site/standalone/standalone-components.js:778
+#: static/site/standalone/standalone-components.js:790
+#: static/site/standalone/standalone-components.js:823
+#: static/site/standalone/standalone-components.js:824
+#: static/site/standalone/standalone-components.js:827
+msgid "GTIN"
+msgstr "GTIN"
+
+#: static/site/js/product_create_form.js:372
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:371
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:715
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:778
+#: static/site/standalone/standalone-components.js:789
+msgid "Package level"
+msgstr "Nivo pakovanja"
+
+#: static/site/js/product_create_form.js:372
+#: static/site/js/product_edit_form.js:371
+#: static/site/standalone/standalone-components.js:715
+#: static/site/standalone/standalone-components.js:778
+msgid "Product description"
+msgstr "Opis proizvoda"
+
+#: static/site/js/product_create_form.js:372
+#: static/site/js/product_edit_form.js:371
+#: static/site/standalone/standalone-components.js:715
+#: static/site/standalone/standalone-components.js:778
+msgid "Quantity"
+msgstr "Količina"
+
+#: static/site/js/product_create_form.js:374
+#: static/site/js/product_edit_form.js:369
+#: static/site/standalone/standalone-components.js:718
+msgid "Location information"
+msgstr "Informacije o lokaciji"
+
+#: static/site/js/product_create_form.js:374
+#: static/site/js/product_edit_form.js:369
+#: static/site/standalone/standalone-components.js:718
+msgid "Default GLN"
+msgstr "Zadani GLN"
+
+#: static/site/js/product_create_form.js:376
+#: static/site/js/product_edit_form.js:385
+#: static/site/standalone/standalone-components.js:721
+msgid "Product activation confirmation"
+msgstr "Potvrda aktivacije proizvoda"
+
+#: static/site/js/product_create_form.js:376
+#: static/site/js/product_edit_form.js:385
+#: static/site/standalone/standalone-components.js:721
+#: static/site/standalone/standalone-components.js:781
+msgid "I agree"
+msgstr "Slažem se"
+
+#: static/site/js/product_create_form.js:376
+#: static/site/js/product_create_form.js:378
+#: static/site/js/product_edit_form.js:383
+#: static/site/js/product_edit_form.js:385
+#: static/site/js/product_edit_form.js:391
+#: static/site/standalone/standalone-components.js:721
+#: static/site/standalone/standalone-components.js:724
+#: static/site/standalone/standalone-components.js:781
+#: static/site/standalone/standalone-components.js:787
+msgid "OK"
+msgstr "OK"
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "Opted out from GS1 Cloud"
+msgstr "Odjavili ste GS1 Cloud"
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "Opt out from GS1 Cloud"
+msgstr "Odjava GS1 Cloud-a"
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "Update"
+msgstr "Ažuriraj"
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "Saved"
+msgstr "Snimljeno"
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "Update draft"
+msgstr "Ažuriraj nacrt"
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "Saved as draft"
+msgstr "Snimljeno kao nacrt"
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "Save as draft"
+msgstr "Snimi kao nacrt"
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "Activated"
+msgstr "Aktiviran"
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "Activate barcode/GTIN"
+msgstr "Aktiviraj barkod/GTIN"
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "This field is required for activation."
+msgstr "Ovo polje je obavezno za aktivaciju."
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:727
+msgid "Save as Draft"
+msgstr "Snimi kao nacrt"
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:727
+msgid "You can not activate this product."
+msgstr "Ne možete aktivirati ovaj proizvod."
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:727
+msgid "These fields should be filled:"
+msgstr "Ova polja trebaju biti popunjena:"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Company"
+msgstr "Kompanija"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Label description"
+msgstr "Opis etikete"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+#: static/site/standalone/standalone-components.js:823
+#: static/site/standalone/standalone-components.js:824
+#: static/site/standalone/standalone-components.js:827
+msgid "Brand"
+msgstr "Brend"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Sub brand"
+msgstr "Podbrend"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Functional name"
+msgstr "Funkcionalni naziv"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Variant"
+msgstr "Varijanta"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Point of sale"
+msgstr "Prodajno mjesto"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Category"
+msgstr "Kategorija"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Sku"
+msgstr "Sku"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+#, fuzzy
+msgid "Is bunit"
+msgstr "Jeste b jedinica"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+#, fuzzy
+msgid "Is cunit"
+msgstr "Jeste c jedinica"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+#, fuzzy
+msgid "Is dunit"
+msgstr "Jeste d jedinica"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+#, fuzzy
+msgid "Is vunit"
+msgstr "Jeste v jedinica"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+#, fuzzy
+msgid "Is iunit"
+msgstr "Jeste i jedinica"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+#, fuzzy
+msgid "Is ounit"
+msgstr "Jeste o jedinica"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Country of origin"
+msgstr "Država porijekla"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Target market"
+msgstr "Ciljno tržište"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Language"
+msgstr "Jezik"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Gln of information provider"
+msgstr "GLN pružatelja informacija"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Net weight"
+msgstr "Neto težina"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+#, fuzzy
+msgid "Net weight uom"
+msgstr "Neto težina - jm"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Gross weight"
+msgstr "Bruto težina"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Gross weight uom"
+msgstr "Bruto težina - jm"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Depth"
+msgstr "Dubina"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Depth uom"
+msgstr "Dubina - jm"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Width uom"
+msgstr "Širina - jm"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Height uom"
+msgstr "Visina - jm"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Net content uom"
+msgstr "Neto sadržaj - jm"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Image url"
+msgstr "URL slike"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Image upload"
+msgstr "Učitavanje slike"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Website URL"
+msgstr "URL web stranice"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Gs1 cloud state"
+msgstr "Stanje GS1 Cloud-a"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "DRAFT"
+msgstr "NACRT"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "ACTIVE"
+msgstr "AKTIVAN"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "INACTIVE"
+msgstr "NEAKTIVAN"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "OPTED_OUT"
+msgstr "ODJAVLJEN"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:741
+#: static/site/standalone/standalone-components.js:790
+msgid "Product Identification"
+msgstr "Identifikacija proizvoda"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:741
+#: static/site/standalone/standalone-components.js:790
+msgid "Fields marked with (*) are required."
+msgstr "Polja označena sa (*) su obavezna."
+
+#: static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:381
+msgid "Print Product Summary"
+msgstr "Štampaj informacije o proizvodu"
+
+#: static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:381
+#: static/site/standalone/standalone-components.js:747
+msgid "GTIN-13 Number"
+msgstr "GTIN-13 broj"
+
+#: static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:381
+#: static/site/standalone/standalone-components.js:747
+msgid "GS1 Company Prefix"
+msgstr "GS1 prefiks kompanije"
+
+#: static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:381
+#: static/site/js/product_edit_form.js:396
+msgid "Package Type"
+msgstr "Vrsta pakovanja"
+
+#: static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:381
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:747
+#: static/site/standalone/standalone-components.js:790
+msgid "Basic"
+msgstr "Osnovni"
+
+#: static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:381
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:747
+#: static/site/standalone/standalone-components.js:790
+msgid "Measurements"
+msgstr "Mjere"
+
+#: static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:381
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:747
+#: static/site/standalone/standalone-components.js:790
+msgid "Picture"
+msgstr "Slika"
+
+#: static/site/js/product_create_form.js:399
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:750
+#: static/site/standalone/standalone-components.js:790
+msgid "Summary"
+msgstr "Sažetak"
+
+#: static/site/js/product_edit_form.js:283
+#: static/site/standalone/standalone-components.js:775
+msgid "Product delete confirmation"
+msgstr "Potvrda brisanja proizvoda"
+
+#: static/site/js/product_edit_form.js:283
+#: static/site/standalone/standalone-components.js:775
+msgid "Don't delete product"
+msgstr "Nemoj brisati proizvod"
+
+#: static/site/js/product_edit_form.js:283
+#: static/site/standalone/standalone-components.js:775
+msgid "Delete and set"
+msgstr "Izbriši i postavi"
+
+#: static/site/js/product_edit_form.js:283
+#: static/site/standalone/standalone-components.js:775
+msgid "Delete only"
+msgstr "Samo izbriši"
+
+#: static/site/js/product_edit_form.js:283
+#: static/site/standalone/standalone-components.js:775
+msgid ""
+"You are about to delete one of your products. Because this action will "
+"probably create a gap in your serial numbers you must choose what to do."
+msgstr ""
+"Upravo ćete izbrisati jedan od vaših proizvoda. Kako će ova radnja "
+"vjerovatno proizvesti prazninu u vašim serijskim brojevima, morate odabrati "
+"šta učiniti."
+
+#: static/site/js/product_edit_form.js:283
+#: static/site/standalone/standalone-components.js:775
+msgid "Delete product and set prefix's starting GTIN to deleted product's GTIN"
+msgstr ""
+"Izbriši proizvod i postavi početni GTIN prefiksa na GTIN izbrisanog proizvoda"
+
+#: static/site/js/product_edit_form.js:283
+#: static/site/standalone/standalone-components.js:775
+msgid "or"
+msgstr "ili"
+
+#: static/site/js/product_edit_form.js:283
+#: static/site/standalone/standalone-components.js:775
+msgid "Delete product and don't change the starting GTIN of this prefix"
+msgstr "Izbriši proizvod i nemoj mijenjati početni GTIN ovog prefiksa"
+
+#: static/site/js/product_edit_form.js:283
+#: static/site/standalone/standalone-components.js:775
+msgid ""
+"Keep in mind that only products that are not part of a container can be "
+"deleted."
+msgstr ""
+"Ne zaboravite da se mogu brisati samo proizvodi koji nisu dio kontejnera."
+
+#: static/site/js/product_edit_form.js:371
+#: static/site/standalone/standalone-components.js:778
+msgid "Add subproducts"
+msgstr "Dodaj podproizvode"
+
+#: static/site/js/product_edit_form.js:391
+#: static/site/standalone/standalone-components.js:787
+msgid "Make a pack of trade items using"
+msgstr "Napravi paket trgovinskih jedinica koristeći"
+
+#: static/site/js/product_edit_form.js:391
+#: static/site/standalone/standalone-components.js:787
+msgid "as a base"
+msgstr "kao osnovu"
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:789
+msgid "Gtin"
+msgstr "GTIN"
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:789
+#, fuzzy
+msgid "Bar placement"
+msgstr "Postavljanje barkoda"
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:789
+msgid "Status"
+msgstr "Status"
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:789
+msgid "Date"
+msgstr "Datum"
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:790
+msgid ""
+"When giving the barcode number for a product to your printer/graphic "
+"designer/packaging designer for the creation of a barcode symbol, please "
+"ignore the preceding 0 attached to the barcode number below if the package "
+"level is a base unit and inner case. Keep the 0 if the package level is an "
+"outer case or pallet."
+msgstr ""
+"Kada prosljeđujete barkod broj za proizvod štampariji/grafičkom dizajneru/"
+"dizajneru pakovanja u svrhu kreiranja barkod simbola, molimo ignorirajte "
+"vodeću 0 priključenu barkod broju ispod, ako je nivo pakovanja osnovna "
+"jedinica i zbirno pakovanje. Zadržite 0 ako je nivo pakovanja paket ili "
+"paleta."
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:790
+msgid "Advanced"
+msgstr "Napredan"
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:790
+msgid "Optional information"
+msgstr "Opcionalne informacije"
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:790
+msgid "Symbols"
+msgstr "Simboli"
+
+#: static/site/js/product_edit_form.js:396
+msgid "Label Generator"
+msgstr "Generator naljepnice"
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:790
+msgid "Clone"
+msgstr "Klon"
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:790
+msgid "Make a Pack"
+msgstr "Napravi paket"
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:790
+msgid "Message"
+msgstr "Poruka"
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:790
+msgid ""
+"You cannot edit a product field once activated. If the information is wrong "
+"place contact the"
+msgstr ""
+"Ne možete uređivati polje proizvoda nakon aktivacije. Ako su informacije "
+"pogrešne, molimo kontaktirajte"
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:790
+msgid "HELPDESK"
+msgstr "HELPDESK"
+
+#: static/site/js/profile_strength.js:9
+msgid "Strong"
+msgstr "Visoka"
+
+#: static/site/js/profile_strength.js:12
+msgid "Medium"
+msgstr "Srednja"
+
+#: static/site/js/profile_strength.js:15 static/site/js/profile_strength.js:18
+msgid "Weak"
+msgstr "Slaba"
+
+#: static/site/standalone/standalone-components.js:694
+msgid "Auto-Fill"
+msgstr "Popuni automatski"
+
+#: static/site/standalone/standalone-components.js:709
+msgid "Choose file"
+msgstr "Izaberite datoteku.."
+
+#: static/site/standalone/standalone-components.js:709
+msgid "No file chosen"
+msgstr "Nije izabrana datoteka"
+
+#: static/site/standalone/standalone-components.js:712
+msgid "Upload Image File"
+msgstr "Učitaj sliku"
+
+#: static/site/standalone/standalone-components.js:712
+msgid "Paste External Image Url"
+msgstr "Zalijepi Url slike"
+
+#: static/site/standalone/standalone-components.js:747
+msgid "Finish"
+msgstr "Završi"
+
+#: static/site/standalone/standalone-components.js:783
+msgid "File type"
+msgstr "Tip datoteke"
+
+#: static/site/standalone/standalone-components.js:783
+msgid "Image file type"
+msgstr "Tip datoteke slike"
+
+#: static/site/standalone/standalone-components.js:783
+msgid "Printer resolution"
+msgstr "Rezolucija printera"
+
+#: static/site/standalone/standalone-components.js:783
+msgid "Postscript type"
+msgstr "Postscript tip"
+
+#: static/site/standalone/standalone-components.js:783
+msgid "Postscript (eps) image type"
+msgstr "Postscript (eps) tip datoteke slike"
+
+#: static/site/standalone/standalone-components.js:783
+msgid "Label type"
+msgstr "Tip naljepnica"
+
+#: static/site/standalone/standalone-components.js:783
+msgid "PDF label type"
+msgstr "Tip PDF naljepnica"
+
+#: static/site/standalone/standalone-components.js:783
+#: static/site/standalone/standalone-components.js:784
+msgid "Magnification"
+msgstr "Uvećanje"
+
+#: static/site/standalone/standalone-components.js:783
+msgid "BWR"
+msgstr "BWR"
+
+#: static/site/standalone/standalone-components.js:783
+msgid ""
+"BWR stands for bar-width reduction and compensates for the ink-spread during "
+"printing."
+msgstr ""
+"BWR se odnosi na smanjenje širine linije barkoda i kompenzira razmazivanje "
+"boje tokom štampanja."
+
+#: static/site/standalone/standalone-components.js:783
+msgid "Right quiet zone indicator"
+msgstr "Indikator desne mirne zone"
+
+#: static/site/standalone/standalone-components.js:783
+msgid "Printing Marks"
+msgstr "Oznake za štampu"
+
+#: static/site/standalone/standalone-components.js:783
+msgid "Calibration (Debug)"
+msgstr "Kalibriranje (debug)"
+
+#: static/site/standalone/standalone-components.js:783
+msgid "0.0015 (printer resolution 600 dpi)"
+msgstr "0.0015 (rezolucija printera 600 dpi)"
+
+#: static/site/standalone/standalone-components.js:783
+msgid "0.0035 (printer resolution 300 dpi)"
+msgstr "0.0035 (rezolucija printera 300 dpi)"
+
+#: static/site/standalone/standalone-components.js:784
+#: static/site/standalone/standalone-components.js:827
+msgid "Barcode"
+msgstr "Barkod"
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Logistics Label Tool"
+msgstr "Alat za logističku naljepnicu"
+
+#: static/site/standalone/standalone-components.js:784
+msgid ""
+"The family of EAN/UPC barcodes are used to represent GTINs on trade items so "
+"they can be scanned atPoint-of-Sale and distribution centers. They should "
+"only be printed on outer-cases if they are printedat 200% their size and the "
+"case will be scanned at the point of sale. A case of wine is an example of "
+"such a product"
+msgstr ""
+"Porodica EAN/UPC barkodova koristi se za prikaz GTIN-ova na trgovinskim "
+"jedinicama, tako da se oni mogu skenirati na prodajnim mjestima naplate i u "
+"distributivnim centrima. Oni bi se na paketima trebali štampati samo ukoliko "
+"su uvećani za 200% i ukoliko će paket biti skeniran na prodajnom mjestu. "
+"Primjer takvog proizvoda je paket vina."
+
+#: static/site/standalone/standalone-components.js:784
+msgid ""
+"The ITF 14 symbol is used for trade items not passing the point of sale and "
+"is ideal for use where thesymbol is to be pre-printed onto corrugated "
+"fibreboard/Kraftboard or onto labels attached outer cases."
+msgstr ""
+"ITF-14 simbol koristi se za trgovinske jedinice koje ne prolaze kroz "
+"maloprodajno mjesto naplate i idealan je u situacijama kada je simbol "
+"potrebno pred-štampati na valovitoj kartonskoj površini ili na etikete "
+"prikačene na kutije. "
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Barcodes for this package level are not supported"
+msgstr "Barkodovi nisu dostupni za ovaj nivo pakovanja"
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Download raster image"
+msgstr "Preuzmi raster sliku"
+
+#: static/site/standalone/standalone-components.js:784
+#, fuzzy
+#| msgid "Image file type"
+msgid "Image type"
+msgstr "Tip datoteke slike"
+
+#: static/site/standalone/standalone-components.js:784
+#, fuzzy
+#| msgid "Printer resolution"
+msgid "Resolution"
+msgstr "Rezolucija printera"
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Download postscript (eps) image"
+msgstr "Preuzmi postscript (eps) sliku"
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Download postscript(eps) image"
+msgstr "Preuzmi postscript (eps) sliku"
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Download PDF labels"
+msgstr "Preuzmi naljepnice u PDF formatu"
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Image Options"
+msgstr "Podešavanja"
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Update barcode preview"
+msgstr "Ažuriraj pregled barkoda"
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Create and download a high resolution image of this barcode."
+msgstr "Kreiraj i preuzmi sliku visoke rezolucije ovog barkoda."
+
+#: static/site/standalone/standalone-components.js:784
+msgid ""
+"Available formats are JPG, PNG and GIF raster images up to 2400dpi "
+"resolution,and postscript images which scale to your desired size."
+msgstr ""
+"Dostupni formati su JPG, PNG i GIF rasterske slike rezolucije do 2400dpi, "
+"kao i postscript slike prilagodljive željenoj veličini."
+
+#: static/site/standalone/standalone-components.js:784
+msgid ""
+"To create your barcode image you need to have at least 1 credit available in "
+"your balance."
+msgstr ""
+"Da biste kreirali sliku barkoda morate imati najmanje 1 kredit dostupan na "
+"vašem računu. "
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Create EAN13 barcode"
+msgstr "Kreiraj barkod"
+
+#: static/site/standalone/standalone-components.js:784
+#, fuzzy
+#| msgid "Agreement needed"
+msgid "Agreement required"
+msgstr "Potreban pristanak"
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Please contact us for the agreement text"
+msgstr "Molimo kontaktirajte nas za tekst sporazuma"
+
+#: static/site/standalone/standalone-components.js:787
+msgid "Choose one from the available GTINs"
+msgstr "Izaberi jedan od dostupnih GTIN-ova"
+
+#: static/site/standalone/standalone-components.js:787
+msgid "Indicate hierarchy level"
+msgstr "Navesti nivo hijerarhije pakovanja"
+
+#: static/site/standalone/standalone-components.js:815
+msgid "Display shipper"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:815
+#: static/site/standalone/standalone-components.js:824
+msgid "Base Unit"
+msgstr "Osnovna jedinica"
+
+#: static/site/standalone/standalone-components.js:815
+#: static/site/standalone/standalone-components.js:824
+msgid "Pack"
+msgstr "Grupno pakovanje"
+
+#: static/site/standalone/standalone-components.js:815
+msgid "Case"
+msgstr "Paket"
+
+#: static/site/standalone/standalone-components.js:815
+#: static/site/standalone/standalone-components.js:824
+msgid "Pallet"
+msgstr "Paleta"
+
+#: static/site/standalone/standalone-components.js:823
+#: static/site/standalone/standalone-components.js:824
+#: static/site/standalone/standalone-components.js:827
+msgid "SKU"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:823
+#: static/site/standalone/standalone-components.js:827
+msgid "Package Level"
+msgstr "Nivo pakovanja"
+
+#: static/site/standalone/standalone-components.js:823
+msgid "Created"
+msgstr "Datum kreiranja"
+
+#: static/site/standalone/standalone-components.js:823
+msgid "Updated"
+msgstr "Datum ažuriranja"
+
+#: static/site/standalone/standalone-components.js:823
+msgid "Descending"
+msgstr "Opadajući"
+
+#: static/site/standalone/standalone-components.js:823
+msgid "Ascending"
+msgstr "Rastući"
+
+#: static/site/standalone/standalone-components.js:824
+msgid "Filters"
+msgstr "Filteri"
+
+#: static/site/standalone/standalone-components.js:824
+msgid "Applied"
+msgstr "Primjenjeno"
+
+#: static/site/standalone/standalone-components.js:824
+msgid "Target Market"
+msgstr "Ciljno tržište"
+
+#: static/site/standalone/standalone-components.js:824
+msgid "Case or mixed case"
+msgstr "Paket "
+
+#: static/site/standalone/standalone-components.js:824
+#, fuzzy
+msgid "Display unit"
+msgstr "Jeste b jedinica"
+
+#: static/site/standalone/standalone-components.js:824
+msgid "Starred"
+msgstr "Označeno zvjezdicom"
+
+#: static/site/standalone/standalone-components.js:824
+msgid "Sort by"
+msgstr "Sortiraj"
+
+#: static/site/standalone/standalone-components.js:824
+msgid "Reset"
+msgstr "Resetuj"
+
+#: static/site/standalone/standalone-components.js:824
+msgid "Apply"
+msgstr "Primjeni"
+
+#: static/site/standalone/standalone-components.js:827
+msgid "Edit your product catalogue"
+msgstr "Uredite vaš katalog proizvoda"
+
+#: static/site/standalone/standalone-components.js:827
+msgid "GS1 Cloud"
+msgstr "GS1 Cloud"
+
+#: static/site/standalone/standalone-components.js:827
+#, fuzzy
+#| msgid "No products"
+msgid "No products found, please"
+msgstr "Nema proizvoda"
+
+#: static/site/standalone/standalone-components.js:827
+#, fuzzy
+#| msgid "Add product"
+msgid "add product"
+msgstr "Dodaj proizvod"
+
+#: static/site/standalone/standalone-components.js:827
+msgid " No products found, please change or reset filters."
+msgstr ""
+"Nijedan proizvod nije pronađen, molimo promjenite ili resetujte filtere."
+
+#: static/site/standalone/standalone-components.js:827
+msgid "Products per page"
+msgstr "Broj proizvoda po stranici"
+
+#, fuzzy
+#~ msgid "Available %s"
+#~ msgstr "Raspoloživi %s"
+
+#~ msgid ""
+#~ "This is the list of available %s. You may choose some by selecting them "
+#~ "in the box below and then clicking the \"Choose\" arrow between the two "
+#~ "boxes."
+#~ msgstr ""
+#~ "Ovo je lista raspoloživih %s. Možete neke odabrati tako što ćete ih "
+#~ "selektirati u okviru ispod i zatim kliknuti na strelicu \"Odaberi\" "
+#~ "između dva okvira."
+
+#~ msgid "Type into this box to filter down the list of available %s."
+#~ msgstr "Pišite u ovom okviru kako biste filtrirali listu raspoloživih %s."
+
+#, fuzzy
+#~| msgid "Filters"
+#~ msgid "Filter"
+#~ msgstr "Filteri"
+
+#, fuzzy
+#~ msgid "Choose all"
+#~ msgstr "Odaberi sve"
+
+#~ msgid "Click to choose all %s at once."
+#~ msgstr "Kliknite kako biste odabrali sve %s odjednom."
+
+#, fuzzy
+#~ msgid "Choose"
+#~ msgstr "Odaberi"
+
+#, fuzzy
+#~ msgid "Remove"
+#~ msgstr "Ukloni"
+
+#~ msgid "Chosen %s"
+#~ msgstr "Odabrani %s"
+
+#~ msgid ""
+#~ "This is the list of chosen %s. You may remove some by selecting them in "
+#~ "the box below and then clicking the \"Remove\" arrow between the two "
+#~ "boxes."
+#~ msgstr ""
+#~ "Ovo je lista odabranih %s. Možete ukloniti neke tako što ćete ih "
+#~ "selektirati u okviru ispod i zatim kliknuti na strelicu \"Ukloni\" između "
+#~ "dva okvira."
+
+#, fuzzy
+#~ msgid "Remove all"
+#~ msgstr "Ukloni sve"
+
+#~ msgid "Click to remove all chosen %s at once."
+#~ msgstr "Kliknite kako biste uklonili sve odabrane %s odjednom."
+
+#~ msgid "%(sel)s of %(cnt)s selected"
+#~ msgid_plural "%(sel)s of %(cnt)s selected"
+#~ msgstr[0] "%(sel)s od %(cnt)s odabrano"
+#~ msgstr[1] "%(sel)s od %(cnt)s odabrano"
+
+#~ msgid ""
+#~ "You have unsaved changes on individual editable fields. If you run an "
+#~ "action, your unsaved changes will be lost."
+#~ msgstr ""
+#~ "Imate nesnimljene izmjene pojedinačnih polja koja se mogu uređivati. Ako "
+#~ "izvršite neku akciju, vaše nesnimljene izmjene će biti izgubljene."
+
+#~ msgid ""
+#~ "You have selected an action, but you haven't saved your changes to "
+#~ "individual fields yet. Please click OK to save. You'll need to re-run the "
+#~ "action."
+#~ msgstr ""
+#~ "Odabrali ste akciju, ali još niste snimili vaše izmjene pojedinačnih "
+#~ "polja. Molimo kliknite na OK za snimanje. Bit će potrebno da ponovo "
+#~ "pokrenete akciju. "
+
+#~ msgid ""
+#~ "You have selected an action, and you haven't made any changes on "
+#~ "individual fields. You're probably looking for the Go button rather than "
+#~ "the Save button."
+#~ msgstr ""
+#~ "Odabrali ste akciju, ali niste napravili nikakve izmjene pojedičanih "
+#~ "polja. Vjerovatno tražite dugme Idi umjesto dugmeta Snimi."
+
+#~ msgid "Now"
+#~ msgstr "Sada"
+
+#~ msgid "Midnight"
+#~ msgstr "Ponoć"
+
+#~ msgid "6 a.m."
+#~ msgstr "6 sati ujutro"
+
+#~ msgid "Noon"
+#~ msgstr "Podne"
+
+#~ msgid "6 p.m."
+#~ msgstr "18 sati"
+
+#~ msgid "Note: You are %s hour ahead of server time."
+#~ msgid_plural "Note: You are %s hours ahead of server time."
+#~ msgstr[0] "Napomena: Vi ste %s sat ispred vremena servera."
+#~ msgstr[1] "Napomena: Vi ste %s sati ispred vremena servera."
+
+#~ msgid "Note: You are %s hour behind server time."
+#~ msgid_plural "Note: You are %s hours behind server time."
+#~ msgstr[0] "Napomena: Vi ste %s sat iza vremena servera."
+#~ msgstr[1] "Napomena: Vi ste %s sati iza vremena servera."
+
+#, fuzzy
+#~ msgid "Choose a Time"
+#~ msgstr "Odaberi vrijeme"
+
+#, fuzzy
+#~ msgid "Choose a time"
+#~ msgstr "Odaberi vrijeme"
+
+#~ msgid "Today"
+#~ msgstr "Danas"
+
+#, fuzzy
+#~ msgid "Choose a Date"
+#~ msgstr "Odaberi datum"
+
+#~ msgid "Yesterday"
+#~ msgstr "Jučer"
+
+#~ msgid "Tomorrow"
+#~ msgstr "Sutra"
+
+#~ msgid "January"
+#~ msgstr "Januar"
+
+#~ msgid "February"
+#~ msgstr "Februar"
+
+#~ msgid "March"
+#~ msgstr "Mart"
+
+#~ msgid "April"
+#~ msgstr "April"
+
+#, fuzzy
+#~ msgid "May"
+#~ msgstr "Maj"
+
+#~ msgid "June"
+#~ msgstr "Juni"
+
+#~ msgid "July"
+#~ msgstr "Juli"
+
+#~ msgid "August"
+#~ msgstr "August"
+
+#~ msgid "September"
+#~ msgstr "Septembar"
+
+#~ msgid "October"
+#~ msgstr "Oktobar"
+
+#~ msgid "November"
+#~ msgstr "Novembar"
+
+#~ msgid "December"
+#~ msgstr "Decembar"
+
+#~ msgctxt "one letter Sunday"
+#~ msgid "S"
+#~ msgstr "N"
+
+#~ msgctxt "one letter Monday"
+#~ msgid "M"
+#~ msgstr "P"
+
+#~ msgctxt "one letter Tuesday"
+#~ msgid "T"
+#~ msgstr "U"
+
+#~ msgctxt "one letter Wednesday"
+#~ msgid "W"
+#~ msgstr "S"
+
+#~ msgctxt "one letter Thursday"
+#~ msgid "T"
+#~ msgstr "Č"
+
+#~ msgctxt "one letter Friday"
+#~ msgid "F"
+#~ msgstr "P"
+
+#~ msgctxt "one letter Saturday"
+#~ msgid "S"
+#~ msgstr "S"
+
+#~ msgid "Show"
+#~ msgstr "Pokaži"
+
+#~ msgid "Hide"
+#~ msgstr "Sakrij"
+
+#~ msgid "transform"
+#~ msgstr "transformiraj"
+
+#~ msgid "Base unit"
+#~ msgstr "Osnovna jedinica"
+
+#~ msgid "Inner pack"
+#~ msgstr "Grupno pakovanje"
+
+#, fuzzy
+#~ msgid "export"
+#~ msgstr "Izvještaj"
+
+#~ msgid "delete"
+#~ msgstr "delete"
+
+#~ msgid "has"
+#~ msgstr "has"
+
+#~ msgid "get"
+#~ msgstr "get"
+
+#, fuzzy
+#~ msgid " "
+#~ msgstr ","
+
+#~ msgid "."
+#~ msgstr "-"
+
+#~ msgid "*"
+#~ msgstr "*"
+
+#~ msgid "import"
+#~ msgstr "import"
+
+#~ msgid "{}"
+#~ msgstr "{}"
+
+#~ msgid ", "
+#~ msgstr ","
+
+#~ msgid "this"
+#~ msgstr "this"
+
+#~ msgid "super"
+#~ msgstr "super"
+
+#~ msgid "null"
+#~ msgstr "null"
+
+#~ msgid ",\n"
+#~ msgstr ",\n"
+
+#~ msgid " = "
+#~ msgstr "="
+
+#, fuzzy
+#~ msgid "\n"
+#~ msgstr ",\n"
+
+#~ msgid "debugger;"
+#~ msgstr "debugger;"
+
+#~ msgid ":"
+#~ msgstr ":"
+
+#~ msgid "empty"
+#~ msgstr "empty"
+
+#~ msgid "any"
+#~ msgstr "any"
+
+#~ msgid "mixed"
+#~ msgstr "mixed"
+
+#~ msgid "boolean"
+#~ msgstr "boolean"
+
+#~ msgid "interface "
+#~ msgstr "interface"
+
+#~ msgid " & "
+#~ msgstr "&"
+
+#~ msgid "number"
+#~ msgstr "number"
+
+#~ msgid "string"
+#~ msgstr "string"
+
+#~ msgid "typeof "
+#~ msgstr "typeof"
+
+#~ msgid " | "
+#~ msgstr "|"
+
+#~ msgid "void"
+#~ msgstr "void"
+
+#~ msgid "handle"
+#~ msgstr "handle"
+
+#~ msgid "success"
+#~ msgstr "success"
+
+#~ msgid "failure"
+#~ msgstr "failure"
+
+#~ msgid "input"
+#~ msgstr "input"
+
+#~ msgid "click"
+#~ msgstr "click"
+
+#, fuzzy
+#~ msgid "{"
+#~ msgstr "{}"
+
+#~ msgid ""
+#~ "You must agree to our Terms and Conditions in order to be able to "
+#~ "download barcode images."
+#~ msgstr ""
+#~ "Morate pristati na naše Uvjete i odredbe kako biste mogli preuzeti slike "
+#~ "barkodova."
+
+#~ msgid "You can set your agreement at your"
+#~ msgstr "Možete dati svoj pristanak na vašoj"
+
+#~ msgid "Dashboard"
+#~ msgstr "Kontrolnoj tabli"
+
+#~ msgid "Inches"
+#~ msgstr "Inči"
+
+#~ msgid "Feet"
+#~ msgstr "Stope"
+
+#~ msgid "Millimetres"
+#~ msgstr "Milimetri"
+
+#~ msgid "Centimetres"
+#~ msgstr "Centimetri"
+
+#~ msgid "Metres"
+#~ msgstr "Metri"
+
+#~ msgid "Ounces"
+#~ msgstr "Unce"
+
+#~ msgid "Pounds"
+#~ msgstr "Funte"
+
+#~ msgid "Grams"
+#~ msgstr "Grami"
+
+#~ msgid "Kilograms"
+#~ msgstr "Kilogrami"
+
+#~ msgid "Milligrams"
+#~ msgstr "Miligrami"
+
+#~ msgid "Actual Ton"
+#~ msgstr "Stvarna tona"
+
+#~ msgid "Each"
+#~ msgstr "Svaki"
+
+#~ msgid "Litre"
+#~ msgstr "Litar"
+
+#~ msgid "Millilitre"
+#~ msgstr "Mililitar"
+
+#~ msgid "Cubic decimetre"
+#~ msgstr "Kubni decimetar"
+
+#~ msgid "Cubic inches"
+#~ msgstr "Kubni inči"
+
+#~ msgid "Piece"
+#~ msgstr "Komad"
+
+#~ msgid "Millimetre"
+#~ msgstr "Milimetar"
+
+#~ msgid "Square metre"
+#~ msgstr "Kvadratni metar"
+
+#~ msgid "Cubic metre"
+#~ msgstr "Kubni metar"

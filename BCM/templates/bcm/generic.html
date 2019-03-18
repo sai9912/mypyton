@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}Welcome to GS1 Activate{% endblock %}
+
+{% block page_title %}Welcome to GS1 Activate{% endblock %}
+
+{% block page_content %}
+
+    <h4>Generate barcode numbers and symbols accurately and effortlessly.</h4>
+
+    <p>
+        Activate is a service offered by GS1 to make it easy for you to put a barcode on your products. Whether you're
+        selling in retail or in other sectors, we provide all you need so you can get your product listed fast. And the
+        faster you list your product, the more you can sell.
+    </p>
+
+    <ul>
+        {% if not request.user.is_authenticated %}
+
+            <li>
+                <a href="{% url 'oidc_auth_request' %}">Login</a>
+            </li>
+
+            {% if DJANGO_ENV != 'azure_swarm' %}
+
+                <li>
+                    <a href="{% url 'BCM:login' %}">{% trans 'Staff & Demo login: (Username / Password)' %}</a><br/>
+                </li>
+
+            {% endif %}
+
+        {% else %}
+            <li>
+                <a href="{% url 'profile' %}">{% trans 'Dashboard' %}</a><br/>
+            </li>
+            <li>
+                Logged-in as: <b>{{ user.username }}</b> <a href="{% url 'oidc_end_session' %}">Logout</a>
+            </li>
+        {% endif %}
+
+    </ul>
+
+
+{% endblock %}
+

@@ -1,0 +1,13 @@
+default_api_key = "3269_060d3723c9ebc470:4e71997a96099d11b40f1f51ebf0d08486ea5626b510fdc004d134e58b02e7ce"
+
+[[files]]
+path = "/tmp/gunicorn-django*.log"
+
+[[files]]
+path = "/var/log/dropbox-*.log"
+
+[[files]]
+path = "/var/log/rq_out.log"
+
+[[files]]
+path = "/var/log/nginx/*.log"

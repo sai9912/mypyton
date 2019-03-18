@@ -1,0 +1,27 @@
+[
+  {
+    "fields": {
+      "currency_name": "Euro",
+      "languages": "fr-FR,frp,br,co,ca,eu,oc",
+      "name": "France",
+      "area": "547030.0",
+      "geonameid": 3017382,
+      "postal_code_regex": "^(\\d{5})$",
+      "tld": ".fr",
+      "neighbours": "CH,DE,BE,LU,IT,AD,MC,ES",
+      "iso_numeric": 250,
+      "phone": "33",
+      "iso3": "FRA",
+      "fips": "FR",
+      "postal_code_format": "#####",
+      "capital": "Paris",
+      "equivalent_fips_code": null,
+      "currency_symbol": "\u20ac",
+      "continent": "EU",
+      "currency_code": "EUR",
+      "population": 64768389
+    },
+    "model": "countries_plus.country",
+    "pk": "FR"
+  }
+]

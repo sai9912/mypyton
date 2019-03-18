@@ -1,0 +1,44 @@
+{% load extra_templates %}
+
+{% if orders|length %}
+
+        <table width="99%">
+
+            <tr><th></th><th>Order</th><th></th><th>
+
+</th></tr>
+            
+            {% for order in orders %}
+
+                <tr class="{% cycle 'striped_odd' 'striped_even' %}">
+                
+                    <td>
+                    <center>
+                        {{ order }}
+                    </center>
+                    </td>
+                    <td>
+                    <center>
+                        {{ order.invoice }} {{ order.created|date:"d M Y" }}
+                    </center>
+                    </td>
+                    <td width="25%"><small><center>
+                      <a href="{{ order.get_absolute_url }}?from=result_listing">Review</a>
+                      </center></small>
+                    </td>
+
+                    <td>
+                        {% if order.payed %}
+                        <small><center>Purchased</center></small>
+                        {% endif %}
+                    </td>                
+
+                </tr>
+            
+            {% endfor %}
+            
+        </table>
+
+<p></p>
+
+{% endif %}

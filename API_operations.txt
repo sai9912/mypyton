@@ -1,0 +1,92 @@
+Case 1: user supplies UN/PW -> gets token (for UI)
+Case 2: user supplies token -> gest to protected content (for UI)
+Case 3: user supplies token -> renews token via knox
+Case 4: user supplies APIKey -> * not implemented * (for future API use, see class ApiKeyAuthentication)
+
+* LOGIN NEW USER via accounts/login -> no more Basic Authentication!
+
+curl -i  -H "Content-Type: application/json" -X POST -d "{\"username\":\"admin\",\"password\":\"pass\"}" http://localhost:8000/api/v1/accounts/login/
+
+HTTP/1.1 200 OK
+Date: Tue, 20 Mar 2018 16:54:13 GMT
+Server: WSGIServer/0.2 CPython/3.6.4
+Content-Type: application/json
+Allow: GET, POST, HEAD, OPTIONS
+X-Frame-Options: SAMEORIGIN
+Vary: Cookie, Accept-Language
+Content-Length: 145
+Content-Language: en
+Set-Cookie:  csrftoken=mEQYRvBN1wbmvzusE1kTN0NLkoWpuphdHjI86SbYrmtjYjCWcGmn5LS9n5BBRYD4; expires=Tue, 19-Mar-2019 16:54:13 GMT; Max-Age=31449600; Path=/
+Set-Cookie:  sessionid=a4eo0gyu2lxc9najctgfcyjslrjv3wb0; expires=Tue, 03-Apr-2018 16:54:13 GMT; HttpOnly; Max-Age=1209600; Path=/
+
+{"user":{"email":"admin@activate.org","first_name":"","last_name":""},"token":"39dc04fa4a419b48ebc7a716819ff983558781c8d7b90386f0530146ab3b58e1"}%
+
+
+* NEW USER - ACCESS PROTECTED CONTENT
+
+➜  ~ curl  -i  -H "Authorization: Token 39dc04fa4a419b48ebc7a716819ff983558781c8d7b90386f0530146ab3b58e1" -H "Content-Type: application/json"   http://localhost:8000/api/v1/accounts/protected_data/
+HTTP/1.1 200 OK
+Date: Tue, 20 Mar 2018 16:59:13 GMT
+Server: WSGIServer/0.2 CPython/3.6.4
+Content-Type: application/json
+Vary: Accept, Accept-Language, Cookie
+Allow: GET, HEAD, OPTIONS
+X-Frame-Options: SAMEORIGIN
+Content-Length: 51
+Content-Language: en
+Set-Cookie:  sessionid=ysymqpuecx6p1i5izf1hya5i8vxe0z7b; expires=Tue, 03-Apr-2018 16:59:13 GMT; HttpOnly; Max-Age=1209600; Path=/
+
+{"data":"THIS IS THE PROTECTED STRING FROM SERVER"}%
+
+
+# KNOX LOGIN WITH TOKEN (renews token )
+
+curl  -i  -H "Authorization: Token 2409a49929909594550036ef7175702ccaab0fe9e35efa794e562da3ae5c65e8" -H "Content-Type: application/json"   -d "{}" http://localhost:8000/api/v1/accounts/renew/
+HTTP/1.1 200 OK
+Date: Tue, 20 Mar 2018 17:01:44 GMT
+Server: WSGIServer/0.2 CPython/3.6.4
+Content-Type: application/json
+Vary: Accept, Accept-Language, Cookie
+Allow: POST, OPTIONS
+X-Frame-Options: SAMEORIGIN
+Content-Length: 135
+Content-Language: en
+Set-Cookie:  sessionid=nc09th5fp9j5v2j05efcryc62n5l85td; expires=Tue, 03-Apr-2018 17:01:44 GMT; HttpOnly; Max-Age=1209600; Path=/
+
+{"user":{"username":"admin","first_name":"","last_name":""},"token":"b0c23f5e128eac60567935554a61d9c1d09214727e242274174a05f494fbfe84"}%
+
+
+# SIGN-ON examples:
+
+
+## CREATE ACCOUNT + ADD PREFIXES
+
+curl -s -o /dev/null -w "%{http_code}" -H "Content-Type: application/json" \
+-H "Authorization: Token 5d5cd854b73e4402e437abe23215f0b47eb0c36b7ba26e64143bc5a420544277" \
+-X POST -d '{
+  "uuid": "gs1se-387123123",
+  "email": "admin@bluewater.se",
+  "company_prefix": "735009123,735009124",
+  "company_name": "Bluewater Ltd. Sweden",
+  "member_organisation": "gs1se"
+}' http://localhost:5050/api/v1/register/
+
+## DISPLAY PREFIX STATUS
+
+curl -H "Authorization: Token 5d5cd854b73e4402e437abe23215f0b47eb0c36b7ba26e64143bc5a420544277" \
+-H "Content-Type: application/json" -X GET http://localhost:5050/api/v1/prefixes/735009650/ | jq
+
+## CHANGE PREFIX STATUS
+
+curl -s -H "Content-Type: application/json" \
+-H "Authorization: Token 5d5cd854b73e4402e437abe23215f0b47eb0c36b7ba26e64143bc5a420544277" \
+-X PATCH -d '{
+  "status": 6,
+  "is_suspended": "true",
+  "description": "This prefix is suspended, please contact the Helpdesk"
+}' http://localhost:5050/api/v1/prefixes/735009123/ | jq
+
+
+
+ab -p post_loc.txt -T application/json -H 'Authorization: Token abcd1234' -c 10 -n 2000 http://example.com/api/v1/locations/
+

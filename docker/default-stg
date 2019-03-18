@@ -1,0 +1,61 @@
+# NGINX - staging config
+
+server {
+    listen 5000;
+    server_name activate.stg.gs1.org;
+    client_max_body_size 2M;
+
+    location / {
+        return 301 https://$host$request_uri;
+    }
+
+    location ^~ /.well-known/ {
+        default_type "text/plain";
+        root /var/www/html/;
+    }
+}
+
+server {
+        listen          5443 ssl;
+        server_name     activate.stg.gs1.org;
+        client_max_body_size 2M;
+
+        ssl_certificate /etc/ssl/certs/combined-activate_gs1_org-stg.ca-bundle;
+        ssl_certificate_key /etc/ssl/private/activate_gs1_org-stg.key;
+        ssl_prefer_server_ciphers on;
+
+        location /static/ {
+                # root /var/www/app/static/;
+                alias /home/www-data/staticfiles/;
+                autoindex off;
+        }
+
+        location /media/ {
+                alias /var/lib/activate/data/media/;
+                autoindex off;
+        }
+
+        location /api/ {
+
+                access_log  /var/log/nginx/api-access.log custom2;
+                error_log   /var/log/nginx/api-error.log info;
+
+                uwsgi_pass 127.0.0.1:3042;
+
+                proxy_pass              http://127.0.0.1:5001;
+                proxy_set_header        Host                $host;
+                proxy_set_header        X-Real-IP           $remote_addr;
+                proxy_set_header        X-Forwarded-For     $proxy_add_x_forwarded_for;
+                proxy_set_header        X-Forwarded-Proto   $scheme;
+        }
+
+        location / {
+                proxy_pass              http://127.0.0.1:5001;
+                proxy_set_header        Host                $host;
+                proxy_set_header        X-Real-IP           $remote_addr;
+                proxy_set_header        X-Forwarded-For     $proxy_add_x_forwarded_for;
+                proxy_set_header        X-Forwarded-Proto   $scheme;
+        }
+
+}
+

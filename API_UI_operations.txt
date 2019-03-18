@@ -1,0 +1,93 @@
+### Get wizard step 1 listing:
+
+Attention, created user should belong to gs1ie!
+
+
+curl  -H "Authorization: Token 18c50b60b33227ef75c5e22e9af90e6d59b87e484d9ec2cfbd88e06a900cf050"  -X GET http://localhost:8000/api/v1/templates/  -H "accept: application/json" -H "Content-Type: application/json" | jq
+
+or
+
+curl  -H "Authorization: Token 18c50b60b33227ef75c5e22e9af90e6d59b87e484d9ec2cfbd88e06a900cf050"  -X GET http://localhost:8000/api/v1/templates/?lang=en  -H "accept: application/json" -H "Content-Type: application/json" | jq
+
+
+
+[
+  {
+    "name": "gs1ie-base",
+    "order": 0,
+    "package_level": 70,
+    "attributes": [],
+    "member_organisation": 16,
+    "image_url": "http://test.com/image.jpg",
+    "ui_label": "Consumer Unit (Base Unit/Each) e.g. bottle of beer"
+  },
+  {
+    "name": "gs1ie-inner-pack",
+    "order": 0,
+    "package_level": 60,
+    "attributes": [],
+    "member_organisation": 16,
+    "image_url": "http://test.com/image.jpg",
+    "ui_label": "Pack or inner pack e.g. six pack of beer bottles"
+  },
+  {
+    "name": "gs1ie-inner-case",
+    "order": 0,
+    "package_level": 50,
+    "attributes": [],
+    "member_organisation": 16,
+    "image_url": "http://test.com/image.jpg",
+    "ui_label": "Case or mixed case e.g. case of beer (bottles or packs)"
+  },
+  {
+    "name": "gs1ie-display-unit",
+    "order": 0,
+    "package_level": 40,
+    "attributes": [],
+    "member_organisation": 16,
+    "image_url": "http://test.com/image.jpg",
+    "ui_label": "Display unit"
+  },
+  {
+    "name": "gs1ie-inner-pallet",
+    "order": 0,
+    "package_level": 30,
+    "attributes": [],
+    "member_organisation": 16,
+    "image_url": "http://test.com/image.jpg",
+    "ui_label": "Pallet e.g. pallet of cases of beer"
+  }
+]
+
+
+### Get wizard step 2 listing:
+
+Attention, created user should belong to gs1se, but languages do not work yet!
+
+
+  curl  -H "Authorization: Token 3e0eb316ba355c526f88b624d8c58452061eacc81c9c0239813ea7b78e00ce33"  -X GET http://localhost:8000/api/v1/packaging/\?lang\=se  -H "accept: application/json" -H "Content-Type: application/json" | jq
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  2008  100  2008    0     0  80182      0 --:--:-- --:--:-- --:--:-- 83666
+[
+  {
+    "name": "0-gs1se-Intermediate bulk container, rigid plastic",
+    "order": 0,
+    "package_level": 70,
+    "member_organisation": 6,
+    "package_type": 25,
+    "image_url": "http://undefined.com",
+    "ui_label": "Intermediate bulk container, rigid plastic",
+    "ui_description": "A Rigid Intermediate Bulk Container (RIBC) that is attached to a pallet or has the pallet integrated into the RIBC. The container is used for the transport and storage of fluids and other bulk materials."
+  },
+  {
+    "name": "0-gs1se-Aerosol",
+    "order": 0,
+    "package_level": 70,
+    "member_organisation": 6,
+    "package_type": 19,
+    "image_url": "http://undefined.com",
+    "ui_label": "Aerosol",
+    "ui_description": "A gas-tight, pressure-resistant container with a valve and propellant. When the valve is opened, propellant forces the product from the container in a fine or coarse spray pattern or stream. (e.g., a spray can dispensing paint, furniture polish, etc, under pressure). It does not include atomizers, because atomizers do not rely on a pressurised container to propel product from the container."
+  }

@@ -1,0 +1,87 @@
+{% extends "_getbase.html" %}
+
+{% block title %}
+    Download {{ symbol|upper }} {{ meta_barcode.data }}  | BarCodeRobot.com
+{% endblock %}
+
+{% block content %}
+
+        <h2>{{ symbol|upper }} : {{ meta_barcode.data }}</h2>
+        
+        <div id="resImage">
+
+<img alt="" src="{{ src }}"></img>
+    
+    <form id="{{ symbol }}_detail" action="../../auth/templates" method="post">
+        <table>
+            {{ form }}
+        <tr><td colspan=2>
+        <small>
+            Adjust barcode size, and printing parameters above and update barcode:
+        </small>
+        </td>
+        <tr>
+        <tr>
+        <td colspan=2>
+        <div>
+            <!-- <noscript> -->
+            <input type="submit" name="action" value="Update" />
+            <!-- </noscript> -->
+        </div>
+        </td>
+        </tr>
+        </table>
+    </form>
+</div>
+
+
+    <br/>
+
+
+    <h3>Download Postscript File</h3>
+        <table>
+        <tr valign="top">
+        <td><p class="note"><u>EPS files offer best possible quality for the final barcode production</u> because of the exact geometry provided by its vector format. This is preferred way to generate barcode lables.</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <form id="eps_download" action="../../auth/templates" method="post">
+
+        <table>
+        {{ dpsf }}
+        </table>
+
+        <p class="page-actions"><input type="submit" name="action" value="Download EPS file" />&nbsp;</input>
+        </form>
+        </td>
+        </tr>
+        </table>
+
+
+    <h3>Download Barcode Images</h3>
+        <table>
+        <tr valign="top">
+        <td><p class="note">Choose image type and appropriate resolution.</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <form id="img_download" action="../../auth/templates" method="post">
+
+        <table>
+        {{ dimgf }}
+        </table>
+
+
+        <br/>
+        <p class="page-actions"><input type="submit" name="action" value="Download Image file" />&nbsp;</input>
+        </form>
+        </td>
+        </tr>
+        </table>
+
+
+<div style="clear:both;"></div>
+
+{% endblock %}

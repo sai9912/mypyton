@@ -1,0 +1,419 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load product_tags %}
+{% load i18n %}
+
+{# from theme("security/_macros.html") import render_field_with_errors, render_field #}
+{# from theme("prefixes/range_macros.html") import render_range_breadcrumb, render_gtin, render_package_level #}
+{% block base_css %}
+    <link href="{% static 'products/site/css/add_product.css' %}" rel="stylesheet"/>
+    <link href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet"/>
+{% endblock %}
+{% block title %}{% trans 'GS1 Activate: New product' %}{% endblock %}
+{% block breadcrumb %}
+    <ol class="breadcrumb" style="display:inline-block">
+        <li><a href="{% url 'users:profile' %}">{% trans 'Home' %}</a></li>
+        <li>{% trans 'Edit product - add new subproducts' %}</li>
+    </ol>
+    <div class="active_range pull-right">
+         {% include 'prefixes/render_range_prefix.html' with prefix=prefix only %}
+        <a href="{% url 'prefixes:prefixes_list' %}"> [{% trans 'Change' %}]</a>
+    </div>
+{% endblock %}
+{% block site_content %}
+    <div class="site-content">
+
+        <h2>{% block page_title %}{% trans 'Edit product - add new subproducts' %}{% endblock %}</h2>
+
+        {% block page_content %}
+            <div class="site-content-padder">
+
+                <fieldset>
+                    <legend>{% trans 'Available products' %}</legend>
+                    <p class="fieldset">{% blocktrans %}
+                        Select the products contained in this item and click the "Next step" button.<br/>
+                        Or click <a href="/products/subproduct/add/case_edit/skip/">here</a>
+                        if contained products are not in your allocated prefixes.
+                    {% endblocktrans %}</p>
+                    <div class="panel panel-default">
+                        <div class="panel-heading orange-panel-heading">
+                            <h4 class="panel-title" style="display: inline">
+                                {% if session.adding_filter %}
+                                    <a data-toggle="collapse" href="#collapseOne" class="btn grey-button">
+                                        {% trans 'List filtered' %}
+                                    </a>
+                                {% else %}
+                                    <a data-toggle="collapse" href="#collapseOne" class="btn btn-primary">
+                                        {% trans 'Filter Product List' %}
+                                    </a>
+                                {% endif %}
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <form method="post" action="{% url 'products:subproduct_add_case' %}"
+                                      id="filterForm">
+                                    {% csrf_token %}
+                                    {% for hidden in form.hidden_fields %}
+                                        {{ hidden }}
+                                    {% endfor %}
+                                    <div class='row' style="margin-bottom: 10px">
+                                        <div class="col-xs-12">
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <div class="row">
+                                                        <div class="col-xs-6">
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    {% include 'security/_macros.html' with func='render_field_with_errors' field=filterform.base label=_('Base unit') only %}
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    {% include 'security/_macros.html' with func='render_field_with_errors' field=filterform.pack label=_('Inner pack') only %}
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-xs-6">
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    {% include 'security/_macros.html' with func='render_field_with_errors' field=filterform.case label=_('Case') only %}
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            {# filterform.is_filter #}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <div class="row">
+                                                        <div class="col-xs-6">
+                                                            <div class="form-group">
+                                                                {{ filterform.brand }}
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            <div class="form-group">
+                                                                {{ filterform.gtin }}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-xs-6">
+                                                            <div class="form-group">
+                                                                {{ filterform.description }}
+                                                            </div>
+                                                        </div>
+                                                        {% if request.user.profile.member_organisation.slug != 'gs1se' %}
+                                                            <div class="col-xs-6">
+                                                                <div class="form-group">
+                                                                    {{ filterform.sku }}
+                                                                </div>
+                                                            </div>
+                                                        {% endif %}
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-xs-6" style="padding-right:0px;">
+                                                            <div class="form-group"
+                                                                 style="text-align:right; padding-top:5px;">
+                                                                {% trans 'Select Target Market:' %}
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            <div class="form-group">
+                                                                {{ filterform.target_market }}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <input type="submit" class="btn btn-primary" value="Filter"
+                                                           name="filtersubmit"/>
+                                                    <a class="btn btn-default"
+                                                       href="{% url 'products:subproduct_add_case' %}?clear_filter=1">
+                                                        {% trans 'Clear filter' %}
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <div class="pull-right">
+                                                        {% trans 'Prefixes' %}: &nbsp; &nbsp;
+                                                        {{ filterform.prefixes }}
+                                                        {# (class="form-control", style="display:inline;width:inherit") #}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <form method="post" id="subproductsform">
+                        {% csrf_token %}
+                        {% for hidden in form.hidden_fields %}
+                            {{ hidden }}
+                        {% endfor %}
+                        <div id='pdt-list'>
+                            {% if products %}
+                                <table class="table table-striped" id="pdt-table">
+                                    <thead>
+                                    <tr>
+                                        <th>&nbsp;</th>
+                                        <th>{% trans 'Package level' %}</th>
+                                        <th>{% trans 'Brand' %}</th>
+                                        <th>{% trans 'Description' %}</th>
+                                        {% if request.user.profile.member_organisation.slug != 'gs1se' %}
+                                            <th>{% trans 'SKU' %}</th>
+                                        {% endif %}
+                                        <th>{% trans 'GTIN' %}</th>
+                                        <th style="text-align: center">{% trans 'Select' %}</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    {% for p in products %}
+                                        <tr>
+                                            <td>
+                                                {% for subproducts in assoc_products %}
+                                                    {% if subproducts.p_id == p.id %}
+                                                        <a href="javascript:void(0)"
+                                                           onclick="return togglesub(this, '.sub_{{ p.id }}')">
+                                                            <span class="glyphicon glyphicon-chevron-down"></span>
+                                                        </a>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            </td>
+                                            <td>
+                                                {# render_package_level(p) #}
+                                                {% include 'prefixes/range_macros.html' with func='render_package_level' product=p only %}
+                                            </td>
+                                            <td>
+                                                {{ p.brand|default:'' }}
+                                            </td>
+                                            <td>
+                                                <a href="/products/{{ p.id }}/fulledit_js" target="_blank">
+                                                    {{ p.description|slice:":30" }}
+                                                </a>
+                                            </td>
+                                            {% if request.user.profile.member_organisation.slug != 'gs1se' %}
+                                                <td>
+                                                    {{ p.sku|slice:":30"|default:'' }}
+                                                </td>
+                                            {% endif %}
+                                            <td style="white-space: nowrap; color: #002C6C">
+            {% include 'prefixes/range_macros.html' with func='render_gtin' gtin=p.gtin plength=p.gs1_company_prefix|length kind=p.bar_type enable_leading=enable_leading only %}
+                                            </td>
+                                            <td style="text-align: center">
+
+                                                <input type="checkbox" id='pdt_select_{{ p.id }}' name='pdt_select'
+                                                       value='{{ p.id }}'
+                                                       class='pdt_select'>
+
+                                            </td>
+                                        </tr>
+                                        {% for subproducts in assoc_products %}
+                                            {% if subproducts.p_id == p.id %}
+                                                {% for sub_p in subproducts.sub_p %}
+                                                    <tr class="warning sub_lines sub_{{ p.id }}" style="display:none">
+                                                        <td><span class="glyphicon glyphicon-minus"></span></td>
+                                                        <td style="vertical-align:middle; text-align:center;">
+                                                            {% include 'prefixes/range_macros.html' with func='render_package_level' product=sub_p only %}
+                                                        </td>
+                                                        <td>{{ sub_p.brand }}</td>
+                                                        <td>
+                                                            <a href="/products/{{ sub_p.id }}/fulledit_js" target="_blank">
+                                                                {{ sub_p.description|slice:":30" }}
+                                                            </a>
+                                                        </td>
+                                                        {% if request.user.profile.member_organisation.slug != 'gs1se' %}
+                                                            <td>
+                                                                {{ sub_p.sku|default:'' }}
+                                                            </td>
+                                                        {% endif %}
+                                                        <td style="color:#002C6C;">
+            {% include 'prefixes/range_macros.html' with func='render_gtin' gtin=sub_p.gtin plength=sub_p.gs1_company_prefix|length kind=sub_p.bar_type enable_leading=enable_leading only %}
+                                                        </td>
+                                                        <td style="text-align: center">
+                                                            {{ sub_p.quantity }}
+                                                        </td>
+                                                    </tr>
+                                                {% endfor %}
+                                            {% endif %}
+                                        {% endfor %}
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            {% else %}
+                                <div id="pdt-add-new">{% trans 'No products found, please' %}
+                                    <a id="add-book" href="{% url 'products:add_product' %}">
+                                        {% trans 'add product' %}
+                                    </a>.
+                                </div>
+                            {% endif %}
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <ul class="pager">
+                                    {% if pagination.has_previous %}
+                                        <li class="previous">
+                                            <a href="{% url 'products:subproduct_add_case' %}?page={{ pagination.previous_page_number }}">
+                                                &larr; {% trans 'Previous' %}
+                                            </a>
+                                        </li>
+                                    {% else %}
+                                        <li class="previous disabled">
+                                            <a href="javascript:void(0)">&larr; {% trans 'Previous' %}</a>
+                                        </li>
+                                    {% endif %}
+                                    <li style="margin-right: 20px;vertical-align: middle;">{% trans 'Page' %} {{ pagination.number }}
+                                        {% trans 'of' %} {{ pagination.paginator.num_pages }}</li>
+                                    <li style="margin-left: 20px;vertical-align: middle;"> {% trans 'Products per Page' %}:
+                                        <select name="per_page" id="per_page">
+                                            <option value="{{ ppp }}"
+                                                    {% if per_page == ppp %}selected{% endif %}>{{ ppp }}</option>
+                                            <option value="{{ ppp|mul:2 }}"
+                                                    {% if per_page == ppp|mul:2 %}selected{% endif %}>{{ ppp|mul:2 }}</option>
+                                            <option value="{{ ppp|mul:5 }}"
+                                                    {% if per_page == ppp|mul:5 %}selected{% endif %}>{{ ppp|mul:5 }}</option>
+                                            <option value="{{ ppp|mul:10 }}"
+                                                    {% if per_page == ppp|mul:10 %}selected{% endif %}>{{ ppp|mul:10 }}</option>
+                                        </select>
+                                    </li>
+                                    {% if pagination.has_next %}
+                                        <li class="next">
+                                            <a href="{% url 'products:subproduct_add_case' %}?page={{ pagination.next_page_number }}">
+                                                {% trans 'Next' %} &rarr;
+                                            </a>
+                                        </li>
+                                    {% else %}
+                                        <li class="next disabled">
+                                            <a href="javascript:void(0)">{% trans 'Next' %} &rarr;</a>
+                                        </li>
+                                    {% endif %}
+                                </ul>
+                            </div>
+                        </div>
+
+                        <hr>
+                        <div class='row'>
+                            <div class="col-xs-12">
+                                <div class="pull-right">
+                                    <a class='btn btn-primary' href="javascript:void(0)" onclick="return submitForm()">
+                                        {% trans 'Continue edit product' %}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                </fieldset>
+                </form>
+            </div>
+        {% endblock page_content %}
+    </div>
+{% endblock site_content %}
+
+{% block base_scripts %}
+
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        function togglesub(o, c) {
+            if ($(o).hasClass('sub_opened')) {
+                $(c).toggle();
+                $(o).html('<span class="glyphicon glyphicon-chevron-down"></span>');
+                $(o).removeClass('sub_opened');
+            } else {
+                $(c).toggle();
+                $(o).html('<span class="glyphicon glyphicon-chevron-up"></span>');
+                $(o).addClass('sub_opened');
+            }
+        }
+
+        function submitForm() {
+            $('input[name="pdt_select"]:checked').each(function () {
+                $("#sub_products").val($("#sub_products").val() + $(this).val() + ',')
+            });
+            $("#subproductsform").submit();
+            return false;
+        }
+
+        function clearform() {
+            $('#filterForm').find('input[type="text"]').each(function () {
+                $(this).val('');
+            });
+            $('#filterForm').find('input[type="checkbox"]').each(function () {
+                $(this).prop('checked', true);
+            });
+            return false;
+        }
+
+        $(document).ready(function () {
+            $('#per_page').on('change', function () {
+                window.location = "{% url 'products:subproduct_add_case' %}?per_page=" + $("#per_page").val();
+            })
+            //retrieve the state of checkboxes
+            $.ajax({
+                type: "GET",
+                url: '/products/ajax/subproduct_selected',
+                success: function (data) {
+                    //ok
+                    console.log(data);
+                    $.each(data.sub_products,
+                        function (index, val) {
+                            if (val) {
+                                $("#pdt_select_" + val).prop("checked", true);
+                            }
+                        });
+                },
+                error: function () {
+                    //nok
+                },
+                complete: function () {
+                    //done
+                }
+            });
+        })
+    </script>
+
+    <script>
+        $('.pdt_select').click(function () {
+            if (this.checked) {
+                $.ajax({
+                    type: "GET",
+                    url: '/products/ajax/' + this.value + '/subproduct_select',
+                    // data: $(this).attr('value'),
+                    success: function (data) {
+                        //ok
+                    },
+                    error: function () {
+                        //nok
+                    },
+                    complete: function () {
+                        //done
+                    }
+                });
+            } else {
+                $.ajax({
+                    type: "GET",
+                    url: '/products/ajax/' + this.value + '/subproduct_unselect',
+                    // data: $(this).attr('value'),
+                    success: function (data) {
+                        //ok
+                    },
+                    error: function () {
+                        //nok
+                    },
+                    complete: function () {
+                        //done
+                    }
+                });
+            }
+        });
+    </script>
+
+{% endblock base_scripts %}

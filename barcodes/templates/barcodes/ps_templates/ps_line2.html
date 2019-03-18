@@ -1,0 +1,12 @@
+{% load l10n %}
+{% localize off %}
+
+gsave
+    {{ w }} mm setlinewidth
+    newpath
+    {{ x0 }}  mm {{ y0 }} mm moveto
+    0 {{ h }} mm rlineto
+    closepath
+    stroke
+grestore
+{% endlocalize %}

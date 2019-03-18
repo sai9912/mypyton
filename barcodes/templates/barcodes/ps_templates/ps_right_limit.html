@@ -1,0 +1,11 @@
+{% load l10n %}
+{% localize off %}
+% -- rqz
+gsave newpath
+{{ width }} setlinewidth
+1.00 {{ dx }} add mm 0.00 {{ dy }} add mm moveto
+2.30 {{ dx }} add mm 1.30 {{ dy }} add mm lineto
+1.00 {{ dx }} add mm 2.60 {{ dy }} add mm lineto
+1 setlinejoin 1 setlinecap
+stroke grestore
+{% endlocalize %}

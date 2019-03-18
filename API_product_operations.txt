@@ -1,0 +1,90 @@
+1. Access following URLs:
+
+http://localhost:8000/products/add/
+http://localhost:8000/products/2/fulledit/
+
+2. Retrieve auth_token value:
+
+<head>
+        <div id="auth_token" style="display: none;">2d54e6948da258ec178e2567058c0f5eb10279e95d57dfe5d131ff778f1732dc</div>
+
+3. Given the token the follwoing operations can be executed:
+
+# access restricted data
+curl  -i  -H "Authorization: Token 2d54e6948da258ec178e2567058c0f5eb10279e95d57dfe5d131ff778f1732dc" -H "Content-Type: application/json"   http://localhost:8000/api/v1/accounts/protected_data/
+
+# renew token, by default token expires in  10 hours ’TOKEN_TTL': timedelta(hours=10),
+curl  -i  -H "Authorization: Token 2d54e6948da258ec178e2567058c0f5eb10279e95d57dfe5d131ff778f1732dc" -d {} -H "Content-Type: application/json"   http://localhost:8000/api/v1/accounts/renew/
+{"user":{"username":"539153224@test.com","first_name":"","last_name":""},"token":"fe7c89e84a336a5e427d7eca93551384649d2e4dcc6cf1168f0ad149219ef8ec"}
+
+# list user prefixes
+curl  -i  -H "Authorization: Token 2d54e6948da258ec178e2567058c0f5eb10279e95d57dfe5d131ff778f1732dc"  -H "Content-Type: application/json"   http://localhost:8000/api/v1/prefixes/
+[{"prefix":"539153224","is_active":true,"is_suspended":false,"is_special":"","created":"2018-03-15T10:36:13.128000Z","updated":"2018-03-15T10:36:13.128000Z","starting_from":"5391532240022","starting_from_gln":null,"member_organisation":16,"description":""},{"prefix":"53920001052","is_active":false,"is_suspended":true,"is_special":"","created":"2018-03-15T10:36:13.132000Z","updated":"2018-03-15T10:36:13.132000Z","starting_from":"5392000105201","starting_from_gln":null,"member_organisation":16,"description":""}]%
+
+# set prefix to active
+curl  -i  -H "Authorization: Token 2d54e6948da258ec178e2567058c0f5eb10279e95d57dfe5d131ff778f1732dc"  -X PATCH "http://localhost:8000/api/v1/prefixes/53920001052/" -H "accept: application/json" -H "Content-Type: application/json"  -d "{ \"is_active\": false}"
+{"prefix":"53920001052","is_active":false,"is_suspended":true,"is_special":"","created":"2018-03-15T10:36:13.132000Z","updated":"2018-03-15T10:36:13.132000Z","starting_from":"5392000105201","starting_from_gln":null,"member_organisation":16,"description":""}
+
+# operate on absent prefix
+curl  -i  -H "Authorization: Token 2d54e6948da258ec178e2567058c0f5eb10279e95d57dfe5d131ff778f1732dc"  -X PATCH "http://localhost:8000/api/v1/prefixes/53920001053/“ -H "accept: application/json" -H "Content-Type: application/json"  -d "{ \"is_active\": false}"
+HTTP/1.1 404 Not Found
+
+
+# --
+
+# create a product on prefix
+curl  -H "Authorization: Token 5654972f0d23ffb4ac2fb827f6b4f9cc9cc158719ff7a7bfccf41667ff77b1a9"  -X POST \
+http://localhost:8000/api/v1/prefixes/539456456/products \
+-H "accept: application/json" -H "Content-Type: application/json" -d '{"category":"999999","label_description":"dscsd","description":"sdcsd","brand":"skamoto","sub_brand":"dcdd","functional_name":"sdcsd","variant":"sdcsd","is_bunit":false,"is_cunit":true,"is_dunit":false,"is_vunit":false,"is_iunit":false,"is_ounit":false}' | jq
+
+{
+  "gtin": "5394564560007",
+  "gs1_company_prefix": "539456456",
+  "owner": 66,
+  "member_organisation": 1,
+  "company_organisation": 28,
+  "category": "999999",
+  "label_description": "dscsd",
+  "description": "sdcsd",
+  "brand": "skamoto",
+  "sub_brand": "dcdd",
+  "functional_name": "sdcsd",
+  "variant": "sdcsd",
+  "is_bunit": false,
+  "is_cunit": true,
+  "is_dunit": false,
+  "is_vunit": false,
+  "is_iunit": false,
+  "is_ounit": false
+}
+
+# list products for a prefix
+curl  -H "Authorization: Token 5654972f0d23ffb4ac2fb827f6b4f9cc9cc158719ff7a7bfccf41667ff77b1a9"  -X GET \
+http://localhost:8000/api/v1/prefixes/539456456/products \
+-H "accept: application/json" -H "Content-Type: application/json"
+
+[...]
+
+# --
+
+
+# get a product
+curl  -i  -H "Authorization: Token 2d54e6948da258ec178e2567058c0f5eb10279e95d57dfe5d131ff778f1732dc"  -H "Content-Type: application/json"   http://localhost:8000/api/v1/products/05391532240015/
+{"gtin":"05391532240015","category":"999999","label_description":"dscsd","description":"sdcsd","brand":"sdcsd","sub_brand":"dcdd","functional_name":"sdcsd","variant":"sdcsd","is_bunit":false,"is_cunit":true,"is_dunit":false,"is_vunit":false,"is_iunit":false,"is_ounit":false}
+
+# update product
+curl  -i  -H "Authorization: Token 2d54e6948da258ec178e2567058c0f5eb10279e95d57dfe5d131ff778f1732dc"  -X PATCH http://localhost:8000/api/v1/products/05391532240015/ -H "accept: application/json" -H "Content-Type: application/json"  -d "{ \"brand\": \"skamoto\"}"
+{"gtin":"05391532240015","category":"999999","label_description":"dscsd","description":"sdcsd","brand":"skamoto","sub_brand":"dcdd","functional_name":"sdcsd","variant":"sdcsd","is_bunit":false,"is_cunit":true,"is_dunit":false,"is_vunit":false,"is_iunit":false,"is_ounit":false}%
+
+5. Full list of opeartions is available via swagger UI, one can not run the interactive tests though. See: https://github.com/gs1cloud/BCM_multihosted/issues/94
+
+
+
+    curl -i  -H "Content-Type: application/json" -X POST -d {
+       "uuid": "gs1se-123456",
+       "email": "user1@company12345.com",
+       "company_prefix": "735009641,735009642",
+       "company_name": "GS1SE Test company 12345",
+       "member_organisation": "gs1se" } -i -H "Authorization: Token aa2af10c18fee59b59d9645340892cf659dd7df473d702128299cb7e37d39784"
+       
+       test

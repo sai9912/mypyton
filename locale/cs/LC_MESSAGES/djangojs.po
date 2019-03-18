@@ -1,0 +1,1671 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-18 09:54+0000\n"
+"PO-Revision-Date: 2018-09-19 09:51+0000\n"
+"Last-Translator: b'  <test@gs1cz-01.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+
+#: frontend/static/js/vendor.04b6d1e335e3778838c7.js:13
+msgid "&"
+msgstr "&"
+
+#: frontend/static/js/vendor.04b6d1e335e3778838c7.js:13
+msgid "-enter"
+msgstr ""
+
+#: frontend/static/js/vendor.04b6d1e335e3778838c7.js:34
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Height"
+msgstr "Výška"
+
+#: frontend/static/js/vendor.04b6d1e335e3778838c7.js:34
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Width"
+msgstr "Šířka"
+
+#: static/site/js/admin-dashboard.js:896
+#: static/site/standalone/standalone-components.js:794
+msgid "Data Import"
+msgstr "Import dat"
+
+#: static/site/js/admin-dashboard.js:896 static/site/js/dashboard.js:896
+#: static/site/js/product_create_form.js:376
+#: static/site/js/product_create_form.js:378
+#: static/site/js/product_edit_form.js:283
+#: static/site/js/product_edit_form.js:383
+#: static/site/js/product_edit_form.js:385
+#: static/site/js/product_edit_form.js:391
+#: static/site/standalone/standalone-components.js:470
+#: static/site/standalone/standalone-components.js:721
+#: static/site/standalone/standalone-components.js:724
+#: static/site/standalone/standalone-components.js:775
+#: static/site/standalone/standalone-components.js:781
+#: static/site/standalone/standalone-components.js:787
+#: static/site/standalone/standalone-components.js:795
+msgid "Close"
+msgstr "Zavřít"
+
+#: static/site/js/admin-dashboard.js:896
+#: static/site/standalone/standalone-components.js:795
+msgid "Please select an .xlsx file to upload."
+msgstr "Vyberte .xlsx soubor pro nahrání"
+
+#: static/site/js/admin-dashboard.js:896
+#: static/site/standalone/standalone-components.js:795
+msgid "Success count"
+msgstr "Počet úspěšných"
+
+#: static/site/js/admin-dashboard.js:896
+#: static/site/standalone/standalone-components.js:795
+msgid "Error count"
+msgstr "Počet chyb"
+
+#: static/site/js/admin-dashboard.js:896
+#: static/site/standalone/standalone-components.js:795
+msgid "Error messages"
+msgstr "Chybové hlášky"
+
+#: static/site/js/admin-dashboard.js:896 static/site/js/dashboard.js:896
+#: static/site/js/product_create_form.js:376
+#: static/site/js/product_edit_form.js:385
+#: static/site/js/product_edit_form.js:391
+#: static/site/standalone/standalone-components.js:470
+#: static/site/standalone/standalone-components.js:721
+#: static/site/standalone/standalone-components.js:781
+#: static/site/standalone/standalone-components.js:787
+#: static/site/standalone/standalone-components.js:795
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: static/site/js/admin-dashboard.js:896
+#: static/site/standalone/standalone-components.js:795
+msgid "Upload"
+msgstr "Nahrát"
+
+#: static/site/js/admin-dashboard.js:900
+#: static/site/standalone/standalone-components.js:799
+msgid "Import Companies"
+msgstr "Importovat společnosti"
+
+#: static/site/js/admin-dashboard.js:900
+#: static/site/standalone/standalone-components.js:799
+msgid "Import Prefixes"
+msgstr "Importovat prefixy"
+
+#: static/site/js/admin-dashboard.js:900
+#: static/site/standalone/standalone-components.js:799
+msgid "Import Users"
+msgstr "Import uživatelů"
+
+#: static/site/js/admin-dashboard.js:900
+#: static/site/standalone/standalone-components.js:800
+#: static/site/standalone/standalone-components.js:824
+msgid "Search"
+msgstr "Hledat"
+
+#: static/site/js/admin-dashboard.js:900
+#: static/site/standalone/standalone-components.js:800
+msgid "Companies"
+msgstr "Firmy"
+
+#: static/site/js/admin-dashboard.js:900
+#: static/site/standalone/standalone-components.js:800
+msgid "Prefixes"
+msgstr "Prefixy"
+
+#: static/site/js/admin-dashboard.js:900
+#: static/site/standalone/standalone-components.js:800
+msgid "Users"
+msgstr "Uživatelé"
+
+#: static/site/js/admin-dashboard.js:900 static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+#: static/site/standalone/standalone-components.js:800
+msgid "Products"
+msgstr "Produkty"
+
+#: static/site/js/admin-dashboard.js:900
+#: static/site/standalone/standalone-components.js:800
+msgid "Report"
+msgstr "Report"
+
+#: static/site/js/admin-dashboard.js:900
+#: static/site/standalone/standalone-components.js:800
+msgid "Import Data"
+msgstr "Importovat data"
+
+#: static/site/js/dashboard.js:896
+#: static/site/standalone/standalone-components.js:470
+msgid "Prefix activation confirmation"
+msgstr "Potvrzení aktivace prefixu"
+
+#: static/site/js/dashboard.js:896
+#: static/site/standalone/standalone-components.js:470
+msgid "You have chosen a default prefix."
+msgstr "Zvolili jste výchozí prefix"
+
+#: static/site/js/dashboard.js:896
+#: static/site/standalone/standalone-components.js:470
+msgid ""
+"Next time you click on \"Add a new product\" this prefix will be used for "
+"GTIN allocation."
+msgstr ""
+"Příštím kliknutím na \"Přidat nový produkt\" bude tato číselná řada použita "
+"pro přiřazení GTINu."
+
+#: static/site/js/dashboard.js:896
+#: static/site/standalone/standalone-components.js:470
+msgid "Confirm choice of prefix"
+msgstr "Potvrď volbu číselné řady"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Active Prefix"
+msgstr "Aktivní číselná řada"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "GCP"
+msgstr "GCP"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Allocated"
+msgstr "Přidělené"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Available"
+msgstr "Volné"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+#: static/site/standalone/standalone-components.js:827
+msgid "Add product"
+msgstr "Přidat produkt"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Allocate a new barcode from the Active Prefix"
+msgstr "Přiřazení nového čárového kódu z aktivní číselné řady."
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "View Products"
+msgstr "Zobraz produkty"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "View allocated numbers from Active Prefix"
+msgstr "Zobraz přidělená čísla z aktivní řady."
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Global Company Prefixes and GTIN Ranges"
+msgstr "Globální prefiy a řady GTINů"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Prefix"
+msgstr "Prefix (číselná řada)"
+
+#: static/site/js/dashboard.js:948 static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:545
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+#: static/site/standalone/standalone-components.js:823
+#: static/site/standalone/standalone-components.js:824
+#: static/site/standalone/standalone-components.js:827
+msgid "Description"
+msgstr "Popis"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Capacity"
+msgstr "Kapacita"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Block of __number__ GTINs"
+msgstr "Blok čísel GTIN"
+
+#: static/site/js/dashboard.js:948 static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:381
+#: static/site/standalone/standalone-components.js:545
+#: static/site/standalone/standalone-components.js:747
+msgid "Product"
+msgstr "Produkt"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "No products"
+msgstr "Žádné produkty"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Account Summary"
+msgstr "Přehled účtu"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Symbol Credits"
+msgstr "Kredity k symbolu"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Points balance:"
+msgstr "Bodové konto:"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Company ID:"
+msgstr "ID společnosti:"
+
+#: static/site/js/dashboard.js:948
+#: static/site/standalone/standalone-components.js:545
+msgid "Company Name:"
+msgstr "Název společnosti:"
+
+#: static/site/js/product_create_form.js:329
+#: static/site/standalone/standalone-components.js:658
+msgid "Packaging Level"
+msgstr "Úroveň balení"
+
+#: static/site/js/product_create_form.js:329
+#: static/site/standalone/standalone-components.js:658
+msgid ""
+"Products are packaged at different levels, and each level requires a "
+"specific type of barcode. Choose the option below that best describes the "
+"packaging of your product."
+msgstr ""
+"Produkty jsou baleny v jednotlivých úrovních a každá úroveň vyýaduje "
+"specifický typ čárového kódu. Z možností níže vyberte tu, která nejlépe "
+"vystihuje balení vašeho produktu."
+
+#: static/site/js/product_create_form.js:329
+#: static/site/standalone/standalone-components.js:658
+msgid ""
+"Note: Packaging levels are heirarchical, which means that you define the "
+"lowest level (base unit/each) first before proceeding to a higher level e.g."
+" a case."
+msgstr ""
+"Poznámka: úrovně balení mají hierarchii, což znamená, že napřed definujete "
+"nejnižší úroveň (jednotlivý výrobek) a pak teprve pokračujete k vyšší úrovni"
+" (např. krabice)."
+
+#: static/site/js/product_create_form.js:329
+#: static/site/standalone/standalone-components.js:658
+msgid "Level"
+msgstr "Úroveň"
+
+#: static/site/js/product_create_form.js:329
+#: static/site/js/product_create_form.js:338
+#: static/site/standalone/standalone-components.js:658
+#: static/site/standalone/standalone-components.js:671
+#: static/site/standalone/standalone-components.js:827
+msgid "Next"
+msgstr "Další"
+
+#: static/site/js/product_create_form.js:338
+#: static/site/standalone/standalone-components.js:671
+msgid ""
+"The purpose of this step is to show you where to place the barcode on your "
+"products and select the appropriately sized barcode symbol. Barcode symbols "
+"are placed where they can be best scanned at point-of-sale as shown below by"
+" these general example pictures."
+msgstr ""
+"Účelem tohoto kroku je ukázat Vám, kam nejlépe umístit na Váš výrobek čárový"
+" kód a vybrat odpovídající velikost jeho symbolu. Symboly čárového kódu se "
+"umísťují tam, kde mohou být nejlépe snímány na pokladně. Příklady jsou na "
+"obrázcích níže."
+
+#: static/site/js/product_create_form.js:338
+#: static/site/standalone/standalone-components.js:671
+msgid "PRODUCT AND PACKAGING TYPES"
+msgstr "TYPY PRODUKTŮ A BALENÍ"
+
+#: static/site/js/product_create_form.js:338
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:671
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Package type"
+msgstr "Typ balení"
+
+#: static/site/js/product_create_form.js:338
+#: static/site/standalone/standalone-components.js:671
+msgid "Packaging example"
+msgstr "Příklad balení"
+
+#: static/site/js/product_create_form.js:338
+#: static/site/standalone/standalone-components.js:671
+msgid "Packaging definition"
+msgstr "Definice balení"
+
+#: static/site/js/product_create_form.js:338
+#: static/site/js/product_create_form.js:393
+#: static/site/standalone/standalone-components.js:671
+#: static/site/standalone/standalone-components.js:741
+#: static/site/standalone/standalone-components.js:827
+msgid "Previous"
+msgstr "Předchozí"
+
+#: static/site/js/product_create_form.js:352
+#: static/site/js/product_edit_form.js:287
+#: static/site/standalone/standalone-components.js:686
+msgid "entries"
+msgstr "položky"
+
+#: static/site/js/product_create_form.js:356
+#: static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:305
+#: static/site/js/product_edit_form.js:381
+#: static/site/standalone/standalone-components.js:691
+msgid "Global Product Classification"
+msgstr "Globální klasifikace produktu (GPC)"
+
+#: static/site/js/product_create_form.js:356
+#: static/site/js/product_edit_form.js:305
+#: static/site/standalone/standalone-components.js:691
+msgid "Please enter at least 3 characters"
+msgstr "Prosím zadejte alespoň 3 znaky"
+
+#: static/site/js/product_create_form.js:356
+#: static/site/js/product_edit_form.js:305
+#: static/site/standalone/standalone-components.js:691
+#: static/site/standalone/standalone-components.js:824
+msgid "Results not found"
+msgstr "Nenalezeny žádné výsledky"
+
+#: static/site/js/product_create_form.js:362
+#: static/site/js/product_edit_form.js:311
+#: static/site/standalone/standalone-components.js:700
+#, fuzzy
+msgid "Unit qualifiers"
+msgstr "Kvalifikátory jednotky"
+
+#: static/site/js/product_create_form.js:362
+#: static/site/js/product_edit_form.js:311
+#: static/site/standalone/standalone-components.js:700
+msgid "Mandatory"
+msgstr "Povinné"
+
+#: static/site/js/product_create_form.js:362
+#: static/site/js/product_edit_form.js:311
+#: static/site/standalone/standalone-components.js:700
+msgid "(Select One)"
+msgstr "(Vyberte jeden)"
+
+#: static/site/js/product_create_form.js:362
+#: static/site/js/product_edit_form.js:311
+#: static/site/standalone/standalone-components.js:700
+msgid "Options: At least one option must be selected."
+msgstr "Volby: alespoň jedna volba musí být vybrána"
+
+#: static/site/js/product_create_form.js:362
+#: static/site/js/product_edit_form.js:311
+#: static/site/standalone/standalone-components.js:700
+msgid "Optional"
+msgstr "Nepovinné"
+
+#: static/site/js/product_create_form.js:366
+#: static/site/js/product_edit_form.js:315
+#: static/site/standalone/standalone-components.js:706
+msgid "Weights"
+msgstr "Hmotnosti"
+
+#: static/site/js/product_create_form.js:366
+#: static/site/js/product_edit_form.js:315
+#: static/site/standalone/standalone-components.js:706
+msgid "Dimensions"
+msgstr "Rozměry"
+
+#: static/site/js/product_create_form.js:366
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:315
+#: static/site/js/product_edit_form.js:381
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:706
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Net content"
+msgstr "Čistý objem"
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+#: static/site/standalone/standalone-components.js:712
+msgid "Product Image"
+msgstr "Obrázek produktu"
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+#: static/site/standalone/standalone-components.js:712
+msgid "Upload a picture of your product"
+msgstr "Nahrajte obrázek Vašeho produktu"
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+#: static/site/standalone/standalone-components.js:712
+msgid ""
+"Please upload an image of your product and/or a publicly-accessible Web URL "
+"of an image of the product. This URL should be for an image (jpg or png), "
+"not for a web page (html). This is a text field and the format will be, for "
+"example"
+msgstr ""
+"Prosím nahrajte obrázek Vašeho produktu a/nebo veřejně přístupnou URL adresu"
+" obrázku Vašeho produktu. Tato URL musí vést k souboru obrázku (jpg nebo "
+"png), ne k webové stránce (html). Toto je textové pole a formát bude, "
+"například "
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+#: static/site/standalone/standalone-components.js:712
+msgid ""
+"Including a URL to an image of your product will ensure potential customers "
+"can access the image you want them to see and not something they just find "
+"on the internet. It can also help online market places to have an accurate "
+"representation of your product and help you increase sales."
+msgstr ""
+"Přiložení URL obrázku Vašeho produktu zajístí, že  potenciální zákazníci "
+"uvidí obrázek který chcete a ne něco, co zrovna našli na internetu. Také to "
+"pomůže online tržištím podat správnou ilustraci Vašeho produktu a tím zvýšit"
+" prodeje."
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+#: static/site/standalone/standalone-components.js:712
+msgid "Accepted file types are: JPG, PNG, GIF with a size less than 2 MB"
+msgstr "Přijatelné typy souborů jsou: JPG, PNG, GIF o velikosti do 2MB."
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+msgid "Paste image Url"
+msgstr "Vložte URL obrázku"
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+msgid "Upload an image"
+msgstr "Nahrajte obrázek"
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+#: static/site/standalone/standalone-components.js:712
+msgid "Preview"
+msgstr "Náhled"
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+#: static/site/standalone/standalone-components.js:712
+msgid ""
+"The URL doesn't refer to an image or the image is not publicly accessible."
+msgstr "URL nevede k souboru obrázku, nebo soubor není veřejně přístupný."
+
+#: static/site/js/product_create_form.js:368
+#: static/site/js/product_edit_form.js:363
+#: static/site/standalone/standalone-components.js:712
+msgid "Remove image"
+msgstr "Odstranit obrázek"
+
+#: static/site/js/product_create_form.js:372
+#: static/site/js/product_edit_form.js:371
+#: static/site/standalone/standalone-components.js:715
+#: static/site/standalone/standalone-components.js:778
+msgid "Subproducts"
+msgstr "Podprodukty"
+
+#: static/site/js/product_create_form.js:372
+#: static/site/js/product_edit_form.js:371
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:715
+#: static/site/standalone/standalone-components.js:778
+#: static/site/standalone/standalone-components.js:790
+#: static/site/standalone/standalone-components.js:823
+#: static/site/standalone/standalone-components.js:824
+#: static/site/standalone/standalone-components.js:827
+msgid "GTIN"
+msgstr "GTIN"
+
+#: static/site/js/product_create_form.js:372
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:371
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:715
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:778
+#: static/site/standalone/standalone-components.js:789
+msgid "Package level"
+msgstr "Úroveň balení"
+
+#: static/site/js/product_create_form.js:372
+#: static/site/js/product_edit_form.js:371
+#: static/site/standalone/standalone-components.js:715
+#: static/site/standalone/standalone-components.js:778
+msgid "Product description"
+msgstr "Popis produktu"
+
+#: static/site/js/product_create_form.js:372
+#: static/site/js/product_edit_form.js:371
+#: static/site/standalone/standalone-components.js:715
+#: static/site/standalone/standalone-components.js:778
+msgid "Quantity"
+msgstr "Množství"
+
+#: static/site/js/product_create_form.js:374
+#: static/site/js/product_edit_form.js:369
+#: static/site/standalone/standalone-components.js:718
+msgid "Location information"
+msgstr "Informace o lokaci"
+
+#: static/site/js/product_create_form.js:374
+#: static/site/js/product_edit_form.js:369
+#: static/site/standalone/standalone-components.js:718
+msgid "Default GLN"
+msgstr "Defaultní GLN"
+
+#: static/site/js/product_create_form.js:376
+#: static/site/js/product_edit_form.js:385
+#: static/site/standalone/standalone-components.js:721
+msgid "Product activation confirmation"
+msgstr "Informace o aktivaci produktu"
+
+#: static/site/js/product_create_form.js:376
+#: static/site/js/product_edit_form.js:385
+#: static/site/standalone/standalone-components.js:721
+#: static/site/standalone/standalone-components.js:781
+msgid "I agree"
+msgstr "Souhlasím"
+
+#: static/site/js/product_create_form.js:376
+#: static/site/js/product_create_form.js:378
+#: static/site/js/product_edit_form.js:383
+#: static/site/js/product_edit_form.js:385
+#: static/site/js/product_edit_form.js:391
+#: static/site/standalone/standalone-components.js:721
+#: static/site/standalone/standalone-components.js:724
+#: static/site/standalone/standalone-components.js:781
+#: static/site/standalone/standalone-components.js:787
+msgid "OK"
+msgstr "OK"
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "Opted out from GS1 Cloud"
+msgstr "Vyloučeno z GS1 Cloudu"
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "Opt out from GS1 Cloud"
+msgstr "Vyloučit z GS1 Cloudu"
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "Update"
+msgstr "Obnovit"
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "Saved"
+msgstr "Uloženo"
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "Update draft"
+msgstr "Obnovit koncept"
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "Saved as draft"
+msgstr "Uloženo jako koncept"
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "Save as draft"
+msgstr "Uložit jako koncept"
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "Activated"
+msgstr "Aktivováno"
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "Activate barcode/GTIN"
+msgstr "Aktivovat čárový kód / GTIN"
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:726
+msgid "This field is required for activation."
+msgstr "Toto pole je povinné pro aktivaci."
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:727
+msgid "Save as Draft"
+msgstr "Uložit jako koncept"
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:727
+msgid "You can not activate this product."
+msgstr "Tento produkt nemůžete aktivovat."
+
+#: static/site/js/product_create_form.js:380
+#: static/site/js/product_edit_form.js:387
+#: static/site/standalone/standalone-components.js:727
+msgid "These fields should be filled:"
+msgstr "Tato pole musí být vyplněna:"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Company"
+msgstr "Společnost"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Label description"
+msgstr "Popis na etiketě"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+#: static/site/standalone/standalone-components.js:823
+#: static/site/standalone/standalone-components.js:824
+#: static/site/standalone/standalone-components.js:827
+msgid "Brand"
+msgstr "Značka"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Sub brand"
+msgstr "Podznačka"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Functional name"
+msgstr "Funkční název"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Variant"
+msgstr "Varianta"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Point of sale"
+msgstr "Místo prodeje"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Category"
+msgstr "Kategorie"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Sku"
+msgstr "SKU"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Is bunit"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Is cunit"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Is dunit"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Is vunit"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Is iunit"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Is ounit"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Country of origin"
+msgstr "Země původu"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Target market"
+msgstr "Cílový trh"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Language"
+msgstr "Jazyk"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Gln of information provider"
+msgstr "GLN poskytovatele informací"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Net weight"
+msgstr "Čistá hmotnost"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Net weight uom"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Gross weight"
+msgstr "Hrubá hmotnost"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Gross weight uom"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Depth"
+msgstr "Hloubka"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Depth uom"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Width uom"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Height uom"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Net content uom"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Image url"
+msgstr "URL obrázku"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Image upload"
+msgstr "Nahrání obrázku"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Website URL"
+msgstr "URL webové stránky"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "Gs1 cloud state"
+msgstr "Status GS1 Cloud"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "DRAFT"
+msgstr "KONCEPT"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "ACTIVE"
+msgstr "AKTIVNÍ"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "INACTIVE"
+msgstr "NEAKTIVNÍ"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:740
+#: static/site/standalone/standalone-components.js:789
+msgid "OPTED_OUT"
+msgstr ""
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:741
+#: static/site/standalone/standalone-components.js:790
+msgid "Product Identification"
+msgstr "Identifikace produktu"
+
+#: static/site/js/product_create_form.js:393
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:741
+#: static/site/standalone/standalone-components.js:790
+msgid "Fields marked with (*) are required."
+msgstr "Pole označená (*) jsou povinná."
+
+#: static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:381
+msgid "Print Product Summary"
+msgstr "Vytisknout shrnutí informací o produktu"
+
+#: static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:381
+#: static/site/standalone/standalone-components.js:747
+msgid "GTIN-13 Number"
+msgstr "Číslo GTIN-13"
+
+#: static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:381
+#: static/site/standalone/standalone-components.js:747
+msgid "GS1 Company Prefix"
+msgstr "GS1 Company Prefix"
+
+#: static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:381
+#: static/site/js/product_edit_form.js:396
+msgid "Package Type"
+msgstr "Typ balení"
+
+#: static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:381
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:747
+#: static/site/standalone/standalone-components.js:790
+msgid "Basic"
+msgstr "Základní"
+
+#: static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:381
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:747
+#: static/site/standalone/standalone-components.js:790
+msgid "Measurements"
+msgstr "Rozměry"
+
+#: static/site/js/product_create_form.js:397
+#: static/site/js/product_edit_form.js:381
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:747
+#: static/site/standalone/standalone-components.js:790
+msgid "Picture"
+msgstr "Obrázek"
+
+#: static/site/js/product_create_form.js:399
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:750
+#: static/site/standalone/standalone-components.js:790
+msgid "Summary"
+msgstr "Shrnutí"
+
+#: static/site/js/product_edit_form.js:283
+#: static/site/standalone/standalone-components.js:775
+msgid "Product delete confirmation"
+msgstr "Potvrzení smazání produktu"
+
+#: static/site/js/product_edit_form.js:283
+#: static/site/standalone/standalone-components.js:775
+msgid "Don't delete product"
+msgstr "Nemazat produkt"
+
+#: static/site/js/product_edit_form.js:283
+#: static/site/standalone/standalone-components.js:775
+msgid "Delete and set"
+msgstr "Smazat a nastavit"
+
+#: static/site/js/product_edit_form.js:283
+#: static/site/standalone/standalone-components.js:775
+msgid "Delete only"
+msgstr "Pouze smazat"
+
+#: static/site/js/product_edit_form.js:283
+#: static/site/standalone/standalone-components.js:775
+msgid ""
+"You are about to delete one of your products. Because this action will "
+"probably create a gap in your serial numbers you must choose what to do."
+msgstr ""
+"Chystáte se smazat produkt. Protože tato operace pravděpodobně vytvoří "
+"mezeru v číslování, musíte zvolit jak pokračovat."
+
+#: static/site/js/product_edit_form.js:283
+#: static/site/standalone/standalone-components.js:775
+msgid ""
+"Delete product and set prefix's starting GTIN to deleted product's GTIN"
+msgstr ""
+"Smazat produkt a nastavit číslování dalších produktů na číslo smazaného "
+"produktu."
+
+#: static/site/js/product_edit_form.js:283
+#: static/site/standalone/standalone-components.js:775
+msgid "or"
+msgstr "nebo"
+
+#: static/site/js/product_edit_form.js:283
+#: static/site/standalone/standalone-components.js:775
+msgid "Delete product and don't change the starting GTIN of this prefix"
+msgstr "Smazat produkt a neměnit další číslo GTIN v řadě na tento produkt."
+
+#: static/site/js/product_edit_form.js:283
+#: static/site/standalone/standalone-components.js:775
+msgid ""
+"Keep in mind that only products that are not part of a container can be "
+"deleted."
+msgstr ""
+"Uvědomte si, že pouze produkty, které nejsou částí kontejneru, mohou být "
+"smazány."
+
+#: static/site/js/product_edit_form.js:371
+#: static/site/standalone/standalone-components.js:778
+msgid "Add subproducts"
+msgstr "Přidat podprodukty"
+
+#: static/site/js/product_edit_form.js:391
+#: static/site/standalone/standalone-components.js:787
+msgid "Make a pack of trade items using"
+msgstr ""
+
+#: static/site/js/product_edit_form.js:391
+#: static/site/standalone/standalone-components.js:787
+msgid "as a base"
+msgstr ""
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:789
+msgid "Gtin"
+msgstr "GTIN"
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:789
+msgid "Bar placement"
+msgstr "Umístění čáry"
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:789
+msgid "Status"
+msgstr "Stav"
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:789
+msgid "Date"
+msgstr "Datum"
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:790
+msgid ""
+"When giving the barcode number for a product to your printer/graphic "
+"designer/packaging designer for the creation of a barcode symbol, please "
+"ignore the preceding 0 attached to the barcode number below if the package "
+"level is a base unit and inner case. Keep the 0 if the package level is an "
+"outer case or pallet."
+msgstr ""
+"Až budete předávat číslo čárového kódu Vašeho produktu do tisku nebo "
+"grafikovi, aby z něj vytvořil grafický symbol čárového kódu, ignorujte "
+"prosím číslici 0 připojenou zleva k číslům níže v případě, že se jedná o "
+"spotřebitelsnou jednotku uvnitř dalšího obalu. V případě že se jedná o "
+"paletu nebo vnější obal, číslici 0 ponechte."
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:790
+msgid "Advanced"
+msgstr "Pokročilé"
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:790
+msgid "Optional information"
+msgstr "Nepovinné informace"
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:790
+msgid "Symbols"
+msgstr "Symboly"
+
+#: static/site/js/product_edit_form.js:396
+msgid "Label Generator"
+msgstr "Generátor etikety"
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:790
+msgid "Clone"
+msgstr "Duplikovat"
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:790
+msgid "Make a Pack"
+msgstr "Vytvořit balení"
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:790
+msgid "Message"
+msgstr "Zpráva"
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:790
+msgid ""
+"You cannot edit a product field once activated. If the information is wrong "
+"place contact the"
+msgstr ""
+"Nemůžete upravovat pole, je-li již produkt aktivní. Pokud jsou informace "
+"nesprávné, kontaktujte"
+
+#: static/site/js/product_edit_form.js:396
+#: static/site/standalone/standalone-components.js:790
+msgid "HELPDESK"
+msgstr "HELPDESK"
+
+#: static/site/js/profile_strength.js:9
+msgid "Strong"
+msgstr "Silný"
+
+#: static/site/js/profile_strength.js:12
+msgid "Medium"
+msgstr "Střední"
+
+#: static/site/js/profile_strength.js:15 static/site/js/profile_strength.js:18
+msgid "Weak"
+msgstr "Slaby"
+
+#: static/site/standalone/standalone-components.js:694
+msgid "Auto-Fill"
+msgstr "Předvyplnit"
+
+#: static/site/standalone/standalone-components.js:709
+msgid "Choose file"
+msgstr "Vybrat soubor"
+
+#: static/site/standalone/standalone-components.js:709
+msgid "No file chosen"
+msgstr "Není vybrán žádný soubor"
+
+#: static/site/standalone/standalone-components.js:712
+msgid "Upload Image File"
+msgstr "Nahrát soubor obrázku"
+
+#: static/site/standalone/standalone-components.js:712
+msgid "Paste External Image Url"
+msgstr "Vložit URL externího obrázku"
+
+#: static/site/standalone/standalone-components.js:747
+msgid "Finish"
+msgstr "Dokončit"
+
+#: static/site/standalone/standalone-components.js:783
+msgid "File type"
+msgstr "Typ souboru"
+
+#: static/site/standalone/standalone-components.js:783
+msgid "Image file type"
+msgstr "Typ souboru obrázku"
+
+#: static/site/standalone/standalone-components.js:783
+msgid "Printer resolution"
+msgstr "Rozlišení tiskárny"
+
+#: static/site/standalone/standalone-components.js:783
+msgid "Postscript type"
+msgstr "Typ postscriptu"
+
+#: static/site/standalone/standalone-components.js:783
+msgid "Postscript (eps) image type"
+msgstr "Typ souboru postscriptu (eps)"
+
+#: static/site/standalone/standalone-components.js:783
+msgid "Label type"
+msgstr "Typ etikety"
+
+#: static/site/standalone/standalone-components.js:783
+msgid "PDF label type"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:783
+#: static/site/standalone/standalone-components.js:784
+msgid "Magnification"
+msgstr "Zvětšení"
+
+#: static/site/standalone/standalone-components.js:783
+msgid "BWR"
+msgstr "BWR"
+
+#: static/site/standalone/standalone-components.js:783
+msgid ""
+"BWR stands for bar-width reduction and compensates for the ink-spread during"
+" printing."
+msgstr ""
+"BWR znamená bar-width reduction a kompenzuje rozpíjení inkoustu při tisku."
+
+#: static/site/standalone/standalone-components.js:783
+msgid "Right quiet zone indicator"
+msgstr "Indikátor pravé ochranné zóny."
+
+#: static/site/standalone/standalone-components.js:783
+msgid "Printing Marks"
+msgstr "Tiskové značky"
+
+#: static/site/standalone/standalone-components.js:783
+msgid "Calibration (Debug)"
+msgstr "Kalibrace (Debug)"
+
+#: static/site/standalone/standalone-components.js:783
+msgid "0.0015 (printer resolution 600 dpi)"
+msgstr "0.0015 (rozlišení tiskárny 600 DPI)"
+
+#: static/site/standalone/standalone-components.js:783
+msgid "0.0035 (printer resolution 300 dpi)"
+msgstr "0.0035 (rozlišení tiskárny 300 DPI)"
+
+#: static/site/standalone/standalone-components.js:784
+#: static/site/standalone/standalone-components.js:827
+msgid "Barcode"
+msgstr "Čárový kód"
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Logistics Label Tool"
+msgstr "Nástroj Logistická etiketa"
+
+#: static/site/standalone/standalone-components.js:784
+msgid ""
+"The family of EAN/UPC barcodes are used to represent GTINs on trade items so"
+" they can be scanned atPoint-of-Sale and distribution centers. They should "
+"only be printed on outer-cases if they are printedat 200% their size and the"
+" case will be scanned at the point of sale. A case of wine is an example of "
+"such a product"
+msgstr ""
+"Skupina čárových kódů EAN/UPC se používá k vyjádření GTINů na "
+"spotřebitelských jednotkách, aby bylo možné je naskenovat na pokladnách. "
+"Měly by být natisknuté na vnějších obalech ve 200% jmenovité velikosti. "
+"Příkladem je krabice na víno."
+
+#: static/site/standalone/standalone-components.js:784
+msgid ""
+"The ITF 14 symbol is used for trade items not passing the point of sale and "
+"is ideal for use where thesymbol is to be pre-printed onto corrugated "
+"fibreboard/Kraftboard or onto labels attached outer cases."
+msgstr ""
+"Symbol ITF 14 se používá na obchodní jednotky neprocházející pokladnou a je "
+"ideální tam, kde se předtiskuje na karton nebo na samolepky nalepované na "
+"vnější krabice."
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Barcodes for this package level are not supported"
+msgstr "Čárové kódy pro tuto úroveň balení nejsou podporovány"
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Download raster image"
+msgstr "Stáhnout rastrový obrázek"
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Image type"
+msgstr "Typ obrázku"
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Resolution"
+msgstr "Rozlišení"
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Download postscript (eps) image"
+msgstr "Stáhnout obrázek postscript (eps)"
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Download postscript(eps) image"
+msgstr "Stáhnout obrázek postscript (eps)"
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Download PDF labels"
+msgstr "Stáhnout etikety v PDF"
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Image Options"
+msgstr "Možnosti obrázku"
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Update barcode preview"
+msgstr "Obnovit náhled čárového kódu"
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Create and download a high resolution image of this barcode."
+msgstr ""
+"Vytvořit a stáhnout obrázek tohoto čárového kódu ve vysokém rozlišení."
+
+#: static/site/standalone/standalone-components.js:784
+msgid ""
+"Available formats are JPG, PNG and GIF raster images up to 2400dpi "
+"resolution,and postscript images which scale to your desired size."
+msgstr ""
+"K dispozici jsou formáty JPG, PNG a GIF do rozlišení 2400 DPI, a postscript "
+"který si můžete upravit do potřebné velikosti."
+
+#: static/site/standalone/standalone-components.js:784
+msgid ""
+"To create your barcode image you need to have at least 1 credit available in"
+" your balance."
+msgstr "K vytvoření čárového kódu potřebujete alespoň 1 kredit na svém účtu."
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Create EAN13 barcode"
+msgstr "Vytvořit čárový kód EAN13"
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Agreement required"
+msgstr "Je potřeba Váš souhlas"
+
+#: static/site/standalone/standalone-components.js:784
+msgid "Please contact us for the agreement text"
+msgstr "Prosím kontaktujte nás kvůli obsahu souhlasu"
+
+#: static/site/standalone/standalone-components.js:787
+msgid "Choose one from the available GTINs"
+msgstr "Vyberte jeden z GTINů"
+
+#: static/site/standalone/standalone-components.js:787
+msgid "Indicate hierarchy level"
+msgstr "Indikovat úroveň hierarchie"
+
+#: static/site/standalone/standalone-components.js:815
+msgid "Display shipper"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:815
+#: static/site/standalone/standalone-components.js:824
+msgid "Base Unit"
+msgstr "Spotřebitelská jednotka"
+
+#: static/site/standalone/standalone-components.js:815
+#: static/site/standalone/standalone-components.js:824
+msgid "Pack"
+msgstr "Balení"
+
+#: static/site/standalone/standalone-components.js:815
+msgid "Case"
+msgstr "Krabice"
+
+#: static/site/standalone/standalone-components.js:815
+#: static/site/standalone/standalone-components.js:824
+msgid "Pallet"
+msgstr "Paleta"
+
+#: static/site/standalone/standalone-components.js:823
+#: static/site/standalone/standalone-components.js:824
+#: static/site/standalone/standalone-components.js:827
+msgid "SKU"
+msgstr "SKU"
+
+#: static/site/standalone/standalone-components.js:823
+#: static/site/standalone/standalone-components.js:827
+msgid "Package Level"
+msgstr "Úroveň balení"
+
+#: static/site/standalone/standalone-components.js:823
+msgid "Created"
+msgstr "Vytvořeno"
+
+#: static/site/standalone/standalone-components.js:823
+msgid "Updated"
+msgstr "Aktualizováno"
+
+#: static/site/standalone/standalone-components.js:823
+msgid "Descending"
+msgstr "Klesající"
+
+#: static/site/standalone/standalone-components.js:823
+msgid "Ascending"
+msgstr "Stoupající"
+
+#: static/site/standalone/standalone-components.js:824
+msgid "Filters"
+msgstr "Filtry"
+
+#: static/site/standalone/standalone-components.js:824
+msgid "Applied"
+msgstr "Použito"
+
+#: static/site/standalone/standalone-components.js:824
+msgid "Target Market"
+msgstr "Cílový trh"
+
+#: static/site/standalone/standalone-components.js:824
+msgid "Case or mixed case"
+msgstr "Krabice nebo smíšený obsah"
+
+#: static/site/standalone/standalone-components.js:824
+msgid "Display unit"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:824
+msgid "Starred"
+msgstr ""
+
+#: static/site/standalone/standalone-components.js:824
+msgid "Sort by"
+msgstr "Seřadit podle"
+
+#: static/site/standalone/standalone-components.js:824
+msgid "Reset"
+msgstr "Reset"
+
+#: static/site/standalone/standalone-components.js:824
+msgid "Apply"
+msgstr "Použít"
+
+#: static/site/standalone/standalone-components.js:827
+msgid "Edit your product catalogue"
+msgstr "Editovat Váš katalog produktů"
+
+#: static/site/standalone/standalone-components.js:827
+msgid "GS1 Cloud"
+msgstr "GS1 Cloud"
+
+#: static/site/standalone/standalone-components.js:827
+msgid "No products found, please"
+msgstr "Nebyly nalezeny žádné produkty, prosím"
+
+#: static/site/standalone/standalone-components.js:827
+msgid "add product"
+msgstr "přidat produkt"
+
+#: static/site/standalone/standalone-components.js:827
+msgid " No products found, please change or reset filters."
+msgstr "Nebyly nalezeny žádné produkty, prosím změńte nebo resetujte filtry."
+
+#: static/site/standalone/standalone-components.js:827
+msgid "Products per page"
+msgstr "Produktů na stránce"
+
+#~ msgid "Available %s"
+#~ msgstr "K dispozici %s"
+
+#~ msgid ""
+#~ "This is the list of available %s. You may choose some by selecting them in "
+#~ "the box below and then clicking the \"Choose\" arrow between the two boxes."
+#~ msgstr ""
+#~ "Toto je seznam %s k dispozici. Můžete některé vybrat v rámečku níže a po té "
+#~ "kliknout na šipku \"Vybrat\" mezi dvěma rámečky."
+
+#, fuzzy
+#~ msgid "Type into this box to filter down the list of available %s."
+#~ msgstr "Napište do tohoto rámečku podle čeho filtrovat %s k dispozici."
+
+#~ msgid "Filter"
+#~ msgstr "Filtr"
+
+#~ msgid "Choose all"
+#~ msgstr "Vybrat vše"
+
+#~ msgid "Click to choose all %s at once."
+#~ msgstr "Klikněte a vyberte všechny %s najednou."
+
+#~ msgid "Choose"
+#~ msgstr "Vybrat"
+
+#~ msgid "Remove"
+#~ msgstr "Odebrat"
+
+#~ msgid "Chosen %s"
+#~ msgstr "Vybráno %s"
+
+#~ msgid ""
+#~ "This is the list of chosen %s. You may remove some by selecting them in the "
+#~ "box below and then clicking the \"Remove\" arrow between the two boxes."
+#~ msgstr ""
+#~ "Toto je přehled vybraných %s. Můžete některé odebrat jejich vybráním v "
+#~ "rámečku nížě a po té kliknutím na šipku \"Odebrat\" mezi dvěma rámečky."
+
+#~ msgid "Remove all"
+#~ msgstr "Odebrat vše"
+
+#~ msgid "Click to remove all chosen %s at once."
+#~ msgstr "Kliknutím odeberete všechny vybrané %s najednou."
+
+#~ msgid "%(sel)s of %(cnt)s selected"
+#~ msgid_plural "%(sel)s of %(cnt)s selected"
+#~ msgstr[0] "%(sel)s z %(cnt)s vybráno"
+#~ msgstr[1] "%(sel)s z %(cnt)s vybráno"
+
+#~ msgid ""
+#~ "You have unsaved changes on individual editable fields. If you run an "
+#~ "action, your unsaved changes will be lost."
+#~ msgstr ""
+#~ "V jednotlivých editovatelných polích máte neuložené změny. Pokud spustíte "
+#~ "akci, změny budou ztraceny."
+
+#~ msgid ""
+#~ "You have selected an action, but you haven't saved your changes to "
+#~ "individual fields yet. Please click OK to save. You'll need to re-run the "
+#~ "action."
+#~ msgstr ""
+#~ "Zvolili jste akci, ale v jednotlivých polích máte neuložené změny. Uložte je"
+#~ " kliknutím na OK. Akci budete muset spustit znovu."
+
+#~ msgid ""
+#~ "You have selected an action, and you haven't made any changes on individual "
+#~ "fields. You're probably looking for the Go button rather than the Save "
+#~ "button."
+#~ msgstr ""
+#~ "Máte zvolenou akci a v polích jste neprovedli žádné změny. Pravděpodobně "
+#~ "hledáte tlačítko Provést místo Uložit."
+
+#~ msgid "Now"
+#~ msgstr "Nyní"
+
+#~ msgid "Midnight"
+#~ msgstr "Půlnoc"
+
+#~ msgid "6 a.m."
+#~ msgstr "6 ráno"
+
+#~ msgid "Noon"
+#~ msgstr "Poledne"
+
+#~ msgid "6 p.m."
+#~ msgstr "6 večer"
+
+#~ msgid "Note: You are %s hour ahead of server time."
+#~ msgid_plural "Note: You are %s hours ahead of server time."
+#~ msgstr[0] "Poznámka: jste o %s hodin napřed před časem serveru."
+#~ msgstr[1] "Poznámka: jste o %s hodin napřed před časem serveru."
+
+#~ msgid "Note: You are %s hour behind server time."
+#~ msgid_plural "Note: You are %s hours behind server time."
+#~ msgstr[0] "Poznámka: jste o %s hodin pozadu za časem serveru."
+#~ msgstr[1] "Poznámka: jste o %s hodin pozadu za časem serveru."
+
+#~ msgid "Choose a Time"
+#~ msgstr "Zvolte čas"
+
+#~ msgid "Choose a time"
+#~ msgstr "Zvolte čas"
+
+#~ msgid "Today"
+#~ msgstr "Dnes"
+
+#~ msgid "Choose a Date"
+#~ msgstr "Zvolte datum"
+
+#~ msgid "Yesterday"
+#~ msgstr "Včera"
+
+#~ msgid "Tomorrow"
+#~ msgstr "Zítra"
+
+#~ msgid "January"
+#~ msgstr "Leden"
+
+#~ msgid "February"
+#~ msgstr "Únor"
+
+#~ msgid "March"
+#~ msgstr "Březen"
+
+#~ msgid "April"
+#~ msgstr "Duben"
+
+#~ msgid "May"
+#~ msgstr "Květen"
+
+#~ msgid "June"
+#~ msgstr "Červen"
+
+#~ msgid "July"
+#~ msgstr "Červenec"
+
+#~ msgid "August"
+#~ msgstr "Srpen"
+
+#~ msgid "September"
+#~ msgstr "Září"
+
+#~ msgid "October"
+#~ msgstr "Říjen"
+
+#~ msgid "November"
+#~ msgstr "Listopad"
+
+#~ msgid "December"
+#~ msgstr "Prosinec"
+
+#~ msgctxt "one letter Sunday"
+#~ msgid "S"
+#~ msgstr "N"
+
+#~ msgctxt "one letter Monday"
+#~ msgid "M"
+#~ msgstr "P"
+
+#~ msgctxt "one letter Tuesday"
+#~ msgid "T"
+#~ msgstr "Ú"
+
+#~ msgctxt "one letter Wednesday"
+#~ msgid "W"
+#~ msgstr "S"
+
+#~ msgctxt "one letter Thursday"
+#~ msgid "T"
+#~ msgstr "Č"
+
+#~ msgctxt "one letter Friday"
+#~ msgid "F"
+#~ msgstr "P"
+
+#~ msgctxt "one letter Saturday"
+#~ msgid "S"
+#~ msgstr "S"
+
+#~ msgid "Show"
+#~ msgstr "Zobrazit"
+
+#~ msgid "Hide"
+#~ msgstr "Skrýt"
+
+#~ msgid "transform"
+#~ msgstr "transformovat"

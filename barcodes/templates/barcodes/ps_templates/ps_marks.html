@@ -1,0 +1,72 @@
+{% load l10n %}
+{% localize off %}
+% -- box start
+gsave
+
+    0.1 mm setlinewidth
+    1 0 0 setrgbcolor
+
+    % -- top right
+    newpath
+    {{ box.x2 }} mm {{ box.y2 }} mm moveto
+    2 0 rmoveto
+    8 0 rlineto
+    closepath
+    stroke
+    newpath
+    {{ box.x2 }} mm {{ box.y2 }} mm moveto
+    0 2 rmoveto
+    0 8 rlineto
+    closepath
+    stroke
+
+    % -- top left
+    newpath
+    {{ box.x1 }} mm {{ box.y2 }} mm moveto
+    -2 0 rmoveto
+    -8 0 rlineto
+    closepath
+    stroke
+    newpath
+    {{ box.x1 }} mm {{ box.y2 }} mm moveto
+    0 2 rmoveto
+    0 8 rlineto
+    closepath
+    stroke
+
+    % -- bottom right
+    newpath
+    {{ box.x2 }} mm {{ box.y1 }} mm moveto
+    2 0 rmoveto
+    8 0 rlineto
+    closepath
+    stroke
+    newpath
+    {{ box.x2 }} mm {{ box.y1 }} mm moveto
+    0 -2 rmoveto
+    0 -8 rlineto
+    closepath
+    stroke
+
+    % -- bottom left
+    newpath
+    {{ box.x1 }} mm {{ box.y1 }} mm moveto
+    -2 0 rmoveto
+    -8 0 rlineto
+    closepath
+    stroke
+    newpath
+    {{ box.x1 }} mm {{ box.y1 }} mm moveto
+    0 -2 rmoveto
+    0 -8 rlineto
+    closepath
+    stroke
+
+grestore
+
+%newpath
+%{{ box.x2 }} mm {{ box.y2 }} mm lineto
+%{{ box.x1 }} mm {{ box.y2 }} mm lineto
+%closepath
+% -- box end
+{% endlocalize %}

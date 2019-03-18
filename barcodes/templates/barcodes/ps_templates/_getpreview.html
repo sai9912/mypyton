@@ -1,0 +1,17 @@
+{% extends "_getbase.html" %}
+
+{% block title %}
+    Download {{ symbol|upper }} {{ meta_barcode.data }}  | BarCodeRobot.com
+{% endblock %}
+
+{% block content %}
+
+<h2>{{ symbol|upper }} : {{ meta_barcode.data }}</h2>
+
+<div id="resImage">
+<img alt="" src="{{ src }}"></img>
+</div>
+
+<div style="clear:both;"></div>
+
+{% endblock %}

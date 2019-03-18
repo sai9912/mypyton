@@ -1,0 +1,32 @@
+{
+    "mo_username": "konecny@gs1cz.org",
+    "user": {
+        "uuid": "gs1cz-99",
+        "email": "user99@gs1cz.org",
+        "password": "1234",
+        "company_prefix": "501000",
+        "company_name": "Test company",
+        "member_organisation": "gs1cz"
+    },
+    "product": {
+        "gs1_company_prefix": "501000",
+        "owner": null,
+        "member_organisation": null,
+        "company_organisation": null,
+        "category": "99999999",
+        "label_description": "G1006 3/C HARP BROOCH \u20ac36.50",
+        "description": "G1006 3/C HARP BROOCH \u20ac36.50",
+        "brand": "NJO DESIGNS ",
+        "sub_brand": "GRANGE ",
+        "functional_name": "Enter_Functional_name",
+        "is_bunit": true,
+        "is_cunit": false,
+        "is_dunit": false,
+        "is_vunit": false,
+        "is_iunit": false,
+        "is_ounit": false,
+        "website_url": "http://barcodemanager.gs1ie.org/static/site/img/no-image.gif",
+        "variant": "test variant",
+        "point_of_sale": "point_of_sale"
+    }
+}

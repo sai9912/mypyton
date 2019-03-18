@@ -1,0 +1,2267 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-22 21:29+0200\n"
+"PO-Revision-Date: 2018-09-19 11:34+0000\n"
+"Last-Translator: b'  <test@gs1cz-01.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+
+#: BCM/forms.py:30 BCM/forms.py:78
+#: activate/templates/activate/AccountCreateOrUpdate.html:29
+#: products/templates/products/product_print_summary.rml:175
+msgid "Email"
+msgstr "Email"
+
+#: BCM/forms.py:34
+msgid "Member Organisation"
+msgstr "Členská organizace"
+
+#: BCM/helpers/pdf_export.py:42
+#: products/templates/products/product_print_summary.rml:147
+#: products/templates/products/product_print_summary.rml:150
+#: products/templates/products/product_print_summary.rml:153
+#: products/templates/products/product_print_summary.rml:156
+#: products/templates/products/product_print_summary.rml:159
+msgid "Yes"
+msgstr "Ano"
+
+#: BCM/helpers/pdf_export.py:42
+msgid "No"
+msgstr "Ne"
+
+#: BCM/models.py:13
+msgid "Countries"
+msgstr "Země"
+
+#: BCM/models.py:41
+msgid "Languages by countries"
+msgstr "Jazyky podle zemí"
+
+#: BCM/templates/bcm/base.html:12
+#, fuzzy
+msgid "Django translations"
+msgstr "Django překlady"
+
+#: BCM/templates/bcm/base.html:14
+msgid "Profile"
+msgstr "Profil"
+
+#: BCM/templates/bcm/base.html:15 BCM/templates/bcm/new_base.html:53
+msgid "Logout"
+msgstr "Odhlášení"
+
+#: BCM/templates/bcm/base.html:17
+msgid "Login"
+msgstr "Přihlášení"
+
+#: BCM/templates/bcm/base.html:18
+msgid "Register"
+msgstr "Registrovat se"
+
+#: BCM/templates/bcm/generic.html:28
+msgid "Staff & Demo login: (Username / Password)"
+msgstr "Zaměstnanci & Demo login: (login / heslo)"
+
+#: BCM/templates/bcm/generic.html:35
+#: products/templates/products/product_fulledit_form.html:342
+#: templates/base.html:210 templates/base.html:221 templates/base_bs4.html:192
+#: templates/base_bs4.html:205 users/templates/user/profile.html:15
+#: users/templates/user/settings.html:5
+msgid "Dashboard"
+msgstr "Ovládací panel"
+
+#: BCM/templates/bcm/index.html:6
+msgid "Choose your language"
+msgstr "Vyberte jazyk"
+
+#: BCM/templates/bcm/new_base.html:40 templates/base.html:129
+#: templates/base_bs4.html:120
+msgid "Languages"
+msgstr "Jazyky"
+
+#: BCM/templates/bcm/profile.html:4
+msgid "User profile"
+msgstr "Uživatelský profil"
+
+#: BCM/templates/bcm/profile.html:8
+#: BCM/templates/bcm/registration/staff_login.html:48
+#: BCM/templates/bcm/registration/staff_registration.html:47
+#: users/templates/user/user_agreement_required.html:61
+msgid "Submit"
+msgstr "Odeslat"
+
+#: BCM/templates/bcm/registration/staff_login.html:5
+msgid "Staff login"
+msgstr "Login zaměstnanci"
+
+#: BCM/templates/bcm/registration/staff_login.html:10
+#: BCM/templates/bcm/registration/staff_registration.html:9
+msgid ""
+"Your account doesn't have access to this page. To proceed, please login with"
+" an account that has access."
+msgstr ""
+"Nemáte přístup na tuto stránku. Použijte účet, který má přístup povolen."
+
+#: BCM/templates/bcm/registration/staff_login.html:12
+#: BCM/templates/bcm/registration/staff_registration.html:11
+msgid "Please login to see this page."
+msgstr "Pro zobrazení se přihlaste."
+
+#: BCM/templates/bcm/registration/staff_registration.html:4
+msgid "Staff registration"
+msgstr ""
+
+#: BCM_multihosted/settings/components/base.py:196
+msgid "English"
+msgstr "Anglicky"
+
+#: BCM_multihosted/settings/components/base.py:197
+#: BCM_multihosted/settings/components/base.py:205
+msgid "Czech"
+msgstr "Česky"
+
+#: BCM_multihosted/settings/components/base.py:198
+msgid "German"
+msgstr "Německy"
+
+#: BCM_multihosted/settings/components/base.py:199
+msgid "French"
+msgstr "Francouzsky"
+
+#: BCM_multihosted/settings/components/base.py:200
+msgid "Italian"
+msgstr "Italsky"
+
+#: BCM_multihosted/settings/components/base.py:201
+msgid "Dutch"
+msgstr "Holandsky"
+
+#: BCM_multihosted/settings/components/base.py:202
+msgid "Swedish"
+msgstr "Švédsky"
+
+#: BCM_multihosted/settings/components/base.py:203
+msgid "Bosnian"
+msgstr "Bosensky"
+
+#: BCM_multihosted/settings/components/base.py:204
+msgid "Spanish"
+msgstr "Španělsky"
+
+#: activate/forms.py:16 api/serializers/account_serializers.py:14
+msgid "Unique User Id"
+msgstr "Unikátní ID uživatele"
+
+#: activate/forms.py:20 api/serializers/account_serializers.py:15
+msgid "User Email"
+msgstr "email uživatele"
+
+#: activate/forms.py:24 api/serializers/account_serializers.py:17
+msgid "Company Prefix"
+msgstr "Company Prefix"
+
+#: activate/forms.py:28
+#: activate/templates/activate/AccountCreateOrUpdate.html:45
+#: api/serializers/account_serializers.py:19
+msgid "Company Name"
+msgstr "Název společnosti"
+
+#: activate/forms.py:33 api/serializers/account_serializers.py:20
+msgid "Credit Points"
+msgstr "Kredity"
+
+#: activate/forms.py:38 api/serializers/account_serializers.py:22
+msgid "Unique Transaction Reference"
+msgstr ""
+
+#: activate/forms.py:43
+#: activate/templates/activate/AccountCreateOrUpdate.html:69
+#: api/serializers/account_serializers.py:23
+msgid "GS1 MO"
+msgstr "GS1 MO"
+
+#: activate/forms.py:49
+#: activate/templates/activate/AccountCreateOrUpdate.html:77
+msgid "m2m_token"
+msgstr ""
+
+#: activate/templates/activate/AccountCreateOrUpdate.html:5
+#: activate/templates/activate/AccountCreateOrUpdate.html:16
+msgid "Account API"
+msgstr ""
+
+#: activate/templates/activate/AccountCreateOrUpdate.html:37
+msgid "Prefix"
+msgstr "Prefix"
+
+#: activate/templates/activate/AccountCreateOrUpdate.html:53
+msgid "Credits"
+msgstr "Kredity"
+
+#: activate/templates/activate/AccountCreateOrUpdate.html:61
+msgid "TXN Ref"
+msgstr ""
+
+#: activate/templates/activate/AccountCreateOrUpdate.html:93
+msgid "Send"
+msgstr "Odeslat"
+
+#: activate/templates/activate/token_expired.html:5
+#, fuzzy
+msgid "Token expired"
+msgstr "Exporovaný token"
+
+#: activate/templates/activate/token_expired.html:12
+#, fuzzy
+msgid "This token has expired"
+msgstr "Tento token expiroval"
+
+#: activate/templates/activate/user_not_found.html:5
+#: activate/templates/activate/user_not_found.html:12
+msgid "User not found"
+msgstr "Uživatel nenalezen"
+
+#: api/authentication.py:19
+msgid "The API Key is not valid"
+msgstr "API key není platný"
+
+#: api/filters.py:35
+msgid "Multiple MOs were specified, please specify only one"
+msgstr "Bylo vybráno více MO, prosím zvolte pouze jedno"
+
+#: api/filters.py:37
+msgid "Wrong MO slug specified"
+msgstr ""
+
+#: api/filters.py:71
+msgid "Multiple languages were specified, please specify only one"
+msgstr "Bylo vybráno více jazyků, prosím zvolte pouze jeden"
+
+#: api/filters.py:73
+msgid "Wrong language code specified"
+msgstr "Nesprávný kód jazyka"
+
+#: api/models.py:20 products/templates/products/list.html:227
+#: products/templates/products/product_print_summary.rml:193
+#: products/templates/products/product_summary_base.html:202
+#: products/templates/products/subproduct_add_case.html:170
+#: products/templates/products/subproduct_add_case_edit.html:171
+msgid "Description"
+msgstr "Popis"
+
+#: api/models.py:25
+msgid "API Key"
+msgstr "API klíč"
+
+#: api/models.py:26
+msgid "API Keys"
+msgstr "API klíče"
+
+#: api/serializers/account_serializers.py:16
+msgid "User Password"
+msgstr "Password uživatele"
+
+#: api/serializers/account_serializers.py:30
+msgid "defined member_organisation does not exist."
+msgstr ""
+
+#: api/serializers/account_serializers.py:39
+msgid ""
+"defined member_organisation does not exist for validate company_prefix."
+msgstr ""
+
+#: api/serializers/account_serializers.py:48
+msgid "invalid prefix"
+msgstr "Neplatný prefix"
+
+#: api/serializers/gpc_serializer.py:10
+msgid "Segment"
+msgstr "Segment"
+
+#: api/serializers/gpc_serializer.py:11
+msgid "Segment code"
+msgstr "Kód segmentu"
+
+#: api/serializers/gpc_serializer.py:13
+msgid "Familly"
+msgstr "Skupina"
+
+#: api/serializers/gpc_serializer.py:14
+msgid "Familly code"
+msgstr "Kód skupiny"
+
+#: api/serializers/gpc_serializer.py:16
+msgid "Class"
+msgstr "Třída"
+
+#: api/serializers/gpc_serializer.py:17
+msgid "Class code"
+msgstr "Kód třídy"
+
+#: api/serializers/gpc_serializer.py:18
+msgid "Brick"
+msgstr "Brick"
+
+#: api/serializers/gpc_serializer.py:19
+msgid "Brick code"
+msgstr "Kód bricku"
+
+#: api/serializers/gpc_serializer.py:20
+msgid "Attribute"
+msgstr "Atribut"
+
+#: api/serializers/prefix_serializer.py:101
+msgid "Company with this uuid does not exist"
+msgstr "Společnost s tímto uuid neexistuje"
+
+#: api/serializers/prefix_serializer.py:104
+msgid "More than one company found for this uuid"
+msgstr "S tímto uuid bylo nalezeno více společností"
+
+#: api/serializers/prefix_serializer.py:110
+msgid "Prefix not valid"
+msgstr "Prefix není platný"
+
+#: api/serializers/product_serializers.py:39
+msgid "this field is read-only for Company organisation."
+msgstr "Toto pole je pouze pro čtení."
+
+#: api/serializers/product_serializers.py:109
+#: api/serializers/product_serializers.py:111
+msgid "Callable error"
+msgstr ""
+
+#: api/serializers/product_serializers.py:257
+msgid "this field is not editable."
+msgstr "Toto pole nelze upravovat."
+
+#: api/serializers/product_serializers.py:262
+msgid "given prefix does not exist."
+msgstr "daný prefix neexistuje."
+
+#: api/serializers/product_serializers.py:312
+#, python-brace-format
+msgid "Maximum image size is {self._max_upload_size} bytes"
+msgstr "Maximální velikost obrázku {self._max_upload_size} je bajtů"
+
+#: api/serializers/product_serializers.py:332
+msgid "You can't change this status, please ask for a support."
+msgstr "Tento stav nemůžete změnit, prosím obraťte se na podporu."
+
+#: api/serializers/product_serializers.py:350
+msgid "Prefix is not in ACTIVE state"
+msgstr "Prefix není ve stavu AKTIVNÍ."
+
+#: api/serializers/product_serializers.py:355
+msgid "not allowed to create products for this prefix."
+msgstr "není dovoleno vytvářet produkty v této řadě."
+
+#: api/serializers/product_serializers.py:362
+msgid "generated GTIN invalid."
+msgstr "generovaný GTIN neplatný."
+
+#: api/serializers/product_serializers.py:369
+msgid "Generated GTIN is already used, please check your prefixes."
+msgstr "Generovaný GTIN se už používá, zkontrolujte své číselné řady."
+
+#: api/serializers/subproduct_serializer.py:16
+msgid "Quantity should be greater than 0"
+msgstr "Množství musí být větší než 0"
+
+#: api/serializers/subproduct_serializer.py:23
+msgid "Invalid product gtin"
+msgstr "Neplatný GTIN produktu"
+
+#: api/serializers/subproduct_serializer.py:28
+msgid "Invalid subproduct gtin"
+msgstr "Neplatný GTIN podproduktu"
+
+#: api/serializers/subproduct_serializer.py:33
+msgid "Product have no subproduct"
+msgstr "Produkt nemá podprodukty"
+
+#: api/serializers/user_serializer.py:193
+msgid "You can't select this prefix."
+msgstr "Tento prefix nemůžete zvolit."
+
+#: api/validators/product_validators.py:39
+msgid "This field must be an integer."
+msgstr "Toto pole musí být ve formátu interger."
+
+#: api/validators/product_validators.py:60
+msgid "This field must be a number."
+msgstr "Toto pole musí být číselné."
+
+#: api/validators/product_validators.py:82
+msgid "This field must be a positive number."
+msgstr "Toto pole musí být kladné číslo."
+
+#: api/validators/product_validators.py:114
+msgid "Please specify both value and unit or leave them blank"
+msgstr "Prosám specifikujte hodnotu a jednotky, nebo nechte pole prázdné."
+
+#: api/validators/product_validators.py:118
+msgid "Value can not be converted to a number"
+msgstr "Hodnota nemůže být převedena na číslo"
+
+#: api/validators/product_validators.py:122
+msgid "Value should be a positive number"
+msgstr "Hodnota musí být kladné číslo"
+
+#: company_organisations/models.py:18
+msgid "The name of the organization"
+msgstr "Název společnosti"
+
+#: company_organisations/models.py:66
+#, python-brace-format
+msgid "User can't have multiple companies, assigned companies: {companies}"
+msgstr ""
+"Uživatel nemůže mít více společností, přiřazené společnosti:  {companies}"
+
+#: excel/spreadsheet.py:97
+msgid "File save error"
+msgstr "Chyba prři ukládání souboru"
+
+#: excel/spreadsheet.py:107 excel/spreadsheet.py:112
+msgid "file structure error"
+msgstr "Chyba ve struktuře souboru"
+
+#: excel/spreadsheet.py:108
+msgid "File doesn't contain template information"
+msgstr "Soubor neobsahuje informaci o šabloně"
+
+#: excel/spreadsheet.py:113
+msgid "File does contain incorrect template name"
+msgstr "Soubor obsahuje nesprávný název šablony"
+
+#: excel/templates/excel/export_select.html:18
+#: excel/templates/excel/import_file.html:18
+#: products/templates/products/product_summary.html:6 templates/base.html:12
+#: templates/base.html:80 templates/base_bs4.html:13
+#: users/templates/user/user_agreement_required.html:6
+msgid "GS1 Activate"
+msgstr "GS1 Activate"
+
+#: excel/templates/excel/export_select.html:18
+#: excel/templates/excel/export_select.html:31 templates/base.html:258
+#: templates/base_bs4.html:243
+msgid "Export products"
+msgstr "Export produktů"
+
+#: excel/templates/excel/export_select.html:22
+#: excel/templates/excel/import_file.html:22
+#: member_organisations/templates/admin/go_admin/change_form.html:18
+#: member_organisations/templates/admin/go_admin/change_list.html:31
+#: member_organisations/templates/admin/go_admin/delete_confirmation.html:15
+#: member_organisations/templates/admin/go_admin/delete_selected_confirmation.html:14
+#: member_organisations/templates/admin/mo_admin/change_form.html:18
+#: member_organisations/templates/admin/mo_admin/change_list.html:31
+#: member_organisations/templates/admin/mo_admin/delete_confirmation.html:15
+#: member_organisations/templates/admin/mo_admin/delete_selected_confirmation.html:14
+#: member_organisations/templates/admin/pending_users/change_form.html:18
+#: member_organisations/templates/admin/pending_users/change_list.html:31
+#: prefixes/templates/prefixes/prefix_exhausted.html:7
+#: prefixes/templates/prefixes/prefixes_list.html:13
+#: prefixes/templates/prefixes/set_starting.html:7
+#: products/templates/products/custom_forms.html:10
+#: products/templates/products/list.html:24
+#: products/templates/products/list_js.html:26
+#: products/templates/products/package_level_form.html:11
+#: products/templates/products/package_type_form.html:8
+#: products/templates/products/product_add_js.html:8
+#: products/templates/products/product_details_form.html:10
+#: products/templates/products/product_fulledit_form.html:10
+#: products/templates/products/product_fulledit_form_js.html:12
+#: products/templates/products/product_summary.html:9
+#: products/templates/products/subproduct_add_case.html:15
+#: products/templates/products/subproduct_add_case_edit.html:15
+#: products_react/templates/products_react/product_react_fulledit_form.html:9
+#: templates/admin/base.html:66 templates/base.html:109
+#: templates/base.html:164 templates/base_bs4.html:100
+#: templates/base_bs4.html:151 users/templates/admin/profile_js.html:9
+#: users/templates/user/profile.html:10 users/templates/user/profile_js.html:9
+#: users/templates/user/settings.html:9
+#: users/templates/user/user_agreement_required.html:10
+msgid "Home"
+msgstr "Domů"
+
+#: excel/templates/excel/export_select.html:23
+msgid "Export"
+msgstr "Export"
+
+#: excel/templates/excel/export_select.html:27
+#: excel/templates/excel/import_file.html:28
+#: member_organisations/templates/admin/go_admin/index.html:47
+#: member_organisations/templates/admin/mo_admin/index.html:46
+#: products/templates/products/list_js.html:31
+#: products/templates/products/product_add_js.html:13
+#: products/templates/products/product_fulledit_form.html:15
+#: products/templates/products/product_fulledit_form_js.html:17
+#: products/templates/products/product_summary.html:14
+#: products/templates/products/subproduct_add_case.html:20
+#: products/templates/products/subproduct_add_case_edit.html:20
+#: products_react/templates/products_react/product_react_fulledit_form.html:14
+#: templates/admin/base.html:108 templates/admin/index.html:37
+msgid "Change"
+msgstr "Změnit"
+
+#: excel/templates/excel/export_select.html:38
+msgid ""
+"Select type of export and the desired file type. All exports can be used for"
+" import back in the database."
+msgstr ""
+"Zvolte typ exportu a požadovaný typ souboru. Všechny exporty mohou být "
+"použity pro import zpět do databáze."
+
+#: excel/templates/excel/export_select.html:45
+msgid "Type of export"
+msgstr "Typ exportu"
+
+#: excel/templates/excel/export_select.html:46
+msgid "Available templates"
+msgstr "Šablony k dispozici"
+
+#: excel/templates/excel/export_select.html:49
+msgid "GEPIR export"
+msgstr "Export do GEPIRu"
+
+#: excel/templates/excel/export_select.html:55
+msgid "More information about exporting your products can be found"
+msgstr "Více informací o exportu Vašich produktů naleznete"
+
+#: excel/templates/excel/export_select.html:55
+#: excel/templates/excel/import_file.html:53
+msgid "here"
+msgstr "zde"
+
+#: excel/templates/excel/export_select.html:57
+msgid ""
+"\n"
+"                Please note that only products or available numbers from the <b>active prefix</b> are exported.<br/>\n"
+"                Click <a href=\"/prefixes\">here</a> to change the active prefix.<br/>\n"
+"                - Ranges with capacity bigger than <b>1000</b> will export to \"csv\" file type only.<br/>\n"
+"                - <strong>GEPIR export</strong> will always create <strong>xlsx</strong> file ignoring your selection.<br/>\n"
+"            "
+msgstr ""
+"\n"
+"Prosím uvědomte si, že pouze produkty nebo volná čísla z <b>aktivní řady</b. budou exportovány.\n"
+"Klikněte <a href=\"/prefixes\">zde</a> pro změnu aktivní řady.<br/>\n"
+"- Rozsahy s kapacitou vyšší než <b>1000</b> se vyexportují pouze jako typ souboru \"csv\".<br/>\n"
+"- <b>export pro GEPIR</b> vytvoří vždy soubor typu xlsx, bez ohledu na Vaší volbu.<br/>"
+
+#: excel/templates/excel/import_file.html:18
+#: excel/templates/excel/import_file.html:32 templates/base.html:265
+#: templates/base_bs4.html:250
+msgid "Import products"
+msgstr "Import produktů"
+
+#: excel/templates/excel/import_file.html:23
+#: excel/templates/excel/import_file.html:48
+msgid "Import"
+msgstr "Import"
+
+#: excel/templates/excel/import_file.html:26
+#: prefixes/templates/prefixes/render_range_prefix.html:3
+#: users/templates/user/profile.html:115
+msgid "Range"
+msgstr "Rozsah"
+
+#: excel/templates/excel/import_file.html:39
+msgid ""
+"Select a file to upload and import products. Accepted file types are xls, "
+"xlsx, ods, csv"
+msgstr ""
+"Vyberte soubor pro upload a import produktů. Typ youboru může být xls, xlsx,"
+" ods, csv"
+
+#: excel/templates/excel/import_file.html:47
+msgid "File to import"
+msgstr "Soubor pro import"
+
+#: excel/templates/excel/import_file.html:52
+msgid "More information about importing your products can be found"
+msgstr "Více informací o importování Vašich produktů naleznete "
+
+#: excel/templates/excel/import_file.html:55
+msgid ""
+"\n"
+"                Please note that imported product details must belong to the <b>active prefix</b> only.\n"
+"                Click <a href=\"/prefixes\">here</a> to change the active prefix.\n"
+"            "
+msgstr ""
+"\n"
+"Prosím uvědomte si, že importované produkty se musejí vztahovat jen k <b>aktivní číselné řadě</a>. Pro změnu aktivní řady klikněte <a href=\"/prefixes\">zde</a>."
+
+#: excel/templates/excel/import_file.html:64
+msgid "Processed rows"
+msgstr "Zpracovaných řádků"
+
+#: excel/templates/excel/import_file.html:68
+msgid "where successfully imported"
+msgstr "úspěšně importovaných"
+
+#: excel/templates/excel/import_file.html:74
+msgid "had warnings and imported partially"
+msgstr "importovaných částečně, s výstrahou"
+
+#: excel/templates/excel/import_file.html:85
+msgid "had errors and failed to import"
+msgstr "chybných a neimportovaných"
+
+#: member_organisations/custom_admin/modified_model_admin.py:158
+#, python-brace-format
+msgid "The {name} \"{obj}\" was added successfully. You may edit it again below."
+msgstr "{name} \"{obj}\" byl úspěšně přidán. Níže ho můžete znovu editovat."
+
+#: member_organisations/custom_admin/modified_model_admin.py:172
+#, python-brace-format
+msgid ""
+"The {name} \"{obj}\" was added successfully. You may add another {name} "
+"below."
+msgstr "{name} \"{obj}\" byl úspěšně přidán. Níže můžete přidat další {name}."
+
+#: member_organisations/custom_admin/modified_model_admin.py:184
+#, python-brace-format
+msgid "The {name} \"{obj}\" was added successfully."
+msgstr "{name} \"{obj}\" byl úspěšně přidán."
+
+#: member_organisations/custom_admin/modified_model_admin.py:231
+#, python-format
+msgid "The %(name)s \"%(obj)s\" was deleted successfully."
+msgstr "%(name)s \"%(obj)s\" byl úspěšně smazán."
+
+#: member_organisations/models.py:77
+msgid "GS1 Cloud Disclaimer"
+msgstr "Podmínky použití GS1 Cloud"
+
+#: member_organisations/models.py:80
+msgid "GS1 Barcode Production Disclaimer"
+msgstr "Podmínky použití čárových kódů GS1"
+
+#: member_organisations/models.py:104
+msgid "GS1 Dashboard"
+msgstr "GS1 ovládací panel"
+
+#: member_organisations/models.py:154
+#, python-brace-format
+msgid ""
+"User can't have multiple organizations, assigned organizations: "
+"{organizations}"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/change_form.html:21
+#: member_organisations/templates/admin/go_admin/change_list.html:58
+#: member_organisations/templates/admin/mo_admin/change_form.html:21
+#: member_organisations/templates/admin/mo_admin/change_list.html:58
+#: member_organisations/templates/admin/pending_users/change_form.html:21
+#: member_organisations/templates/admin/pending_users/change_list.html:61
+#, python-format
+msgid "Add %(name)s"
+msgstr "Přidat %(name)s"
+
+#: member_organisations/templates/admin/go_admin/change_form.html:63
+#: member_organisations/templates/admin/go_admin/change_list.html:67
+#: member_organisations/templates/admin/mo_admin/change_form.html:64
+#: member_organisations/templates/admin/mo_admin/change_list.html:67
+#: member_organisations/templates/admin/pending_users/change_form.html:63
+#: member_organisations/templates/admin/pending_users/change_list.html:70
+msgid "Please correct the error below."
+msgstr "Prosím opravte níže zmíněnou chybu."
+
+#: member_organisations/templates/admin/go_admin/change_form.html:63
+#: member_organisations/templates/admin/go_admin/change_list.html:67
+#: member_organisations/templates/admin/mo_admin/change_form.html:64
+#: member_organisations/templates/admin/mo_admin/change_list.html:67
+#: member_organisations/templates/admin/pending_users/change_form.html:63
+#: member_organisations/templates/admin/pending_users/change_list.html:70
+msgid "Please correct the errors below."
+msgstr "Prosím opravte níže zmíněné chyby."
+
+#: member_organisations/templates/admin/go_admin/change_form.html:106
+#: member_organisations/templates/admin/mo_admin/change_form.html:107
+#: templates/admin/custom_change_view.html:21 templates/admin/index.html:56
+msgid "Administration sections"
+msgstr "Sekce administrace"
+
+#: member_organisations/templates/admin/go_admin/change_list.html:78
+#: member_organisations/templates/admin/mo_admin/change_list.html:78
+#: member_organisations/templates/admin/pending_users/change_list.html:81
+msgid "Filter"
+msgstr "Filtr"
+
+#: member_organisations/templates/admin/go_admin/delete_confirmation.html:18
+#: member_organisations/templates/admin/go_admin/delete_selected_confirmation.html:16
+#: member_organisations/templates/admin/go_admin/submit_line.html:7
+#: member_organisations/templates/admin/mo_admin/delete_confirmation.html:18
+#: member_organisations/templates/admin/mo_admin/delete_selected_confirmation.html:16
+#: member_organisations/templates/admin/mo_admin/submit_line.html:7
+#: member_organisations/templates/admin/pending_users/submit_line.html:7
+#: products/templates/products/product_fulledit_form.html:368
+#: products/templates/products/product_fulledit_form.html:504
+#: products/templates/products/product_fulledit_form_js.html:146
+msgid "Delete"
+msgstr "Smazat"
+
+#: member_organisations/templates/admin/go_admin/delete_confirmation.html:32
+#: member_organisations/templates/admin/mo_admin/delete_confirmation.html:32
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '\n"
+"            %(escaped_object)s' would result in deleting related objects, but your account doesn't\n"
+"            have permission to delete the following types of objects:"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/delete_confirmation.html:41
+#: member_organisations/templates/admin/mo_admin/delete_confirmation.html:41
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '\n"
+"            %(escaped_object)s' would require deleting the following protected related\n"
+"            objects:"
+msgstr ""
+"Smazání %(object_name)s '\n"
+"%(escaped_object)s' by vyžadovalo smazání následujících chráněných souvztažných objektů:"
+
+#: member_organisations/templates/admin/go_admin/delete_confirmation.html:50
+#: member_organisations/templates/admin/mo_admin/delete_confirmation.html:50
+#, python-format
+msgid ""
+"Are you sure you want to delete the\n"
+"            %(object_name)s \"%(escaped_object)s\"? All of the following related items will be\n"
+"            deleted:"
+msgstr ""
+"Jste si jisti, že chcete smazat\n"
+"%(object_name)s \"%(escaped_object)s\"? Budou smazány všechny následující souvztažné položky:"
+
+#: member_organisations/templates/admin/go_admin/delete_confirmation.html:54
+#: member_organisations/templates/admin/go_admin/delete_selected_confirmation.html:46
+#: member_organisations/templates/admin/mo_admin/delete_confirmation.html:54
+#: member_organisations/templates/admin/mo_admin/delete_selected_confirmation.html:46
+msgid "Objects"
+msgstr "Objekty"
+
+#: member_organisations/templates/admin/go_admin/delete_confirmation.html:63
+#: member_organisations/templates/admin/go_admin/delete_selected_confirmation.html:57
+#: member_organisations/templates/admin/mo_admin/delete_confirmation.html:63
+#: member_organisations/templates/admin/mo_admin/delete_selected_confirmation.html:57
+msgid "Yes, I'm sure"
+msgstr "Jsem si jístý"
+
+#: member_organisations/templates/admin/go_admin/delete_confirmation.html:64
+#: member_organisations/templates/admin/go_admin/delete_selected_confirmation.html:58
+#: member_organisations/templates/admin/mo_admin/delete_confirmation.html:64
+#: member_organisations/templates/admin/mo_admin/delete_selected_confirmation.html:58
+msgid "No, take me back"
+msgstr "Ne, vrátit se"
+
+#: member_organisations/templates/admin/go_admin/delete_selected_confirmation.html:30
+#: member_organisations/templates/admin/mo_admin/delete_selected_confirmation.html:30
+#, python-format
+msgid ""
+"Deleting the selected %(objects_name)s would result in deleting related "
+"objects, but your account doesn't have permission to delete the following "
+"types of objects:"
+msgstr ""
+"Smazání vybraných %(objects_name)s by mělo za následek smazání souvztažných "
+"objektů, ale Váš účet nemá oprávnění k mazání následujících typů objektů:"
+
+#: member_organisations/templates/admin/go_admin/delete_selected_confirmation.html:37
+#: member_organisations/templates/admin/mo_admin/delete_selected_confirmation.html:37
+#, python-format
+msgid ""
+"Deleting the selected %(objects_name)s would require deleting the following "
+"protected related objects:"
+msgstr ""
+"Smazání %(objects_name)s by vyžadovalo smazání následujících chráněných "
+"souvztažných objektů:"
+
+#: member_organisations/templates/admin/go_admin/delete_selected_confirmation.html:44
+#: member_organisations/templates/admin/mo_admin/delete_selected_confirmation.html:44
+#, python-format
+msgid ""
+"Are you sure you want to delete the selected %(objects_name)s? All of the "
+"following objects and their related items will be deleted:"
+msgstr ""
+"Jste si jisti, že chcete smazat vybrané %(objects_name)s? Všechny "
+"následující objekty a jejich souvztažné položky budou smazány:"
+
+#: member_organisations/templates/admin/go_admin/index.html:30
+#: member_organisations/templates/admin/mo_admin/index.html:29
+#: templates/admin/index.html:20
+#, python-format
+msgid "Models in the %(name)s application"
+msgstr ""
+
+#: member_organisations/templates/admin/go_admin/index.html:41
+#: member_organisations/templates/admin/mo_admin/index.html:40
+#: templates/admin/index.html:31
+msgid "Add"
+msgstr "Přidat"
+
+#: member_organisations/templates/admin/go_admin/index.html:57
+#: member_organisations/templates/admin/mo_admin/index.html:56
+#: templates/admin/index.html:47
+msgid "You don't have permission to edit anything."
+msgstr "Nemáte oprávnění cokoliv měnit."
+
+#: member_organisations/templates/admin/go_admin/index.html:58
+msgid ""
+"If you just registered please ask a super administrator to activate your "
+"account."
+msgstr ""
+"Pokud jste se právě registrovali, požádejte super administrátora o aktivaci "
+"Vašeho účtu."
+
+#: member_organisations/templates/admin/go_admin/index.html:67
+#: member_organisations/templates/admin/mo_admin/index.html:67
+msgid "Administration section"
+msgstr "Sekce administrace"
+
+#: member_organisations/templates/admin/go_admin/index.html:73
+#: member_organisations/templates/admin/go_admin/user_tools.html:8
+#: member_organisations/templates/admin/mo_admin/index.html:73
+#: member_organisations/templates/admin/mo_admin/user_tools.html:8
+#: templates/admin/base.html:45
+msgid "View site"
+msgstr "Zobraz stránku"
+
+#: member_organisations/templates/admin/go_admin/index.html:81
+#: member_organisations/templates/admin/mo_admin/index.html:89
+#: templates/admin/index.html:97
+msgid "Translations"
+msgstr "Překlady"
+
+#: member_organisations/templates/admin/go_admin/index.html:98
+#: templates/admin/index.html:67
+msgid "Member organizations"
+msgstr "Členské organizace"
+
+#: member_organisations/templates/admin/go_admin/index.html:103
+msgid "GS1 Member Organization Admin"
+msgstr "Admin GS1 členské organizace"
+
+#: member_organisations/templates/admin/go_admin/submit_line.html:3
+#: member_organisations/templates/admin/mo_admin/submit_line.html:3
+#: member_organisations/templates/admin/pending_users/submit_line.html:3
+msgid "Save"
+msgstr "Uložit"
+
+#: member_organisations/templates/admin/go_admin/submit_line.html:9
+#: member_organisations/templates/admin/mo_admin/submit_line.html:9
+#: member_organisations/templates/admin/pending_users/submit_line.html:9
+msgid "Save as new"
+msgstr "Uložit jako nové"
+
+#: member_organisations/templates/admin/go_admin/submit_line.html:10
+#: member_organisations/templates/admin/mo_admin/submit_line.html:10
+#: member_organisations/templates/admin/pending_users/submit_line.html:10
+msgid "Save and add another"
+msgstr "Uložit a přidat další"
+
+#: member_organisations/templates/admin/go_admin/submit_line.html:11
+#: member_organisations/templates/admin/mo_admin/submit_line.html:11
+#: member_organisations/templates/admin/pending_users/submit_line.html:11
+msgid "Save and continue editing"
+msgstr "Uložit a pokračovat v editaci"
+
+#: member_organisations/templates/admin/go_admin/user_tools.html:4
+#: member_organisations/templates/admin/mo_admin/user_tools.html:4
+#: templates/admin/base.html:40
+msgid "Welcome,"
+msgstr "Vítejte,"
+
+#: member_organisations/templates/admin/go_admin/user_tools.html:10
+#: member_organisations/templates/admin/mo_admin/user_tools.html:10
+#: member_organisations/templates/admin/pending_users/change_form.html:33
+#: member_organisations/templates/admin/pending_users/change_list.html:46
+#: templates/admin/base.html:56 templates/base.html:98
+#: templates/base_bs4.html:88
+msgid "Log out"
+msgstr "Odhlásit"
+
+#: member_organisations/templates/admin/mo_admin/index.html:57
+msgid ""
+"If you just registered please ask a GO administrator to activate your "
+"account."
+msgstr ""
+"Pokud jste se právě registrovali, požádejte prosím GO administrátora o "
+"aktivaci Vašeho účtu."
+
+#: member_organisations/templates/admin/mo_admin/index.html:97
+msgid "GS1 Member Organisation"
+msgstr "Členská organizace GS1"
+
+#: member_organisations/templates/admin/mo_admin/index.html:102
+msgid "GS1 Member Organisation Admin"
+msgstr "Admin GS1 členské organizace"
+
+#: member_organisations/tests/test_staff_registration.py:138
+#: member_organisations/tests/test_staff_registration.py:144
+msgid ""
+"User must be redirected to main GO admin page with \"user is not activated\""
+" notification"
+msgstr ""
+"Uživatel musí být přesměrován na hlavní stránku GO administrace s "
+"upozorněním *uživatel není aktivní*"
+
+#: member_organisations/tests/test_staff_registration.py:153
+msgid "GO admin user must be created with .is_active=False"
+msgstr ""
+
+#: member_organisations/tests/test_staff_registration.py:161
+msgid "Login failed for {self.users_credentials[\"goadmin\"]}"
+msgstr ""
+
+#: member_organisations/tests/test_staff_registration.py:174
+#: member_organisations/tests/test_staff_registration.py:232
+#, python-brace-format
+msgid "User must have an access to the following apps: {required_apps}"
+msgstr ""
+
+#: member_organisations/tests/test_staff_registration.py:197
+#: member_organisations/tests/test_staff_registration.py:203
+msgid ""
+"User must be redirected to main MO admin page with \"user is not activated\""
+" notification"
+msgstr ""
+"Uživatel musí být přesměrován na hlavní stránku MO administrace s "
+"upozorněním *uživatel není aktivní*"
+
+#: member_organisations/tests/test_staff_registration.py:212
+msgid "MO admin user must be created with .is_active=False"
+msgstr ""
+
+#: member_organisations/tests/test_staff_registration.py:220
+msgid "Login failed for {self.users_credentials[\"moadmin\"]}"
+msgstr ""
+
+#: member_organisations/tests/test_staff_registration.py:264
+#, python-brace-format
+msgid "Signup failed for {credentials}"
+msgstr ""
+
+#: member_organisations/tests/test_staff_registration.py:273
+msgid ""
+"Login failed for GO Admin with credentials: "
+"{self.users_credentials[\"goadmin\"]}"
+msgstr ""
+
+#: member_organisations/tests/test_staff_registration.py:281
+msgid "MO Admin must not be activated here"
+msgstr ""
+
+#: member_organisations/tests/test_staff_registration.py:286
+msgid "MO Admin must be activated here"
+msgstr ""
+
+#: member_organisations/tests/test_staff_registration.py:307
+msgid "User must be redirected to main GO admin page"
+msgstr ""
+
+#: member_organisations/tests/test_staff_registration.py:312
+#, python-brace-format
+msgid ""
+"Login failed for {credentials}, must be allowed with a randomized case "
+"username"
+msgstr ""
+
+#: prefixes/templates/admin/drop_down_filters.html:3
+#, python-format
+msgid " By %(filter_title)s "
+msgstr ""
+
+#: prefixes/templates/prefixes/_location_prefix_list.html:49
+msgid "Enter a new location in selected range"
+msgstr "Vložit novou lokaci ve vybrané řadě"
+
+#: prefixes/templates/prefixes/_location_prefix_list.html:52
+msgid "Set selected range as active and go to My Locations"
+msgstr "Nastavit vybranou řadu jako aktivní a přejít do Mých lokací"
+
+#: prefixes/templates/prefixes/_location_prefix_list.html:55
+msgid "Set starting GLN in selected range manually"
+msgstr "Nastavit počáteční GLN ve vybrané řadě ručně"
+
+#: prefixes/templates/prefixes/_location_prefix_list.html:58
+msgid "Set starting GLN to first available number"
+msgstr "Nastavit počáteční GLN na první volné číslo"
+
+#: prefixes/templates/prefixes/_location_prefix_list.html:61
+msgid "Export available GLNs in this range"
+msgstr "Exportovat volná GLN v této řadě"
+
+#: prefixes/templates/prefixes/_location_prefix_list.html:65
+#: prefixes/templates/prefixes/_product_prefix_list.html:74
+msgid "Continue"
+msgstr "Pokračovat"
+
+#: prefixes/templates/prefixes/_product_prefix_list.html:57
+msgid "Enter a new product in selected range"
+msgstr "Vložit nový produkt ve vybrané řadě"
+
+#: prefixes/templates/prefixes/_product_prefix_list.html:61
+msgid "Set selected range as active and go to My Products"
+msgstr "Zvolit vybranou řadu jako aktivní a přejít do Mých produktů"
+
+#: prefixes/templates/prefixes/_product_prefix_list.html:64
+msgid "Set starting GTIN in selected range manually"
+msgstr "Nastavit první GTIN v řadě ručně"
+
+#: prefixes/templates/prefixes/_product_prefix_list.html:67
+msgid "Set starting GTIN to first available number"
+msgstr "Nastavit první GTIN na první volné číslo."
+
+#: prefixes/templates/prefixes/_product_prefix_list.html:70
+msgid "Export available GTINs in this range"
+msgstr "Exportovat volné GTINy v této řadě"
+
+#: prefixes/templates/prefixes/prefix_exhausted.html:3
+#: prefixes/templates/prefixes/prefix_exhausted.html:12
+#: prefixes/templates/prefixes/prefixes_list.html:3
+#: prefixes/templates/prefixes/prefixes_list.html:18 templates/base.html:215
+#: templates/base_bs4.html:199
+msgid "Prefix management"
+msgstr "Správá prefixů (rozsahů - číselných řad)"
+
+#: prefixes/templates/prefixes/render_range_prefix.html:6
+msgid "GS1 Prefix"
+msgstr ""
+
+#: prefixes/templates/prefixes/set_starting.html:3
+msgid "Set Starting number"
+msgstr "Nastavit počáteční číslo"
+
+#: prefixes/templates/prefixes/set_starting.html:12
+msgid "Set starting number for a range"
+msgstr "Nastavit počáteční číslo pro rozsah"
+
+#: prefixes/templates/prefixes/set_starting.html:20
+msgid "New starting number"
+msgstr "Nové počáteční číslo"
+
+#: products/forms.py:655
+msgid "Ascending"
+msgstr "Stoupající"
+
+#: products/forms.py:656
+msgid "Descending"
+msgstr "Klesající"
+
+#: products/models/product.py:844
+msgid "Image"
+msgstr "Obrázek"
+
+#: products/templates/products/_product_cloud.html:7
+msgid "Product properties"
+msgstr "Vlastnosti produktu"
+
+#: products/templates/products/_product_cloud.html:8
+msgid "Must be present for the upload"
+msgstr "Musí být obsaženo pro upload"
+
+#: products/templates/products/_product_cloud.html:12
+msgid ""
+"Please note that the following attributes must be present for the product "
+"upload:"
+msgstr ""
+"Prosím uvědomte si, že pro upload musí být obsaženy následující atributy:"
+
+#: products/templates/products/_product_cloud.html:15
+msgid "gtin"
+msgstr "gtin"
+
+#: products/templates/products/_product_cloud.html:18
+msgid "target market"
+msgstr "cílový trh"
+
+#: products/templates/products/_product_cloud.html:21
+msgid "brand"
+msgstr "značka"
+
+#: products/templates/products/_product_cloud.html:24
+msgid "label description"
+msgstr "popis na etiketě"
+
+#: products/templates/products/_product_cloud.html:27
+msgid "company name"
+msgstr "název společnosti"
+
+#: products/templates/products/_product_cloud.html:30
+#, fuzzy
+msgid "category code"
+msgstr "kód kategorie"
+
+#: products/templates/products/_product_cloud.html:33
+msgid "image"
+msgstr "obrázek"
+
+#: products/templates/products/_product_cloud.html:36
+msgid "language"
+msgstr "jazyk"
+
+#: products/templates/products/_product_cloud.html:39
+msgid "To find out more click here"
+msgstr "Pro úplné znění klikněte zde"
+
+#: products/templates/products/_product_cloud.html:48
+msgid "GS1 Cloud state"
+msgstr "Stav GS1 Cloud"
+
+#: products/templates/products/_product_cloud.html:49
+msgid "Must be active for synchronisation to take place"
+msgstr ""
+
+#: products/templates/products/_product_cloud.html:54
+msgid "Current state"
+msgstr "Současný stav"
+
+#: products/templates/products/_product_cloud.html:73
+msgid "Last Status"
+msgstr "Poslední stav"
+
+#: products/templates/products/_product_cloud.html:92
+msgid "GS1 Cloud audit"
+msgstr ""
+
+#: products/templates/products/_product_cloud.html:94
+msgid "Log of the last operations"
+msgstr "Log poslední aktivity"
+
+#: products/templates/products/_product_cloud.html:101
+msgid "Status"
+msgstr "Stav"
+
+#: products/templates/products/_product_cloud.html:102
+msgid "Date"
+msgstr "Datum"
+
+#: products/templates/products/list.html:21
+#: products/templates/products/list_js.html:23
+msgid "GS1 Activate: My products"
+msgstr "GS1 Activate: mé produkty"
+
+#: products/templates/products/list.html:25
+msgid "My products"
+msgstr "Mé produkty"
+
+#: products/templates/products/list.html:29
+msgid "[Change]"
+msgstr "[Změnit]"
+
+#: products/templates/products/list.html:37
+#: products/templates/products/list_js.html:43 templates/base.html:248
+#: templates/base_bs4.html:233
+msgid "My Products"
+msgstr "Mé produkty"
+
+#: products/templates/products/list.html:42
+#: products/templates/products/list_js.html:48
+#: products/templates/products/product_fulledit_form.html:29
+#: products/templates/products/product_fulledit_form_js.html:46
+#: products_react/templates/products_react/product_react_fulledit_form.html:28
+#: templates/base.html:316 templates/base_bs4.html:289
+msgid "Help"
+msgstr "Nápověda"
+
+#: products/templates/products/list.html:51
+msgid "Edit your product catalogue"
+msgstr "Upravit svůj katalog produktů"
+
+#: products/templates/products/list.html:54
+#: users/templates/user/profile.html:88
+msgid "Add product"
+msgstr "Přidat produkt"
+
+#: products/templates/products/list.html:71
+#: products/templates/products/subproduct_add_case.html:43
+#: products/templates/products/subproduct_add_case_edit.html:43
+msgid "List filtered"
+msgstr "Vypsat filtrované"
+
+#: products/templates/products/list.html:75
+msgid "Search"
+msgstr "Prohledat"
+
+#: products/templates/products/list.html:80
+msgid "Sorted"
+msgstr "Setříděné"
+
+#: products/templates/products/list.html:93
+#: products/templates/products/subproduct_add_case.html:68
+#: products/templates/products/subproduct_add_case_edit.html:68
+msgid "Base unit"
+msgstr "Základní jednotka"
+
+#: products/templates/products/list.html:100
+#: products/templates/products/subproduct_add_case.html:75
+#: products/templates/products/subproduct_add_case_edit.html:75
+msgid "Inner pack"
+msgstr "Vnitřní balení"
+
+#: products/templates/products/list.html:110
+#: products/templates/products/subproduct_add_case.html:84
+#: products/templates/products/subproduct_add_case_edit.html:84
+msgid "Case"
+msgstr ""
+
+#: products/templates/products/list.html:117
+#: products/templates/products/list.html:415
+#: products/templates/products/list_js.html:102
+msgid "Pallet"
+msgstr "Paleta"
+
+#: products/templates/products/list.html:127
+msgid "Display shipper"
+msgstr ""
+
+#: products/templates/products/list.html:133
+msgid "Starred"
+msgstr ""
+
+#: products/templates/products/list.html:171
+#: products/templates/products/subproduct_add_case.html:124
+#: products/templates/products/subproduct_add_case_edit.html:124
+msgid "Select Target Market:"
+msgstr "Zvolit cílový trh:"
+
+#: products/templates/products/list.html:185
+msgid "OK"
+msgstr "OK"
+
+#: products/templates/products/list.html:187
+msgid "Reset"
+msgstr "Reset"
+
+#: products/templates/products/list.html:191
+msgid "Sort by"
+msgstr "Srovnat podle"
+
+#: products/templates/products/list.html:210
+msgid ""
+"\n"
+"                            When giving the barcode number for a product to your printer/graphic designer/packaging\n"
+"                            designer for the creation of a barcode symbol, please ignore the preceding 0 attached\n"
+"                            to the barcode number below if the package level is a base unit and inner case. Keep\n"
+"                            the 0 if the package level is an outer case or pallet.\n"
+"                        "
+msgstr ""
+"\n"
+"Až budete předávat číslo čárového kódu Vašeho produktu do tisku nebo grafikovi, aby z něj vytvořil grafický symbol čárového kódu, ignorujte prosím číslici 0 připojenou zleva k číslům níže v případě, že se jedná o spotřebitelsnou jednotku uvnitř dalšího obalu. V případě že se jedná o paletu nebo vnější obal, číslici 0 ponechte."
+
+#: products/templates/products/list.html:225
+msgid "Package Level"
+msgstr "Úroveň balení"
+
+#: products/templates/products/list.html:226
+#: products/templates/products/product_print_summary.rml:106
+#: products/templates/products/product_summary_base.html:52
+#: products/templates/products/subproduct_add_case.html:169
+#: products/templates/products/subproduct_add_case_edit.html:170
+msgid "Brand"
+msgstr "Značka"
+
+#: products/templates/products/list.html:229
+#: products/templates/products/subproduct_add_case.html:172
+#: products/templates/products/subproduct_add_case_edit.html:173
+msgid "SKU"
+msgstr "SKU"
+
+#: products/templates/products/list.html:231
+#: products/templates/products/product_fulledit_form.html:82
+#: products/templates/products/product_fulledit_form.html:204
+#: products/templates/products/product_fulledit_form.html:404
+#: products/templates/products/product_fulledit_form_js.html:76
+#: products/templates/products/product_print_summary.rml:97
+#: products/templates/products/product_summary_base.html:201
+#: products/templates/products/subproduct_add_case.html:174
+#: products/templates/products/subproduct_add_case_edit.html:175
+msgid "GTIN"
+msgstr "GTIN"
+
+#: products/templates/products/list.html:232
+msgid "Barcode"
+msgstr "Čárový kód"
+
+#: products/templates/products/list.html:233
+#: products/templates/products/product_fulledit_form.html:58
+msgid "GS1 Cloud"
+msgstr "GS1 CLoud"
+
+#: products/templates/products/list.html:326
+#: products/templates/products/subproduct_add_case.html:252
+#: products/templates/products/subproduct_add_case_edit.html:253
+msgid "No products found, please"
+msgstr "Nebyly nalezeny žádné produkty, prosím"
+
+#: products/templates/products/list.html:327
+#: products/templates/products/subproduct_add_case.html:254
+#: products/templates/products/subproduct_add_case_edit.html:255
+msgid "add product"
+msgstr "přidejte produkt"
+
+#: products/templates/products/list.html:337
+#: products/templates/products/list.html:343
+#: products/templates/products/subproduct_add_case.html:265
+#: products/templates/products/subproduct_add_case.html:270
+#: products/templates/products/subproduct_add_case_edit.html:266
+#: products/templates/products/subproduct_add_case_edit.html:271
+msgid "Previous"
+msgstr "Předchozí"
+
+#: products/templates/products/list.html:347
+#: products/templates/products/subproduct_add_case.html:273
+#: products/templates/products/subproduct_add_case_edit.html:274
+msgid "Page"
+msgstr "Stránka"
+
+#: products/templates/products/list.html:348
+#: products/templates/products/subproduct_add_case.html:274
+#: products/templates/products/subproduct_add_case_edit.html:275
+msgid "of"
+msgstr "z"
+
+#: products/templates/products/list.html:349
+#: products/templates/products/subproduct_add_case.html:275
+#: products/templates/products/subproduct_add_case_edit.html:276
+msgid "Products per Page"
+msgstr "Produktů na stránku"
+
+#: products/templates/products/list.html:364
+#: products/templates/products/list.html:370
+#: products/templates/products/subproduct_add_case.html:290
+#: products/templates/products/subproduct_add_case.html:295
+#: products/templates/products/subproduct_add_case_edit.html:291
+#: products/templates/products/subproduct_add_case_edit.html:296
+msgid "Next"
+msgstr "Další"
+
+#: products/templates/products/list.html:385
+#: products/templates/products/list_js.html:72
+msgid "Legend"
+msgstr "Legenda"
+
+#: products/templates/products/list.html:391
+#: products/templates/products/list_js.html:78
+msgid "Base Unit"
+msgstr "Základní jednotka"
+
+#: products/templates/products/list.html:397
+#: products/templates/products/list_js.html:84
+msgid "Pack"
+msgstr "Balení"
+
+#: products/templates/products/list.html:403
+#: products/templates/products/list_js.html:90
+msgid "Case or mixed case"
+msgstr ""
+
+#: products/templates/products/list.html:409
+#: products/templates/products/list_js.html:96
+msgid "Display unit"
+msgstr ""
+
+#: products/templates/products/list.html:424
+#: products/templates/products/list_js.html:111
+msgid "Data Completeness"
+msgstr "Úplnost dat"
+
+#: products/templates/products/list_js.html:27
+#: products/templates/products/product_fulledit_form.html:11
+#: products/templates/products/product_fulledit_form.html:23
+#: products/templates/products/product_fulledit_form_js.html:13
+#: products/templates/products/product_fulledit_form_js.html:31
+#: products_react/templates/products_react/product_react_fulledit_form.html:10
+#: products_react/templates/products_react/product_react_fulledit_form.html:22
+msgid "Edit product"
+msgstr "Upravit produkt"
+
+#: products/templates/products/package_type_form.html:9
+#: products/templates/products/product_details_form.html:11
+#: products/templates/products/subproduct_add_case.html:16
+#: products/views/products_js.py:71
+msgid "New Product"
+msgstr "Nový produkt"
+
+#: products/templates/products/product_fulledit_form.html:45
+msgid "Basic"
+msgstr "Základní"
+
+#: products/templates/products/product_fulledit_form.html:47
+msgid "Measurements"
+msgstr "Rozměry"
+
+#: products/templates/products/product_fulledit_form.html:49
+msgid "Advanced"
+msgstr "Rozšířené"
+
+#: products/templates/products/product_fulledit_form.html:52
+msgid "Picture"
+msgstr "Obrázek"
+
+#: products/templates/products/product_fulledit_form.html:54
+msgid "Symbols"
+msgstr "Symboly"
+
+#: products/templates/products/product_fulledit_form.html:55
+#: products/templates/products/product_print_summary.rml:19
+msgid "Summary"
+msgstr "Shrnutí"
+
+#: products/templates/products/product_fulledit_form.html:68
+msgid "Product Identification"
+msgstr "Identifikace produktu"
+
+#: products/templates/products/product_fulledit_form.html:70
+msgid ""
+"\n"
+"                                            When giving the barcode number for a product to your printer/graphic\n"
+"                                            designer/packaging designer for the creation of a barcode symbol,\n"
+"                                            please ignore the preceding 0 attached to the barcode number\n"
+"                                            below if the package level is a base unit and inner case. Keep the 0 if\n"
+"                                            the package level is an outer case or pallet.\n"
+"                                        "
+msgstr ""
+"\n"
+"Až budete předávat číslo čárového kódu Vašeho produktu do tisku nebo grafikovi, aby z něj vytvořil grafický symbol čárového kódu, ignorujte prosím číslici 0 připojenou zleva k číslům níže v případě, že se jedná o spotřebitelsnou jednotku uvnitř dalšího obalu. V případě že se jedná o paletu nebo vnější obal, číslici 0 ponechte."
+
+#: products/templates/products/product_fulledit_form.html:118
+msgid "Options"
+msgstr "Volby"
+
+#: products/templates/products/product_fulledit_form.html:119
+msgid "(Tick if yes)"
+msgstr "(Zaškrtněte pokud Ano)"
+
+#: products/templates/products/product_fulledit_form.html:129
+msgid "The item is a Consumer Unit"
+msgstr "Položka je Spotřebitelská jednotka"
+
+#: products/templates/products/product_fulledit_form.html:130
+msgid "The item is a Dispatch Unit"
+msgstr "Položka je Dodací jednotka"
+
+#: products/templates/products/product_fulledit_form.html:131
+msgid "The item is a Variable Weight Product"
+msgstr "Položka je Jednotka s proměnnou hmotností"
+
+#: products/templates/products/product_fulledit_form.html:132
+msgid "The item is an Invoice Unit"
+msgstr "Položka je Fakturační jednotka"
+
+#: products/templates/products/product_fulledit_form.html:133
+msgid "The item is an Orderable Unit"
+msgstr "Položka je Objednací jednotka"
+
+#: products/templates/products/product_fulledit_form.html:140
+msgid "Base unit indicator"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:141
+msgid "The item is a Base Unit"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:147
+#: products/templates/products/product_summary_base.html:87
+msgid "Country Of Origin"
+msgstr "Země původu"
+
+#: products/templates/products/product_fulledit_form.html:148
+#: products/templates/products/product_summary_base.html:92
+msgid "Target Market"
+msgstr "Cílový trh"
+
+#: products/templates/products/product_fulledit_form.html:163
+#: products/templates/products/product_summary_base.html:97
+msgid "Language"
+msgstr "Jazyk"
+
+#: products/templates/products/product_fulledit_form.html:167
+msgid "GLN of Information provider"
+msgstr "GLN poskytovatele informací"
+
+#: products/templates/products/product_fulledit_form.html:172
+msgid "Default GLN"
+msgstr "Defaultní GLN"
+
+#: products/templates/products/product_fulledit_form.html:180
+msgid "Package Type"
+msgstr "Typ balení"
+
+#: products/templates/products/product_fulledit_form.html:189
+msgid "Fields marked with (*) are required."
+msgstr "Pole označená (*) jsou povinná."
+
+#: products/templates/products/product_fulledit_form.html:197
+msgid "Subproducts"
+msgstr "Podprodukty"
+
+#: products/templates/products/product_fulledit_form.html:198
+msgid "subproducts contained in this item"
+msgstr "podprodukty obsažené v této položce"
+
+#: products/templates/products/product_fulledit_form.html:205
+#: products/templates/products/product_fulledit_form.html:405
+#: products/templates/products/product_fulledit_form_js.html:77
+#: products/templates/products/product_summary_base.html:203
+#: products/templates/products/subproduct_add_case.html:168
+#: products/templates/products/subproduct_add_case_edit.html:169
+msgid "Package level"
+msgstr "Úroveň balení"
+
+#: products/templates/products/product_fulledit_form.html:206
+#: products/templates/products/product_fulledit_form.html:406
+#: products/templates/products/product_fulledit_form_js.html:78
+msgid "Product description"
+msgstr "Popis produktu"
+
+#: products/templates/products/product_fulledit_form.html:207
+msgid "Quantity"
+msgstr "Množství"
+
+#: products/templates/products/product_fulledit_form.html:215
+#: products/templates/products/product_fulledit_form.html:395
+#: products/templates/products/product_fulledit_form_js.html:67
+msgid "Add subproducts"
+msgstr "Přidat podprodukty"
+
+#: products/templates/products/product_fulledit_form.html:231
+#: products/templates/products/product_fulledit_form.html:234
+#: products/templates/products/product_print_summary.rml:121
+#: products/templates/products/product_summary_base.html:115
+msgid "Net Content"
+msgstr "Čistý obsah"
+
+#: products/templates/products/product_fulledit_form.html:237
+msgid "Net Content Measurement Unit"
+msgstr "Jednotka čistého obsahu"
+
+#: products/templates/products/product_fulledit_form.html:252
+msgid "Optional information"
+msgstr "Volitelná informace"
+
+#: products/templates/products/product_fulledit_form.html:310
+msgid "Barcode images of pallets are not yet available."
+msgstr "Obrázky čárového kódu pro palety ještě nejsou k dispozici."
+
+#: products/templates/products/product_fulledit_form.html:331
+msgid "Agreement needed"
+msgstr "Je potřeba souhlas"
+
+#: products/templates/products/product_fulledit_form.html:333
+#: users/templates/user/profile.html:36
+#: users/templates/user/user_agreement_required.html:34
+msgid "You must agree to our"
+msgstr "Musíte schválit naše"
+
+#: products/templates/products/product_fulledit_form.html:338
+#: users/templates/user/profile.html:38
+#: users/templates/user/user_agreement_required.html:36
+msgid "Terms and Conditions"
+msgstr "Podmínky použití"
+
+#: products/templates/products/product_fulledit_form.html:339
+#: users/templates/user/profile.html:40
+msgid "in order to be able to download barcode images."
+msgstr "abyste si mohli stáhnout obrázky čárového kódu."
+
+#: products/templates/products/product_fulledit_form.html:341
+msgid "You can set your agreement at your"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:371
+msgid "Clone"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:375
+msgid "Make a Pack"
+msgstr "Vytvořit balení"
+
+#: products/templates/products/product_fulledit_form.html:380
+msgid "Update"
+msgstr "Aktualizovat"
+
+#: products/templates/products/product_fulledit_form.html:394
+#: products/templates/products/product_fulledit_form.html:427
+#: products/templates/products/product_fulledit_form.html:462
+#: products/templates/products/product_fulledit_form.html:492
+#: products/templates/products/product_fulledit_form.html:519
+#: products/templates/products/product_fulledit_form_js.html:66
+#: products/templates/products/product_fulledit_form_js.html:99
+#: products/templates/products/product_fulledit_form_js.html:134
+#: products/templates/products/product_fulledit_form_js.html:161
+msgid "Close"
+msgstr "Zavřít"
+
+#: products/templates/products/product_fulledit_form.html:399
+#: products/templates/products/product_fulledit_form_js.html:71
+msgid "Available subproducts"
+msgstr "Podprodukty k dispozici"
+
+#: products/templates/products/product_fulledit_form.html:428
+#: products/templates/products/product_fulledit_form_js.html:100
+msgid "Product delete confirmation"
+msgstr "Potvrzení smazání produktu"
+
+#: products/templates/products/product_fulledit_form.html:431
+#: products/templates/products/product_fulledit_form_js.html:103
+msgid ""
+"\n"
+"                            You are about to delete one of your products. Because this action will probably create a gap\n"
+"                            in your serial numbers you must choose what to do.\n"
+"                        "
+msgstr ""
+"\n"
+"Chystáte se smazat jeden z Vašich produktů. Pradvěpodobně to vytvoří mezeru v číslování, musíte zvolit co udělat dál."
+
+#: products/templates/products/product_fulledit_form.html:436
+#: products/templates/products/product_fulledit_form_js.html:108
+msgid ""
+"Delete product and set prefix's starting GTIN to deleted product's GTIN"
+msgstr "Smazat produkt a nastavit další číslování na číslo tohoto produktu"
+
+#: products/templates/products/product_fulledit_form.html:437
+#: products/templates/products/product_fulledit_form_js.html:109
+msgid "or"
+msgstr "nebo"
+
+#: products/templates/products/product_fulledit_form.html:438
+#: products/templates/products/product_fulledit_form_js.html:110
+msgid "Delete product and don't change the starting GTIN of this prefix"
+msgstr "Smazat produkt a neměnit počáteční číslo GTIN"
+
+#: products/templates/products/product_fulledit_form.html:440
+#: products/templates/products/product_fulledit_form_js.html:112
+msgid ""
+"Keep in mind that only products that are not part of a container can be "
+"deleted."
+msgstr ""
+"Pamatujte, že jen produkty které nejsou částí kontejneru mohou být smazány."
+
+#: products/templates/products/product_fulledit_form.html:444
+#: products/templates/products/product_fulledit_form_js.html:116
+msgid "Don't delete product"
+msgstr "Nemazat produkt"
+
+#: products/templates/products/product_fulledit_form.html:446
+#: products/templates/products/product_fulledit_form_js.html:118
+msgid "Delete and set"
+msgstr "Smazat a nastavit"
+
+#: products/templates/products/product_fulledit_form.html:448
+#: products/templates/products/product_fulledit_form_js.html:120
+msgid "Delete only"
+msgstr "Pouze smazat"
+
+#: products/templates/products/product_fulledit_form.html:464
+msgid "Target Market delete confirmation"
+msgstr "Potvrzení smazání cílového trhu"
+
+#: products/templates/products/product_fulledit_form.html:468
+msgid "You are about to delete"
+msgstr "Chystáte se smazat"
+
+#: products/templates/products/product_fulledit_form.html:471
+msgid "Target Market of your product"
+msgstr "Cílový trh Vašeho produktu"
+
+#: products/templates/products/product_fulledit_form.html:476
+msgid "Don't delete Target Market"
+msgstr "Nemazat cílový trh"
+
+#: products/templates/products/product_fulledit_form.html:478
+msgid "Delete Target Market"
+msgstr "Smazat cílový trh"
+
+#: products/templates/products/product_fulledit_form.html:494
+#: products/templates/products/product_fulledit_form_js.html:136
+msgid "Sub-product delete confirmation"
+msgstr "Potvrzení smazání podproduktu"
+
+#: products/templates/products/product_fulledit_form.html:497
+#: products/templates/products/product_fulledit_form_js.html:139
+msgid ""
+"\n"
+"                            You are about to delete one of sub-products. Subproduct would be kept in the database,\n"
+"                            just the link between parent and child products would be removed.\n"
+"                        "
+msgstr ""
+"\n"
+"Chystáte se smazat jeden z podproduktů. Podprodukt bude zachován v databázi, odstraní se jen propojení v hierarchii."
+
+#: products/templates/products/product_fulledit_form.html:522
+#: products/templates/products/product_fulledit_form_js.html:164
+msgid "Make a pack of trade items using"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:524
+#: products/templates/products/product_fulledit_form_js.html:166
+msgid "as a base"
+msgstr ""
+
+#: products/templates/products/product_fulledit_form.html:534
+#: products/templates/products/product_fulledit_form_js.html:176
+msgid "Choose one from the available GTINs"
+msgstr "Vyberte jeden s volných GTINů"
+
+#: products/templates/products/product_fulledit_form.html:544
+#: products/templates/products/product_fulledit_form_js.html:186
+msgid "Indicate hierarchy level"
+msgstr "Zobrazit úroveň hierarchie"
+
+#: products/templates/products/product_fulledit_form.html:549
+#: products/templates/products/product_fulledit_form_js.html:191
+msgid "Pack or inner pack e.g. six pack of beer bottles"
+msgstr "Balení nebo vnitřní balení, např. balík šesti lahví"
+
+#: products/templates/products/product_fulledit_form.html:552
+#: products/templates/products/product_fulledit_form_js.html:194
+msgid "Outer Case e.g. case of beer (bottles or packs)"
+msgstr "Vnější balení, např. pivní přepravka (basa) lahví"
+
+#: products/templates/products/product_fulledit_form.html:553
+#: products/templates/products/product_fulledit_form_js.html:195
+msgid "Pallet e.g. pallet of cases of beer"
+msgstr "Paleta, například paleta pivních bas"
+
+#: products/templates/products/product_fulledit_form.html:560
+#: products/templates/products/product_fulledit_form_js.html:202
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: products/templates/products/product_fulledit_form.html:562
+#: products/templates/products/product_fulledit_form_js.html:204
+msgid "Create"
+msgstr "Vytvořit"
+
+#: products/templates/products/product_print_summary.rml:11
+msgid "Summary of"
+msgstr "Shrnutí"
+
+#: products/templates/products/product_print_summary.rml:100
+#: products/templates/products/product_summary_base.html:35
+msgid "GS1 Company Prefix"
+msgstr "GS1 Company prefix"
+
+#: products/templates/products/product_print_summary.rml:103
+msgid "Product packaging"
+msgstr "Balení produktu"
+
+#: products/templates/products/product_print_summary.rml:109
+#: products/templates/products/product_summary_base.html:57
+msgid "Sub Brand"
+msgstr "Podznačka"
+
+#: products/templates/products/product_print_summary.rml:112
+msgid "Functional Name"
+msgstr "Funkční název"
+
+#: products/templates/products/product_print_summary.rml:115
+#: products/templates/products/product_summary_base.html:67
+msgid "Variant"
+msgstr "Varianta"
+
+#: products/templates/products/product_print_summary.rml:118
+#: products/templates/products/product_summary_base.html:82
+msgid "Internal Product Code"
+msgstr "Interní kód produktu"
+
+#: products/templates/products/product_print_summary.rml:123
+#: products/templates/products/product_summary_base.html:104
+msgid "Number of products"
+msgstr "Počet produktů"
+
+#: products/templates/products/product_print_summary.rml:125
+#: products/templates/products/product_summary_base.html:109
+msgid "Base Unit/Inner GTIN"
+msgstr "Základní jednotka"
+
+#: products/templates/products/product_print_summary.rml:125
+msgid "Not available"
+msgstr "Není k dispozici"
+
+#: products/templates/products/product_print_summary.rml:128
+#: products/templates/products/product_summary_base.html:123
+msgid "Product depth"
+msgstr "Hloubka produktu"
+
+#: products/templates/products/product_print_summary.rml:131
+#: products/templates/products/product_summary_base.html:130
+msgid "Product width"
+msgstr "Šířka produktu"
+
+#: products/templates/products/product_print_summary.rml:134
+#: products/templates/products/product_summary_base.html:137
+msgid "Product height"
+msgstr "Výška produktu"
+
+#: products/templates/products/product_print_summary.rml:137
+#: products/templates/products/product_summary_base.html:144
+msgid "Product gross weight"
+msgstr "Hrubá hmotnost produktu"
+
+#: products/templates/products/product_print_summary.rml:140
+#: products/templates/products/product_summary_base.html:152
+#: products/templates/products/product_summary_base.html:159
+msgid "Product net weight"
+msgstr "Čistá hmotnost produktu"
+
+#: products/templates/products/product_print_summary.rml:147
+msgid "Is Consumer Unit"
+msgstr "Spotřebitelská jednotka"
+
+#: products/templates/products/product_print_summary.rml:150
+msgid "Is Despatch Unit"
+msgstr "Dodací jednotka"
+
+#: products/templates/products/product_print_summary.rml:153
+msgid "Is Variable Weight Unit"
+msgstr "Jednotka s proměnnou hmotností"
+
+#: products/templates/products/product_print_summary.rml:156
+msgid "Is Invoice Unit"
+msgstr "Fakturační jednotka"
+
+#: products/templates/products/product_print_summary.rml:159
+msgid "Is Orderable Unit"
+msgstr "Objednací jednotka"
+
+#: products/templates/products/product_print_summary.rml:167
+msgid "Country of origin"
+msgstr "Země původu"
+
+#: products/templates/products/product_print_summary.rml:171
+msgid "Website"
+msgstr "Webová stránka"
+
+#: products/templates/products/product_print_summary.rml:182
+msgid "Barcode placement"
+msgstr "Umístění čárového kódu"
+
+#: products/templates/products/product_print_summary.rml:182
+#: products/templates/products/product_summary_base.html:248
+msgid "Product image"
+msgstr "Obrázek produktu"
+
+#: products/templates/products/product_print_summary.rml:190
+msgid "Contained Items"
+msgstr "Obsažené položky"
+
+#: products/templates/products/product_print_summary.rml:193
+msgid "Package level "
+msgstr "Úroveň balení"
+
+#: products/templates/products/product_summary.html:30
+#: products/templates/products/product_summary.html:39
+#: products/templates/products/product_summary_xhr.html:7
+#: products/templates/products/product_summary_xhr.html:16
+msgid "Print Product Summary"
+msgstr "Vytisknout shrnutí produktu"
+
+#: products/templates/products/product_summary_base.html:9
+msgid "Owner"
+msgstr "Vlastník"
+
+#: products/templates/products/product_summary_base.html:14
+msgid "Company"
+msgstr "Společnost"
+
+#: products/templates/products/product_summary_base.html:19
+msgid "Label description"
+msgstr "Popis etikety"
+
+#: products/templates/products/product_summary_base.html:26
+msgid "GTIN-13 Number"
+msgstr "Číslo GTIN-13"
+
+#: products/templates/products/product_summary_base.html:29
+msgid "GTIN Number"
+msgstr "Číslo GTIN"
+
+#: products/templates/products/product_summary_base.html:41
+msgid "Product/Packaging"
+msgstr "Produkt / Balení"
+
+#: products/templates/products/product_summary_base.html:47
+msgid "GLN of information provider"
+msgstr "GLN poskytovatele informací"
+
+#: products/templates/products/product_summary_base.html:62
+msgid "Product Type/Functional Name"
+msgstr "Typ produktu / Funkční název"
+
+#: products/templates/products/product_summary_base.html:72
+msgid "Product/Trade item description"
+msgstr "Popis produktu / spotřebitelské jednotky"
+
+#: products/templates/products/product_summary_base.html:77
+msgid "Global Product Classification"
+msgstr "Globální klasifikace produktu (GPC)"
+
+#: products/templates/products/product_summary_base.html:110
+msgid "Not Available"
+msgstr "Není k dispozici"
+
+#: products/templates/products/product_summary_base.html:167
+msgid "External image URL"
+msgstr "URL externího obrázku"
+
+#: products/templates/products/product_summary_base.html:172
+msgid "GS1 cloud state"
+msgstr "Stav GS1 Cloud"
+
+#: products/templates/products/product_summary_base.html:198
+msgid "Contained items"
+msgstr "Obsažené položky"
+
+#: products/templates/products/product_summary_base.html:204
+msgid "Count"
+msgstr "Počet"
+
+#: products/templates/products/product_summary_base.html:238
+msgid "Barcode Placement"
+msgstr "Umístění čárového kódu"
+
+#: products/templates/products/subproduct_add_case.html:12
+#: products/templates/products/subproduct_add_case_edit.html:12
+msgid "GS1 Activate: New product"
+msgstr "GS1 Activate: Nový produkt"
+
+#: products/templates/products/subproduct_add_case.html:26
+msgid "Create an item"
+msgstr "Vytvořit položku"
+
+#: products/templates/products/subproduct_add_case.html:32
+#: products/templates/products/subproduct_add_case_edit.html:32
+msgid "Available products"
+msgstr "Prokukty k dispozici"
+
+#: products/templates/products/subproduct_add_case.html:33
+msgid ""
+"\n"
+"                        Select the products contained in this item and click the \"Next step\" button.<br/>\n"
+"                        Or click <a href=\"/products/subproduct/add/case/skip/\">here</a>\n"
+"                        if contained products are not in your allocated prefixes.\n"
+"                    "
+msgstr ""
+
+#: products/templates/products/subproduct_add_case.html:47
+#: products/templates/products/subproduct_add_case_edit.html:47
+msgid "Filter Product List"
+msgstr "Seznam produktů ve filtru"
+
+#: products/templates/products/subproduct_add_case.html:141
+#: products/templates/products/subproduct_add_case_edit.html:141
+msgid "Clear filter"
+msgstr "Vyčistit filtr"
+
+#: products/templates/products/subproduct_add_case.html:146
+#: products/templates/products/subproduct_add_case_edit.html:146
+msgid "Prefixes"
+msgstr "Prefixy"
+
+#: products/templates/products/subproduct_add_case.html:175
+#: products/templates/products/subproduct_add_case_edit.html:176
+msgid "Select"
+msgstr "Vybrat"
+
+#: products/templates/products/subproduct_add_case.html:307
+msgid "Previous step"
+msgstr "Předchozí krok"
+
+#: products/templates/products/subproduct_add_case.html:310
+msgid "Next step"
+msgstr "Další krok"
+
+#: products/templates/products/subproduct_add_case_edit.html:16
+#: products/templates/products/subproduct_add_case_edit.html:26
+msgid "Edit product - add new subproducts"
+msgstr "Upravit produkt - přidat nové podprodukty"
+
+#: products/templates/products/subproduct_add_case_edit.html:33
+msgid ""
+"\n"
+"                        Select the products contained in this item and click the \"Next step\" button.<br/>\n"
+"                        Or click <a href=\"/products/subproduct/add/case_edit/skip/\">here</a>\n"
+"                        if contained products are not in your allocated prefixes.\n"
+"                    "
+msgstr ""
+
+#: products/templates/products/subproduct_add_case_edit.html:308
+msgid "Continue edit product"
+msgstr "Pokračovat v úpravě produktu"
+
+#: templates/admin/base.html:50
+msgid "Documentation"
+msgstr "Dokumentace"
+
+#: templates/admin/base.html:54
+msgid "Change password"
+msgstr "Změnit password"
+
+#: templates/admin/index.html:57 templates/admin/index.html:61
+msgid "RQ tasks management"
+msgstr ""
+
+#: templates/admin/index.html:71
+msgid "GO Admin"
+msgstr "GO admin"
+
+#: templates/admin/index.html:79
+msgid "MO Admin"
+msgstr "MO admin"
+
+#: templates/admin/index.html:106
+msgid "Recent actions"
+msgstr "Nedávné akce"
+
+#: templates/admin/index.html:107
+msgid "My actions"
+msgstr "Mé akce"
+
+#: templates/admin/index.html:111
+msgid "None available"
+msgstr "Není nic k dispozici"
+
+#: templates/admin/index.html:125
+msgid "Unknown content"
+msgstr "Neznámý obsah"
+
+#: templates/admin_footer/footer.html:4
+msgid "Copyright"
+msgstr "Copyright"
+
+#: templates/base.html:93 templates/base_bs4.html:83
+msgid "Stop impersonate"
+msgstr ""
+
+#: templates/base.html:145 templates/base_bs4.html:135
+msgid "Company name"
+msgstr "Název společnosti"
+
+#: templates/base.html:147 templates/base_bs4.html:137
+msgid "User"
+msgstr "Uživatel"
+
+#: templates/base.html:179 templates/base_bs4.html:166
+msgid "Instant flash message"
+msgstr ""
+
+#: templates/base.html:205 templates/base_bs4.html:187
+msgid "My Account"
+msgstr "Můj účet"
+
+#: templates/base.html:233 templates/base_bs4.html:219
+#: users/templates/user/settings.html:14
+msgid "Settings"
+msgstr "Nastavení"
+
+#: templates/base.html:242 templates/base_bs4.html:227
+msgid "Product Manager"
+msgstr "Správa produktů"
+
+#: templates/base.html:277 templates/base_bs4.html:259
+msgid "Location Manager"
+msgstr "Správa lokací"
+
+#: templates/base.html:283 templates/base_bs4.html:265
+msgid "My Locations"
+msgstr "Mé lokace"
+
+#: templates/base.html:311 templates/base_bs4.html:284
+msgid "Create GS1 Barcodes"
+msgstr "Vytvořit čárové kódy GS1"
+
+#: templates/base.html:343 templates/base_bs4.html:311
+msgid "Terms of Use"
+msgstr "Podmínky použití"
+
+#: templates/base.html:347 templates/base_bs4.html:315
+msgid "Privacy Policy"
+msgstr ""
+
+#: users/admin.py:144
+msgid "Personal info"
+msgstr "Osobní info"
+
+#: users/admin.py:145
+msgid "Permissions"
+msgstr "Oprávnění"
+
+#: users/admin.py:147
+msgid "Important dates"
+msgstr "Důležitá data"
+
+#: users/helpers.py:75
+msgid "You don't have required permissions to view this page"
+msgstr "K zobrazení této stránky nemáte požadované oprávnění"
+
+#: users/templates/admin/profile_js.html:5 users/templates/user/profile.html:6
+#: users/templates/user/profile_js.html:5
+msgid "GS1 Activate: Dashboard"
+msgstr "GS1 Activate: Ovládací panel"
+
+#: users/templates/admin/profile_js.html:16
+msgid "Admin Dashboard "
+msgstr "Ovládací panel administrace"
+
+#: users/templates/user/profile.html:32
+#: users/templates/user/user_agreement_required.html:31
+msgid "Alerts"
+msgstr "Varování"
+
+#: users/templates/user/profile.html:49
+msgid "I agree to the Terms and Conditions:"
+msgstr "Souhlasím s podmínkami"
+
+#: users/templates/user/profile.html:50
+#: users/templates/user/user_agreement_required.html:54
+msgid "version"
+msgstr "verze"
+
+#: users/templates/user/profile.html:71
+msgid "Active Prefix"
+msgstr "Aktivní řada"
+
+#: users/templates/user/profile.html:74 users/templates/user/profile.html:117
+msgid "Products"
+msgstr "Produkty"
+
+#: users/templates/user/profile.html:75 users/templates/user/profile.html:79
+msgid "Allocated"
+msgstr "Přidělené"
+
+#: users/templates/user/profile.html:76 users/templates/user/profile.html:80
+msgid "Available"
+msgstr "K dispozici"
+
+#: users/templates/user/profile.html:78
+msgid "Locations"
+msgstr "Umístění"
+
+#: users/templates/user/profile.html:92
+msgid "Allocate a new barcode from the Active Prefix"
+msgstr "Přiřazení nového čárového kódu z aktivní řady"
+
+#: users/templates/user/profile.html:96
+msgid "View Products"
+msgstr "Zobrazit produkty"
+
+#: users/templates/user/profile.html:99
+msgid "View allocated numbers from Active Prefix"
+msgstr "Zobrazit přidělená čísla z aktivní řady"
+
+#: users/templates/user/profile.html:108
+msgid "Global Company Prefixes and GTIN Ranges"
+msgstr "Globální company prefix a řady GTIN"
+
+#: users/templates/user/profile.html:114
+msgid "Prefix Description"
+msgstr "Popis číselné řady"
+
+#: users/templates/user/profile.html:116
+msgid "Next number"
+msgstr "Další číslo"
+
+#: users/templates/user/profile.html:129
+msgid "Block of"
+msgstr "Blok"
+
+#: users/templates/user/profile.html:136
+msgid "No products"
+msgstr "žádné produkty"
+
+#: users/templates/user/profile.html:139
+msgid "Product"
+msgstr "Produkty"
+
+#: users/templates/user/profile.html:154
+msgid "Account Summary"
+msgstr "Shrnutí účtu"
+
+#: users/templates/user/profile.html:160
+msgid "Symbol Credits"
+msgstr "Kredity k symbolu"
+
+#: users/templates/user/profile.html:162
+msgid "Points balance:"
+msgstr "Bodový stav:"
+
+#: users/templates/user/profile.html:167
+msgid "Purchase barcode image credits now"
+msgstr "Kupte si kredity k čárovým kódům"
+
+#: users/templates/user/profile.html:173
+msgid "Company ID:"
+msgstr "ID společnosti:"
+
+#: users/templates/user/profile.html:178 users/templates/user/profile.html:180
+msgid "Company Name:"
+msgstr "Název společnosti:"
+
+#: users/templates/user/profile.html:196
+#: users/templates/user/user_agreement_required.html:78
+msgid "Account disabled"
+msgstr "Účet odpojen"
+
+#: users/templates/user/profile.html:199
+msgid "Please contact GS1 Helpdesk to enable your account."
+msgstr "Pro zpřístupnění účtu prosím kontaktujte Helpdesk GS1"
+
+#: users/templates/user/profile.html:203
+msgid "Org. account active?"
+msgstr "Účet společnosti aktivní?"
+
+#: users/templates/user/profile.html:206
+#: users/templates/user/user_agreement_required.html:88
+msgid "Organisation Admin"
+msgstr "Administrace organizace"
+
+#: users/templates/user/profile.html:209
+msgid "User account active?"
+msgstr "Uživatelský účet aktivní?"
+
+#: users/templates/user/profile.html:210
+#: users/templates/user/user_agreement_required.html:92
+msgid "User Admin"
+msgstr "Administrace uživatelů"
+
+#: users/templates/user/profile_js.html:23
+msgid "Dashboard "
+msgstr "Ovládací panel"
+
+#: users/templates/user/user_agreement_required.html:6
+#: users/templates/user/user_agreement_required.html:15
+msgid "Agreement required"
+msgstr "Je potřeba souhlas"
+
+#: users/templates/user/user_agreement_required.html:38
+msgid "in order to be able to download barcode images"
+msgstr "abyste si mohli stáhnout obrázky čárového kódu"
+
+#: users/templates/user/user_agreement_required.html:53
+msgid "I agree to the Terms and Conditions"
+msgstr "Souhlasím s podmínkami"
+
+#: users/templates/user/user_agreement_required.html:81
+msgid "Please contact GS1 Helpdesk to enable your account"
+msgstr "Prosím pro zpřístupnění účtu kontaktujte Helpdesk GS1"
+
+#: users/templates/user/user_agreement_required.html:85
+msgid "Org. account active"
+msgstr "Účet společnosti aktivní"
+
+#: users/templates/user/user_agreement_required.html:91
+msgid "User account active"
+msgstr "Uživetelský účet aktivní"

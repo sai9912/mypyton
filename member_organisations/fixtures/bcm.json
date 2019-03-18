@@ -1,0 +1,128 @@
+[
+{
+    "model": "BCM.country",
+    "pk": 1,
+    "fields": {
+        "name": "Belgium",
+        "slug": "BE"
+    }
+},
+{
+    "model": "BCM.country",
+    "pk": 2,
+    "fields": {
+        "name": "France",
+        "slug": "FR"
+    }
+},
+{
+    "model": "BCM.country",
+    "pk": 3,
+    "fields": {
+        "name": "Germany",
+        "slug": "DE"
+    }
+},
+{
+    "model": "BCM.country",
+    "pk": 6,
+    "fields": {
+        "name": "Sweden",
+        "slug": "SE"
+    }
+},
+{
+    "model": "BCM.language",
+    "pk": 1,
+    "fields": {
+        "name": "German",
+        "slug": "de"
+    }
+},
+{
+    "model": "BCM.language",
+    "pk": 2,
+    "fields": {
+        "name": "French",
+        "slug": "fr"
+    }
+},
+{
+    "model": "BCM.language",
+    "pk": 3,
+    "fields": {
+        "name": "Dutch",
+        "slug": "nl"
+    }
+},
+{
+    "model": "BCM.language",
+    "pk": 4,
+    "fields": {
+        "name": "Swedish",
+        "slug": "sv"
+    }
+},
+{
+    "model": "BCM.language",
+    "pk": 5,
+    "fields": {
+        "name": "English",
+        "slug": "en"
+    }
+},
+{
+    "model": "BCM.languagebycountry",
+    "pk": 1,
+    "fields": {
+        "country": 1,
+        "language": 2,
+        "default": true
+    }
+},
+{
+    "model": "BCM.languagebycountry",
+    "pk": 2,
+    "fields": {
+        "country": 1,
+        "language": 3,
+        "default": false
+    }
+},
+{
+    "model": "BCM.languagebycountry",
+    "pk": 3,
+    "fields": {
+        "country": 1,
+        "language": 1,
+        "default": false
+    }
+},
+{
+    "model": "BCM.languagebycountry",
+    "pk": 4,
+    "fields": {
+        "country": 2,
+        "language": 2,
+        "default": true
+    }
+},
+{
+    "model": "BCM.languagebycountry",
+    "pk": 5,
+    "fields": {
+        "country": 3,
+        "language": 1,
+        "default": true
+    }
+},
+{
+    "model": "BCM.languagebycountry",
+    "pk": 6,
+    "fields": {
+        "country": 6,
+        "language": 4,
+        "default": true
+    }
+}
+]

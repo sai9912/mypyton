@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+
+{% block title %}GS1 Activate{% endblock %}
+
+{% block page_title %}Terms of Use{% endblock %}
+
+{% block page_content %}
+
+    <h4>
+        Last update: {{ date_terms }}
+        {% if version_terms %}
+            Version: {{ version_terms }}
+        {% endif %}
+    </h4>
+
+    <p>
+        <textarea cols="95" rows="20" name="myname">{{ text_terms }}</textarea>
+    </p>
+
+{% endblock %}
+

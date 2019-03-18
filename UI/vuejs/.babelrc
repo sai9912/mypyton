@@ -1,0 +1,50 @@
+{
+  "env": {
+    "test": {
+      "presets": [
+        [
+          "es2015",
+          {
+            "modules": false
+          }
+        ],
+        "vue"
+      ],
+      "plugins": [
+        "transform-es2015-modules-commonjs",
+        "transform-object-rest-spread",
+        "istanbul"
+      ]
+    },
+    "prod": {
+      "presets": [
+       [
+          "env",
+          {
+            "modules": false
+          }
+        ],
+        "stage-2",
+        "vue"
+      ],
+      "plugins": [
+        "transform-runtime"
+      ]
+    },
+    "dev": {
+      "presets": [
+        [
+          "env",
+          {
+            "modules": false
+          }
+        ],
+        "stage-2",
+        "vue"
+      ],
+      "plugins": [
+        "transform-runtime"
+      ]
+    }
+  }
+}

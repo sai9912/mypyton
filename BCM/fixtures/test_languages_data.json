@@ -1,0 +1,15 @@
+[
+  {
+    "pk": "fr",
+    "model": "languages_plus.language",
+    "fields": {
+      "family": "Indo-European",
+      "iso_639_2T": "fra",
+      "iso_639_3": "fra",
+      "notes": "",
+      "name_en": "French",
+      "iso_639_2B": "fre",
+      "name_native": "fran\u00e7ais, langue fran\u00e7aise"
+    }
+  }
+]

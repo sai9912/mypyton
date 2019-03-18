@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-14 23:20+0100\n"
+"PO-Revision-Date: 2018-02-14 22:00+0000\n"
+"Last-Translator: b'  <test@test.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.8.1\n"
+
+#: BCM/models.py:56
+msgid "Countries"
+msgstr "das Land"
+
+#: BCM/models.py:84
+msgid "Languages by countries"
+msgstr "Sprachen nach Ländern"
+
+#: BCM/templates/bcm/base.html:12
+msgid "Django translations"
+msgstr "Django Übersetzungen"
+
+#: BCM/templates/bcm/base.html:14
+msgid "Profile"
+msgstr "Profil"
+
+#: BCM/templates/bcm/base.html:15 BCM/templates/bcm/new_base.html:53
+msgid "Logout"
+msgstr "Ausloggen"
+
+#: BCM/templates/bcm/base.html:17 BCM/templates/bcm/registration/login.html:29
+msgid "Login"
+msgstr "Anmeldung"
+
+#: BCM/templates/bcm/base.html:18
+msgid "Register"
+msgstr "Registrieren"
+
+#: BCM/templates/bcm/generic.html:21
+msgid "Welcome"
+msgstr "Wikommen"
+
+#: BCM/templates/bcm/generic.html:31
+#, fuzzy
+#| msgid "Profile"
+msgid "Admin Profile"
+msgstr "Profil"
+
+#: BCM/templates/bcm/generic.html:33
+#, fuzzy
+#| msgid "Login"
+msgid "Admin Login"
+msgstr "Anmeldung"
+
+#: BCM/templates/bcm/generic.html:34
+#, fuzzy
+#| msgid "Register"
+msgid "Admin Register"
+msgstr "Registrieren"
+
+#: BCM/templates/bcm/generic.html:42
+msgid "API Account Create or Update"
+msgstr "API Konto Erstellung oder Erfrischung"
+
+#: BCM/templates/bcm/index.html:6
+msgid "Choose your language"
+msgstr "Wähle deine Sprache"
+
+#: BCM/templates/bcm/new_base.html:40
+msgid "Languages"
+msgstr "Sprachen"
+
+#: BCM/templates/bcm/profile.html:4
+msgid "User profile"
+msgstr "Benutzerprofil"
+
+#: BCM/templates/bcm/profile.html:8
+msgid "Submit"
+msgstr "Einreichen"
+
+#: BCM/templates/bcm/registration/login.html:5
+#: BCM/templates/bcm/registration/registration.html:5
+msgid "Your username and password didn't match. Please try again."
+msgstr ""
+"Ihr Benutzername und Passwort stimmen nicht überein. Bitte versuche es "
+"erneut."
+
+#: BCM/templates/bcm/registration/login.html:10
+#: BCM/templates/bcm/registration/registration.html:10
+msgid ""
+"Your account doesn't have access to this page. To proceed, please login with "
+"an account that has access."
+msgstr ""
+"Ihr Konto hat keinen Zugriff auf diese Seite. Um fortzufahren, loggen Sie "
+"sich bitte mit einem Konto ein, das Zugriff hat."
+
+#: BCM/templates/bcm/registration/login.html:12
+#: BCM/templates/bcm/registration/registration.html:12
+msgid "Please login to see this page."
+msgstr "Bitte loggen Sie sich ein, um diese Seite zu sehen."
+
+#: BCM/templates/bcm/registration/registration.html:19
+msgid "Add user"
+msgstr "Benutzer hinzufügen"
+
+#~ msgid "User profiles"
+#~ msgstr "Benutzerprofil"
+
+#~ msgid "Choose your country"
+#~ msgstr "Wähle dein Land"

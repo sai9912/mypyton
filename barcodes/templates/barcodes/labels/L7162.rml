@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no" ?>
+<!DOCTYPE document SYSTEM "rml.dtd">
+<document>
+ <template pageSize="(210mm, 297mm)">
+ <pageTemplate id="main">
+ <frame id="first" x1="0" y1="0" width="210mm" height="287mm"/>
+ </pageTemplate>
+ </template>
+ <stylesheet>
+ 	<blockTableStyle id="myBlockTableStyle">
+		 <blockAlignment value="CENTER"/>
+		 <blockValign value="MIDDLE"/>
+	 </blockTableStyle>
+ </stylesheet>
+ <story>
+	 <blockTable style="myBlockTableStyle" colWidths="99.1mm, 99.1mm"  rowHeights="33.9mm,33.9mm,33.9mm,33.9mm,33.9mm,33.9mm,33.9mm,33.9mm">
+	 {% for row in range_rows %}
+	 	 <tr>
+             {% for col in range_cols %}
+                 <td>
+                     <illustration width="{{label_width}}mm" height="{{label_height}}mm">
+                         <image file="{{ image }}" x="1" y="1" width="{{label_width}}mm" height="{{label_height}}mm"/>
+                     </illustration>
+                 </td>
+                 {% if has_gap and not forloop.last %}
+                     <td></td>
+                 {% endif %}
+             {% endfor %}
+	 	</tr>
+	 {% endfor %}
+	</blockTable>
+</story>
+</document>

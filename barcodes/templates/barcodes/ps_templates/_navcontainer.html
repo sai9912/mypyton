@@ -1,0 +1,18 @@
+<div id="navcontainer">
+    <ul id="navlist">
+        <li><a href="/">Home</a></li>		
+        
+        {% comment %}
+        <li><a rel="nofollow"  href="/services.html">Services</a></li>
+        <li><a rel="nofollow"  href="/page/support.html">Support</a></li>
+        <li><a rel="nofollow"  href="/faq.html">FAQ</a></li>
+        <li><a rel="nofollow"  href="/page/sitemap.html">Site Map</a></li>
+        {% endcomment %}
+        
+{% if user.is_authenticated %}
+        <li><a rel="nofollow"  href="/barcodes/">Your Barcodes</a></li>
+{% endif %}
+
+        <li class="last">&nbsp;</li>
+    </ul>
+</div>

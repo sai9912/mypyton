@@ -1,0 +1,260 @@
+{% load i18n %}
+{% load static %}
+
+{# from theme("prefixes/range_macros.html") import render_package_level #}
+<div class=" row">
+    <div class="col-xs-12">
+
+        <div class="row debug">
+            <div class="col-xs-4">{% trans 'Owner' %}:</div>
+            <div class="col-xs-8">{{ product.owner.email }}</div>
+        </div>
+
+        <div class="row debug">
+            <div class="col-xs-4">{% trans 'Company' %}:</div>
+            <div class="col-xs-8">{{ product.company }}</div>
+        </div>
+
+        <div class="row debug">
+            <div class="col-xs-4">{% trans 'Label description' %}:</div>
+            <div class="col-xs-8">{{ product.label_description }}</div>
+        </div>
+
+        <div class="row">
+            {% if product.package_level_id == 70 %}
+                {# will render gtin-13 if level is each #}
+                <div class="col-xs-4">{% trans 'GTIN-13 Number' %}:</div>
+                <div class="col-xs-8"><a href="{# product.get_absolute_url() #}"><b>{{ product.gtin|slice:"1:" }}</b></a></div>
+            {% else %}
+                <div class="col-xs-4">{% trans 'GTIN Number' %}:</div>
+                <div class="col-xs-8"><a href="{# product.get_absolute_url() #}"><b>{{ product.gtin }}</b></a></div>
+            {% endif %}
+        </div>
+
+        <div class="row">
+            <div class="col-xs-4">{% trans 'GS1 Company Prefix' %}:</div>
+            <div class="col-xs-8">{{ product.gs1_company_prefix|default:"" }}</div>
+        </div>
+
+        {% if product.package_level_id == 70 %}
+            <div class="row">
+                <div class="col-xs-4">{% trans 'Product/Packaging' %}:</div>
+                <div class="col-xs-8">{{ product.package_type.type|default:"" }}</div>
+            </div>
+        {% endif %}
+
+        <div class="row debug">
+            <div class="col-xs-4">{% trans 'GLN of information provider' %}:</div>
+            <div class="col-xs-8">{{ product.gln_of_information_provider }}</div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-4">{% trans 'Brand' %}:</div>
+            <div class="col-xs-8">{{ product.brand|default:"" }}</div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-4">{% trans 'Sub Brand' %}:</div>
+            <div class="col-xs-8">{{ product.sub_brand|default:"" }}</div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-4">{% trans 'Product Type/Functional Name' %}:</div>
+            <div class="col-xs-8">{{ product.functional_name|default:"" }}</div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-4">{% trans 'Variant' %}:</div>
+            <div class="col-xs-8">{{ product.variant|default:"" }}</div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-4">{% trans 'Product/Trade item description' %}:</div>
+            <div class="col-xs-8">{{ product.description|default:"" }}</div>
+        </div>
+
+        <div class="row debug">
+            <div class="col-xs-4">{% trans 'Global Product Classification' %}:</div>
+            <div class="col-xs-8">{{ product.category }}</div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-4">{% trans 'Internal Product Code' %}:</div>
+            <div class="col-xs-8">{{ product.sku|default:"" }}</div>
+        </div>
+
+        <div class="row debug">
+            <div class="col-xs-4">{% trans 'Country Of Origin' %}:</div>
+            <div class="col-xs-8">{{ product.country_of_origin.name }}</div>
+        </div>
+
+        <div class="row debug">
+            <div class="col-xs-4">{% trans 'Target Market' %}:</div>
+            <div class="col-xs-8">{{ product.target_market.market }}</div>
+        </div>
+
+        <div class="row debug">
+            <div class="col-xs-4">{% trans 'Language' %}:</div>
+            <div class="col-xs-8">{{ product.language.name }}</div>
+        </div>
+
+        {% if product.package_level_id != 70 %}
+            {% if nop %}
+                <div class="row">
+                    <div class="col-xs-4">{% trans 'Number of products' %}:</div>
+                    <div class="col-xs-8">{{ nop|default:"" }}</div>
+                </div>
+            {% else %}
+                <div class="row">
+                    <div class="col-xs-4">{% trans 'Base Unit/Inner GTIN' %}:</div>
+                    <div class="col-xs-8">{% trans 'Not Available' %}</div>
+                </div>
+            {% endif %}
+        {% else %}
+            <div class="row">
+                <div class="col-xs-4">{% trans 'Net Content' %}:</div>
+                <div class="col-xs-8">
+                    {{ product.net_content|default:"" }} {{ product.net_content_uom.uom }}
+                </div>
+            </div>
+        {% endif %}
+
+        <div class="row">
+            <div class="col-xs-4">{% trans 'Product depth' %}:</div>
+            <div class="col-xs-8">
+                {% if product.depth %}{{ product.depth|default:"" }} {{ product.depth_uom.uom }}{% endif %}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-4">{% trans 'Product width' %}:</div>
+            <div class="col-xs-8">
+                {% if product.width %}{{ product.width|default:"" }} {{ product.width_uom.uom }}{% endif %}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-4">{% trans 'Product height' %}:</div>
+            <div class="col-xs-8">
+                {% if product.height %}{{ product.height|default:"" }} {{ product.height_uom.uom }}{% endif %}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-4">{% trans 'Product gross weight' %}:</div>
+            <div class="col-xs-8">
+                {% if product.gross_weight %}{{ product.gross_weight|default:"" }} {{ product.gross_weight_uom.uom }}{% endif %}
+            </div>
+        </div>
+
+        {% if product.package_level_id == 70 %}
+            <div class="row">
+                <div class="col-xs-4">{% trans 'Product net weight' %}:</div>
+                <div class="col-xs-8">
+                    {% if product.net_weight %}{{ product.net_weight|default:"" }} {{ product.net_weight_uom.uom }}{% endif %}
+                </div>
+            </div>
+        {% else %}
+            <div class="row debug">
+                <div class="col-xs-4">{% trans 'Product net weight' %}:</div>
+                <div class="col-xs-8">
+                    {{ product.net_weight|default:"" }} {{ product.net_weight_uom.uom }}
+                </div>
+            </div>
+        {% endif %}
+
+        <div class="row debug">
+            <div class="col-xs-4">{% trans 'External image URL' %}:</div>
+            <div class="col-xs-8">{{ product.website_url }}</div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-4">{% trans 'GS1 cloud state' %}:</div>
+            <div class="col-xs-8">
+                {{ product.gs1_cloud_state|default:"--" }}
+            </div>
+        </div>
+
+        {% if debug %}
+            <hr class="debug">
+            {% for field in product_fields %}
+                <div class="row debug">
+                    <div class="col-xs-4">{{ field.name }}</div>
+                    {% if field.value == None %}
+                        <div class="col-xs-8" style="font-size:xx-small">{{ field.value }}</div>
+                    {% else %}
+                        <div class="col-xs-8">{{ field.value }}</div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+</div>
+
+{% if sub_products %}
+    <br/>
+    <div class="row">
+        <div class="col-xs-12">
+            <h4>{% trans 'Contained items' %}</h4>
+            <table class="table table-condensed">
+                <thead>
+                <th>{% trans 'GTIN' %}</th>
+                <th>{% trans 'Description' %}</th>
+                <th>{% trans 'Package level' %}</th>
+                <th>{% trans 'Count' %}</th>
+                </thead>
+                <tbody>
+                {% for sub_p in sub_products %}
+                    <tr>
+                        <td>
+                            {% if sub_p.sub_product.package_level_id == 70 %}
+                                {{ sub_p.sub_product.gtin|slice:"1:" }}
+                            {% else %}
+                                {{ sub_p.sub_product.gtin }}
+                            {% endif %}
+                        </td>
+                        <td>
+                            {{ sub_p.sub_product.description }}
+                        </td>
+                        <td>
+                    {% include 'prefixes/range_macros.html' with func='render_package_level' product=sub_p only %}
+                            {# render_package_level(sub_p.sub_product) #}
+                        </td>
+                        <td>
+                            {{ sub_p.quantity }}
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endif %}
+<br/>
+
+{% if product.bar_placement %}
+    <div class="row">
+        <div class="col-xs-6">
+            <h4>{% trans 'Barcode Placement' %}:</h4>
+            <img src='{{ product.bar_placement }}' height="300"/>
+        </div>
+    </div>
+    <br/>
+{% endif %}
+
+{% if product.package_level.id >= 4 and product.package_level.id <= 70 %}
+    <div class="row">
+        <div class="col-xs-6">
+            <h4>{% trans 'Product image' %}</h4>
+            {% if product.image %}
+                <img src="{{ product.image }}"
+                     style="max-height:300px; max-width:300px"
+                     id="img-preview">
+            {% else %}
+                <img src="{{ product.website_url|default:'/static/site/img/no-image.gif' }}"
+                     alt="Product image"
+                     style="max-width:100%; height:300px;"/>
+            {% endif %}
+        </div>
+    </div>
+{% endif %}

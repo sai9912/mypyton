@@ -1,0 +1,167 @@
+{% extends "_base.html" %}
+
+{% load experiments %}
+
+{% block title %}
+{% if not manufacturer %}
+    {{ symbol|upper }} {{ meta_barcode.data }}  | BarCodeRobot.com
+    
+{% else %}
+    {{ symbol|upper }} {{ meta_barcode.data }} | {{ manufacturer}} | BarCodeRobot.com
+{% endif %}
+{% endblock %}
+
+{% block local-scripts %}
+{% endblock %}
+
+
+{% block content %}
+
+
+{% if manufacturer %}
+    <h2>{{ symbol|upper }} : {{ meta_barcode.data }} : {{manufacturer}}</h2>
+{% else %}
+    <h2 id="manufacturer">{{ symbol|upper }} : {{ meta_barcode.data }}</h2>
+{% endif %}
+
+<!-- manufacturer info:
+{{ manufacturer }}
+-->
+
+<!-- {% if not manufacturer %}
+    <script type="text/javascript" charset="utf-8">
+        function sleep(milliseconds) {
+          var start = new Date().getTime();
+          for (var i = 0; i < 1e7; i++) {
+            if ((new Date().getTime() - start) > milliseconds){
+              break;
+            }
+          }
+        }
+        
+        gepircb = function(data){
+          if (data.result == "FOUND"){
+              if (data.party){
+                  if (data.party != "N/A"){
+                      document.location.reload();
+                  }
+              }
+          }else{
+              if (data.result == "RETRY"){
+                  sleep(1000);
+                  check_completion();
+              }
+          }
+        };
+        
+        function check_completion(){
+            $.ajax({
+                dataType: 'jsonp',
+                data: 'gtin={{gtin}}&ping=1&callback=gepircb',
+                url: 'http://puppet.cpgoods.com:8080/',
+            });
+        }
+        
+        $(document).ready(function() {
+            check_completion();
+        });
+        
+    </script>
+{% endif %} -->
+
+<div id="resImage">
+
+<img id="resImg" alt="" src="{{ src }}"/>
+
+    {% if watermark %}
+    <p class="note" style="color:red">Image not licensed. Please <a href="javascript:submitform()">purchase</a> to remove watermarks <br/> or <a href="/accounts/pricing.html">subscribe</a> for unlimited downloads.</p>
+    {% endif %}
+    
+    <form id="{{ symbol }}_detail" action="/{{ symbol }}/{{ gtin }}/" method="post">
+        <table>
+        
+        {{ form }}
+        
+        <tr><td colspan=2>
+        <small>
+            Adjust barcode size, and printing parameters above and update barcode:
+        </small>
+        </td>
+        <tr>
+        <tr>
+        <td colspan=2>
+        <div>
+            <!-- <noscript> -->
+            <input type="submit" name="action" value="Update" />
+            <!-- </noscript> -->
+        </div>
+        </td>
+        </tr>
+        
+        <tr>
+            <td colspan=2>
+                <small>Download a spreadsheet with the batch of <a href="/services/spreadsheet.html?prefix={{gtin}}&count=50">50</a> or <a href="/services/spreadsheet.html?prefix={{gtin}}&count=100">100</a> barcode numbers starting with this ({{gtin}}) {{symbol}}.<a>
+        </td></tr>
+
+<!--
+<table>
+  <tr>
+    <td width="33%"></td>
+    <td width="34%">
+      <div class="buttons">
+        <a href="https://www.origindb.com/" class="positive">
+            <img src="http://barcoderobot.s3.amazonaws.com/static/icons/tick.png" alt=""/>
+            check OriginDB.com
+        </a>
+      </div>
+    </td>
+    <td width="33%"></td>
+  </tr>
+</table>
+-->
+
+        
+        
+        </table>
+        
+    </form>
+    
+</div>
+
+<br/>
+
+{% if user.is_authenticated %}
+    <!-- authenticated -->
+    {% if barcode.payed %}
+        {% include "_olddownload.html" %} <!-- POST Prepare -->
+    {% else %}
+        {% if user.userprofile.points %}
+            <!-- w points -->
+            {% include "_olddownload.html" %} <!-- POST Prepare -->
+        {% else %}
+            <!-- partners and subscribers --> 
+            {% if user.userprofile.partner or user.userprofile.subscriber %}
+                {% include "_olddownload.html" %}   <!-- POST Prepare -->
+            {% else %}
+                {% include "_cart.html" %}
+            {% endif %}
+        {% endif %}
+    {% endif %}
+{% else %}
+    <!-- unauthenticated -->
+    {% include "_cart.html" %}
+{% endif %}
+
+<!-- end mxpanel -->
+<script type="text/javascript">
+mpq.push(["track", "barcode generation", {"symbol":"{{ symbol|upper }}", "size":"{{ barcode.size }}"}]);
+</script>
+<!-- end mxpanel -->
+
+<img src="/django-lean/goal/barcode-creation" alt="" height="1" width="1" />
+
+<div style="clear:both;"></div>
+
+<form id="showBC" action="/show/{{ barcode.id }}/{{ barcode.gtin }}/"></form>
+
+{% endblock %}

@@ -1,0 +1,389 @@
+{% load i18n %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+
+    {% if request.session.auth_token %}
+        {# check AuthTokenGenerateMiddleware if html tokens are required #}
+        <input id="auth_token" type="hidden" value="{{request.session.auth_token}}">
+    {% endif %}
+
+    <title>{% block title %}{% trans 'GS1 Activate' %}{% endblock %}</title>
+
+    <meta name="copyright" content="(c) 2009-2015 Copyright BarcodeRobot"/>
+    <meta name="keywords"
+          content="GS1 Activate"/>
+
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Language" content="en-us"/>
+
+    <link rel="shortcut icon"
+          href="{% static 'site/img/favicon.png' %}"/>
+    <link rel="icon" href="{% static 'site/img/favicon.png' %}"/>
+
+
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,700"
+          rel="stylesheet" type="text/css">
+
+
+    <link href="{% static 'bootstrap-3/css/bootstrap.min.css' %}?v=20180107"
+          rel="stylesheet" media="screen">
+
+    <link href="{% static 'site/css/master.css' %}?v=20180107"
+          rel="stylesheet"
+          media="screen">
+
+    <link href="{% static 'site/css/style.css' %}?v=20180107" rel="stylesheet"
+          media="screen">
+
+    <link href="{% static 'site/css/common.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'site/css/profile_strength.css' %}" rel="stylesheet">
+
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" media="screen"
+          href="{% static 'site/css/ie.css' %}?v=201501"/>
+    <![endif]-->
+
+    <style>
+        .site-header h1 > a {
+            display: block;
+            width: {{ user.profile.member_organisation.gs1_logo_width|default:"300px" }};
+            height: {{ user.profile.member_organisation.gs1_logo_height|default:"105px" }};
+            background: url({{ user.profile.member_organisation.gs1_logo_path|default:"/static/site/logo/gs1-logo.png" }}) no-repeat;
+            text-indent: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            background-size: contain;
+            margin: 3px;
+        }
+    </style>
+
+    <!--[if lt IE 9]>
+    <script src="{% static 'site/js/html5shiv/html5shiv.js' %}?v=201312181"></script>
+    <script src="{% static 'site/js/respond/respond.min.js' %}?v=201312181"></script>
+    <![endif]-->
+    {% block base_css %}{% endblock %}
+    {% block head_scripts %}{% endblock %}
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-889776-24"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-889776-24');
+    </script>
+
+</head>
+
+<body class="site">
+{# set profile_strength = current_user.profile_strength #}
+<header class="site-header">
+    <div class="container">
+        <nav class="navbar" role="navigation">
+
+            <div class="navbar-header">
+                <h1>
+                    <a href="{{ request.user.profile.member_organisation.gs1_logo_url|default:'/'}}">
+                        {% trans 'GS1 Activate' %}{# gs1 top left logo #}
+                    </a>
+                </h1>
+            </div>
+
+            <div>
+
+                <div style="text-align:right">
+                    {% if user.is_impersonate %}
+                        <a href="{% url 'impersonate-stop' %}"
+                           title="{{ user }}"
+                           class="btn btn-warning btn-sm"
+                           role="button">
+                            {% trans 'Stop impersonate' %}
+                        </a>
+                    {% else %}
+                        {% if request.user.is_authenticated %}
+                            <a href="{% url 'BCM:logout' %}" style="padding:0px; display:inline; height:20px;">
+                                {% trans 'Log out' %}
+                            </a>
+                        {% else %}
+                            <div style="padding:0px; display:inline; height:20px;">
+                                &nbsp;
+                            </div>
+                        {% endif %}
+                    {% endif %}
+                </div>
+                <ul class="nav navbar-nav navbar-right" style="padding-top: 5px">
+
+                    <li><a href="/">{% trans 'Home' %}</a></li>
+
+                    {% if request.user.is_authenticated %}
+                        <li>
+                            <a href="{{ request.user.profile.member_organisation.gs1_help_url_2 }}">
+                                {{ request.user.profile.member_organisation.gs1_help_label_2 }}
+                            </a>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="{{ request.user.profile.member_organisation.gs1_dashboard_url|default:'https://www.gs1.org/services/activate' }}">
+                                {{ request.user.profile.member_organisation.gs1_dashboard_label|default:'Return to GS1 Dashboard' }}
+                            </a>
+                        </li>
+                    {% endif %}
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#"
+                           id="navbar-languages" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false">
+                            {% trans 'Languages' %}
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbar-languages">
+                            {% for language in languages %}
+                                <li>
+                                    <a href="{{ request.path }}?new_language={{ language.slug }}">
+                                        {{ language }}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+
+                    <li class="nav-user-info">
+                        {% if request.user.is_authenticated %}
+                            <span class="nav-user-info_label">{% trans 'Company name' %}:</span>
+                            {{ request.user.profile.company_organisation.company }}<br/>
+                            <span class="nav-user-info_label">{% trans 'User' %}:</span><a href="mailto:{{ request.user.email }}"
+                                                                             style="padding:0px; display:inline;">{{ request.user.email }}</a>
+                        {% endif %}
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+    </div>
+</header>
+
+<div class="container breadcrumbs">
+    <div class="site-breadcrumbs">
+        {% block breadcrumb %}
+            <ol class="breadcrumb">
+                <li><a href="/">{% trans 'Home' %}</a></li>
+            </ol>
+        {% endblock %}
+    </div>
+</div>
+
+<div class="container" id="messages" style="margin-bottom:0px">
+    {% for message,category in flashed_messages %}
+        <div class="alert alert-{{ category }}">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            {{ message|safe }}
+        </div>
+    {% endfor %}
+    <div class="alert alert-success" style="display:none" id="flash_message_container">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <span id="flash_message">{% trans 'Instant flash message' %}</span>
+    </div>
+</div>
+<script type="text/javascript">
+    function flash(message, category) {
+        $('#flash_message').text(message)
+        var cls = 'alert alert-' + category
+        $('#flash_message_container').attr('class', cls)
+        $('#flash_message_container').show()
+    }
+</script>
+
+<div class="container">
+    <div class="site-main">
+
+        {% block site_nav %}
+
+
+            {# set activePage = request.path #}
+
+
+            <nav class="site-nav">
+                {% if user.is_authenticated and user.is_active and user.profile.agreed %}
+
+                    <ul>
+                        <li>
+                            {% trans 'My Account' %}
+                            <ul>
+                                {% if request.user.profile.member_organisation.gs1_enable_advanced_dashboard %}
+                                    <li {% if activePage == "url 'profile'" %}class="active"{% endif %}>
+                                        <a href="{% url 'profile' %}">
+                                            {% trans 'Dashboard' %}
+                                        </a>
+                                    </li>
+                                    <li {% if activePage == "url 'prefixes:prefixes_list'" %}class="active"{% endif %}>
+                                        <a href="{% url 'prefixes:prefixes_list' %}">
+                                            {% trans 'Prefix management' %}
+                                        </a>
+                                    </li>
+                                {% else %}
+                                    <li {% if activePage == "url 'profile_js'" %}class="active"{% endif %}>
+                                        <a href="{% url 'profile_js' %}">
+                                            {% trans 'Dashboard' %}
+                                        </a>
+                                    </li>
+                                {% endif %}
+                                <li><a href="{{ request.user.profile.member_organisation.gs1_help_url_1 }}">
+                                    {{ request.user.profile.member_organisation.gs1_help_label_1 }}
+                                </a></li>
+
+                                {# enable user settings #}
+                                {% if request.user.profile.member_organisation.gs1_enable_user_settings %}
+                                    <li>
+                                        <a href="{% url 'users:settings' %}">
+                                            {% trans 'Settings' %}
+                                        </a>
+                                    </li>
+                                {% endif %}
+
+                            </ul>
+
+                        </li>
+                        <li>
+                            {% trans 'Product Manager' %}
+                            <ul>
+                                <li {% if activePage == "url 'user:products.products_list_js'" %}
+                                    class="active"
+                                {% endif %}>
+                                    <a href="{% url 'products:products_list_js' %}">
+                                        {% trans 'My Products' %}
+                                    </a>
+                                </li>
+
+                                {# enable import/export #}
+                                {% if request.user.profile.member_organisation.gs1_enable_import_export %}
+                                    <li {% if activePage == "url 'excel:export_select'" %}
+                                        class="active"
+                                    {% endif %}>
+                                        <a href="{% url 'excel:export_select' %}">
+                                            {% trans 'Export products' %}
+                                        </a>
+                                    </li>
+                                    <li {% if activePage == "url 'excel:import_file'" %}
+                                        class="active"
+                                    {% endif %}>
+                                        <a href="{% url 'excel:import_file' %}">
+                                            {% trans 'Import products' %}
+                                        </a>
+                                    </li>
+                                {% endif %}
+
+                            </ul>
+                        </li>
+
+
+                        {% if config.GS1_GLN_CAPABILITY %}
+
+                            <li>
+                                {% trans 'Location Manager' %}
+                                <ul>
+                                    <li {% if activePage == "url 'user:locations.locations_list'" %}
+                                        class="active"
+                                    {% endif %}>
+                                        <a href="{% url 'user:locations.locations_list' %}">
+                                            {% trans 'My Locations' %}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        {% endif %}
+
+                    </ul>
+
+                    {% block legend %}
+                    {% endblock %}
+
+                    {% block completeness %}
+                    {% endblock %}
+
+                    <div class="clearfix"></div>
+
+                {% endif %}
+            </nav>
+        {% endblock %}
+
+
+        {% block site_content %}
+
+            <div class="site-content">
+                <div>
+                    <h2>
+                        {% block page_title %}{% trans 'Create GS1 Barcodes' %}{% endblock %}
+                    </h2>
+                    <div style="position: absolute; right: 10px; top: 10px; text-align: right;">
+                        <a href="{{ request.user.profile.member_organisation.gs1_help_url_3 }}">
+                            <b>{{ request.user.profile.member_organisation.gs1_help_label_3 }}</b>
+                            <img src="{% static 'site/img/training_button_2.png' %}" alt="{% trans 'Help' %}"
+                                 style="width: auto;height: 30px;">
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="site-content-padder">
+                    {% block page_content %}
+                        {% include "activate/landing_page_content.html" %}
+                    {% endblock %}
+                </div>
+                <div class='clearfix'></div>
+            </div>
+
+        {% endblock %}
+    </div>
+
+</div>
+</div>
+
+<footer class="site-footer">
+    <div class="container">
+        <span class="footer-disclaimer">Copyright &copy; GS1 2018</span>
+        <br/>
+        <span class="footer-disclaimer">
+
+            <a href="/static/legal/terms_{{ request.user.profile.member_organisation.slug }}.txt" style="color:lightgrey; text-decoration: underline;">{% trans 'Terms of Use' %}</a>
+
+            &nbsp; | &nbsp;
+
+            <a href="http://www.gs1.org/privacy-policy" style="color:lightgrey; text-decoration: underline;" target="_blank">{% trans 'Privacy Policy' %}</a>
+
+        </span>
+        <span class="footer-terms">
+            <!--
+        Version Placeholder
+        -->
+</span>
+
+        <div class="clearfix"></div>
+
+    </div>
+
+
+</footer>
+
+{% block modal %}{% endblock %}
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script src="{% static 'bootstrap-3/js/bootstrap.min.js' %}"></script>
+
+<link src="{% static 'site/css/bootstrap-editable.css' %}" rel="stylesheet">
+<script src="{% static 'site/js/bootstrap-editable.js' %}"></script>
+
+{#<link href="bootstrap-editable/css/bootstrap-editable.css" rel="stylesheet">#}
+{#<script src="bootstrap-editable/js/bootstrap-editable.js"></script>#}
+
+{% block base_scripts %}{% endblock %}
+{% block page_scripts %}{% endblock %}
+{% include 'base_tracking.html' %}
+
+</body>
+</html>

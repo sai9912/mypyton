@@ -1,0 +1,16 @@
+{% load l10n %}
+{% localize off %}
+
+gsave
+    1 0 0 setrgbcolor
+    0.01 mm setlinewidth
+    newpath
+    {{ x1 }} mm {{ y1 }} mm moveto
+    0 mm {{ y2 }} mm rlineto
+    {{ x2 }} mm 0 mm rlineto
+    0 mm -{{ y2 }} mm rlineto
+    -{{ x1 }} mm 0 mm rlineto
+    closepath
+    stroke
+grestore
+{% endlocalize %}

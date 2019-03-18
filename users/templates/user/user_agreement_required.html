@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+
+{% block title %}
+    {% trans 'GS1 Activate' %}: {% trans 'Agreement required' %}
+{% endblock %}
+{% block breadcrumb %}
+    <ol class="breadcrumb">
+        <li>{% trans 'Home' %}</li>
+    </ol>
+{% endblock %}
+
+{% block page_title %}
+    {% trans 'Agreement required' %}
+{% endblock %}
+
+{% block base_css %}
+    <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jquery-editable/css/jquery-editable.css"
+          rel="stylesheet"/>
+{% endblock %}
+
+{% block page_content %}
+
+    {% if  user.is_active and user.company_organisations_companyorganisation.first.is_active %}
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">
+                        {% trans 'Alerts' %}
+                    </div>
+                    <div class="panel-body">
+                        <p>{% trans 'You must agree to our' %}
+                            <a href="javascript:void(0)" style="text-decoration: underline;">
+                                {% trans 'Terms and Conditions' %}
+                            </a>
+                            {% trans 'in order to be able to download barcode images' %}.
+                        </p>
+                        <form method="post">
+                            {% csrf_token %}
+                            {% for hidden in form.hidden_fields %}
+                                {{ hidden }}
+                            {% endfor %}
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <textarea style="width:100%; height:250px;" readonly>{{ terms_text }}</textarea>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="checkbox">
+                                        <label>
+                                            {{ form.agree }}
+                                            {% trans 'I agree to the Terms and Conditions' %}:<br/>
+                                            ({% trans 'version' %} {{ terms_version }}).
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="submit"
+                                           name="submit"
+                                           value="{% trans 'Submit' %}"
+                                           class="btn btn-primary pull-right"
+                                           style="margin-top:20px" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    {% else %}
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">
+                        {% trans 'Account disabled' %}
+                    </div>
+                    <div class="panel-body">
+                        <p>{% trans 'Please contact GS1 Helpdesk to enable your account' %}.</p>
+                        {% if config.LOCAL %}
+                            <hr/>
+                            <ul>
+                                <li>{% trans 'Org. account active' %}?
+                                    [{{ current_user.organisation.active }}] &xrarr;
+                                    <a href="{% url 'organisation.edit' %}">
+                                        {% trans 'Organisation Admin' %}
+                                    </a>
+                                </li>
+                                <li>{% trans 'User account active' %}? [{{ current_user.active }}] &xrarr;
+                                    <a href="{% url 'user.edit' %}">{% trans 'User Admin' %}</a>
+                                </li>
+                            </ul>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    {% endif %}
+
+{% endblock %}

@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{# from theme("security/_macros.html") import render_field_with_errors, render_field #}
+{# from theme("prefixes/range_macros.html") import render_range_breadcrumb #}
+{% block base_css %}
+    <link rel="stylesheet" href="{% static 'site/css/add_product.css' %}" />
+<style>
+.fieldset>legend{
+    border: none;
+    width: auto;
+    margin-bottom: auto;
+}
+</style>
+{% endblock %}
+{% block title %}
+    {% trans 'GS1 Activate' %}: {% trans 'Import products' %}
+{% endblock %}
+{% block breadcrumb %}
+    <ol class="breadcrumb" style="display:inline-block">
+        <li><a href="{% url 'users:profile' %}">{% trans 'Home' %}</a></li>
+        <li>{% trans 'Import' %}</li>
+    </ol>
+    <div class="active_range pull-right">
+        {% trans 'Range' %}:
+        {% include 'prefixes/range_macros.html' with func='render_range_breadcrumb' prefix=prefix only %}
+        <a href="{% url 'prefixes:prefixes_list' %}"> [{% trans 'Change' %}]</a>
+    </div>
+{% endblock %}
+{% block page_title %}
+    {% trans 'Import products' %}
+{% endblock %}
+
+{% block page_content %}
+    <div class="row">
+        <div class="col-md-6">
+            <p>
+                {% trans 'Select a file to upload and import products. Accepted file types are xls, xlsx, ods, csv' %}
+            </p>
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {% for hidden in form.hidden_fields %}
+                    {{ hidden }}
+                {% endfor %}
+            {# render_field_with_errors(form.import_file, class="form-control") #}
+    {% include 'security/_macros.html' with func='render_field_with_errors4_help' field=form.import_file label=_('File to import') only %}
+            <button type="submit" class="btn btn-primary">{% trans 'Import' %}</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <div class="well">{% trans 'More information about importing your products can be found' %}
+                <a href="/article/81-importing-product-information">{% trans 'here' %}</a>.
+            </div>
+            <div class="well">{% blocktrans %}
+                Please note that imported product details must belong to the <b>active prefix</b> only.
+                Click <a href="/prefixes">here</a> to change the active prefix.
+            {% endblocktrans %}</div>
+        </div>
+    </div>
+    {% if results %}
+        <br/>
+        <br/>
+        <h4>{% trans 'Processed rows' %}: {{ results.total_rows }}</h4>
+        {% if results.successes > 0 %}
+            <div class="alert alert-success" role="alert">
+                <b>{{ results.successes }}</b> {% if results.successes > 1 %}rows{% else %}row{% endif %}
+                {% trans 'where successfully imported' %}
+            </div>
+        {% endif %}
+        {% if results.warnings|length > 0 %}
+            <div class="alert alert-warning" role="alert">
+                <b>{{ results.warnings|length }}</b> {% if results.warnings|length > 1 %}rows{% else %}row{% endif %}
+                {% trans 'had warnings and imported partially' %}.
+                <ul class="list-unstyled">
+                    {% for warning in results.warnings %}
+                        <li>{{ warning }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+        {% if results.failures|length > 0 %}
+            <div class="alert alert-danger" role="alert">
+                <b>{{ results.failures|length }}</b> {% if results.failures|length > 1 %}rows{% else %}row{% endif %}
+                {% trans 'had errors and failed to import' %}.
+                <ul class="list-unstyled">
+                    {% for failure in results.failures %}
+                        <li>{{ failure }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+    {% endif %}
+{% endblock %}

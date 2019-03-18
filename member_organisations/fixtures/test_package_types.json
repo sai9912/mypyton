@@ -1,0 +1,266 @@
+[
+{
+    "model": "products.packagetype",
+    "pk": 1,
+    "fields": {
+        "type": "Bag",
+        "code": "BG",
+        "image_path": "",
+        "description": "",
+        "ui_enabled": true
+    }
+},
+{
+    "model": "products.packagetype",
+    "pk": 2,
+    "fields": {
+        "type": "Blister pack",
+        "code": "BPG",
+        "image_path": "",
+        "description": "",
+        "ui_enabled": true
+    }
+},
+{
+    "model": "products.packagetype",
+    "pk": 3,
+    "fields": {
+        "type": "Bottles and jars",
+        "code": "BO",
+        "image_path": "",
+        "description": "",
+        "ui_enabled": true
+    }
+},
+{
+    "model": "products.packagetype",
+    "pk": 4,
+    "fields": {
+        "type": "Boxed",
+        "code": "BX",
+        "image_path": "",
+        "description": "",
+        "ui_enabled": true
+    }
+},
+{
+    "model": "products.packagetype",
+    "pk": 5,
+    "fields": {
+        "type": "Can and cylinders",
+        "code": "CNG",
+        "image_path": "",
+        "description": "",
+        "ui_enabled": true
+    }
+},
+{
+    "model": "products.packagetype",
+    "pk": 6,
+    "fields": {
+        "type": "Carded items",
+        "code": "CM",
+        "image_path": "",
+        "description": "",
+        "ui_enabled": true
+    }
+},
+{
+    "model": "products.packagetype",
+    "pk": 7,
+    "fields": {
+        "type": "Egg carton",
+        "code": "EGG_CT",
+        "image_path": "",
+        "description": "",
+        "ui_enabled": false
+    }
+},
+{
+    "model": "products.packagetype",
+    "pk": 8,
+    "fields": {
+        "type": "Jug",
+        "code": "JG",
+        "image_path": "",
+        "description": "",
+        "ui_enabled": true
+    }
+},
+{
+    "model": "products.packagetype",
+    "pk": 9,
+    "fields": {
+        "type": "Large heavy or bulky",
+        "code": "ZU",
+        "image_path": "",
+        "description": "",
+        "ui_enabled": true
+    }
+},
+{
+    "model": "products.packagetype",
+    "pk": 10,
+    "fields": {
+        "type": "Multi packs",
+        "code": "MPG",
+        "image_path": "",
+        "description": "",
+        "ui_enabled": true
+    }
+},
+{
+    "model": "products.packagetype",
+    "pk": 11,
+    "fields": {
+        "type": "Set",
+        "code": "SET",
+        "image_path": "",
+        "description": "",
+        "ui_enabled": false
+    }
+},
+{
+    "model": "products.packagetype",
+    "pk": 12,
+    "fields": {
+        "type": "Tag (apparel)",
+        "code": "TAG",
+        "image_path": "",
+        "description": "",
+        "ui_enabled": false
+    }
+},
+{
+    "model": "products.packagetype",
+    "pk": 13,
+    "fields": {
+        "type": "Thin items or containers",
+        "code": "THIN",
+        "image_path": "",
+        "description": "",
+        "ui_enabled": false
+    }
+},
+{
+    "model": "products.packagetype",
+    "pk": 14,
+    "fields": {
+        "type": "Tray",
+        "code": "PU",
+        "image_path": "",
+        "description": "",
+        "ui_enabled": true
+    }
+},
+{
+    "model": "products.packagetype",
+    "pk": 15,
+    "fields": {
+        "type": "Tub",
+        "code": "CU",
+        "image_path": "",
+        "description": "",
+        "ui_enabled": true
+    }
+},
+{
+    "model": "products.packagetype",
+    "pk": 16,
+    "fields": {
+        "type": "Tube",
+        "code": "TU",
+        "image_path": "",
+        "description": "",
+        "ui_enabled": true
+    }
+},
+{
+    "model": "products.packagetype",
+    "pk": 17,
+    "fields": {
+        "type": "Unpackaged items",
+        "code": "NE",
+        "image_path": "",
+        "description": "",
+        "ui_enabled": true
+    }
+},
+{
+    "model": "products.packagetype",
+    "pk": 18,
+    "fields": {
+        "type": "Flow wrapped items",
+        "code": "FLW",
+        "image_path": "",
+        "description": "",
+        "ui_enabled": false
+    }
+},
+{
+    "model": "products.packagetype",
+    "pk": 19,
+    "fields": {
+        "type": "Aerosol",
+        "code": "AE",
+        "image_path": "",
+        "description": "",
+        "ui_enabled": true
+    }
+},
+{
+    "model": "products.packagetype",
+    "pk": 20,
+    "fields": {
+        "type": "Basket or hamper",
+        "code": "BK",
+        "image_path": "",
+        "description": "",
+        "ui_enabled": false
+    }
+},
+{
+    "model": "products.packagetype",
+    "pk": 21,
+    "fields": {
+        "type": "Carton",
+        "code": "CT",
+        "image_path": "",
+        "description": "",
+        "ui_enabled": true
+    }
+},
+{
+    "model": "products.packagetype",
+    "pk": 22,
+    "fields": {
+        "type": "Packed, Unspecified",
+        "code": "PUG",
+        "image_path": "",
+        "description": "",
+        "ui_enabled": true
+    }
+},
+{
+    "model": "products.packagetype",
+    "pk": 23,
+    "fields": {
+        "type": "Keg",
+        "code": "KEG",
+        "image_path": "",
+        "description": "",
+        "ui_enabled": false
+    }
+},
+{
+    "model": "products.packagetype",
+    "pk": 24,
+    "fields": {
+        "type": "Kit",
+        "code": "KIT",
+        "image_path": "",
+        "description": "",
+        "ui_enabled": false
+    }
+}
+]

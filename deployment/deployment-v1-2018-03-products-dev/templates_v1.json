@@ -1,0 +1,337 @@
+[
+{
+    "model": "member_organisations.producttemplate",
+    "pk": 1,
+    "fields": {
+        "name": "gs1ie-base",
+        "order": 1,
+        "package_level": 70,
+        "member_organisation": 16,
+        "image_url": "http://undefined.com",
+        "ui_label": "Consumer Unit (Base Unit/Each) e.g. bottle of beer",
+        "ui_label_en": "Consumer Unit (Base Unit/Each) e.g. bottle of beer",
+        "ui_label_cz": "",
+        "ui_label_de": "",
+        "ui_label_fr": "",
+        "ui_label_it": "",
+        "ui_label_nl": "",
+        "ui_label_sv": "",
+        "attributes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    }
+},
+{
+    "model": "member_organisations.producttemplate",
+    "pk": 2,
+    "fields": {
+        "name": "gs1ie-inner-pack",
+        "order": 2,
+        "package_level": 60,
+        "member_organisation": 16,
+        "image_url": "http://undefined.com",
+        "ui_label": "Pack or inner pack e.g. six pack of beer bottles",
+        "ui_label_en": "Pack or inner pack e.g. six pack of beer bottles",
+        "ui_label_cz": "",
+        "ui_label_de": "",
+        "ui_label_fr": "",
+        "ui_label_it": "",
+        "ui_label_nl": "",
+        "ui_label_sv": "",
+        "attributes": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "member_organisations.producttemplate",
+    "pk": 3,
+    "fields": {
+        "name": "gs1ie-inner-case",
+        "order": 3,
+        "package_level": 50,
+        "member_organisation": 16,
+        "image_url": "http://undefined.com",
+        "ui_label": "Case or mixed case e.g. case of beer (bottles or packs)",
+        "ui_label_en": "Case or mixed case e.g. case of beer (bottles or packs)",
+        "ui_label_cz": "",
+        "ui_label_de": "",
+        "ui_label_fr": "",
+        "ui_label_it": "",
+        "ui_label_nl": "",
+        "ui_label_sv": "",
+        "attributes": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "member_organisations.producttemplate",
+    "pk": 4,
+    "fields": {
+        "name": "gs1ie-display-unit",
+        "order": 4,
+        "package_level": 40,
+        "member_organisation": 16,
+        "image_url": "http://undefined.com",
+        "ui_label": "Display unit",
+        "ui_label_en": "Display unit",
+        "ui_label_cz": "",
+        "ui_label_de": "",
+        "ui_label_fr": "",
+        "ui_label_it": "",
+        "ui_label_nl": "",
+        "ui_label_sv": "",
+        "attributes": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "member_organisations.producttemplate",
+    "pk": 5,
+    "fields": {
+        "name": "gs1ie-pallet",
+        "order": 5,
+        "package_level": 30,
+        "member_organisation": 16,
+        "image_url": "http://undefined.comp",
+        "ui_label": "Pallet e.g. pallet of cases of beer",
+        "ui_label_en": "Pallet e.g. pallet of cases of beer",
+        "ui_label_cz": "",
+        "ui_label_de": "",
+        "ui_label_fr": "",
+        "ui_label_it": "",
+        "ui_label_nl": "",
+        "ui_label_sv": "",
+        "attributes": [
+            1,
+            2,
+            3,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "member_organisations.producttemplate",
+    "pk": 6,
+    "fields": {
+        "name": "gs1sv-base",
+        "order": 0,
+        "package_level": 70,
+        "member_organisation": 6,
+        "image_url": "/undefined.png",
+        "ui_label": "Basniv\u00e5",
+        "ui_label_en": "Basniv\u00e5",
+        "ui_label_cz": "",
+        "ui_label_de": "",
+        "ui_label_fr": "",
+        "ui_label_it": "",
+        "ui_label_nl": "",
+        "ui_label_sv": "",
+        "attributes": []
+    }
+},
+{
+    "model": "member_organisations.producttemplate",
+    "pk": 7,
+    "fields": {
+        "name": "gs1sv-inner-case",
+        "order": 0,
+        "package_level": 50,
+        "member_organisation": 6,
+        "image_url": "/undefined.png",
+        "ui_label": "Mellanniv\u00e5",
+        "ui_label_en": "Mellanniv\u00e5",
+        "ui_label_cz": "",
+        "ui_label_de": "",
+        "ui_label_fr": "",
+        "ui_label_it": "",
+        "ui_label_nl": "",
+        "ui_label_sv": "",
+        "attributes": []
+    }
+},
+{
+    "model": "member_organisations.producttemplate",
+    "pk": 8,
+    "fields": {
+        "name": "gs1sv-inner-pallet",
+        "order": 0,
+        "package_level": 30,
+        "member_organisation": 6,
+        "image_url": "/undefined.png",
+        "ui_label": "Toppniv\u00e5",
+        "ui_label_en": "Toppniv\u00e5",
+        "ui_label_cz": "",
+        "ui_label_de": "",
+        "ui_label_fr": "",
+        "ui_label_it": "",
+        "ui_label_nl": "",
+        "ui_label_sv": "",
+        "attributes": []
+    }
+},
+{
+    "model": "member_organisations.producttemplate",
+    "pk": 9,
+    "fields": {
+        "name": "gs1sv-display-unit",
+        "order": 0,
+        "package_level": 40,
+        "member_organisation": 6,
+        "image_url": "",
+        "ui_label": "Display unit",
+        "ui_label_en": "Display unit",
+        "ui_label_cz": "",
+        "ui_label_de": "",
+        "ui_label_fr": "",
+        "ui_label_it": "",
+        "ui_label_nl": "",
+        "ui_label_sv": "",
+        "attributes": []
+    }
+},
+{
+    "model": "member_organisations.producttemplate",
+    "pk": 10,
+    "fields": {
+        "name": "gs1sv-inner-pallet",
+        "order": 0,
+        "package_level": 30,
+        "member_organisation": 6,
+        "image_url": "",
+        "ui_label": "Pallet e.g. pallet of cases of beer",
+        "ui_label_en": "Pallet e.g. pallet of cases of beer",
+        "ui_label_cz": "",
+        "ui_label_de": "",
+        "ui_label_fr": "",
+        "ui_label_it": "",
+        "ui_label_nl": "",
+        "ui_label_sv": "",
+        "attributes": []
+    }
+},
+{
+    "model": "member_organisations.producttemplate",
+    "pk": 11,
+    "fields": {
+        "name": "gs1sv-base",
+        "order": 0,
+        "package_level": 70,
+        "member_organisation": 6,
+        "image_url": "",
+        "ui_label": "Konsumentenhet (basenhet / varje), t.ex. flaska \u00f6l",
+        "ui_label_en": "",
+        "ui_label_cz": "",
+        "ui_label_de": "",
+        "ui_label_fr": "",
+        "ui_label_it": "",
+        "ui_label_nl": "",
+        "ui_label_sv": "Konsumentenhet (basenhet / varje), t.ex. flaska \u00f6l",
+        "attributes": []
+    }
+},
+{
+    "model": "member_organisations.producttemplate",
+    "pk": 12,
+    "fields": {
+        "name": "gs1sv-inner-pack",
+        "order": 0,
+        "package_level": 60,
+        "member_organisation": 6,
+        "image_url": "",
+        "ui_label": "F\u00f6rpackning eller innerf\u00f6rpackning, t.ex. sex paket \u00f6lflaskor",
+        "ui_label_en": "",
+        "ui_label_cz": "",
+        "ui_label_de": "",
+        "ui_label_fr": "",
+        "ui_label_it": "",
+        "ui_label_nl": "",
+        "ui_label_sv": "F\u00f6rpackning eller innerf\u00f6rpackning, t.ex. sex paket \u00f6lflaskor",
+        "attributes": []
+    }
+},
+{
+    "model": "member_organisations.producttemplate",
+    "pk": 13,
+    "fields": {
+        "name": "gs1sv-inner-case",
+        "order": 0,
+        "package_level": 50,
+        "member_organisation": 6,
+        "image_url": "",
+        "ui_label": "Fall eller blandat fall t.ex. fall av \u00f6l (flaskor eller f\u00f6rpackningar)",
+        "ui_label_en": "",
+        "ui_label_cz": "",
+        "ui_label_de": "",
+        "ui_label_fr": "",
+        "ui_label_it": "",
+        "ui_label_nl": "",
+        "ui_label_sv": "Fall eller blandat fall t.ex. fall av \u00f6l (flaskor eller f\u00f6rpackningar)",
+        "attributes": []
+    }
+},
+{
+    "model": "member_organisations.producttemplate",
+    "pk": 14,
+    "fields": {
+        "name": "gs1sv-display-unit",
+        "order": 0,
+        "package_level": 40,
+        "member_organisation": 6,
+        "image_url": "",
+        "ui_label": "Sk\u00e4rm",
+        "ui_label_en": "",
+        "ui_label_cz": "",
+        "ui_label_de": "",
+        "ui_label_fr": "",
+        "ui_label_it": "",
+        "ui_label_nl": "",
+        "ui_label_sv": "Sk\u00e4rm",
+        "attributes": []
+    }
+},
+{
+    "model": "member_organisations.producttemplate",
+    "pk": 15,
+    "fields": {
+        "name": "gs1sv-inner-pallet",
+        "order": 0,
+        "package_level": 30,
+        "member_organisation": 6,
+        "image_url": "",
+        "ui_label": "Pallet t.ex. pall av \u00f6lfall",
+        "ui_label_en": "",
+        "ui_label_cz": "",
+        "ui_label_de": "",
+        "ui_label_fr": "",
+        "ui_label_it": "",
+        "ui_label_nl": "",
+        "ui_label_sv": "Pallet t.ex. pall av \u00f6lfall",
+        "attributes": []
+    }
+}
+]

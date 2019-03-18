@@ -1,0 +1,205 @@
+{% load i18n %}
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!DOCTYPE document SYSTEM "rml.dtd">
+<document filename="{{ product.gtin }}.pdf">
+    <docinit>
+        <registerFont fontName="Verdana" fontFile="{{ verdana }}"/>
+        <registerFont fontName="Verdana-Bold" fontFile="{{ verdana_bold }}"/>
+    </docinit>
+   <stylesheet>
+   </stylesheet>
+    <template showBoundary="0" leftMargin="20" rightMargin="20" title="{% trans 'Summary of' %} {{ product.gtin }}">
+        <pageTemplate id="main">
+            <pageGraphics>
+                <image file="{{ logo }}" x="30" y="750" height="80"/>
+                <fill color="#f06030"/>
+                <setFont name="Courier-Bold" size="14"/>
+                <fill color="#032c6c"/>
+                <setFont name="Courier-Bold" size="14"/>
+                <drawString x="265" y="740">{% trans 'Summary' %}</drawString>
+            </pageGraphics>
+            <frame id="productDescription" x1="10" y1="680" width="570" height="55"/>
+            <frame id="productData" x1="10" y1="395" width="320" height="280"/>
+            <frame id="productDataRest" x1="350" y1="560" width="220" height="115"/>
+            <frame id="productDataRest2" x1="350" y1="395" width="220" height="130"/>
+            <frame id="subproductData" x1="10" y1="10" width="580" height="380"/>
+        </pageTemplate>
+    </template>
+    <stylesheet>
+        <blockTableStyle id="productTableStyle">
+            <blockTextColor colorName="#032c6c"/>
+            <blockAlignment value="LEFT"/>
+            <blockValign value="MIDDLE"/>
+            <blockFont name="Courier" size="10"/>
+{#            <blockFont name="Courier-Bold" size="10" start="0,0" stop="0,{% if product.package_level_id == 70 %}13{%else%}11{%endif%}"/>#}
+        </blockTableStyle>
+        <blockTableStyle id="productRestTableStyle">
+            <blockTextColor colorName="#032c6c"/>
+{#            <blockTextColor colorName="#032c6c" start="0,0" stop="0,4"/>#}
+            <blockAlignment value="LEFT"/>
+            <blockValign value="MIDDLE"/>
+            <blockFont name="Courier" size="10"/>
+{#            <blockFont name="Courier-Bold" size="10" start="0,0" stop="0,4"/>#}
+            <blockBackground colorName="#f8f8f8" />
+        </blockTableStyle>
+        <blockTableStyle id="productRestTableStyle2">
+            <blockTextColor colorName="#000000"/>
+            <blockAlignment value="LEFT"/>
+            <blockValign value="MIDDLE"/>
+            <blockFont name="Courier" size="10"/>
+{#            <blockTextColor colorName="#032c6c" start="0,0" stop="0,0"/>#}
+{#            <blockTextColor colorName="#032c6c" start="0,2" stop="0,2"/>#}
+{#            <blockTextColor colorName="#032c6c" start="0,4" stop="0,4"/>#}
+{#            <blockFont name="Courier-Bold" size="10" start="0,0" stop="0,0"/>#}
+{#            <blockFont name="Courier-Bold" size="10" start="0,2" stop="0,2"/>#}
+{#            <blockFont name="Courier-Bold" size="10" start="0,4" stop="0,4"/>#}
+            <blockBackground colorName="#f8f8f8"/>
+        </blockTableStyle>
+        <blockTableStyle id="imagesStyle">
+            <blockBackground colorName="#f8f8f8" start="0,0" stop="1,0"/>
+            <blockTextColor colorName="#032c6c"/>
+            <blockFont name="Courier" size="12"/>
+            <blockValign value="MIDDLE"/>
+            <blockAlignment value="CENTER"/>
+            <blockBottomPadding length="4mm" start="0,0" stop="1,0"/>
+        </blockTableStyle>
+        {% if sub_products %}
+            <blockTableStyle id="subproductTableStyle">
+                <blockTextColor colorName="black"/>
+                <blockTextColor colorName="#032c6c" start="0,0" stop="3,0"/>
+                <blockAlignment value="LEFT" start="0,0" stop="1,0"/>
+                <blockAlignment value="CENTER" start="2,0" stop="3,0"/>
+                {% for sub_product in sub_products %}
+                    <blockAlignment value="LEFT" start="0,{{forloop.counter0|add:1}}" stop="1,{{forloop.counter0|add:1}}"/>
+                    <blockAlignment value="CENTER" start="2,{{forloop.counter0|add:1}}" stop="3,{{forloop.counter0|add:1}}"/>
+                {% endfor %}
+                <blockValign value="MIDDLE"/>
+                <blockFont name="Courier" size="10"/>
+            </blockTableStyle>
+            <blockTableStyle id="subproductHeading">
+                <blockTextColor colorName="#032c6c"/>
+                <blockAlignment value="LEFT"/>
+                <blockFont name="Courier" size="12"/>
+                <blockValign value="MIDDLE"/>
+                <blockBackground colorName="#f8f8f8" start="0,0" stop="0,0"/>
+            </blockTableStyle>
+        {% endif %}
+        <paraStyle name="paraNavy" textColor="#032c6c"/>
+        <paraStyle name="fieldTitle" fontName="Courier-Bold" textColor="#032c6c"/>
+    </stylesheet>
+    <story>
+        {% if ui_attributes.description_i18n.ui_enabled %}
+            <para alignment="center" textColor="#032c6c" fontName="Courier-Bold" fontSize="14" leading="20">{{ product.description|upper }}</para>
+        {% endif %}
+        <nextFrame name="productData"/>
+        <blockTable style="productTableStyle" colWidths="4.70cm,5.80cm">
+            {% if ui_attributes.gtin.ui_enabled %}
+                <tr><td><para style="fieldTitle">{% trans 'GTIN' %}</para></td><td>{{ product.gtin }}</td></tr>
+            {% endif %}
+            {% if ui_attributes.gs1_company_prefix.ui_enabled %}
+                <tr><td><para style="fieldTitle">{% trans 'GS1 Company Prefix' %}</para></td><td>{{ product.gs1_company_prefix }}</td></tr>
+            {% endif %}
+            {% if product.package_level_id == 70 %}
+            <tr><td><para style="fieldTitle">{% trans 'Product packaging' %}</para></td><td>{{ product.package_type.type }}</td></tr>
+            {% endif %}
+            {% if ui_attributes.brand_i18n.ui_enabled %}
+                <tr><td><para style="fieldTitle">{% trans 'Brand' %}</para></td><td><para style="paraNavy">{{ product.brand }}</para></td></tr>
+            {% endif %}
+            {% if ui_attributes.sub_brand.ui_enabled %}
+                <tr><td><para style="fieldTitle">{% trans 'Sub Brand' %}</para></td><td><para style="paraNavy">{{ product.sub_brand }}</para></td></tr>
+            {% endif %}
+            {% if ui_attributes.functional_name_i18n.ui_enabled %}
+                <tr><td><para style="fieldTitle">{% trans 'Functional Name' %}</para></td><td><para style="paraNavy">{{ product.functional_name }}</para></td></tr>
+            {% endif %}
+            {% if ui_attributes.variant.ui_enabled %}
+                <tr><td><para style="fieldTitle">{% trans 'Variant' %}</para></td><td><para style="paraNavy">{{ product.variant }}</para></td></tr>
+            {% endif %}
+            {% if ui_attributes.sku.ui_enabled %}
+                <tr><td><para style="fieldTitle">{% trans 'Internal Product Code' %}</para></td><td><para style="paraNavy">{{ product.sku|default:'--' }}</para></td></tr>
+            {% endif %}
+            {% if product.package_level_id == 70 and ui_attributes.net_content.ui_enabled %}
+                <tr><td><para style="fieldTitle">{% trans 'Net Content' %}</para></td><td>{{ product.net_content|default:'--' }} {{ product.net_content_uom.abbr|default:'' }}</td></tr>
+            {% elif sub_products %}
+                <tr><td><para style="fieldTitle">{% trans 'Number of products' %}</para></td><td>{{nop}}</td></tr>
+            {% else %}
+                <tr><td><para style="fieldTitle">{% trans 'Base Unit/Inner GTIN' %}</para></td><td>{% trans 'Not available' %}</td></tr>
+            {% endif %}
+            {% if ui_attributes.depth.ui_enabled %}
+                <tr><td><para style="fieldTitle">{% trans 'Product depth' %}</para></td><td>{{ product.depth|default:'--' }} {{ product.depth_uom.abbr|default:'' }}</td></tr>
+            {% endif %}
+            {% if ui_attributes.width.ui_enabled %}
+                <tr><td><para style="fieldTitle">{% trans 'Product width' %}</para></td><td>{{ product.width|default:'--' }} {{ product.width_uom.abbr|default:'' }}</td></tr>
+            {% endif %}
+            {% if ui_attributes.height.ui_enabled %}
+                <tr><td><para style="fieldTitle">{% trans 'Product height' %}</para></td><td>{{ product.height|default:'--' }} {{ product.height_uom.abbr|default:'' }}</td></tr>
+            {% endif %}
+            {% if ui_attributes.gross_weight.ui_enabled %}
+                <tr><td><para style="fieldTitle">{% trans 'Product gross weight' %}</para></td><td>{{ product.gross_weight|default:'--' }} {{ product.gross_weight_uom.abbr|default:'' }}</td></tr>
+            {% endif %}
+            {% if product.package_level_id == 70 and ui_attributes.net_weight.ui_enabled %}
+                <tr><td><para style="fieldTitle">{% trans 'Product net weight' %}</para></td><td>{{ product.net_weight|default:'--' }} {{ product.net_weight_uom.abbr|default:'' }}</td></tr>
+            {% endif %}
+            <tr><td></td><td></td></tr>
+        </blockTable>
+        <nextFrame name="productDataRest"/>
+        <blockTable style="productRestTableStyle" colWidths="5.1cm,2.8cm">
+            {% if ui_attributes.is_cunit.ui_enabled %}
+                <tr><td><para style="fieldTitle">{% trans 'Is Consumer Unit' %}</para></td><td>{% if product.is_cunit %}{% trans 'Yes' %}{% endif %}</td></tr>
+            {% endif %}
+            {% if ui_attributes.is_dunit.ui_enabled %}
+                <tr><td><para style="fieldTitle">{% trans 'Is Despatch Unit' %}</para></td><td>{% if product.is_dunit %}{% trans 'Yes' %}{% endif %}</td></tr>
+            {% endif %}
+            {% if ui_attributes.is_vunit.ui_enabled %}
+                <tr><td><para style="fieldTitle">{% trans 'Is Variable Weight Unit' %}</para></td><td>{% if product.is_vunit %}{% trans 'Yes' %}{% endif %}</td></tr>
+            {% endif %}
+            {% if ui_attributes.is_iunit.ui_enabled %}
+                <tr><td><para style="fieldTitle">{% trans 'Is Invoice Unit' %}</para></td><td>{% if product.is_iunit %}{% trans 'Yes' %}{% endif %}</td></tr>
+            {% endif %}
+            {% if ui_attributes.is_ounit.ui_enabled %}
+                <tr><td><para style="fieldTitle">{% trans 'Is Orderable Unit' %}</para></td><td>{% if product.is_ounit %}{% trans 'Yes' %}{% endif %}</td></tr>
+            {% else %}
+                <tr><td></td><td></td></tr>
+            {% endif %}
+        </blockTable>
+        <nextFrame name="productDataRest2"/>
+        <blockTable style="productRestTableStyle2" colWidths="7.9cm">
+            {% if ui_attributes.country_of_origin.ui_enabled %}
+                <tr><td><para style="fieldTitle">{% trans 'Country of origin' %}</para></td></tr>
+                <tr><td><para style="paraNavy">{{ product.country_of_origin.name|default:'--' }}</para></td></tr>
+            {% endif %}
+            {% if ui_attributes.website_url.ui_enabled %}
+                <tr><td><para style="fieldTitle">{% trans 'Website' %}</para></td></tr>
+                <tr><td><para style="paraNavy">{{ product.website_url|default:'--' }}</para></td></tr>
+            {% endif %}
+            {% if ui_attributes.enquiries.ui_enabled %}
+                <tr><td><para style="fieldTitle">{% trans 'Email' %}</para></td></tr>
+                <tr><td><para style="paraNavy">{{ product.enquiries|default:'--' }}</para></td></tr>
+            {% endif %}
+            <tr><td></td></tr>
+        </blockTable>
+        <nextFrame name="subproductData"/>
+        <blockTable style="imagesStyle" colWidths="9.8cm,9.8cm">
+            <tr><td>{% trans 'Barcode placement' %}</td><td>{% trans 'Product image' %}</td></tr>
+            <tr><td> </td><td> </td></tr>
+            <tr><td>{% if placement %}<image file="{{ placement }}" x="0" y="0" width="{{ p_width }}mm" height="{{ p_height }}mm"/>{% endif %}</td>
+            <td>{% if image %}<image file="{{ image }}" x="0" y="0" width="{{ i_width }}mm" height="{{ i_height }}mm"/>{% endif %}</td></tr>
+        </blockTable>
+        {% if sub_products %}
+            <spacer length="10mm" width="200mm"/>
+            <blockTable style="subproductHeading" colWidths="19.5cm" rowHeights="1cm">
+                <tr><td>{% trans 'Contained Items' %}</td></tr>
+            </blockTable>
+            <blockTable style="subproductTableStyle" colWidths="4.2cm,9cm,4cm,2.4cm">
+                <tr><td>GTIN</td><td>{% trans 'Description' %}</td><td>{% trans 'Package level ' %}</td><td>Count</td></tr>
+                {% for sp in sub_products %}
+                <tr>
+                    <td>{{ sp.sub_product.gtin }}</td>
+                    <td><para>{{ sp.sub_product.description }}</para></td>
+                    <td>{{ sp.ui_label|slice:":20" }}</td>
+                    <td>{{ sp.quantity }}</td>
+                </tr>
+                {% endfor %}
+            </blockTable>
+        {% endif %}
+    </story>
+</document>

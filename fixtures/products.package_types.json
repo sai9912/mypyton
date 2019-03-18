@@ -1,0 +1,563 @@
+[
+    {
+        "model": "products.packagetype",
+        "pk": 1,
+        "fields": {
+            "code": "BG",
+            "image_path": "",
+            "ui_enabled": true,
+            "type_i18n": "{\"en\": \"Bag\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 2,
+        "fields": {
+            "code": "BPG",
+            "image_path": "",
+            "ui_enabled": true,
+            "type_i18n": "{\"en\": \"Blister pack\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 3,
+        "fields": {
+            "code": "BO",
+            "image_path": "",
+            "ui_enabled": true,
+            "type_i18n": "{\"en\": \"Bottles and jars\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 4,
+        "fields": {
+            "code": "BX",
+            "image_path": "",
+            "ui_enabled": true,
+            "type_i18n": "{\"en\": \"Boxed\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 5,
+        "fields": {
+            "code": "CNG",
+            "image_path": "",
+            "ui_enabled": true,
+            "type_i18n": "{\"en\": \"Can and cylinders\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 6,
+        "fields": {
+            "code": "CM",
+            "image_path": "",
+            "ui_enabled": true,
+            "type_i18n": "{\"en\": \"Carded items\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 7,
+        "fields": {
+            "code": "EGG_CT",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"Egg carton\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 8,
+        "fields": {
+            "code": "JG",
+            "image_path": "",
+            "ui_enabled": true,
+            "type_i18n": "{\"en\": \"Jug\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 9,
+        "fields": {
+            "code": "ZU",
+            "image_path": "",
+            "ui_enabled": true,
+            "type_i18n": "{\"en\": \"Large heavy or bulky\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 10,
+        "fields": {
+            "code": "MPG",
+            "image_path": "",
+            "ui_enabled": true,
+            "type_i18n": "{\"en\": \"Multi packs\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 11,
+        "fields": {
+            "code": "SET",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"Set\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 12,
+        "fields": {
+            "code": "TAG",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"Tag (apparel)\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 13,
+        "fields": {
+            "code": "THIN",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"Thin items or containers\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 14,
+        "fields": {
+            "code": "PU",
+            "image_path": "",
+            "ui_enabled": true,
+            "type_i18n": "{\"en\": \"Tray\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 15,
+        "fields": {
+            "code": "CU",
+            "image_path": "",
+            "ui_enabled": true,
+            "type_i18n": "{\"en\": \"Tub\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 16,
+        "fields": {
+            "code": "TU",
+            "image_path": "",
+            "ui_enabled": true,
+            "type_i18n": "{\"en\": \"Tube\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 17,
+        "fields": {
+            "code": "NE",
+            "image_path": "",
+            "ui_enabled": true,
+            "type_i18n": "{\"en\": \"Unpackaged items\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 18,
+        "fields": {
+            "code": "FLW",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"Flow wrapped items\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 19,
+        "fields": {
+            "code": "AE",
+            "image_path": "",
+            "ui_enabled": true,
+            "type_i18n": "{\"en\": \"Aerosol\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 20,
+        "fields": {
+            "code": "BK",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"Basket or hamper\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 21,
+        "fields": {
+            "code": "CT",
+            "image_path": "",
+            "ui_enabled": true,
+            "type_i18n": "{\"en\": \"Carton\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 22,
+        "fields": {
+            "code": "PUG",
+            "image_path": "",
+            "ui_enabled": true,
+            "type_i18n": "{\"en\": \"Packed, Unspecified\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 23,
+        "fields": {
+            "code": "KEG",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"Keg\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 24,
+        "fields": {
+            "code": "KIT",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"Kit\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 25,
+        "fields": {
+            "code": "AA",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 26,
+        "fields": {
+            "code": "AM",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 27,
+        "fields": {
+            "code": "BA",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 28,
+        "fields": {
+            "code": "BBG",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 29,
+        "fields": {
+            "code": "BJ",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 30,
+        "fields": {
+            "code": "BRI",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 31,
+        "fields": {
+            "code": "CG",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 32,
+        "fields": {
+            "code": "CMS",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 33,
+        "fields": {
+            "code": "CR",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 34,
+        "fields": {
+            "code": "CS",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 35,
+        "fields": {
+            "code": "CY",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 36,
+        "fields": {
+            "code": "EN",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 37,
+        "fields": {
+            "code": "GTG",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 38,
+        "fields": {
+            "code": "JR",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 39,
+        "fields": {
+            "code": "NT",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 40,
+        "fields": {
+            "code": "PB",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 41,
+        "fields": {
+            "code": "PLP",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 42,
+        "fields": {
+            "code": "PO",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 43,
+        "fields": {
+            "code": "PT",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 44,
+        "fields": {
+            "code": "PX",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 45,
+        "fields": {
+            "code": "RK",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 46,
+        "fields": {
+            "code": "RL",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 47,
+        "fields": {
+            "code": "STR",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 48,
+        "fields": {
+            "code": "SW",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 49,
+        "fields": {
+            "code": "SY",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 50,
+        "fields": {
+            "code": "WRP",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    },
+    {
+        "model": "products.packagetype",
+        "pk": 51,
+        "fields": {
+            "code": "X11",
+            "image_path": "",
+            "ui_enabled": false,
+            "type_i18n": "{\"en\": \"\"}",
+            "description_i18n": "{\"en\": \"\"}"
+        }
+    }
+]

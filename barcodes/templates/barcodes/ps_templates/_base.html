@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+    <head>
+        <!-- V13 -->
+        <title>{% block title %}{% endblock %}</title>
+        <meta name="copyright" content="(c) 2009 Copyright BarcodeRobot" />
+        
+        {% block keywords %}<meta name="keywords" content="upc-a, ean-13, isbn-13, upc, u.p.c., ean, jan, gs1, ucc, retail, amazon, barcode, bar code, bar code create, generate, generator, make, online, download, erstellen, check, codes, digital, electronic, files, images, pictures, instant, postscript" />{% endblock %}
+        
+        {% block description %}<meta name="description" content="BarcodeRobot provides everyone with on-line generated world-class Barcode images of EAN-13, UPC-A and ISBN-13 barcodes in PostScript (vector) or JPG, PNG, GIF formats for immediate download. Get free barcode using Twitter!" />
+        {% endblock %}
+        
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Language" content="en-us" />
+        <link rel="shortcut icon" href="https://barcoderobot.s3.amazonaws.com/favicon.ico" />
+        <link rel="icon" href="https://barcoderobot.s3.amazonaws.com/favicon.ico" />
+        <link href="https://barcoderobot.s3.amazonaws.com/main.css?ver=2" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+        <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+        {% block local-scripts %}{% endblock %}
+    </head>
+    
+    <body id="barcoderobotbody">
+        
+        {% include "_head_tracker.html" %}
+
+               <!-- AB  -->
+                <script type="text/javascript">
+        experiments = function() {
+            // experiment_enrollment should have the following format { experiment_name : group }
+            var experiment_enrollment = {};
+
+            return {
+                record_enrollment: function(experiment_name, group) {
+                    experiment_enrollment[experiment_name] = group;
+                },
+                control: function(experiment_name) {
+                    if (experiment_enrollment[experiment_name]) {
+                        return experiment_enrollment[experiment_name] == "control";
+                    } else {
+                        if (console) {
+                            console.error("Can't find experiment named " + experiment_name);
+                        }
+                        return true;
+                    }
+                },
+                test: function(experiment_name) {
+                    if (experiment_enrollment[experiment_name]) {
+                        return experiment_enrollment[experiment_name] == "test";
+                    } else {
+                        if (console) {
+                            console.error("Can't find experiment named " + experiment_name);
+                        }
+                        return false;
+                    }
+                },
+                confirm_human: function() {
+                    $.get("/django-lean/confirm_human/");
+                }
+            };
+        }();
+                </script>
+                <!-- /AB  -->
+        
+        <div id="everything">
+            {% include "_header.html" %}
+            {% block navigation %}
+            	{% comment %}{% include "_navcontainer.html" %}{% endcomment %}
+            {% endblock %}
+            {% block leftside %}
+            	{% include "_left_column.html" %}
+            {% endblock %}
+            <div id="main-content" class="div500">
+                {% block content %}{% endblock %}
+            </div>
+            {% include "_footer.html" %}
+        </div>
+
+	<!-- analytics -->
+	{% include "_tracker.html" %}
+	<!-- end analytics -->
+
+    {% if client_side_experiments or not request.session.verified_human %}
+      <script type="text/javascript" charset="utf-8">
+        {% if not request.session.verified_human %}
+          experiments.confirm_human();
+        {% endif %}
+        {% if client_side_experiments %}
+          {% for experiment, group in client_side_experiments.items %}
+            experiments.record_enrollment("{{ experiment|escapejs }}", "{{ group|escapejs }}");
+          {% endfor %}
+        {% endif %}
+      </script>
+    {% endif %}
+
+    </body>
+</html>

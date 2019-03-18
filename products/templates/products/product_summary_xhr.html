@@ -1,0 +1,19 @@
+{% load i18n %}
+
+<div class="site-content-padder" style="line-height: 24px">
+    <div class='button-container'>
+        <a class='btn btn-primary' target="_blank"
+           href="{% url 'products:product_print_summary' product_id=product.id %}">
+            {% trans 'Print Product Summary' %}
+        </a>
+    </div>
+    <hr/>
+    {% include 'products/product_summary_base.html' %}
+    <hr/>
+    <div class='button-container'>
+        <a class='btn btn-primary' target="_blank"
+           href="{% url 'products:product_print_summary' product_id=product.id %}">
+            {% trans 'Print Product Summary' %}
+        </a>
+    </div>
+</div>

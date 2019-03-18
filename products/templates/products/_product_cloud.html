@@ -1,0 +1,113 @@
+{% load i18n %}
+
+<div id="cloud" class="tab-pane">
+    <div class="row">
+        <div class="col-xs-12">
+            <fieldset class='fieldset' id="cloud_properties_fs">
+                <legend>{% trans 'Product properties' %} <span
+                        style="font-size: 0.6em;vertical-align: middle;">({% trans 'Must be present for the upload' %})&nbsp;</span>
+                </legend>
+                <div class="well">
+                    <p>
+                        {% trans 'Please note that the following attributes must be present for the product upload:' %}
+                    <ul>
+                        <li>
+                            <b>{% trans 'gtin' %}:</b> {{ product.gtin }}
+                        </li>
+                        <li>
+                            <b>{% trans 'target market' %}:</b> {{ product.target_market.code }}
+                        </li>
+                        <li>
+                            <b>{% trans 'brand' %}:</b> {{ product.brand }}
+                        </li>
+                        <li>
+                            <b>{% trans 'label description' %}:</b> {{ product.labelDescription }}
+                        </li>
+                        <li>
+                            <b>{% trans 'company name' %}:</b> {{ current_user.organisation.company|default:'NOT SPECIFIED' }}
+                        </li>
+                        <li>
+                            <b>{% trans 'category code' %}:</b> {{ product.category }}
+                        </li>
+                        <li>
+                            <b>{% trans 'image' %}:</b> {{ product.website_url }}
+                        </li>
+                        <li>
+                            <b>{% trans 'language' %}:</b> {{ product.language.code }}
+                        </li>
+                    </ul>
+                        {% trans 'To find out more click here' %}:
+                        <a href="https://www.gs1ie.org/tools-services/data-services/gs1-cloud/">
+                            https://www.gs1ie.org/tools-services/data-services/gs1-cloud/
+                        </a>
+                    </p>
+                </div>
+            </fieldset>
+
+            <fieldset class='fieldset' id="cloud_properties_fs">
+                <legend>{% trans 'GS1 Cloud state' %}<span
+                        style="font-size: 0.6em;vertical-align: middle;"> ({% trans 'Must be active for synchronisation to take place' %})&nbsp;</span>
+                </legend>
+                <div class="well">
+                    <div class="row">
+                        <div class="col-xs-6">
+    {% include 'security/_macros.html' with func='render_field_with_errors4_help' field=form.gs1_cloud_state label=_('Current state') only %}
+                        </div>
+                        <div class="col-xs-6">
+                            <!--<label>GS1 Cloud command</label>
+                            <div class="btn-group btn-group-sm" role="group" disabled="1">
+                                <button type="button" aria-disabled="true" disabled="1"
+                                        class="btn btn-success btn-secondary"><span
+                                        class="glyphicon glyphicon-cloud"></span>&nbsp; Add
+                                </button>
+                                <button type="button" class="btn btn-success btn-primary"><span
+                                        class="glyphicon glyphicon-ok"></span>&nbsp; Verify
+                                </button>
+                                <button type="button" class="btn btn-info btn-secondary"><span
+                                        class="glyphicon glyphicon-refresh"></span>&nbsp; Refresh
+                                </button>
+                                <button type="button" class="btn btn-danger btn-secondary"><span
+                                        class="glyphicon glyphicon-trash"></span>&nbsp; Remove
+                                </button>
+                            </div>-->
+                            <label>{% trans 'Last Status' %}</label>
+                            <p>
+                                {% if  product.gs1_cloud_last_rc %}
+                                    {{ product.gs1_cloud_last_rc }}<br/>
+                                {% endif %}
+                                {% if  product.gs1_cloud_last_update %}
+                                    {{ product.gs1_cloud_last_update }}
+                                {% else %}
+                                    Unavailable
+                                {% endif %}
+                        </div>
+
+                    </div>
+                </div>
+            </fieldset>
+
+
+            <fieldset class='fieldset' id="cloud_properties_fs">
+                <legend>
+                    {% trans 'GS1 Cloud audit' %}
+                    <span style="font-size: 0.6em;vertical-align: middle;">
+                        ({% trans 'Log of the last operations' %})
+                    </span>
+                </legend>
+                <div class="well">
+                    <table id="cloud_log" class="table table-sm">
+                        <thead>
+                        <tr>
+                            <th>{% trans 'Status' %}</th>
+                            <th>{% trans 'Date' %}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </fieldset>
+
+        </div>
+    </div>
+</div>

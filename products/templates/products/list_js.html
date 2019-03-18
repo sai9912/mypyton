@@ -1,0 +1,186 @@
+{% extends 'base_bs4.html' %}
+
+{% load i18n %}
+{% load static %}
+{% load product_tags %}
+
+{# from theme("prefixes/range_macros.html") import render_range_breadcrumb, render_gtin, render_package_level #}
+{# from theme("security/_macros.html") import render_field_with_errors, render_field_with_errors4 #}
+
+{% block base_css %}
+    <link href="{% static 'products/site/css/add_product.css' %}" rel="stylesheet"/>
+    <style>
+        .fieldset > legend {
+            border: none;
+            width: auto;
+            margin-bottom: auto;
+        }
+    </style>
+
+    <link rel="stylesheet" href="{% static 'site/standalone/standalone-components.css' %}"/>
+    <link rel="stylesheet" href="{% static 'products/site/css/star-rating-svg.css' %}"/>
+{% endblock %}
+{% block title %}{% trans 'GS1 Activate: My products' %}{% endblock %}
+{% block breadcrumb %}
+    <ol class="breadcrumb" style="display:inline-block">
+        <li class="d-inline-block"><a href="{% url 'users:profile' %}">{% trans 'Home' %} /</a></li>
+        <li class="d-inline-block">{% trans 'Edit product' %}</li>
+    </ol>
+    <div class="active_range col-auto ml-auto">
+        {% include 'prefixes/render_range_prefix.html' with prefix=prefix only %}
+        <a href="{% url 'prefixes:prefixes_list' %}"> [{% trans 'Change' %}]</a>
+    </div>
+{% endblock %}
+{% block site_content %}
+    <div class="site-content">
+
+
+
+
+
+        <div>
+            <h2>
+                {% block page_title %} {% trans 'My Products' %} {% endblock %}
+            </h2>
+            <div style="position: absolute; right: 10px; top: 10px; text-align: right;">
+                <a href="{{ request.user.profile.member_organisation.gs1_help_url_3 }}">
+                    <b>{{ request.user.profile.member_organisation.gs1_help_label_3 }}</b>
+                    <img src="{% static 'site/img/training_button_2.png' %}" alt="{% trans 'Help' %}"
+                         style="width: auto;height: 30px;">
+                </a>
+            </div>
+        </div>
+
+        {% block page_content %}
+
+            <div class="site-content-padder">
+
+
+                <div class="productList">
+
+                </div>
+
+
+            </div>
+        {% endblock page_content %}
+    </div>
+{% endblock site_content %}
+
+{% block legend %}
+    <ul style="margin-top: 36px">
+        <span style="    color: #002C6C;
+    font-weight: 700;">{% trans 'Legend' %}</span>
+
+        <ul id="legend">
+            {% if templates.70 %}
+                <li>
+                    <img src="{% static 'products/site/wizard/pos.png' %}" alt="Each"/>
+                    &nbsp;{% trans 'Base Unit' %}
+                </li>
+            {% endif %}
+            {% if templates.60 %}
+                <li>
+                    <img src="{% static 'products/site/wizard/pack.png' %}" alt="Pack"/>
+                    &nbsp;{% trans 'Pack' %}
+                </li>
+            {% endif %}
+            {% if templates.50 %}
+                <li>
+                    <img src="{% static 'products/site/wizard/case.png' %}" alt="Case"/>
+                    &nbsp;{% trans 'Case or mixed case' %}
+                </li>
+            {% endif %}
+            {% if templates.40 %}
+                <li>
+                    <img src="{% static 'products/site/wizard/shipper.png' %}" alt="Display unit"/>
+                    &nbsp;{% trans 'Display unit' %}
+                </li>
+            {% endif %}
+            {% if templates.30 %}
+                <li>
+                    <img src="{% static 'products/site/wizard/pallet.png' %}" alt="Pallet"/>
+                    &nbsp;{% trans 'Pallet' %}
+                </li>
+            {% endif %}
+        </ul>
+    </ul>
+{% endblock %}
+
+{% block completeness %}
+    <ul>
+        <li>{% trans 'Data Completeness' %}</li>
+    </ul>
+    <div style="position:absolute; margin-right: 10px; margin-top: 10px; margin-bottom: 40px; ">
+        <div class="fill"></div>
+        <img class="mask" src="{% static 'site/img/pic_profile_strength_mask_90x90_v2.png' %}">
+        <div class='line'>
+            <div class="profile_strength_txt">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block base_scripts %}
+    <script type="text/javascript" src="{% url 'javascript-i18n' %}"></script>
+    <script src="{% static 'site/js/profile_strength.js' %}"></script>
+    <script src="{% static 'site/standalone/standalone-components.js' %}"></script>
+    <script type='text/javascript'>
+        function togglesub(o, c) {
+            if ($(o).hasClass('sub_opened')) {
+                $(c).toggle();
+                $(o).html('<span class="glyphicon glyphicon-chevron-down"></span>');
+                $(o).removeClass('sub_opened');
+            } else {
+                $(c).toggle();
+                $(o).html('<span class="glyphicon glyphicon-chevron-up"></span>');
+                $(o).addClass('sub_opened');
+            }
+        }
+
+        function clearform() {
+            $('#filterForm').find('input[type="text"]').each(function () {
+                $(this).val('');
+            });
+            $('#filterForm').find('input[type="checkbox"]').each(function () {
+                $(this).prop('checked', true);
+            });
+            return false;
+        }
+
+        $(document).ready(function () {
+            $('.sub_lines').hide();
+            $('#per_page').on('change', function () {
+                window.location = "{% url 'products:products_list' %}?per_page=" + $("#per_page").val();
+            })
+            fillMeter("{{ completeness }}");
+        })
+    </script>
+    <script type='text/javascript' src="{% static 'site/js/jquery.star-rating-svg.js' %}"></script>
+    <script type='text/javascript'>
+        $(".star").starRating({
+            starSize: 20,
+            totalStars: 1,
+            useFullStars: true,
+            disableAfterRate: false,
+            callback: function (currentRating, $el) {
+                // make a server call here
+                var prod_id = $el.attr('id').split('_')[1];
+                if (currentRating == 0) {
+                    $.post('/products/ajax/' + prod_id + '/unmark/',
+                        {'csrfmiddlewaretoken': '{{ csrf_token }}'},
+                        function (data) {
+                            console.log(data);
+                        })
+                }
+                else {
+                    $.post('/products/ajax/' + prod_id + '/mark/',
+                        {'csrfmiddlewaretoken': '{{ csrf_token }}'},
+                        function (data) {
+                            console.log(data);
+                        })
+                }
+            }
+        });
+    </script>
+{% endblock base_scripts %}
+

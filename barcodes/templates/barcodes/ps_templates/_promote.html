@@ -1,0 +1,62 @@
+{% extends "_base.html" %}
+
+{% block page %}Promote: BarcodeRobot{% endblock %}
+{% block title %}Promote: BarcodeRobot{% endblock %}
+
+{% block navigation %}{% endblock %}
+
+{% block leftside %}
+<div id="left" class="column">
+<ul>
+<li class="title"><a rel="nofollow"  href="/accounts/account.html">Account</a></li>
+<li class="first"><a rel="nofollow"  href="/accounts/change_password/">Change Password</a></li>
+</ul>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<h2>Get free data points</h2>
+
+<p>
+You can earn more free bar code points by helping to promote Barcode Robot
+</p>
+
+
+<h3>Link to BarcodeRobot</h3>
+
+<p>
+Become a Barcode Robot partner and we'll give you 100 free bar code points per month.
+It's easy: you just have to add this badge to your homepage with a link to BarcodeRobot.
+</p>
+
+<h4>The steps</h4>
+
+<ol><li> Copy the code </li>
+
+<input class="textinput" readonly="readonly" onclick="highlight(this);" value='<a href="https://www.barcoderobot.com/?from=partner"><img src="http://barcoderobot.s3.amazonaws.com/barcoderobot_partner_logo.gif" alt="Barcodes by BarcodeRobot" /></a>' style="width: 500px; margin: 10px 10px 10px 0px;" />
+<li>Add it to the footer of your website</li>
+
+<li>Send an email to <a href="mailto:support@barcoderobot.com">support@barcoderobot.com</a> and 
+we will add the points to your account.
+</ol>
+
+<!-- <h3>Refer other companies</h3> -->
+
+<script type="text/javascript">
+    function highlight(field) {
+           field.focus();
+           field.select();
+       }
+</script>
+
+{% endblock %}
+
+<!-- untested code below -->
+
+<h3>Refer other companies</h3>
+
+<p>Invite others to join BarcodeRobot and you'll earn an extra XX points per signup. Copy-and-paste following link and post it on a website, forum or message-board.
+<br/>
+<input class="textinput" readonly="readonly" onclick="highlight(this);" value='http://www.barcoderobot.com/?ref={{user.userprofile.ref_key}}' style="width: 500px; margin: 10px 10px 10px 0px;" />
+</p>

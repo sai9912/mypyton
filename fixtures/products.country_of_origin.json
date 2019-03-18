@@ -1,0 +1,1930 @@
+[
+{
+    "model": "products.countryoforigin",
+    "pk": 1,
+    "fields": {
+        "code": "004",
+        "name": "Afghanistan"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 2,
+    "fields": {
+        "code": "008",
+        "name": "Albania"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 3,
+    "fields": {
+        "code": "012",
+        "name": "Algeria"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 4,
+    "fields": {
+        "code": "016",
+        "name": "American Samoa"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 5,
+    "fields": {
+        "code": "020",
+        "name": "Andorra"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 6,
+    "fields": {
+        "code": "024",
+        "name": "Angola"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 7,
+    "fields": {
+        "code": "660",
+        "name": "Anguilla"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 8,
+    "fields": {
+        "code": "010",
+        "name": "Antarctica"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 9,
+    "fields": {
+        "code": "028",
+        "name": "Antigua and Barbuda"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 10,
+    "fields": {
+        "code": "032",
+        "name": "Argentina"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 11,
+    "fields": {
+        "code": "051",
+        "name": "Armenia"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 12,
+    "fields": {
+        "code": "533",
+        "name": "Aruba"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 13,
+    "fields": {
+        "code": "036",
+        "name": "Australia"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 14,
+    "fields": {
+        "code": "040",
+        "name": "Austria"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 15,
+    "fields": {
+        "code": "031",
+        "name": "Azerbaijan"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 16,
+    "fields": {
+        "code": "044",
+        "name": "Bahamas"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 17,
+    "fields": {
+        "code": "048",
+        "name": "Bahrain"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 18,
+    "fields": {
+        "code": "050",
+        "name": "Bangladesh"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 19,
+    "fields": {
+        "code": "052",
+        "name": "Barbados"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 20,
+    "fields": {
+        "code": "112",
+        "name": "Belarus"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 21,
+    "fields": {
+        "code": "056",
+        "name": "Belgium"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 22,
+    "fields": {
+        "code": "084",
+        "name": "Belize"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 23,
+    "fields": {
+        "code": "204",
+        "name": "Benin"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 24,
+    "fields": {
+        "code": "060",
+        "name": "Bermuda"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 25,
+    "fields": {
+        "code": "064",
+        "name": "Bhutan"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 26,
+    "fields": {
+        "code": "068",
+        "name": "Bolivia (Plurinational State of)"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 27,
+    "fields": {
+        "code": "070",
+        "name": "Bosnia and Herzegovina"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 28,
+    "fields": {
+        "code": "072",
+        "name": "Botswana"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 29,
+    "fields": {
+        "code": "074",
+        "name": "Bouvet Island"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 30,
+    "fields": {
+        "code": "076",
+        "name": "Brazil"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 31,
+    "fields": {
+        "code": "086",
+        "name": "British Indian Ocean Territory"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 32,
+    "fields": {
+        "code": "096",
+        "name": "Brunei Darussalam"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 33,
+    "fields": {
+        "code": "100",
+        "name": "Bulgaria"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 34,
+    "fields": {
+        "code": "854",
+        "name": "Burkina Faso"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 35,
+    "fields": {
+        "code": "108",
+        "name": "Burundi"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 36,
+    "fields": {
+        "code": "116",
+        "name": "Cambodia"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 37,
+    "fields": {
+        "code": "120",
+        "name": "Cameroon"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 38,
+    "fields": {
+        "code": "124",
+        "name": "Canada"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 39,
+    "fields": {
+        "code": "132",
+        "name": "Cabo Verde"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 40,
+    "fields": {
+        "code": "136",
+        "name": "Cayman Islands"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 41,
+    "fields": {
+        "code": "140",
+        "name": "Central African Republic"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 42,
+    "fields": {
+        "code": "148",
+        "name": "Chad"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 43,
+    "fields": {
+        "code": "152",
+        "name": "Chile"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 44,
+    "fields": {
+        "code": "156",
+        "name": "China"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 45,
+    "fields": {
+        "code": "162",
+        "name": "Christmas Island"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 46,
+    "fields": {
+        "code": "166",
+        "name": "Cocos (Keeling) Islands"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 47,
+    "fields": {
+        "code": "170",
+        "name": "Colombia"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 48,
+    "fields": {
+        "code": "174",
+        "name": "Comoros"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 49,
+    "fields": {
+        "code": "178",
+        "name": "Congo"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 50,
+    "fields": {
+        "code": "184",
+        "name": "Cook Islands"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 51,
+    "fields": {
+        "code": "188",
+        "name": "Costa Rica"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 52,
+    "fields": {
+        "code": "384",
+        "name": "C\u00f4te d'Ivoire"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 53,
+    "fields": {
+        "code": "191",
+        "name": "Croatia"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 54,
+    "fields": {
+        "code": "192",
+        "name": "Cuba"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 55,
+    "fields": {
+        "code": "196",
+        "name": "Cyprus"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 56,
+    "fields": {
+        "code": "203",
+        "name": "Czechia"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 57,
+    "fields": {
+        "code": "208",
+        "name": "Denmark"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 58,
+    "fields": {
+        "code": "262",
+        "name": "Djibouti"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 59,
+    "fields": {
+        "code": "212",
+        "name": "Dominica"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 60,
+    "fields": {
+        "code": "214",
+        "name": "Dominican Republic"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 61,
+    "fields": {
+        "code": "626",
+        "name": "Timor-Leste"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 62,
+    "fields": {
+        "code": "218",
+        "name": "Ecuador"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 63,
+    "fields": {
+        "code": "818",
+        "name": "Egypt"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 64,
+    "fields": {
+        "code": "222",
+        "name": "El Salvador"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 65,
+    "fields": {
+        "code": "226",
+        "name": "Equatorial Guinea"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 66,
+    "fields": {
+        "code": "232",
+        "name": "Eritrea"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 67,
+    "fields": {
+        "code": "233",
+        "name": "Estonia"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 68,
+    "fields": {
+        "code": "231",
+        "name": "Ethiopia"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 69,
+    "fields": {
+        "code": "097",
+        "name": "European Union"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 70,
+    "fields": {
+        "code": "238",
+        "name": "Falkland Islands  [Malvinas]"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 71,
+    "fields": {
+        "code": "234",
+        "name": "Faroe Islands"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 72,
+    "fields": {
+        "code": "242",
+        "name": "Fiji"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 73,
+    "fields": {
+        "code": "246",
+        "name": "Finland"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 74,
+    "fields": {
+        "code": "250",
+        "name": "France"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 75,
+    "fields": {
+        "code": "254",
+        "name": "French Guiana"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 76,
+    "fields": {
+        "code": "258",
+        "name": "French Polynesia"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 77,
+    "fields": {
+        "code": "260",
+        "name": "French Southern Territories"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 78,
+    "fields": {
+        "code": "266",
+        "name": "Gabon"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 79,
+    "fields": {
+        "code": "270",
+        "name": "Gambia"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 80,
+    "fields": {
+        "code": "268",
+        "name": "Georgia"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 81,
+    "fields": {
+        "code": "276",
+        "name": "Germany"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 82,
+    "fields": {
+        "code": "288",
+        "name": "Ghana"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 83,
+    "fields": {
+        "code": "292",
+        "name": "Gibraltar"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 84,
+    "fields": {
+        "code": "300",
+        "name": "Greece"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 85,
+    "fields": {
+        "code": "304",
+        "name": "Greenland"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 86,
+    "fields": {
+        "code": "308",
+        "name": "Grenada"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 87,
+    "fields": {
+        "code": "312",
+        "name": "Guadeloupe"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 88,
+    "fields": {
+        "code": "316",
+        "name": "Guam"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 89,
+    "fields": {
+        "code": "320",
+        "name": "Guatemala"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 90,
+    "fields": {
+        "code": "324",
+        "name": "Guinea"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 91,
+    "fields": {
+        "code": "624",
+        "name": "Guinea-Bissau"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 92,
+    "fields": {
+        "code": "328",
+        "name": "Guyana"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 93,
+    "fields": {
+        "code": "332",
+        "name": "Haiti"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 94,
+    "fields": {
+        "code": "334",
+        "name": "Heard Island and McDonald Islands"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 95,
+    "fields": {
+        "code": "340",
+        "name": "Honduras"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 96,
+    "fields": {
+        "code": "344",
+        "name": "Hong Kong"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 97,
+    "fields": {
+        "code": "348",
+        "name": "Hungary"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 98,
+    "fields": {
+        "code": "352",
+        "name": "Iceland"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 99,
+    "fields": {
+        "code": "356",
+        "name": "India"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 100,
+    "fields": {
+        "code": "360",
+        "name": "Indonesia"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 101,
+    "fields": {
+        "code": "364",
+        "name": "Iran (Islamic Republic of)"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 102,
+    "fields": {
+        "code": "368",
+        "name": "Iraq"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 103,
+    "fields": {
+        "code": "372",
+        "name": "Ireland"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 104,
+    "fields": {
+        "code": "376",
+        "name": "Israel"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 105,
+    "fields": {
+        "code": "380",
+        "name": "Italy"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 106,
+    "fields": {
+        "code": "388",
+        "name": "Jamaica"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 107,
+    "fields": {
+        "code": "392",
+        "name": "Japan"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 108,
+    "fields": {
+        "code": "400",
+        "name": "Jordan"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 109,
+    "fields": {
+        "code": "398",
+        "name": "Kazakhstan"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 110,
+    "fields": {
+        "code": "404",
+        "name": "Kenya"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 111,
+    "fields": {
+        "code": "296",
+        "name": "Kiribati"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 112,
+    "fields": {
+        "code": "408",
+        "name": "Korea (the Democratic People's Republic of)"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 113,
+    "fields": {
+        "code": "410",
+        "name": "Korea (the Republic of)"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 114,
+    "fields": {
+        "code": "414",
+        "name": "Kuwait"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 115,
+    "fields": {
+        "code": "417",
+        "name": "Kyrgyzstan"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 116,
+    "fields": {
+        "code": "418",
+        "name": "Lao People's Democratic Republic"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 117,
+    "fields": {
+        "code": "428",
+        "name": "Latvia"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 118,
+    "fields": {
+        "code": "422",
+        "name": "Lebanon"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 119,
+    "fields": {
+        "code": "426",
+        "name": "Lesotho"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 120,
+    "fields": {
+        "code": "430",
+        "name": "Liberia"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 121,
+    "fields": {
+        "code": "434",
+        "name": "Libya"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 122,
+    "fields": {
+        "code": "438",
+        "name": "Liechtenstein"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 123,
+    "fields": {
+        "code": "440",
+        "name": "Lithuania"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 124,
+    "fields": {
+        "code": "442",
+        "name": "Luxembourg"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 125,
+    "fields": {
+        "code": "446",
+        "name": "Macao"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 126,
+    "fields": {
+        "code": "807",
+        "name": "Macedonia (the former Yugoslav Republic of)"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 127,
+    "fields": {
+        "code": "450",
+        "name": "Madagascar"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 128,
+    "fields": {
+        "code": "454",
+        "name": "Malawi"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 129,
+    "fields": {
+        "code": "458",
+        "name": "Malaysia"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 130,
+    "fields": {
+        "code": "462",
+        "name": "Maldives"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 131,
+    "fields": {
+        "code": "466",
+        "name": "Mali"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 132,
+    "fields": {
+        "code": "470",
+        "name": "Malta"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 133,
+    "fields": {
+        "code": "584",
+        "name": "Marshall Islands"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 134,
+    "fields": {
+        "code": "474",
+        "name": "Martinique"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 135,
+    "fields": {
+        "code": "478",
+        "name": "Mauritania"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 136,
+    "fields": {
+        "code": "480",
+        "name": "Mauritius"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 137,
+    "fields": {
+        "code": "175",
+        "name": "Mayotte"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 138,
+    "fields": {
+        "code": "484",
+        "name": "Mexico"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 139,
+    "fields": {
+        "code": "583",
+        "name": "Micronesia (Federated States of)"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 140,
+    "fields": {
+        "code": "498",
+        "name": "Moldova (the Republic of)"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 141,
+    "fields": {
+        "code": "492",
+        "name": "Monaco"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 142,
+    "fields": {
+        "code": "496",
+        "name": "Mongolia"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 143,
+    "fields": {
+        "code": "500",
+        "name": "Montserrat"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 144,
+    "fields": {
+        "code": "504",
+        "name": "Morocco"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 145,
+    "fields": {
+        "code": "508",
+        "name": "Mozambique"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 146,
+    "fields": {
+        "code": "104",
+        "name": "Myanmar"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 147,
+    "fields": {
+        "code": "516",
+        "name": "Namibia"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 148,
+    "fields": {
+        "code": "520",
+        "name": "Nauru"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 149,
+    "fields": {
+        "code": "524",
+        "name": "Nepal"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 150,
+    "fields": {
+        "code": "528",
+        "name": "Netherlands"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 151,
+    "fields": {
+        "code": "530",
+        "name": "Netherlands Antilles"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 152,
+    "fields": {
+        "code": "540",
+        "name": "New Caledonia"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 153,
+    "fields": {
+        "code": "554",
+        "name": "New Zealand"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 154,
+    "fields": {
+        "code": "558",
+        "name": "Nicaragua"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 155,
+    "fields": {
+        "code": "562",
+        "name": "Niger"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 156,
+    "fields": {
+        "code": "566",
+        "name": "Nigeria"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 157,
+    "fields": {
+        "code": "570",
+        "name": "Niue"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 158,
+    "fields": {
+        "code": "574",
+        "name": "Norfolk Island"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 159,
+    "fields": {
+        "code": "580",
+        "name": "Northern Mariana Islands"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 160,
+    "fields": {
+        "code": "578",
+        "name": "Norway"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 161,
+    "fields": {
+        "code": "512",
+        "name": "Oman"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 162,
+    "fields": {
+        "code": "586",
+        "name": "Pakistan"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 163,
+    "fields": {
+        "code": "585",
+        "name": "Palau"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 164,
+    "fields": {
+        "code": "591",
+        "name": "Panama"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 165,
+    "fields": {
+        "code": "598",
+        "name": "Papua New Guinea"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 166,
+    "fields": {
+        "code": "600",
+        "name": "Paraguay"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 167,
+    "fields": {
+        "code": "604",
+        "name": "Peru"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 168,
+    "fields": {
+        "code": "608",
+        "name": "Philippines"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 169,
+    "fields": {
+        "code": "612",
+        "name": "Pitcairn"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 170,
+    "fields": {
+        "code": "616",
+        "name": "Poland"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 171,
+    "fields": {
+        "code": "620",
+        "name": "Portugal"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 172,
+    "fields": {
+        "code": "630",
+        "name": "Puerto Rico"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 173,
+    "fields": {
+        "code": "634",
+        "name": "Qatar"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 174,
+    "fields": {
+        "code": "499",
+        "name": "Montenegro"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 175,
+    "fields": {
+        "code": "638",
+        "name": "R\u00e9union"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 176,
+    "fields": {
+        "code": "642",
+        "name": "Romania"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 177,
+    "fields": {
+        "code": "643",
+        "name": "Russian Federation"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 178,
+    "fields": {
+        "code": "646",
+        "name": "Rwanda"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 179,
+    "fields": {
+        "code": "659",
+        "name": "Saint Kitts and Nevis"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 180,
+    "fields": {
+        "code": "662",
+        "name": "Saint Lucia"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 181,
+    "fields": {
+        "code": "670",
+        "name": "Saint Vincent and the Grenadines"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 182,
+    "fields": {
+        "code": "652",
+        "name": "Saint Barth\u00e9lemy"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 183,
+    "fields": {
+        "code": "882",
+        "name": "Samoa"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 184,
+    "fields": {
+        "code": "674",
+        "name": "San Marino"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 185,
+    "fields": {
+        "code": "678",
+        "name": "Sao Tome and Principe"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 186,
+    "fields": {
+        "code": "682",
+        "name": "Saudi Arabia"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 187,
+    "fields": {
+        "code": "686",
+        "name": "Senegal"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 188,
+    "fields": {
+        "code": "688",
+        "name": "Serbia"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 189,
+    "fields": {
+        "code": "690",
+        "name": "Seychelles"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 190,
+    "fields": {
+        "code": "694",
+        "name": "Sierra Leone"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 191,
+    "fields": {
+        "code": "702",
+        "name": "Singapore"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 192,
+    "fields": {
+        "code": "703",
+        "name": "Slovakia"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 193,
+    "fields": {
+        "code": "705",
+        "name": "Slovenia"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 194,
+    "fields": {
+        "code": "090",
+        "name": "Solomon Islands"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 195,
+    "fields": {
+        "code": "706",
+        "name": "Somalia"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 196,
+    "fields": {
+        "code": "710",
+        "name": "South Africa"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 197,
+    "fields": {
+        "code": "239",
+        "name": "South Georgia and the South Sandwich Islands"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 198,
+    "fields": {
+        "code": "724",
+        "name": "Spain"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 199,
+    "fields": {
+        "code": "144",
+        "name": "Sri Lanka"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 200,
+    "fields": {
+        "code": "654",
+        "name": "Saint Helena, Ascension and Tristan da Cunha"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 201,
+    "fields": {
+        "code": "666",
+        "name": "Saint Pierre and Miquelon"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 202,
+    "fields": {
+        "code": "729",
+        "name": "Sudan"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 203,
+    "fields": {
+        "code": "740",
+        "name": "Suriname"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 204,
+    "fields": {
+        "code": "744",
+        "name": "Svalbard and Jan Mayen"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 205,
+    "fields": {
+        "code": "748",
+        "name": "Swaziland"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 206,
+    "fields": {
+        "code": "752",
+        "name": "Sweden"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 207,
+    "fields": {
+        "code": "756",
+        "name": "Switzerland"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 208,
+    "fields": {
+        "code": "760",
+        "name": "Syrian Arab Republic"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 209,
+    "fields": {
+        "code": "158",
+        "name": "Taiwan (Province of China)"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 210,
+    "fields": {
+        "code": "762",
+        "name": "Tajikistan"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 211,
+    "fields": {
+        "code": "834",
+        "name": "Tanzania, United Republic of"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 212,
+    "fields": {
+        "code": "764",
+        "name": "Thailand"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 213,
+    "fields": {
+        "code": "768",
+        "name": "Togo"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 214,
+    "fields": {
+        "code": "772",
+        "name": "Tokelau"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 215,
+    "fields": {
+        "code": "776",
+        "name": "Tonga"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 216,
+    "fields": {
+        "code": "780",
+        "name": "Trinidad and Tobago"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 217,
+    "fields": {
+        "code": "788",
+        "name": "Tunisia"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 218,
+    "fields": {
+        "code": "792",
+        "name": "Turkey"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 219,
+    "fields": {
+        "code": "795",
+        "name": "Turkmenistan"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 220,
+    "fields": {
+        "code": "796",
+        "name": "Turks and Caicos Islands"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 221,
+    "fields": {
+        "code": "798",
+        "name": "Tuvalu"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 222,
+    "fields": {
+        "code": "800",
+        "name": "Uganda"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 223,
+    "fields": {
+        "code": "804",
+        "name": "Ukraine"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 224,
+    "fields": {
+        "code": "784",
+        "name": "United Arab Emirates"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 225,
+    "fields": {
+        "code": "826",
+        "name": "United Kingdom of Great Britain and Northern Ireland"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 226,
+    "fields": {
+        "code": "840",
+        "name": "United States of America"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 227,
+    "fields": {
+        "code": "581",
+        "name": "United States Minor Outlying Islands"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 228,
+    "fields": {
+        "code": "858",
+        "name": "Uruguay"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 229,
+    "fields": {
+        "code": "860",
+        "name": "Uzbekistan"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 230,
+    "fields": {
+        "code": "548",
+        "name": "Vanuatu"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 231,
+    "fields": {
+        "code": "336",
+        "name": "Holy See"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 232,
+    "fields": {
+        "code": "862",
+        "name": "Venezuela (Bolivarian Republic of)"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 233,
+    "fields": {
+        "code": "704",
+        "name": "Viet Nam"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 234,
+    "fields": {
+        "code": "092",
+        "name": "Virgin Islands (British)"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 235,
+    "fields": {
+        "code": "850",
+        "name": "Virgin Islands (U.S.)"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 236,
+    "fields": {
+        "code": "876",
+        "name": "Wallis and Futuna"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 237,
+    "fields": {
+        "code": "732",
+        "name": "Western Sahara"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 238,
+    "fields": {
+        "code": "887",
+        "name": "Yemen"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 239,
+    "fields": {
+        "code": "180",
+        "name": "Congo (the Democratic Republic of the)"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 240,
+    "fields": {
+        "code": "894",
+        "name": "Zambia"
+    }
+},
+{
+    "model": "products.countryoforigin",
+    "pk": 241,
+    "fields": {
+        "code": "716",
+        "name": "Zimbabwe"
+    }
+}
+]

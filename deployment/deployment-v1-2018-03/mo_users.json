@@ -1,0 +1,366 @@
+{
+  "companies": [
+    {
+      "prefixes": [
+        "8594379"
+      ],
+      "name": "Zentiva k. s.",
+      "email": "test@gs1cz-01.com",
+      "uuid": "gs1cz-01",
+      "role": "gs1cz"
+    },
+    {
+      "prefixes": [
+        "85950111"
+      ],
+      "name": "Vitar s. r. o.",
+      "email": "test@gs1cz-02.com",
+      "uuid": "gs1cz-02",
+      "role": "gs1cz"
+    },
+    {
+      "prefixes": [
+        "859400140"
+      ],
+      "name": "Podebradka a. s.",
+      "email": "test@gs1cz-03.com",
+      "uuid": "gs1cz-03",
+      "role": "gs1cz"
+    },
+    {
+      "prefixes": [
+        "0891980000",
+        "735009647"
+      ],
+      "name": "Mr Help Desk",
+      "email": "test@gs1se-01.com",
+      "uuid": "gs1se-01",
+      "role": "gs1se"
+    },
+    {
+      "prefixes": [
+        "0891980001",
+        "735009648"
+      ],
+      "name": "SE Test Company 2",
+      "email": "user1@gs1se-02.com",
+      "uuid": "gs1se-02",
+      "role": "gs1se"
+    },
+    {
+      "prefixes": [
+        "0891980001",
+        "735009648"
+      ],
+      "name": "SE Test Company 2",
+      "email": "user2@gs1se-02.com",
+      "uuid": "gs1se-02",
+      "role": "gs1se"
+    },
+    {
+      "prefixes": [
+        "950110173"
+      ],
+      "name": "Green, Anarkat, Mastrolla Co.",
+      "email": "test@gs1go-01.com",
+      "uuid": "gs1go-01",
+      "role": "gs1go"
+    },
+    {
+      "prefixes": [
+        "9504000235"
+      ],
+      "name": "James, Wehrs Co.",
+      "email": "test@gs1go-02.com",
+      "uuid": "gs1go-02",
+      "role": "gs1go"
+    },
+    {
+      "prefixes": [
+        "950400023599"
+      ],
+      "name": "Single GTIN issuance",
+      "email": "test@gs1go-03.com",
+      "uuid": "gs1go-03",
+      "role": "gs1go"
+    },
+    {
+      "prefixes": [
+        "93532650",
+        "9312345"
+      ],
+      "name": "Mr. Help Desk",
+      "email": "test@gs1au-01.com",
+      "uuid": "gs1au-01",
+      "role": "gs1au"
+    },
+    {
+      "prefixes": [
+        "7612345",
+        "764444444"
+      ],
+      "name": "Beratung Co.",
+      "email": "test@gs1ch-01.com",
+      "uuid": "gs1ch-01",
+      "role": "gs1ch"
+    },
+    {
+      "prefixes": [
+        "764444444"
+      ],
+      "name": "Tamara Co.",
+      "email": "test@gs1ch-02.com",
+      "uuid": "gs1ch-02",
+      "role": "gs1ch"
+    },
+    {
+      "prefixes": [
+        "640000000",
+        "6400001",
+        "642990"
+      ],
+      "name": "GS1 Finland Demo",
+      "email": "test@gs1fi-01.com",
+      "uuid": "gs1fi-01",
+      "role": "gs1fi"
+    },
+    {
+      "prefixes": [
+        "5012345"
+      ],
+      "name": "GS1 UK Demo",
+      "email": "test@gs1uk-01.com",
+      "uuid": "gs1uk-01",
+      "role": "gs1uk"
+    },
+    {
+      "prefixes": [
+        "622300124"
+      ],
+      "name": "Zeina Product",
+      "email": "test@gs1eg-01.com",
+      "uuid": "gs1eg-01",
+      "role": "gs1eg"
+    },
+    {
+      "prefixes": [
+        "62211567"
+      ],
+      "name": "Philip Mores",
+      "email": "test@gs1eg-02.com",
+      "uuid": "gs1eg-02",
+      "role": "gs1eg"
+    },
+    {
+      "prefixes": [
+        "6001065"
+      ],
+      "name": "Mondelez South Africa Pty Ltd",
+      "email": "test@gs1za-01.com",
+      "uuid": "gs1za-01",
+      "role": "gs1za"
+    },
+    {
+      "prefixes": [
+        "6004318"
+      ],
+      "name": "Clover SA Ltd",
+      "email": "test@gs1za-02.com",
+      "uuid": "gs1za-02",
+      "role": "gs1za"
+    },
+    {
+      "prefixes": [
+        "8000000",
+        "803208977"
+      ],
+      "name": "GS1 Italy Test LTD",
+      "email": "test@gs1it-01.com",
+      "uuid": "gs1it-01",
+      "role": "gs1it"
+    },
+    {
+      "prefixes": [
+        "5400141",
+        "542500291",
+        "5430000672"
+      ],
+      "name": "GS1 BelgiLux Test LTD",
+      "email": "test@gs1belu-01.com",
+      "uuid": "gs1belu-01",
+      "role": "gs1belu"
+    },
+    {
+      "prefixes": [
+        "48916681",
+        "489166822"
+      ],
+      "name": "GS1 HK Test LTD",
+      "email": "test@gs1hk-01.com",
+      "uuid": "gs1hk-01",
+      "role": "gs1hk"
+    },
+    {
+      "prefixes": [
+        "4000001",
+        "426000001"
+      ],
+      "name": "GS1 Germany Test LTD",
+      "email": "test@gs1de-01.com",
+      "uuid": "gs1de-01",
+      "role": "gs1de"
+    },
+    {
+      "prefixes": [
+        "3870000000"
+      ],
+      "name": "GS1 Bosne i Hercegovine",
+      "email": "test@gs1bih-01.com",
+      "uuid": "gs1bih-01",
+      "role": "gs1bih"
+    },
+    {
+      "prefixes": [
+        "387002800"
+      ],
+      "name": "SARAJEVSKA PIVARA D.D.",
+      "email": "test@gs1bih-02.com",
+      "uuid": "gs1bih-02",
+      "role": "gs1bih"
+    },
+    {
+      "prefixes": [
+        "9557590"
+      ],
+      "name": "Fonterra Brands (Malaysia) Sdn Bhd",
+      "email": "test@gs1my-01.com",
+      "uuid": "gs1my-01",
+      "role": "gs1my"
+    },
+    {
+      "prefixes": [
+        "955593620"
+      ],
+      "name": "French Fries (Malaysia) Sdn Bhd",
+      "email": "test@gs1my-02.com",
+      "uuid": "gs1my-02",
+      "role": "gs1my"
+    },
+    {
+      "prefixes": [
+        "955525450"
+      ],
+      "name": "Duopharma Malaysia Sdn Bhd",
+      "email": "test@gs1my-03.com",
+      "uuid": "gs1my-03",
+      "role": "gs1my"
+    },
+    {
+      "prefixes": [
+        "5200040062",
+        "5210047"
+      ],
+      "name": "GS1 Greece Test LTD",
+      "email": "test@gs1gr-01.com",
+      "uuid": "gs1gr-01",
+      "role": "gs1gr"
+    },
+    {
+      "prefixes": [
+        "539153224",
+        "53920001052"
+      ],
+      "name": "Blackwater Distillery Limited",
+      "email": "test@gs1ie-01.com",
+      "uuid": "gs1ie-01",
+      "role": "gs1ie"
+    },
+    {
+      "prefixes": [
+        "3838418",
+        "38311217",
+        "383007068"
+      ],
+      "name": "GS1 Slovenia Test LTD",
+      "email": "test@gs1si-01.com",
+      "uuid": "gs1si-01",
+      "role": "gs1si"
+    },
+    {
+      "prefixes": [
+        "590123456",
+        "5900541"
+      ],
+      "name": "GS1 Poland Test LTD",
+      "email": "test@gs1po-01.com",
+      "uuid": "gs1po-01",
+      "role": "gs1po"
+    },
+    {
+      "prefixes": [
+        "6034000010"
+      ],
+      "name": "Lord 'J' Specialties",
+      "email": "test@gs1gh-01.com",
+      "uuid": "gs1gh-01",
+      "role": "gs1gh"
+    },
+    {
+      "prefixes": [
+        "60360000007"
+      ],
+      "name": "Ofori & Sons Co. Ltd",
+      "email": "test@gs1gh-02.com",
+      "uuid": "gs1gh-02",
+      "role": "gs1gh"
+    },
+    {
+      "prefixes": [
+        "5705210",
+        "5705211"
+      ],
+      "name": "GS1 Denmark Test LTD",
+      "email": "test@gs1dk-01.com",
+      "uuid": "gs1dk-01",
+      "role": "gs1dk"
+    },
+    {
+      "prefixes": [
+        "748795"
+      ],
+      "name": "Industrias Helios",
+      "email": "test@gs1gt-01.com",
+      "uuid": "gs1gt-01",
+      "role": "gs1gt"
+    },
+    {
+      "prefixes": [
+        "756956"
+      ],
+      "name": "CHOCOLATES BEST DE GUATEMALA, S.A.",
+      "email": "test@gs1gt-02.com",
+      "uuid": "gs1gt-02",
+      "role": "gs1gt"
+    },
+    {
+      "prefixes": [
+        "380022396",
+        "3800945"
+      ],
+      "name": "GS1 Bulgaria Test LTD",
+      "email": "test@gs1bg-01.com",
+      "uuid": "gs1bg-01",
+      "role": "gs1bg"
+    },
+    {
+      "prefixes": [
+        "4750475",
+        "4750049"
+      ],
+      "name": "GS1 Latvia Test LTD",
+      "email": "test@gs1lv-01.com",
+      "uuid": "gs1lv-01",
+      "role": "gs1lv"
+    }
+  ]
+}

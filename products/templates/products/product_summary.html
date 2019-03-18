@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{# from theme("prefixes/range_macros.html") import render_range_breadcrumb #}
+{% block title %}{% trans 'GS1 Activate' %}: {{ title }}{% endblock %}
+{% block breadcrumb %}
+    <ol class="breadcrumb" style="display:inline-block">
+        <li><a href="{% url 'users:profile' %}">{{ _("Home") }}</a></li>
+        <li>Summary</li>
+    </ol>
+    <div class="active_range pull-right">
+        {% include 'prefixes/render_range_prefix.html' with prefix=prefix only %}
+        <a href="{% url 'prefixes:prefixes_list' %}"> [{% trans 'Change' %}]</a></div>
+{% endblock %}
+{% block site_content %}
+    <div class="site-content">
+        <h2>{% block page_title %}{{ title }}{% endblock %}</h2>
+
+        {% block page_content %}
+
+            <div class="site-content-padder" style="line-height: 24px">
+                {% for message in messages %}
+                    <div class="alert alert-info">{{ message }}</div>
+                {% endfor %}
+
+                <div class='button-container'>
+                    <a class='btn btn-primary' target="_blank"
+                       href="{% url 'products:product_print_summary' product_id=product.id %}">
+                        {% trans 'Print Product Summary' %}
+                    </a>
+                </div>
+                <hr/>
+                {% include 'products/product_summary_base.html' %}
+
+                <hr/>
+                <div class='button-container'>
+                    <a class='btn btn-primary' target="_blank" href="{% url 'products:product_print_summary' product_id=product.id %}">
+                        {% trans 'Print Product Summary' %}
+                    </a>
+                    <div class='pull-right'>
+                        <a class='btn btn-primary' href="{% url 'products:products_list' %}?sort_mode=desc&sort_field=created">Finish</a>
+                    </div>
+                </div>
+            </div>
+        {% endblock page_content %}
+    </div>
+{% endblock %}
+
+{% block base_scripts %}
+{% endblock %}
+
+{% block base_css %}
+    <link rel="stylesheet" href="{% static 'products/site/css/add_product.css' %}"/>
+    <style>
+        .fieldset > legend {
+            border: none;
+            width: auto;
+            margin-bottom: auto;
+        }
+
+        {% if debug %}
+            .debug {
+                font-style: italic;
+            }
+        {% else %}
+            .debug {
+                display: none;
+            }
+        {% endif %}
+    </style>
+{% endblock %}

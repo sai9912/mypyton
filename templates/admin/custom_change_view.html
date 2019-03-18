@@ -1,0 +1,37 @@
+{% extends "admin/change_form.html" %}
+
+
+{% block extrastyle %}
+    {{block.super }}
+    <link rel="stylesheet" type="text/css" href="admin/css/dashboard.css" />
+{% endblock %}
+
+
+{% block content %}
+{% load i18n admin_urls %}
+
+<table >
+    <tr>
+        <td>
+            {{block.super }}
+        </td>
+        <td>
+            <div id="content-related">
+                <div class="module" id="recent-actions-module">
+                    <h2>{% trans 'Administration sections' %}</h2>
+                    <ul class="actionlist">
+                        {% for link in right_side_links %}
+                            <li style="list-style-type: none; margin-left: 15px">
+                                <strong>
+                                    <a href="{{ link.url }}">{{link.name}}</a>
+                                </strong>
+                            </li>
+                         {% endfor %}
+                </ul>
+                </div>
+            </div>
+
+        </td>
+    </tr>
+</table>
+{% endblock %}

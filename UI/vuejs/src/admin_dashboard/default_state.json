@@ -1,0 +1,38 @@
+{
+    "user": {
+        "id": null,
+        "uid": null,
+        "email": null,
+        "first_name": null,
+        "last_name": null,
+        "member_organisation": null,
+        "member_organisation_id": null,
+        "company_organisation": null,
+        "advanced_tab": null,
+        "agreed": null,
+        "agreed_date": null,
+        "agreed_version": null,
+        "is_staff": null,
+        "is_superuser": null
+    },
+    "company_organisation": {
+        "uuid": null,
+        "country": null,
+        "company": null,
+        "street1": null,
+        "street2": null,
+        "city": null,
+        "state": null,
+        "zip": null,
+        "phone": null,
+        "gln": null,
+        "vat": null,
+        "credit_points_balance": null,
+        "active": null,
+        "prefix_override": null,
+        "gln_capability": null,
+        "member_organisation": null
+    },
+    "prefixes": [],
+    "non_field_errors": []
+}

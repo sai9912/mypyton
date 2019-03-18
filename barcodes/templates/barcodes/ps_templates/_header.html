@@ -1,0 +1,42 @@
+<div id="header">	
+    <a href="/"><img src="http://barcoderobot.s3.amazonaws.com/logo.png" alt="Barcode Robot" /></a>
+    <!--htdig_noindex-->
+    <h5><a href="/">BarcodeRobot</a></h5>
+    <div id="toplogin">
+    	{% if not user.is_authenticated %}
+    	
+        <div id="toplogin-actions">
+            <!-- <a rel="nofollow" href="https://free.barcoderobot.com/" onclick="clicky.log('forum');"><b>Questions</b></a>&nbsp;   -->
+
+            {% if request.session.order_id %}
+            <a rel="nofollow" href="/show_cart/" onclick="clicky.log('cart');"><b>Shopping Cart</b></a>&nbsp;
+            {% endif %}
+
+            <a rel="nofollow"  href="/accounts/pricing.html">Pricing</a> - 
+            <a rel="nofollow"  href="/support/">Support</a> - 
+            <a rel="nofollow"  href="/about/">Contact Us</a> - 
+            <a rel="nofollow"  href="/accounts/login/">Login</a>
+        </div>
+            
+        {% else %}
+            
+            <div style="text-align: right">
+                Logged In User: <b>{{user.username}}</b><br />
+                <a rel="nofollow"  href="/barcodes/">Barcodes</a> - 
+                <a rel="nofollow"  href="/accounts/pricing.html">Pricing</a> -
+                <a rel="nofollow"  href="/support/">Support</a> - 
+                <a rel="nofollow"  href="/about/">Contact Us</a> - 
+                <a rel="nofollow"  href="/accounts/account.html">Account</a> - 
+                {% if user.is_superuser %}
+                <a rel="nofollow"  href="/custom_admin/">Admin</a> - 
+                {% endif %}
+                <a rel="nofollow"  class="login_box" href="/accounts/logout/">Log Out</a>
+            </div>
+
+            <div>
+            </div>
+            
+        {% endif %}
+        
+    </div>
+</div>

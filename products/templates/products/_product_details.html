@@ -1,0 +1,71 @@
+{% load i18n %}
+{% load static %}
+<!-- company row -->
+<div class="row">
+    <div class='col-xs-9' style='padding-right: 3px'>
+        {% include 'security/_macros.html' with func='render_field_with_errors4_help' field=form.company label='Company Name' only %}
+    </div>
+    <div class='col-xs-3' style='padding-right: 3px;color: red'>
+    </div>
+</div>
+
+
+<!-- label description row -->
+
+{% if product_package_level_id == 70 %}
+    <div class="row">
+        <div class="col-xs-9" style="padding-right: 3px">
+            {% include 'security/_macros.html' with func='render_field_with_errors4_help' field=form.label_description label='Label Description' required=True only %}
+        </div>
+    </div>
+{% else %}
+    <input type="hidden" name="label_description" id="label_description" value="{{ form.label_description.data }}"/>
+{% endif %}
+
+<input type="hidden" name="mark" id="mark" value="{{ form.mark.data }}"/>
+
+<!-- brand row -->
+<div class="row">
+    <div class='col-xs-6'>
+        {% include 'security/_macros.html' with func='render_field_with_errors4_help' field=form.brand label='Brand' required=True only %}
+    </div>
+    <div class='col-xs-6'>
+        {% include 'security/_macros.html' with func='render_field_with_errors4_help' field=form.sub_brand label='Sub brand' only %}
+    </div>
+</div>
+
+<!-- name / variant -->
+<div class="row">
+    <div class='col-xs-6'>
+        {% include 'security/_macros.html' with func='render_field_with_errors4_help' field=form.functional_name label='Product Type/Functional Name' required=True only %}
+    </div>
+    <div class='col-xs-6'>
+        {% include 'security/_macros.html' with func='render_field_with_errors4_help' field=form.variant label='Variant' only %}
+    </div>
+</div>
+
+<!-- product-trade-item description row -->
+<div class="row">
+    <div class="col-xs-9" style="padding-right: 3px">
+        {% include 'security/_macros.html' with func='render_field_with_errors4_help' field=form.description label='Product/Trade Item Description' required=True only %}
+    </div>
+    <div class="col-xs-3" style="padding-top: 32px;padding-left: 5px">
+        <label><input type='checkbox' id='auto-fill'/> Auto-Fill</label>
+    </div>
+</div>
+
+<!-- GPC / SKU -->
+<div class="row">
+    <div class='col-xs-6'>
+        {% include 'security/_macros.html' with func='render_field_with_errors4_help' field=form.category label='Global Product Classification' required=True only %}
+        <small><a href="https://www.gs1ie.org/standards/data-exchange/Master-Data/GPC/" target="_blank">
+            To find your GPC Brick Code, click here</a></small>
+    </div>
+    <div class='col-xs-6'>
+        {% include 'security/_macros.html' with func='render_field_with_errors4_help' field=form.sku label='Company/Internal Product Code or SKU' only %}
+    </div>
+</div>
+
+{% block base_scripts %}
+    <script src="{% static 'site/js/standalone.js' %}"></script>
+{% endblock %}

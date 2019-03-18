@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+"http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>{% block title %}barcoderbot{% endblock %}</title>
+	<link rel="stylesheet" type="text/css" href="https://localhost:8000/static/build/reset-fonts-grids/reset-fonts-grids.css">
+	<link rel="stylesheet" type="text/css" href="https://localhost:8000/static/css/site.css">
+	<!-- Dependencies -->
+	<!-- core CSS -->
+	<!-- <link rel="stylesheet" type="text/css" href="https://localhost:8000/static/build/tabview/assets/tabview.css"> -->
+	<!-- optional skin for border tabs -->
+	<!-- <link rel="stylesheet" type="text/css" href="https://localhost:8000/static/build/tabview/assets/border_tabs.css">
+	<link rel="stylesheet" type="text/css" href="https://localhost:8000/static/build/tabview/assets/tabview-core.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="https://localhost:8000/static/build/tabview/assets/skins/sam/tabview-skin.css"> -->
+	<script type="text/javascript" src="http://localhost:8000/static/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+	<script type="text/javascript" src="http://localhost:8000/static/build/element/element-beta-min.js"></script>
+	<!-- OPTIONAL: Connection (required for dynamic loading of data) -->
+	<script type="text/javascript" src="http://localhost:8000/static/build/connection/connection-min.js"></script>
+	<!-- Source file -->
+	<!-- <script type="text/javascript" src="http://localhost:8000/static/build/tabview/tabview-min.js"></script> -->
+</head>
+<body>
+	<div id="doc" class="yui-t1">
+		<div id="header">
+			<h1 id="logo">
+				<a href="/" name="BarCode Robot">
+					<img src="http://barcoderobot.s3.amazonaws.com/logo.png" alt="Barcode Robot">
+				</a>
+			</h1>
+			<div id="toplogin">
+				{% if user.is_authenticated %}
+						<div style="text-align: right">
+				            Logged In User: <b>{{user.username}}</b><br />
+				            <a href="/accounts/profile/">Profile</a> - 
+				            <a class="login_box" href="/accounts/logout/">Log Out</a>
+				        </div>
+				{% else %}
+			        <form action="/accounts/login/" method="post">
+			            <input type="hidden" name="__login" value="1" />
+			            <label for="top_username">User:
+			                <input type="text" name="username" id="username" size="14" value="" />
+			            </label>
+			            <label for="top_password">Pass:
+			                <input type="password" name="password" id="password" size="14" />
+			            </label>
+			            <input type="submit" value="Login" />
+			        </form>
+			        <div id="toplogin-actions">
+			            <a href="/account/resetpass.html">Lost Password?</a> -
+			            <a href="/account/register/">Create Account</a>
+			        </div>
+				{% endif %}
+			</div>
+				{% load extra_templates %}{% show_menue request user %}
+				<div id="nav-secondary"><p>&nbsp;</p></div>
+			</div> <!-- end hd -->
+			<div class="search-bar"></div>
+			<!-- <div class="errorbox clearfix">
+				<div id="hdrerror"><img src="/static/img/icon/icon_status_fail_26x26.gif" width="26" 
+					height="26" alt=""><p>You cannot change your display name because you have a public profile.
+				To change your display name, please disable your public profile first.</p></div>
+			</div> -->
+			<div id="bd">
+				<p>&nbsp;</p>
+				{% block content %}{% endblock %}
+			</div>
+			<div id="ft">
+				Use of this site constitutes acceptance of our <a rel="nofollow" href="/useragreement.html">
+					User Agreement</a> and 
+					<a rel="nofollow" href="/privacypolicy.html">Privacy Policy</a>. 
+					Copyright &copy; 2007 BarcodeRobot.com. All rights reserved.
+			</div><!--/htdig_noindex-->
+		</div><!--end bd-->
+	</div><!--end doc-->
+</body>
+</html>

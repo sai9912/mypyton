@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-03 11:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: activate/forms.py:15
+msgid "Unique User Id"
+msgstr ""
+
+#: activate/forms.py:16
+msgid "User Email"
+msgstr ""
+
+#: activate/forms.py:17
+msgid "Company Prefix"
+msgstr ""
+
+#: activate/forms.py:18 activate/templates/activate/AccountCreateOrUpdate.html:45
+msgid "Company Name"
+msgstr ""
+
+#: activate/forms.py:19
+msgid "Credit Points"
+msgstr ""
+
+#: activate/forms.py:21
+msgid "Unique Transaction Reference"
+msgstr ""
+
+#: activate/forms.py:23 activate/templates/activate/AccountCreateOrUpdate.html:69
+msgid "GS1 MO"
+msgstr ""
+
+#: activate/templates/activate/AccountCreateOrUpdate.html:5
+#: activate/templates/activate/AccountCreateOrUpdate.html:16
+msgid "Account API"
+msgstr ""
+
+#: activate/templates/activate/AccountCreateOrUpdate.html:29
+msgid "Email"
+msgstr ""
+
+#: activate/templates/activate/AccountCreateOrUpdate.html:37
+msgid "Prefix"
+msgstr ""
+
+#: activate/templates/activate/AccountCreateOrUpdate.html:53
+msgid "Credits"
+msgstr ""
+
+#: activate/templates/activate/AccountCreateOrUpdate.html:61
+msgid "TXN Ref"
+msgstr ""
+
+#: activate/templates/activate/AccountCreateOrUpdate.html:84
+msgid "Send"
+msgstr ""
+
+#: activate/templates/activate/token_expired.html:5
+msgid "Token expired"
+msgstr ""
+
+#: activate/templates/activate/token_expired.html:12
+msgid "This token has expired"
+msgstr ""
+
+#: activate/templates/activate/user_not_found.html:5
+#: activate/templates/activate/user_not_found.html:12
+msgid "User not found"
+msgstr ""

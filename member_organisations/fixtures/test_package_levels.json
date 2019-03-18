@@ -1,0 +1,114 @@
+[
+{
+    "model": "products.packagelevel",
+    "pk": 1,
+    "fields": {
+        "level": "Pallet e.g. pallet of cases of beer",
+        "unit_descriptor": ""
+    }
+},
+{
+    "model": "products.packagelevel",
+    "pk": 2,
+    "fields": {
+        "level": "Outer Case e.g. case of beer (bottles or packs)",
+        "unit_descriptor": ""
+    }
+},
+{
+    "model": "products.packagelevel",
+    "pk": 3,
+    "fields": {
+        "level": "Pack or Inner Pack e.g. six pack of beer bottles",
+        "unit_descriptor": ""
+    }
+},
+{
+    "model": "products.packagelevel",
+    "pk": 4,
+    "fields": {
+        "level": "Consumer Unit (Base Unit/Each) e.g. bottle of beer",
+        "unit_descriptor": ""
+    }
+},
+{
+    "model": "products.packagelevel",
+    "pk": 5,
+    "fields": {
+        "level": "Display shipper",
+        "unit_descriptor": ""
+    }
+},
+{
+    "model": "products.packagelevel",
+    "pk": 6,
+    "fields": {
+        "level": "Mixed module",
+        "unit_descriptor": ""
+    }
+},
+{
+    "model": "products.packagelevel",
+    "pk": 7,
+    "fields": {
+        "level": "Transport load",
+        "unit_descriptor": ""
+    }
+},
+{
+    "model": "products.packagelevel",
+    "pk": 10,
+    "fields": {
+        "level": "Transport load",
+        "unit_descriptor": "TRANSPORT_LOAD"
+    }
+},
+{
+    "model": "products.packagelevel",
+    "pk": 20,
+    "fields": {
+        "level": "Mixed module",
+        "unit_descriptor": "MIXED_MODULE"
+    }
+},
+{
+    "model": "products.packagelevel",
+    "pk": 30,
+    "fields": {
+        "level": "Pallet e.g. pallet of cases of beer",
+        "unit_descriptor": "PALLET"
+    }
+},
+{
+    "model": "products.packagelevel",
+    "pk": 40,
+    "fields": {
+        "level": "Display shipper",
+        "unit_descriptor": "DISPLAY_SHIPPER"
+    }
+},
+{
+    "model": "products.packagelevel",
+    "pk": 50,
+    "fields": {
+        "level": "Outer Case e.g. case of beer (bottles or packs)",
+        "unit_descriptor": "CASE"
+    }
+},
+{
+    "model": "products.packagelevel",
+    "pk": 60,
+    "fields": {
+        "level": "Pack or Inner Pack e.g. six pack of beer bottles",
+        "unit_descriptor": "PACK_OR_INNER_PACK"
+    }
+},
+{
+    "model": "products.packagelevel",
+    "pk": 70,
+    "fields": {
+        "level": "Consumer Unit (Base Unit/Each) e.g. bottle of beer",
+        "unit_descriptor": "BASE_UNIT_OR_EACH"
+    }
+}
+]

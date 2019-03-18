@@ -1,0 +1,9 @@
+{% load l10n %}
+{% localize off %}
+
+%--
+{{ x }} mm {{ y }} mm moveto
+/{{ font }}  findfont {{ size }}  scalefont setfont
+save {{ ax }} mm {{ ay }} mm ({{ s }})  ashow restore
+%--
+{% endlocalize %}

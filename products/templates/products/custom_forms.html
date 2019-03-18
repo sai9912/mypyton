@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+{% load static %}
+
+{# from theme("prefixes/range_macros.html") import render_range_breadcrumb #}
+{% block title %}GS1 Activate: {{ title }}{% endblock %}
+{% block breadcrumb %}
+    <ol class="breadcrumb" style="display:inline-block">
+        <li><a href="{% url 'users:profile' %}">{{ _("Home") }}</a></li>
+        <li>Summary</li>
+    </ol>
+    <div class="active_range pull-right">Range: {# render_range_breadcrumb(prefix) #}
+        <a href="{% url 'prefixes:prefixes_list' %}"> [Change]</a></div>
+{% endblock %}
+{% block site_content %}
+            <div class="site-content">
+                <h4>Here is demo for rendering differently same form with schemas</h4>
+                <div>
+                    <form action="" method="GET" prefix="schemas_form">
+                        <select class="col-md-10" name="schema_type">
+                            {% for schema in render_schemas %}
+                            <option name="schema_type" {% if request.GET.schema_type == schema %}selected{%endif%} value={{schema.schema_name}}>{{schema}}</option>
+                            {% endfor %}
+                        </select>
+                        <input type="submit">
+                    </form>
+                </div>
+<h1>Here will be form</h1>
+<form action="" method="POST">
+    {% csrf_token %}
+{% for field in form %}
+    <div class="fieldWrapper">
+        {{ field.errors }}
+        {{ field.label_tag }} {{ field }}
+        {% if field.help_text %}
+        <p class="help">{{ field.help_text|safe }}</p>
+        {% endif %}
+    </div>
+{% endfor %}
+<input type="submit" name="Submit">
+</form>
+</div>
+{% endblock %}
+
+{% block base_scripts %}
+{% endblock %}
+
+{% block base_css %}
+    <link rel="stylesheet" href="{% static 'products/site/css/add_product.css' %}"/>
+    <style>
+        .fieldset > legend {
+            border: none;
+            width: auto;
+            margin-bottom: auto;
+        }
+
+        {% if debug %}
+            .debug {
+                font-style: italic;
+            }
+        {% else %}
+            .debug {
+                display: none;
+            }
+        {% endif %}
+    </style>
+{% endblock %}

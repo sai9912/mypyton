@@ -1,0 +1,999 @@
+body
+    font-family: "Open Sans", sans-serif
+    font-size: 14px
+    line-height: 1.428571429
+    color: #333
+    background-color: #fff
+    color: #888B8D
+    padding-right: 0 !important
+a
+    color: #002C6C
+    &:hover
+        color: #002C6C
+    &:focus
+        color: #002C6C
+.container
+    position: relative
+    max-width: none !important
+    width: 1000px
+    padding-right: 0
+    padding-left: 0
+    margin-bottom: 30px
+    .jumbotron
+        border-radius: 0
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+.site-header
+    background-color: #f8f8f8
+    border-bottom: 2px solid #ECECEC
+    & > .container
+        position: relative
+        z-index: 1
+        margin-bottom: -22px
+    .header-box
+        position: relative
+        padding: 20px 18px 20px 14px
+        .header-box-left
+            float: left
+        .header-box-right
+            float: right
+            ul
+                margin: 10px
+                list-style: none
+                li
+                    padding: 5px
+                    display: inline
+                    &.active a
+                        &:before
+                            display: inline-block
+                            padding-right: 4px
+                            color: #002C6C
+                            content: "\e080"
+                            font-family: "Glyphicons Halflings"
+                            font-size: 10px
+                            -webkit-font-smoothing: antialiased
+    h1
+        display: block
+        float: left
+        margin: 5px 0 0 0
+        & > a
+            display: block
+            width: 171px
+            height: 105px
+            background: url("../img/gs1ie-logo.png") no-repeat
+            text-indent: 100%
+            white-space: nowrap
+            overflow: hidden
+    ul.navbar-nav > li.nav-item > a.nav-link
+        padding: 15px !important
+        &:after
+            display: none
+nav.section-nav
+    float: right
+    margin-top: 36px
+    & > ul
+        padding-left: 0
+        list-style-type: none
+        & > li
+            position: relative
+            display: inline-block
+            float: left
+            padding: 0 12px
+            border-left: #dedede solid 1px
+            color: #002C6C
+            font-size: 15px
+            &:first-child
+                padding-left: 0
+                border-left: none
+            &:last-child
+                padding-right: 0
+            & > a
+                color: #002C6C
+            & > ul
+                position: absolute
+                display: none
+                top: 0
+                right: -24px
+                margin-top: 34px
+                padding-left: 0
+                background-color: #ffffff
+                -webkit-box-shadow: rgba(0,0,0,0.1) 0 0 12px
+                -moz-box-shadow: rgba(0,0,0,0.1) 0 0 12px
+                box-shadow: rgba(0,0,0,0.1) 0 0 12px
+                -webkit-border-radius: 4px
+                -moz-border-radius: 4px
+                -ms-border-radius: 4px
+                -o-border-radius: 4px
+                border-radius: 4px
+                list-style-type: none
+                &:before
+                    position: absolute
+                    display: block
+                    top: -14px
+                    left: 0
+                    z-index: 1
+                    width: 100%
+                    height: 14px
+                    background-color: transparent
+                    content: ""
+                &:after
+                    position: absolute
+                    display: block
+                    top: -18px
+                    right: 33px
+                    z-index: 1
+                    width: 0
+                    height: 0
+                    border-color: transparent transparent #fff
+                    border-style: solid
+                    border-width: 9px
+                    content: ""
+                & > li
+                    display: block
+                    border-bottom: #eeeeee solid 1px
+                    white-space: nowrap
+                    & > a
+                        display: block
+                        padding: 8px 12px
+                        text-decoration: none
+                        &:hover
+                            background-color: #fcfcfc
+                    &:first-child
+                        & > a
+                            -moz-border-radius-topleft: 4px
+                            -webkit-border-top-left-radius: 4px
+                            border-top-left-radius: 4px
+                            -moz-border-radius-topright: 4px
+                            -webkit-border-top-right-radius: 4px
+                            border-top-right-radius: 4px
+                    &:last-child
+                        border-bottom: none
+                        & > a
+                            -moz-border-radius-bottomleft: 4px
+                            -webkit-border-bottom-left-radius: 4px
+                            border-bottom-left-radius: 4px
+                            -moz-border-radius-bottomright: 4px
+                            -webkit-border-bottom-right-radius: 4px
+                            border-bottom-right-radius: 4px
+            &:hover
+                & > ul
+                    display: block
+        & > li.active
+            & > a
+                font-weight: 700
+                &:after
+                    display: inline-block
+                    margin: 0 0 0 8px
+                    color: #002C6C
+                    font-family: "Glyphicons Halflings"
+                    font-size: 11px
+                    -webkit-font-smoothing: antialiased
+                    content: "\e114"
+.site-breadcrumbs
+    margin-top: 5px
+    padding: 0
+div.container.breadcrumbs
+    margin-bottom: 10px !important
+.site-main
+    z-index: 1
+    background-color: #ffffff
+    border-right: #fcfcfc
+    &:after
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0px
+        right: 0
+        z-index: -1
+        -webkit-box-shadow: rgba(0,0,0,0.1) 0 0 12px
+        -moz-box-shadow: rgba(0,0,0,0.1) 0 0 12px
+        box-shadow: rgba(0,0,0,0.1) 0 0 12px
+        -webkit-border-radius: 4px 100px 100px 10px
+        -moz-border-radius: 4px 100px 100px / 10px 10px 4px
+        border-radius: 4px 100px 100px / 10px 10px 4px
+        content: ""
+.site-main-full
+    z-index: 1
+    background-color: #ffffff
+    border-right: #fcfcfc
+    &:after
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0px
+        z-index: -1
+        -webkit-box-shadow: rgba(0,0,0,0.1) 0 0 12px
+        -moz-box-shadow: rgba(0,0,0,0.1) 0 0 12px
+        box-shadow: rgba(0,0,0,0.1) 0 0 12px
+        -webkit-border-radius: 100px 10px
+        -moz-border-radius: 100px / 10px
+        border-radius: 100px 100px 0 100px / 10px
+        content: ""
+nav.site-nav
+    position: relative
+    display: block
+    float: left
+    width: 200px
+    padding: 22px 12px 22px 14px
+    margin-bottom: 30px
+    min-height: 830px
+    background-color: #ffffff
+    -moz-border-radius-topleft: 4px
+    -webkit-border-top-left-radius: 4px
+    border-top-left-radius: 4px
+    & > ul
+        padding-left: 0
+        list-style-type: none
+        & > li
+            display: inline
+            color: #002C6C
+            font-weight: 700
+            & > ul
+                padding-left: 5px
+                margin-top: 12px
+                margin-bottom: 16px
+                list-style-type: none
+                & > li
+                    margin-bottom: 4px
+                    font-weight: 400
+                    & > a
+                        color: #888B8D
+                        font-size: 13px
+                & > li.active
+                    & > a
+                        color: #F26334
+                        &:before
+                            display: inline-block
+                            padding-right: 4px
+                            color: #F26334
+                            content: "\e080"
+                            font-family: "Glyphicons Halflings"
+                            font-size: 10px
+                            -webkit-font-smoothing: antialiased
+    a
+        &:hover
+            color: #F26334
+            text-decoration: none
+.navbar-nav
+    & > li
+        & > a
+            font-size: 14px
+.breadcrumb
+    background-color: #F26334
+    margin-bottom: 15px
+    color: white
+    border-radius: 0
+    padding: 4px 7px
+    margin: 0
+    a
+        color: #fff
+    .active
+        a
+            text-decoration: none
+            color: #888B8D
+.site-content
+    position: relative
+    display: block
+    float: left
+    width: 800px
+    height: 100%
+    min-height: 100%
+    background-color: #ffffff
+    -moz-border-radius-topleft: 4px
+    -webkit-border-top-left-radius: 4px
+    border-top-left-radius: 4px
+    -moz-border-radius-topright: 4px
+    -webkit-border-top-right-radius: 4px
+    border-top-right-radius: 4px
+    background-image: url('data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0icmdiYSgyNTUsMjU1LDI1NSwwKSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==')
+    background-size: 100%
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, #ffffff))
+    background-image: -webkit-linear-gradient(left center, #f5f5f5 0%,#ffffff 6px,#ffffff 200px)
+    background-image: -moz-linear-gradient(left center, #f5f5f5 0%,#ffffff 6px,#ffffff 200px)
+    background-image: -o-linear-gradient(left center, #f5f5f5 0%,#ffffff 6px,#ffffff 200px)
+    background-image: linear-gradient(left center, #f5f5f5 0%,#ffffff 6px,#ffffff 200px)
+    min-height: 375px
+    border-radius: 0
+    &:after
+        -webkit-box-sizing: border-box
+    &:before
+        -webkit-box-sizing: border-box
+.site-content-full
+    margin-bottom: 12px
+    position: relative
+    display: block
+    float: left
+    width: 1000px
+    height: 90%
+    min-height: 90%
+    background-color: #ffffff
+    -moz-border-radius-topleft: 4px
+    -webkit-border-top-left-radius: 4px
+    border-top-left-radius: 4px
+    -moz-border-radius-topright: 4px
+    -webkit-border-top-right-radius: 4px
+    border-top-right-radius: 4px
+.card
+    background-color: #f8f8f8
+    border-radius: 0
+    border: 1px solid #888B8D
+.site-content-padder
+    position: relative
+    padding: 20px 10px 20px 10px
+    h3
+        color: #002C6C
+        margin-top: 0
+        margin-bottom: 0
+.site-content-padder-full
+    position: relative
+    padding: 20px 10px 20px 10px
+form.log-reg
+    padding: 0 15px
+h2
+    display: block
+    padding: 10px
+    margin: 0
+    background-image: url('data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y2ZjZmNiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2U4ZThlOCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==')
+    background-size: 100%
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f6f6f6), color-stop(100%, #e8e8e8))
+    background-image: -webkit-linear-gradient(#f6f6f6,#e8e8e8)
+    background-image: -moz-linear-gradient(#f6f6f6,#e8e8e8)
+    background-image: -o-linear-gradient(#f6f6f6,#e8e8e8)
+    background-image: linear-gradient(#f6f6f6,#e8e8e8)
+    -moz-border-radius-topleft: 4px
+    -webkit-border-top-left-radius: 4px
+    border-top-left-radius: 4px
+    -moz-border-radius-topright: 4px
+    -webkit-border-top-right-radius: 4px
+    border-top-right-radius: 4px
+    color: #F26334
+    font-size: 28px
+    font-weight: 300
+.site-footer
+    background-color: #373738
+    font-size: 13px
+    color: #f6f4f0
+    & > .container
+        padding: 12px 0 20px 0
+        border-right: #fcfcfc
+.footer-disclaimer
+    display: inline-block
+    float: left
+.footer-terms
+    display: inline-block
+    float: right
+    & > a
+        color: #002C6C
+        font-weight: 700
+.panel-heading
+    padding: 5px 15px
+    border-radius: 0
+.panel-body
+    padding: 10px 15px
+.accordion
+    .accordion-panel
+        margin-bottom: 10px
+        border: none
+        -webkit-box-shadow: none
+        -moz-box-shadow: none
+        box-shadow: none
+    .panel-heading
+        height: 60px
+        padding: 0
+        background-color: #002C6C
+        -webkit-border-radius: 4px
+        -moz-border-radius: 4px
+        -ms-border-radius: 4px
+        -o-border-radius: 4px
+        border-radius: 4px
+    .panel-heading-options
+        height: 50px
+        padding: 0
+        background-color: #F5F5F5
+        -webkit-border-radius: 4px
+        -moz-border-radius: 4px
+        -ms-border-radius: 4px
+        -o-border-radius: 4px
+        border-radius: 4px
+        border: solid #E3E3E3
+    .accordion-toggle
+        display: block
+        color: #ffffff
+        font-size: 16px
+    .panel-title-text
+        display: inline-block
+        padding: 22px 34px
+    .panel-title-toggle
+        position: relative
+        float: right
+        width: 62px
+        height: 60px
+        -moz-border-radius-topright: 3px
+        -webkit-border-top-right-radius: 3px
+        border-top-right-radius: 3px
+        -moz-border-radius-bottomright: 3px
+        -webkit-border-bottom-right-radius: 3px
+        border-bottom-right-radius: 3px
+        &:before
+            position: absolute
+            top: 17px
+            left: 21px
+            color: #ffffff
+            font-family: "Glyphicons Halflings"
+            font-size: 20px
+            -webkit-font-smoothing: antialiased
+    .accordion-toggle.open
+        .panel-title-options-toggle
+            background-image: url('data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U0NTMxOSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2NiM2EwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==')
+            background-size: 100%
+            background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #F26334), color-stop(100%, #cb3a00))
+            background-image: -webkit-linear-gradient(#F26334,#cb3a00)
+            background-image: -moz-linear-gradient(#F26334,#cb3a00)
+            background-image: -o-linear-gradient(#F26334,#cb3a00)
+            background-image: linear-gradient(#F26334,#cb3a00)
+            &:before
+                content: "\e113"
+        .panel-title-toggle
+            background-image: url('data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U0NTMxOSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2NiM2EwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==')
+            background-size: 100%
+            background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #F26334), color-stop(100%, #cb3a00))
+            background-image: -webkit-linear-gradient(#F26334,#cb3a00)
+            background-image: -moz-linear-gradient(#F26334,#cb3a00)
+            background-image: -o-linear-gradient(#F26334,#cb3a00)
+            background-image: linear-gradient(#F26334,#cb3a00)
+            &:before
+                content: "\e113"
+    .panel-title-text-options
+        display: inline-block
+        color: #000000
+        padding: 14px 34px
+    .panel-title-options-toggle
+        position: relative
+        float: right
+        width: 44px
+        height: 44px
+        -moz-border-radius-topright: 3px
+        -webkit-border-top-right-radius: 3px
+        border-top-right-radius: 3px
+        -moz-border-radius-bottomright: 3px
+        -webkit-border-bottom-right-radius: 3px
+        border-bottom-right-radius: 3px
+        &:before
+            position: absolute
+            top: 15px
+            left: 15px
+            color: #ffffff
+            font-family: "Glyphicons Halflings"
+            font-size: 13px
+            -webkit-font-smoothing: antialiased
+    .accordion-toggle.closed
+        .panel-title-options-toggle
+            background-image: url('data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzc5YTUzNCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzYwOGMxYyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==')
+            background-size: 100%
+            background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #79a534), color-stop(100%, #608c1c))
+            background-image: -webkit-linear-gradient(#79a534,#608c1c)
+            background-image: -moz-linear-gradient(#79a534,#608c1c)
+            background-image: -o-linear-gradient(#79a534,#608c1c)
+            background-image: linear-gradient(#79a534,#608c1c)
+            &:before
+                content: "\e114"
+        .panel-title-toggle
+            &:before
+                content: "\e114"
+                content: "\e114"
+            background-image: url('data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzc5YTUzNCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzYwOGMxYyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==')
+            background-size: 100%
+            background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #79a534), color-stop(100%, #608c1c))
+            background-image: -webkit-linear-gradient(#79a534,#608c1c)
+            background-image: -moz-linear-gradient(#79a534,#608c1c)
+            background-image: -o-linear-gradient(#79a534,#608c1c)
+            background-image: linear-gradient(#79a534,#608c1c)
+    .panel-body
+        padding: 22px 34px
+        border: none !important
+.visualised-input
+    display: inline-block
+    padding-top: 7px
+.visualised-input-edit
+    display: inline-block
+    margin-left: 8px
+.form-description
+    margin-bottom: 22px
+.form-submit
+    padding: 12px 18px
+    margin-top: 6px
+    background-image: url('data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzc5YTUzNCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzYwOGMxYyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==')
+    background-size: 100%
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #79a534), color-stop(100%, #608c1c))
+    background-image: -webkit-linear-gradient(#79a534,#608c1c)
+    background-image: -moz-linear-gradient(#79a534,#608c1c)
+    background-image: -o-linear-gradient(#79a534,#608c1c)
+    background-image: linear-gradient(#79a534,#608c1c)
+    border: none
+    color: #ffffff
+    font-size: 18px
+    &:hover
+        background-image: url('data:image/svg+xmlbase64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzcxOWIzMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzVhODMxYSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==')
+        background-size: 100%
+        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #719b30), color-stop(100%, #5a831a))
+        background-image: -webkit-linear-gradient(#719b30,#5a831a)
+        background-image: -moz-linear-gradient(#719b30,#5a831a)
+        background-image: -o-linear-gradient(#719b30,#5a831a)
+        background-image: linear-gradient(#719b30,#5a831a)
+        color: #ffffff
+.form-horizontal
+    .form-group
+        margin-bottom: 9px
+.dashboard-block
+    float: left
+    width: 277px
+    border: #dcdcdc solid 1px
+    -webkit-border-radius: 2px
+    -moz-border-radius: 2px
+    -ms-border-radius: 2px
+    -o-border-radius: 2px
+    border-radius: 2px
+    &:nth-child(odd)
+        margin-right: 16px
+    h4
+        padding: 15px 20px
+        margin: 0
+        color: #ffffff
+        font-size: 14px
+        font-weight: Bold
+        text-transform: uppercase
+    h5
+        padding: 0
+        margin: 0
+        font-weight: 700
+    table
+        width: 100%
+    .total-value
+        font-size: 18px
+        font-weight: 700
+    .linking
+        font-size: 11px
+    .label-cell
+        width: 70px
+    .comment-cell
+        width: 86px
+.dashboard-block-summary
+    padding: 28px 20px
+.dashboard-block-section-header
+    padding: 24px 20px
+    background-color: #f8f8f8
+.dashboard-block-section-content
+    position: relative
+    padding: 19px 20px
+    font-size: 11px
+    table
+        td
+            padding: 5px 0
+    .help-link
+        position: absolute
+        right: 0
+        bottom: 0
+        width: 0
+        height: 0
+        border-bottom: 42px solid #F26334
+        border-left: 42px solid transparent
+        color: #ffffff
+        text-decoration: none
+        &:after
+            position: absolute
+            right: 6px
+            top: 18px
+            color: #ffffff
+            font-size: 16px
+            font-weight: 700
+            content: "?"
+.dashboard-block-content
+    padding: 19px 30px
+    font-size: 11px
+.dashboard-block-green
+    & > h4
+        background-color: #7ac23a
+    & > .dashboard-block-summary
+        background-color: #e9f0dd
+.dashboard-block-red
+    & > h4
+        background-color: #F26334
+.text-bold
+    font-weight: 700
+.centre
+    display: block
+    margin: auto
+.ajax
+    img
+        background-color: #FFF
+        background-image: url(https://www.barcoderobot.com/static/site/img/barcoderobot-logo.png)
+        background-repeat: no-repeat
+        background-position: center center
+#resImage
+    img
+        background-color: #FFF
+        background-image: url(https://www.barcoderobot.com/static/site/img/barcoderobot-logo.png)
+        background-repeat: no-repeat
+        background-position: center center
+.pdt-row
+    margin-right: -15px
+    margin-left: -15px
+    &:before
+        display: table
+        content: " "
+    &:after
+        display: table
+        content: " "
+        clear: both
+.form-group.required
+    .control-label
+        &:after
+            content: " *"
+            color: red
+.input-group.required
+    .control-label
+        &:after
+            content: " *"
+            color: red
+.active-prefix
+    background-color: #d9edf7
+.inactive-prefix
+    color: #888B8D
+#prefixes-ul
+    padding-right: 25px
+html
+    overflow-y: scroll
+.bc_row
+    height: 300px
+    border: 1px rgb(0, 0, 0) solid
+    margin: 10px 0 10px 0
+#prefix-actions
+    li
+        line-height: 2em
+.btn-gs1ie-orange
+    color: #fff !important
+    background-color: #F26334
+    border-color: #AD572C
+    &:hover
+        color: #fff !important
+        background-color: #AD572C
+        border-color: #AD572C
+.field-info
+    &:hover
+        cursor: help
+.field-info-icon
+    color: #F26334
+    font-size: 16px
+.input-group-checkbox
+    .field-info
+        background-color: transparent
+        border: 0
+#prefix-info
+    margin-top: 20px
+    background-color: #F26334
+    border: 1px solid #888b8d
+
+    .card-body
+        padding: 18px 9px
+    h4
+        color: white
+        font-size: 22px
+    li
+        color: white
+        font-size: 14px
+.description-label
+    text-shadow: 2px 2px #888B8D
+    color: #F26334
+.orange-well
+    background-color: #F26334 !important
+    color: white !important
+.orange-panel-heading
+    background-color: #F26334 !important
+    color: white !important
+.grey-button
+    background-color: #888B8D !important
+.img-rounded
+    border-radius: 0
+.img-thumbnail
+    border-radius: 0
+code
+    border-radius: 0
+pre
+    border-radius: 0
+.form-control
+    border-radius: 0
+    border: 1px solid #888B8D
+.input-sm
+    border-radius: 0
+.input-lg
+    border-radius: 0
+.btn
+    border-radius: 0
+.btn-lg
+    border-radius: 0
+.btn-sm
+    border-radius: 0
+.btn-xs
+    border-radius: 0
+.dropdown-menu
+    border-radius: 0
+.btn-group-xs
+    & > .btn
+        border-radius: 0
+.btn-group-sm
+    & > .btn
+        border-radius: 0
+.btn-group-lg
+    & > .btn
+        border-radius: 0
+.input-group-lg
+    & > .form-control
+        border-radius: 0
+    & > .input-group-addon
+        border-radius: 0
+    & > .input-group-btn
+        & > .btn
+            border-radius: 0
+.input-group-sm
+    & > .form-control
+        border-radius: 0
+    & > .input-group-addon
+        border-radius: 0
+    & > .input-group-btn
+        & > .btn
+            border-radius: 0
+.input-group-addon
+    border-radius: 0
+.input-group-addon.input-sm
+    border-radius: 0
+.input-group-addon.input-lg
+    border-radius: 0
+.nav-tabs
+    border-bottom: 1px solid #888B8D
+    & > li.nav-item
+        & > a
+            border-radius: 0
+            &:hover
+                text-decoration: none;
+                background-color: #eee;
+                border-bottom: 1px solid #888B8D
+            &.active
+                color: #888B8D
+                cursor: default
+                background-color: #fff
+                border: 1px solid #888B8D
+                border-bottom-color: transparent
+                &:hover
+                    color: #888B8D
+                    cursor: default
+                    background-color: #fff
+                    border: 1px solid #888B8D
+                    border-bottom-color: transparent
+                &:focus
+                    color: #888B8D
+                    cursor: default
+                    background-color: #fff
+                    border: 1px solid #888B8D
+                    border-bottom-color: transparent
+.nav-pills
+    & > li
+        & > a
+            border-radius: 0
+.navbar-toggle
+    border-radius: 0
+    .icon-bar
+        border-radius: 0
+.pagination
+    border-radius: 0
+    & > li
+        &:first-child
+            & > a
+                border-radius: 0
+            & > span
+                border-radius: 0
+        &:last-child
+            & > a
+                border-radius: 0
+            & > span
+                border-radius: 0
+.pager
+    li
+        & > a
+            border-radius: 0
+        & > span
+            border-radius: 0
+.label
+    border-radius: 0
+.badge
+    border-radius: 0
+.thumbnail
+    border-radius: 0
+.alert
+    padding: 15px
+    margin-bottom: 20px
+    border: 1px solid transparent
+    border-radius: 0
+.progress
+    border-radius: 0
+.panel
+    border-radius: 0
+.panel-group
+    .panel
+        border-radius: 0
+.well-lg
+    border-radius: 0
+.well-sm
+    border-radius: 0
+.modal-content
+    border-radius: 0
+.tooltip-inner
+    border-radius: 0
+.popover
+    border-radius: 0
+.popover-title
+    border-radius: 0
+.carousel-indicators
+    li
+        border-radius: 0
+.btn-group
+    & > .btn
+        &:first-child
+            &:not(:last-child)
+                &:not(.dropdown-toggle)
+                    border-radius: 0
+        &:last-child
+            &:not(:first-child)
+                border-radius: 0
+    & > .dropdown-toggle
+        &:not(:first-child)
+            border-radius: 0
+    & > .btn-group
+        &:first-child
+            & > .btn
+                &:last-child
+                    border-radius: 0
+            & > .dropdown-toggle
+                border-radius: 0
+        &:last-child
+            & > .btn
+                &:first-child
+                    border-radius: 0
+.btn-group-vertical
+    & > .btn
+        &:first-child
+            &:not(:last-child)
+                border-radius: 0
+        &:last-child
+            &:not(:first-child)
+                border-radius: 0
+.pagination-lg
+    & > li
+        &:first-child
+            & > a
+                border-radius: 0
+            & > span
+                border-radius: 0
+        &:last-child
+            & > a
+                border-radius: 0
+            & > span
+                border-radius: 0
+.pagination-sm
+    & > li
+        &:first-child
+            & > a
+                border-radius: 0
+            & > span
+                border-radius: 0
+        &:last-child
+            & > a
+                border-radius: 0
+            & > span
+                border-radius: 0
+.list-group-item
+    &:first-child
+        border-radius: 0
+    &:last-child
+        border-radius: 0
+.panel-footer
+    border-radius: 0
+.gtin13-class
+    display: inline
+    font-size: 1.5em
+    padding-left: 10px
+    vertical-align: middle
+.bar_placement
+    max-width: 100%
+#pdt-table
+    tbody
+        tr
+            td
+                img
+                    width: auto
+                    height: auto
+                    max-width: 20px
+                    max-height: 20px
+#legend
+    li
+        img
+            width: auto
+            height: auto
+            max-width: 20px
+            max-height: 20px
+    list-style: none
+    padding-left: 5px
+    margin-top: 12px
+    margin-bottom: 16px
+    & > li
+        margin-bottom: 4px
+        font-weight: 400
+.icon-img
+    width: auto
+    height: auto
+    max-width: 20px
+    max-height: 20px
+label.disabled
+    color: #AAAAAA
+.table-borderless
+    & > tbody
+        & > tr
+            & > td
+                border: none
+            & > th
+                border: none
+    & > tfoot
+        & > tr
+            & > td
+                border: none
+            & > th
+                border: none
+    & > thead
+        & > tr
+            & > td
+                border: none
+            & > th
+                border: none
+#gtin-radios
+    margin-bottom: 0
+    margin-top: 10px
+.btn-primary
+    background-color: #002C6C
+    border-color: #002C6C
+.panel-primary
+    border-color: #002C6C
+    & > .panel-heading
+        background-color: #002C6C
+        border-color: #002C6C
+.panel-default
+    border-color: #888B8D
+    & > .panel-heading
+        color: #fff
+        background-color: #888B8D
+        border-color: #888B8D
+.fieldset
+    & > legend
+        color: #002C6C
+.btn-darkened
+    background-color: #888B8D
+    border: none
+    color: whitesmoke
+hr
+    border-top: 1px solid #888B8D
+@media (min-width: 768px)
+    .navbar
+        border-radius: 0
+
+.caret
+    display: inline-block
+    width: 0
+    height: 0
+    margin-left: 2px
+    vertical-align: middle
+    border-top: 4px solid #000
+    border-right: 4px solid transparent
+    border-bottom: 0 dotted
+    border-left: 4px solid transparent
+    content: ""

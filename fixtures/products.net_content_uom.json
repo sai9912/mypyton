@@ -1,0 +1,137 @@
+[
+{
+    "model": "products.netcontentuom",
+    "pk": 1,
+    "fields": {
+        "uom_i18n": "{\"en\": \"Each\"}",
+        "abbr": "EA",
+        "code": "EA"
+    }
+},
+{
+    "model": "products.netcontentuom",
+    "pk": 2,
+    "fields": {
+        "uom_i18n": "{\"en\": \"Ounces\"}",
+        "abbr": "oz",
+        "code": "ONZ"
+    }
+},
+{
+    "model": "products.netcontentuom",
+    "pk": 3,
+    "fields": {
+        "uom_i18n": "{\"en\": \"Pounds\"}",
+        "abbr": "lb",
+        "code": "LBR"
+    }
+},
+{
+    "model": "products.netcontentuom",
+    "pk": 4,
+    "fields": {
+        "uom_i18n": "{\"en\": \"Grams\"}",
+        "abbr": "gr",
+        "code": "GRM"
+    }
+},
+{
+    "model": "products.netcontentuom",
+    "pk": 5,
+    "fields": {
+        "uom_i18n": "{\"en\": \"Kilograms\"}",
+        "abbr": "Kgr",
+        "code": "KGM"
+    }
+},
+{
+    "model": "products.netcontentuom",
+    "pk": 6,
+    "fields": {
+        "uom_i18n": "{\"en\": \"Milligrams\"}",
+        "abbr": "mgr",
+        "code": "MGM"
+    }
+},
+{
+    "model": "products.netcontentuom",
+    "pk": 7,
+    "fields": {
+        "uom_i18n": "{\"en\": \"Actual Ton\"}",
+        "abbr": "ton",
+        "code": "TON"
+    }
+},
+{
+    "model": "products.netcontentuom",
+    "pk": 8,
+    "fields": {
+        "uom_i18n": "{\"en\": \"Litre\"}",
+        "abbr": "ltr",
+        "code": "LTR"
+    }
+},
+{
+    "model": "products.netcontentuom",
+    "pk": 9,
+    "fields": {
+        "uom_i18n": "{\"en\": \"Millilitre\"}",
+        "abbr": "mlt",
+        "code": "MLT"
+    }
+},
+{
+    "model": "products.netcontentuom",
+    "pk": 10,
+    "fields": {
+        "uom_i18n": "{\"en\": \"Cubic decimetre\"}",
+        "abbr": "dmq",
+        "code": "DMQ"
+    }
+},
+{
+    "model": "products.netcontentuom",
+    "pk": 11,
+    "fields": {
+        "uom_i18n": "{\"en\": \"Cubic inches\"}",
+        "abbr": "inq",
+        "code": "INQ"
+    }
+},
+{
+    "model": "products.netcontentuom",
+    "pk": 12,
+    "fields": {
+        "uom_i18n": "{\"en\": \"Piece\"}",
+        "abbr": "pc",
+        "code": "H87"
+    }
+},
+{
+    "model": "products.netcontentuom",
+    "pk": 13,
+    "fields": {
+        "uom_i18n": "{\"en\": \"Millimetre\"}",
+        "abbr": "mm",
+        "code": "MMT"
+    }
+},
+{
+    "model": "products.netcontentuom",
+    "pk": 14,
+    "fields": {
+        "uom_i18n": "{\"en\": \"Square metre\"}",
+        "abbr": "m2",
+        "code": "MTK"
+    }
+},
+{
+    "model": "products.netcontentuom",
+    "pk": 15,
+    "fields": {
+        "uom_i18n": "{\"en\": \"Cubic metre\"}",
+        "abbr": "m3",
+        "code": "MTQ"
+    }
+}
+]

@@ -1,0 +1,400 @@
+GS1 Bosnia Herzegovina
+
+ACTIVATE TERMS OF USE
+(version 1 June 2018)
+
+“Activate” is a web-hosted service provided by GS1 AISBL, an international not for profit association incorporated
+under Belgian law with registered office at Avenue Louise 326, 1050 Brussels, Belgium, (RPM Brussels:
+419.640.608) (“GS1”) and accessible via https://www.gs1.org/services/activate (or any successor website) (the
+“Website”). The agreement resulting from the consent to these Terms of Use is between your organisation
+(“Company”), (where applicable) you in your capacity of Authorised User and GS1. These Terms of Use are
+effective as of the date on which they were first consented to by Company.
+
+1.	General Provisions. Company acknowledges that it has read these Terms of Use and that accepts the terms
+thereof. If Company does not agree to all of the terms and conditions of these Terms of Use, it may not access
+or otherwise use Activate. GS1 may amend these Terms of Use at any time and the amended Terms of Use
+will become effective upon posting thereof on the Website. Company’s continued access to or use of the
+Activate after such posting shall constitute its acceptance to the amended Terms of Use.
+
+2.	Service. Activate allows to create and manage Global Trade Item Numbers (“GTINs”) to identify Company’s
+products created on the basis of a GS1 Company Prefix (“GCP”) licensed from GS1 under the “GS1 Company
+Prefix License” (the “License”) and to generate corresponding barcode images.
+
+3.	Access. Company’s right to access Activate is contingent upon its License with GS1 being current. If, at any
+time, Company ceases to be in good standing under the License (i.e. it fails to meet all its obligations under
+the License), its right to access Activate will be suspended and terminated as set forth in section 13 below and
+further access will be denied. Company may designate persons to use its account (“Authorised Use(s)”).
+Company shall be responsible and liable for all access to and use of Activate and the Website by Authorised
+Users or otherwise through Company’s account and for the Authorised Users’ compliance with these Terms of
+Use. Upon registration, Company will receive login details for use by Authorised Users only. Company shall
+maintain the confidentiality of such login details and notify GS1 immediately of any unauthorised use or
+threatened use thereof.
+
+4.	Permitted Use. Company may access Activate for internal business or educational purposes only. Any other
+use of Activate is strictly prohibited. GS1 may for quality assurance and/or analytics purposes monitor
+Company’s use of Activate.
+
+5.	GS1 Cloud. (a) For the purpose of this section, “Brand Owner Data” means the GTINs and a limited set of
+product data attributes (currently: brand, label description, medium resolution image, target market,
+company name, product classification) created, managed and made available by Company through Activate.
+(b) Company understands and agrees that (i) the Brand Owner Data is shared by GS1 with data recipients
+through the GS1 Cloud, a global service operated by GS1; (ii) Company is making the Brand Owner Data
+available to the GS1 Cloud under the terms of the “GS1 Cloud Brand Owner Terms of Participation” (attached
+as APPENDIX 1), as amended from time to time, which are binding on Company. (c) GS1 commits that the use
+of the Brand Owner Data by data recipients accessing the GS1 Cloud will be subject to the “GS1 Cloud Terms
+of Use” (available on https://www.gs1.org/gs1-cloud/contracts ), as amended from time to time. (d) Any
+complaints about the unlawfulness of the Brand Owner Data will be handled in accordance with the “Notice
+and Take Down Procedure”, (available on https://www.gs1.org/gs1-cloud/contracts ), as amended from time
+to time, which Company agrees to comply with. (e) Company may request that the Brand Owner Data it has
+made available be removed from the GS1 Cloud at any time by notifying GS1 in accordance with the GS1
+Cloud Brand Owner Terms of Participation.
+
+6.	Representations and warranties. Company represents, warrants and covenants that: (a) it shall not upload,
+post, transmit to, distribute or otherwise publish through Activate or the Website any communication or any
+part thereof which: (i) restricts or inhibits any other user from using and enjoying Activate or the Website; (ii)
+is unlawful, threatening, abusive, libellous, defamatory, obscene, vulgar, offensive, pornographic, profane,
+sexually explicit or indecent; (iii) constitutes or encourages conduct that would constitute a criminal offense,
+give rise to civil liability or otherwise violate law; (iv) violates, plagiarises or infringes the rights of GS1 or any
+other third party including, without limitation, copyright, trademark, patent, rights of privacy or publicity or
+any other proprietary right; (v) contains a virus or other harmful component; or (vi) constitutes or contains
+false or misleading statements of fact or indications of origin; and (b) it is (and its Authorised Users are) legally
+competent and have full power and authority to enter into the agreement governed by these Terms of Use.
+
+7.	DISCLAIMER OF WARRANTIES. ACTIVATE, INCLUDING ALL CONTENT, SOFTWARE, FUNCTIONS, MATERIALS
+AND INFORMATION MADE AVAILABLE THEREON OR ACCESSIBLE THERE THROUGH, IS PROVIDED "AS IS". TO
+THE FULLEST EXTENT PERMISSIBLE BY LAW, GS1 MAKES NO REPRESENTATION OR WARRANTIES OF ANY KIND
+WHATSOEVER FOR OR RELATING TO ACTIVATE AS WELL ANY OF THE MATERIALS, OR RELATING TO ANY LINKS
+TO OTHER SITES OR FOR ANY BREACH OF SECURITY ASSOCIATED WITH THE TRANSMISSION OF SENSITIVE
+INFORMATION TO OR THROUGH ACTIVATE AND/OR THE WEBSITE OR ANY LINKED SITE. FURTHERMORE, GS1
+DISCLAIMS ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, NON-
+INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. GS1 DOES NOT WARRANT
+THAT THE WEBSITE OR THE OPERATION THEREOF WILL BE UNINTERRUPTED, OR THAT THE MATERIALS WILL
+BE ERROR FREE, OR THAT DEFECTS WILL BE CORRECTED, OR THAT THE WEBSITE OR THE SERVER THAT MAKES
+IT AVAILABLE IS FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.
+
+8.	LIMITATION OF LIABILITY.  TO THE FULLEST EXTENT PERMITTED BY LAW, COMPANY AGREES THAT NEITHER
+GS1 NOR ANY OF ITS EMPLOYEES, OFFICERS, DIRECTORS, AGENTS OR REPRESENTATIVES SHALL BE LIABLE FOR
+ANY DAMAGES FOR LOSS OF PROFITS, RESULTING FROM THE USE OR THE INABILITY TO USE ACTIVATE OR THE
+WEBSITE (WHETHER OR NOT ANY SUCH INABILITY TO USE THE WEBSITE ARISES FROM ANY ACTION OR
+NEGLIGENCE OF GS1), OR FROM ANY ERRORS CONTAINED IN THE MATERIALS EXCHANGED OR OTHERWISE
+TRANSFERRED ON OR THROUGH ACTIVATE, OR FOR ANY TRANSACTION MADE ON THE WEBSITE, OR ARISING
+FROM ANY OTHER MATTER RELATING TO ACTIVATE OR THE WEBSITE.
+
+9.	Third Party Equipment and use of the World Wide Web. If GS1 publishes a list of system requirements
+and/or compatible equipment for use in conjunction with Activate, such list neither constitutes an
+endorsement of such equipment, nor any warranty or representation that the equipment will function to
+Company’s satisfaction. Because GS1 has no control over equipment that is manufactured and/or distributed
+by third parties, Company’s use of equipment is solely its responsibility and the GS1 shall not be responsible
+for any defects, malfunctions or any other problems that may arise in its use of equipment. Activate may
+contain links to other World Wide Web Internet sites. Links to and from Activate and any other site(s) do not
+constitute an endorsement by GS1 of such site(s), or of its owner or provider, or of any products or services
+offered for sale thereby or information contained thereon.
+
+10.	Indemnification. Company agrees to indemnify, defend and hold GS1 and all its officers, directors, agents,
+employees and affiliates (hereinafter referred to collectively as the "Indemnified Parties") harmless from and
+against any and all liability and costs incurred by the Indemnified Parties in connection with any claim arising
+out of any breach by Company of these Terms of Use or any of the foregoing representations, warranties and
+covenants, or in connection with any claim arising out of any transaction offered or made via Activate,
+including, without limitation, legal fees and costs. Furthermore, Company releases the Indemnified Parties
+from any claims, demands and/or damages, actual or consequential, of every kind and nature known or
+unknown, suspected and unsuspected, disclosed or undisclosed, arising out of or in any way related to any
+transaction instituted or made via Activate. Company shall cooperate as fully as reasonably required in the
+defence of any claim. GS1 reserves the right to assume the exclusive defence and control of any matter
+subject to indemnification by Company.
+
+11.	Intellectual Property. All (intellectual property) rights, title and interest in and to the Website and Activate
+are owned by GS1 or its licensors. Company shall not decompile, reverse-engineer, alter, or in any way
+tamper with all or part of the Activate and/or the Website or any software comprised therein, nor cause,
+permit or assist any other person directly or indirectly to do any of the above. GS1 may place certain materials
+on the Website relating to GS1 and its business and/or relating to Activate (the "Materials"). All such
+Materials are also protected by copyright laws and international conventions and treaties, and are owned or
+controlled by GS1 or by the party credited as the owner or provider thereof. Company agrees to honour any
+and all copyright notices and any other restrictions contained in the Materials. GS1 may change, suspend or
+discontinue any aspect, feature or database of Activate at any time, without prior notice. GS1 may also
+impose limits on certain services or features or restrict Company’s access to any of the Materials without
+providing prior notice or incurring any liability.
+
+12.	Confidentiality. Company acknowledges that communications to and from the Website are not confidential.
+Company furthermore acknowledges that by submitting a communication to the Website, no confidential,
+fiduciary, contractually implied or other relationship is created between Company and GS1, other than as set
+forth in this Agreement.
+
+13.	Suspension and Termination.  GS1 may suspend Company’s access to and use of Activate with immediate
+effect by a written notice to Company if Company (or one of its Authorised User(s)) commit a material breach
+of any provision of these Terms of Use or of the License and until such breach is cured. If the breach remains
+uncured for fifteen (15) consecutive days, GS1 shall have the right to terminate Company’s access to and use
+of Activate by written notice with immediate effect. If the breach is cured to GS1’s satisfaction, Company’s
+access to and use of Activate shall be restored. Company may terminate the agreement governed by these
+Terms of Use at any time for any reason without any right to indemnification (subject to section 10 herein) by
+giving fifteen (15) days’ notice in writing to GS1. Any terms which, by their nature, extend beyond termination
+of Activate shall survive such termination.
+
+14.	Privacy.  GS1 will handle any personal data provided by Company and its Authorised Users in accordance with
+the Privacy Policy available on the Website (as amended from time to time).
+
+15.	Notices.  All notices required to be given hereunder shall be in writing (email included) to the other party's
+registered business address, principal place of business or the (email) address identified when registering to
+use Activate or otherwise updated by Company or its Authorised Users in Activate from time to time.
+
+16.	Severability.  If any provision of these Terms of Use is deemed to be void, invalid, unenforceable or illegal, the
+other provisions shall continue in full force and effect to the fullest extent permitted by law.
+
+17.	No Waiver. Failure by GS1 to assert a right under these Terms of Use shall not be deemed as a waiver to
+exercise such right. No waiver of any right set forth herein shall be deemed effective unless given in writing
+and signed by the GS1.
+
+18.	Assignment.  Company shall not assign or otherwise transfer its rights or obligations under these Terms of
+Use in whole or in part without the prior written consent of GS1. GS1 may assign its rights or obligations
+under these Terms of Use but to an affiliate only without Company’s consent.
+
+19.	Law.  These Terms of Use shall be governed by and construed in accordance with the laws of Belgium,
+without regard to principles of conflict of laws. In addition, Company consents and agrees to submit itself to
+the exclusive jurisdiction of any court located in Brussels, Belgium for any actions, suits or proceedings arising
+out of or relating to these Terms of Use. Notwithstanding the aforementioned, Company accepts that GS1
+shall nevertheless be allowed to apply for injunctive remedies or relief (or other equivalent types of urgent
+legal remedy) in any jurisdiction.
+
+20.	Translations. These Terms of Use are originally drafted in English. Any translation is made available as a
+courtesy only and, in case of discrepancy between the original English version and the translation, the English
+version shall prevail.
+
+
+C.	GS1 CLOUD BRAND OWNER TERMS OF PARTICIPATION
+(Version February 2018)
+
+These GS1 Cloud Brand Owner Terms of Participation (“Terms of Participation”) are entered into by and between
+GS1 and the entity which is identified as Company hereunder, and which provides its acceptance hereto in any of
+the following ways: in writing, by accepting the publication of Brand Owner Data to the GS1 Cloud as a recipient in
+the GDSN, by click-to-accept, by reference to these Terms of Participation in another agreement or otherwise.
+These Terms of Participation are effective as of the date on which they were first accepted by Company in
+accordance with any of the above methods.
+
+1.	Definitions.  In these Terms of Participation, capitalised terms shall have the following meaning:
+a)	“Affiliate” means, with respect to a particular person, any entity that directly or indirectly controls, is
+controlled by, or is under common control with such person.
+b)	“Authorised Users” means any person or entity accessing or using the GS1 Cloud and the Service through
+Company’s account.
+c)	“Brand Owner” means a manufacturer or a retailer with private label products.
+d)	“Brand Owner Data” means product data expressed as data attributes (whether in the form of text,
+images or otherwise) owned by or licensed to Company and provided to GS1 for publication in and
+distribution through the GS1 Cloud.
+e)	“Data Recipient” means a party viewing and/or using the Brand Owner Data, in or through the GS1 Cloud,
+subject to the acceptance of the GS1 Cloud Terms of Use.
+f)	“Data Source” means the party (GS1 Member Organisation, data pool, etc) that has executed an
+agreement with GS1 or an Affiliate of GS1 pursuant to which such party provides Brand Owner Data
+collected in another service or database operated by it to the GS1 Cloud from time to time.
+g)	“Designee” means a party authorised by a Brand Owner to create, maintain, manage and/or deliver its
+principal’s Brand Owner Data (including, without limitation, a distributor or a content provider), it being
+understood that such party must be able to demonstrate its authority to provide and license Brand Owner
+Data to GS1 for the purpose of the GS1 Cloud and grant the license set out in Section 3 at all times and at
+GS1’s first request.
+h)	“GDSN” means the Global Data Synchronisation Network, a network of interoperable data pools and the
+GS1 Global Registry™ that enables data synchronization per the GS1 System standards.
+i)	“GS1” means GS1 AISBL, an international not for profit association incorporated under Belgian law with
+registered office at Avenue Louise 326, 1050 Brussels, Belgium, (RPM Brussels: 419.640.608).
+j)	“GS1 Cloud” means the platform, including all equipment, systems, software and processes necessary to
+operate it, operated by GS1 or any of its Affiliates from time to time to provide the Service.
+k)	“GS1 Cloud Terms of Use” means the terms applying to any view and/or use by a Data Recipient of the
+Brand Owner Data made available to it in the GS1 Cloud, available on the Website, as amended from time
+to time.
+l)	“GS1 Member Organisation” means a member organisation of GS1; as such term is normally understood
+with respect to GS1.
+m)	“GS1 system” means the specifications, standards, and guidelines administered by GS1.
+n)	“Information Provider” means the person or entity that effectively uploads the Brand Owner Data to the
+GS1 Cloud, which may include without limitation the Brand Owner, a Designee or the Data Source.
+o)	“Metadata” means any and all data captured through Data Recipients’ use of the GS1 Cloud, including
+statistics reflecting or based on Data Recipients’ interactions with the GS1 Cloud and information
+submitted by Data Recipients when using the GS1 Cloud, such as information entered by Data Recipients
+into an interface associated with the GS1 Cloud.
+p)	“Notice & Take Down Procedure” means the “GS1 Cloud Policy on the Notice & Take Down Procedure”,
+as published on the Website, as amended from time to time.
+q)	“Party” means Company or GS1.
+r)	“Policies” means the Privacy Policy and the Notice & Take Down Procedure and any policies adopted,
+implemented, and/or modified by GS1 from time to time, governing operational aspects of the GS1 Cloud
+and made available on the Website.
+s)	“Privacy Policy” means the "GS1 Cloud Privacy Policy", as published on the Website.
+t)	“Service” has the meaning given in section 2 below.
+u)	“trusted” means, in relation to data, if such data originates from, is authorised or validated by a Brand
+Owner.
+v)	“Website” means a section of the website designed, owned and controlled by GS1 where the Service is
+offered (https://www.gs1.org/gs1-cloud/contracts or any successor website).
+
+2.	Service. The GS1 Cloud is a platform through which GS1 and the GS1 Member Organisations are providing a
+global service which enables Brand Owners (directly or via a Designee) to share trusted data about their
+products with Data Recipients and enables Data Recipients to view and/or use such trusted data (the
+“Service”). GS1 will provide the Service with reasonable skill and care and in accordance with applicable laws
+and regulations. GS1 does not represent or warrant that the Service will be secure or free from error or
+interruption. GS1 may from time to time make modifications to the Service and/or to GS1 Cloud, including to
+its design, functionalities and appearance, or cease its operation.
+
+3.	License Grant.  Company is a Brand Owner or a Designee and wishes to share Brand Owner Data via the
+Service. Subject to the terms and conditions of these Terms of Participation, (a) Company hereby grants to
+GS1, and GS1 hereby accepts such grant, a non-exclusive, world-wide, non-transferable (except as expressly
+set out herein), royalty-free right and license (including the right to sub-license to Data Recipients subject to
+the GS1 Cloud Terms of Use) to use the Brand Owner Data for any purpose related to the GS1 Cloud and the
+Service, and (b) GS1 hereby grants to Company (acting through its Authorised Users), and Company hereby
+accepts such grant, a right of access to the GS1 Cloud and the Service for its own business purposes
+(including, without limitation or for the management of its own Brand Owner Data, administration of its
+Authorised Users). For the avoidance of doubt, Company may also use the Service as a Data Recipient and
+enjoy access to all available Brand Owner Data subject to Company consenting to the GS1 Cloud Terms of
+Use.
+
+
+
+4.	Company Obligations.
+a)	Company covenants, represents and warrants that it shall not make available in the GS1 Cloud any Brand
+Owner Data, which:
+(i)	is not trusted;
+(ii)	violates any privacy rights, copyrights, trademarks, patents, or other intellectual property rights of
+any third party or violates any applicable laws or regulations;
+(iii)	does not comply with the GS1 system or violates applicable Policies;
+(iv)	contains or introduces a virus, Trojans, worm, logic bomb or any other materials which are malicious
+or technologically harmful;
+(v)	restricts, inhibits or interferes with any other party’s use of the GS1 Cloud; or
+(vi)	subjects, GS1 and/or the GS1 Cloud to all or part of any license obligations relating to any open source
+software.
+b)	Company shall not decompile, reverse-engineer, alter, or in any way tamper with all or part of the GS1
+Cloud or any internet site or any software comprised therein, nor cause, permit or assist any other person
+directly or indirectly to do any of the above.
+c)	Company shall be responsible and liable for all access to and use of the GS1 Cloud, the Website and the
+Service by Authorised Users or otherwise through Company’s account and for the Authorised Users’
+compliance with these Terms of Participation. Upon registration, Company will receive login details for
+use by Authorised Users only. Company shall maintain the confidentiality of such login details and notify
+GS1 immediately of any unauthorised use or threatened use thereof.
+
+5.	Quality of Brand Owner Data.
+a)	Company shall make reasonable efforts to:
+(i)	provide Brand Owner Data of the best quality available to it on an ongoing basis, and
+(ii)	inform GS1 promptly upon becoming aware of any inaccuracy or other quality issue relating to the
+Brand Owner Data published or distributed through in the GS1 Cloud.
+b)	GS1 may, but has no obligation to, monitor and verify that the Brand Owner Data, as submitted to or
+published in the GS1 Cloud, complies with the provisions of these Terms of Participation. If GS1, in its
+sole discretion, suspects or believes that certain Brand Owner Data is submitted to or published in the
+GS1 Cloud in violation of these Terms of Participation (e.g. it violates a third party’s intellectual
+property rights), it may take appropriate remedial action in its sole discretion (including without
+limitation by temporarily suspending the availability of or definitively removing the said Brand Owner
+Data from the GS1 Cloud). In exercising its rights pursuant to this Section, GS1 shall use reasonable
+efforts to adhere to the Notice & Take Down Procedure.
+c)	GS1 may, but has no obligation to, share information with Company in the form of automated reports
+pertaining to basic data quality checks effectuated in the GS1 Cloud. Company understands that these
+reports are provided as a courtesy only and that it shall use such reports at its sole risk.
+
+6.	Termination.
+6.1.	Notwithstanding any other arrangements between Company and a Data Source, either Party may
+terminate the participation of Company to the GS1 Cloud (i) with immediate effect if the other Party
+breaches any material provision of these Terms of Participation and fails to cure such breach within 15
+days of receipt of written notice of such breach from the other Party, (ii) if either Party starts any
+insolvency or liquidation proceedings (in which case no notification shall be required), and (iii) at any
+time for any reason by giving thirty (30) days’ notice in writing to the other Party. GS1 also reserves the
+right to limit the visibility of the Brand Owner Data Company’s participation to the GS1 Cloud if it is in
+breach of a contract with a GS1 Member Organisation (e.g. it is no longer current in its payment
+obligations towards such GS1 Member Organisation).  GS1 will notify Company of any termination in
+accordance with section 15 below. For the avoidance of any doubt, a termination of Company’s
+participation to the GS1 Cloud shall not affect any other agreement Company may have with GS1 or any
+of its Affiliates in relation to the GDSN.
+
+6.2.	Upon termination of the participation of Company to the GS1 Cloud: (i) Company's rights to access and
+use the GS1 Cloud under these Terms of Participation shall cease; (ii) all Brand Owner Data in the GS1
+Cloud shall cease to be made available to Data Recipients, but GS1 may retain any of the Brand Owner
+Data for its records and for internal purposes; and (iii) any Brand Owner Data which has been shared
+with any Data Recipient prior to such termination may continue to be used by such Data Recipient in
+accordance with the GS1 Cloud Terms of Use, and GS1 shall under no circumstances be liable for any
+action or inaction of such Data Recipient. The provisions of Sections 1, 4 b), 5 b), 9, 10, 11, 12, 15 and 19
+shall survive termination.
+
+7.	Further Warranties of Company.  Company covenants, represents and warrants that (i) these Terms of
+Participation represents a valid and legally binding obligation on it and is enforceable against it in accordance
+with its terms, (ii) it has full power and authority to grant the license as referred to in Section 3 and to
+perform its obligations herein and (iii) the use of Brand Owner Data by GS1 and/or Data Recipients (for the
+latter, in compliance with the GS1 Cloud Terms of Use) shall not infringe any copyrights, trademarks, patents,
+database rights or other intellectual property rights of any third party nor violate any applicable laws or
+regulations.
+
+8.	Warranties of GS1.  GS1 covenants, represents and warrants that (i) these Terms of Participation are
+enforceable against GS1 in accordance with its terms and (ii) GS1 shall not use the Brand Owner Data for any
+purposes other than the GS1 Cloud and the Service.
+
+9.	DISCLAIMER OF WARRANTIES.  COMPANY ACKNOWLEDGES AND AGREES THAT, TO THE FULLEST EXTENT
+PERMITTED BY LAW, NEITHER GS1 NOR THE GS1 MEMBER ORGANISATIONS MAKE ANY REPRESENTATIONS OR
+WARRANTIES, EXPRESS OR IMPLIED (OTHER THAN THOSE SET OUT IN SECTION 8 ABOVE), REGARDING ANY
+MATTER, INCLUDING THE GS1 CLOUD, THE SERVICE, ANY BRAND OWNER DATA PUBLISHED TO OR
+DISTRIBUTED THROUGH THE GS1 CLOUD, AND ANY REPORTS, DATA OR INFORMATION PROVIDED BY GS1 TO
+COMPANY. ANY SUCH REPRESENTATIONS OR WARRANTIES ARE EXPRESSLY DISCLAIMED. WITHOUT LIMITING
+THE GENERALITY OF THE FOREGOING, GS1 DOES NOT REPRESENT OR WARRANT THAT THE GS1 CLOUD WILL
+BE AVAILABLE AT OR FOR ANY PARTICULAR TIME OR THAT IT WILL BE SECURE OR FREE FROM ERROR OR
+INTERRUPTION.
+
+10.	LIMITATION OF LIABILITY.  EXCEPT FOR VIOLATIONS OF SECTION 8 ABOVE, TO THE FULLEST EXTENT
+PERMITTED BY LAW, NEITHER GS1 NOR THE GS1 MEMBER ORGANISATIONS SHALL BE LIABLE TO COMPANY
+FOR ANY HARM, EFFECTS OR DAMAGES WHATSOEVER, INCLUDING BUT NOT LIMITED TO ACTUAL, DIRECT,
+CONSEQUENTIAL, INDIRECT, INCIDENTAL OR PUNITIVE DAMAGES, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGES, WHETHER SUCH LIABILITY IS BASED ON (I) BREACH OF CONTRACT, (II) BREACH OF
+WARRANTY OR OTHERWISE, (III) COMPANY’S, COMPANY’S AUTHORISED USERS’ OR A DATA RECIPIENT’S USE
+OF THE GS1 CLOUD AND/OR THE BRAND OWNER DATA, (IV) A FAILURE OR REFUSAL BY GS1 TO GRANT
+ACCESS TO THE GS1 CLOUD OR (V) A BREACH BY THE INFORMATION PROVIDER AND/OR BY A DATA RECIPIENT
+OF ANY OF THEIR/ITS OBLIGATIONS TO GS1.
+
+11.	Indemnity.  Company shall fully indemnify, hold harmless and defend GS1, its Affiliates, as well as any GS1
+Member Organisation and, for each of the aforementioned, their directors, officers, employees, and agents
+from and against all claims, actions, damages, liabilities, obligations, losses, settlements, judgments, costs and
+expenses (including reasonable attorneys’ fees and costs), brought by any consumer, government agency or
+other third party which arise out of, relate to or result from (i) any allegation that any use, publication or
+distribution of Brand Owner Data infringes any patent, copyright, trademark, data base right or other
+intellectual property right; (ii) any breach or alleged breach of these Terms of Participation or any applicable
+laws or regulations by Company and/or its Authorised Users; and/or (iii) any allegation that any Brand Owner
+Data has been made available in the GS1 Cloud by Company in breach of Section 4 a) or Section 7.
+Notwithstanding the aforementioned, GS1 shall retain the right to assume the defence and conduct of the
+claim in its sole discretion as well as the right to settle any such claim.
+
+12.	Intellectual Property and Confidentiality. Unless otherwise expressly provided in these Terms of
+Participation, Company agrees that all intellectual property rights in and to the Website, the GS1 Cloud, the
+Service and any Metadata are owned by GS1 or its licensors. Each Party will keep the other Party's
+confidential information in the strictest confidence and only use such information for the purpose of
+performing its obligations or exercising its rights pursuant to these Terms of Participation.
+
+13.	Amendments.  Company acknowledges that GS1 reserves the right to amend these Terms of Participation
+from time to time. GS1 agrees that the amended Terms of Participation shall be made available to Company
+(either directly to its Authorised Users or via its selected Data Source) at least thirty (30) days prior to the
+effective date and shall become effective as against Company on the effective date thereof, unless Company
+terminates its participation in accordance with section 6 (a) (iii). The continued use of the Service by the Data
+Recipient after the aforementioned period of thirty (30) days shall be deemed to constitute the Data
+Recipient’s consent to the amended Terms of Use.
+
+14.	Privacy.  GS1 will handle any personal data (including any personal data of an Authorised User) in accordance
+with the Privacy Policy on the Website.
+
+15.	Notices. All notices required to be given hereunder shall be in writing (email included) to the other Party's
+registered business address, principal place of business or address identified on its webpage or the (email)
+address identified when registering to use the Service or otherwise updated by the Authorised User from time
+to time.
+
+16.	Severability.  If any provision of these Terms of Participation is deemed to be void, invalid, unenforceable or
+illegal, the other provisions shall continue in full force and effect to the fullest extent permitted by law.
+
+17.	No Waiver. Failure by GS1 to assert a right under these Terms of Participation shall not be deemed as a
+waiver to exercise such right. No waiver of any right set forth herein shall be deemed effective unless given in
+writing and signed by the GS1.
+
+18.	Assignment.  Company shall not assign its rights or obligations under these Terms of Participation in whole or
+in part without the prior written consent of GS1. GS1 may assign its rights or obligations under these Terms of
+Participation to an Affiliate without Company's consent. GS1 shall provide written notice to Company of any
+such assignment.
+
+19.	Law.  These Terms of Participation shall be governed by and construed in accordance with the laws of
+Belgium, without regard to principles of conflict of laws. In addition, each of the Parties consents and agrees
+to submit itself to the exclusive jurisdiction of any court located in Brussels, Belgium, for any actions, suits or
+proceedings arising out of or relating to these Terms of Participation. Notwithstanding the above, Company
+agrees that GS1 shall nevertheless be allowed to apply for injunctive remedies or relief (or other equivalent
+types of urgent legal remedy) in any jurisdiction.
+
+20.	Translations. These Terms of Participation are originally drafted in English. Any translation is made available
+as a courtesy only and, in case of discrepancy between the original English version and the translation, the
+English version shall prevail.
+
+
+
+
+
+4
+
+

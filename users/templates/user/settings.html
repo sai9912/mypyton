@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{# from theme("prefixes/range_macros.html") import render_range, render_starting_number #}
+{# import 'admin/_macros.html' as lib with context #}
+{% block title %}
+    GS1 Activate: {{ _('Dashboard') }}
+{% endblock %}
+{% block breadcrumb %}
+    <ol class="breadcrumb">
+        <li>{{ _("Home") }}</li>
+    </ol>
+{% endblock %}
+
+{% block page_title %}
+    {{ _('Settings') }}
+{% endblock %}
+
+{% block base_css %}
+    <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jquery-editable/css/jquery-editable.css"
+          rel="stylesheet"/>
+{% endblock %}
+
+{% block page_content %}
+
+    GS1 Activate:
+    <ul>
+        <li>
+            <a href="">Change password</a>
+        </li>
+    </ul>
+
+    Company users:
+    <ul>
+        {% for user in company_users %}
+            <li>
+                {{ user.email }}
+            </li>
+        {% endfor %}
+    </ul>
+    <button>Add New User</button>
+
+{% endblock %}

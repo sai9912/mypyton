@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+
+{% block page_title %}{% trans 'Staff login' %}{% endblock %}
+
+{% block page_content %}
+    {% if next %}
+        {% if user.is_authenticated %}
+            <p>{% trans "Your account doesn't have access to this page. To proceed, please login with an account that has access." %}</p>
+        {% else %}
+            <p>{% trans 'Please login to see this page.' %}</p>
+        {% endif %}
+    {% endif %}
+
+    {% for error_text in form.non_field_errors %}
+        <p class="text-danger text-center">
+            {{ error_text }}
+        </p>
+    {% endfor %}
+
+    <!-- todo: move style to .css -->
+    <form method="post" action="">
+        {% csrf_token %}
+        {% for field in form %}
+
+                <div style="margin-top: 10px; overflow: auto">
+                    <div style="float: left; width: 200px; margin-top: 3px;">
+                        {{ field.label_tag }}
+                    </div>
+
+                    <div style="margin-left: 200px;">
+                        {{ field }}
+                        {% if field.errors %}
+                            <div style="margin-top: 15px">
+                                {% for error in field.errors %}
+                                    <div class="text-danger">{{ error }}</div>
+                                {% endfor %}
+
+                                {% if field.help_text %}
+                                    <p class="help text-info">{{ field.help_text|safe }}</p>
+                                {% endif %}
+                            </div>
+                        {% endif %}
+                    </div>
+
+                    {% if forloop.last %}
+                        <input style="margin-top: 30px" type="submit" value="{% trans 'Submit'%}" />
+                    {% endif %}
+                </div>
+
+        {% endfor %}
+
+    </form>
+
+{% endblock page_content %}

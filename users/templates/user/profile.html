@@ -1,0 +1,232 @@
+{% extends "base.html" %}
+{% load i18n %}
+{# from theme("prefixes/range_macros.html") import render_range, render_starting_number #}
+{# import 'admin/_macros.html' as lib with context #}
+{% block title %}
+    {% trans 'GS1 Activate: Dashboard' %}
+{% endblock %}
+{% block breadcrumb %}
+    <ol class="breadcrumb">
+        <li>{% trans 'Home' %}</li>
+    </ol>
+{% endblock %}
+
+{% block page_title %}
+    {% trans 'Dashboard' %}
+{% endblock %}
+
+{% block base_css %}
+    <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jquery-editable/css/jquery-editable.css"
+          rel="stylesheet"/>
+{% endblock %}
+
+{% block page_content %}
+
+    {% if  current_user.is_active and organisation_active %}
+
+        {% if alerts %}
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            {% trans 'Alerts' %}
+                        </div>
+                        <div class="panel-body">
+                            {% if terms_alert %}
+                                <p>{% trans 'You must agree to our' %}
+                                    <a href="{% url 'users:static_views.terms' %}" style="text-decoration: underline;">
+                                        {% trans 'Terms and Conditions' %}
+                                    </a>
+                                    {% trans 'in order to be able to download barcode images.' %}
+                                </p>
+                                <form method="post">
+                                    {% csrf_token %}
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="agree">
+                                                    {% trans 'I agree to the Terms and Conditions:' %}<br/>
+                                                    ({% trans 'version' %} {{ terms_version }}).
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="submit" name="submit" value="Submit"
+                                                   class="btn btn-primary pull-right"/>
+                                        </div>
+                                    </div>
+                                </form>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+
+        <div class="row">
+            <div class="col-md-4">
+                <div id="prefix-info" class="well well-sm"
+                     style="background-color: #F26334">
+                    <h4>{% trans 'Active Prefix' %}</h4>
+                    <ul class="list-unstyled">
+                        <li>GCP: <b>{{ range_data.0 }}</b></li>
+                        <li><b>{% trans 'Products' %}:</b></li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;{% trans 'Allocated' %}: <b>{{ range_data.1 }}</b></li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;{% trans 'Available' %}: <b>{{ range_data.2 }}</b></li>
+                        {% if user.company_organisations_companyorganisation.first.gln_capability %}
+                            <li><b>{% trans 'Locations' %}:</b></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;{% trans 'Allocated' %}: <b>{{ range_data.3 }}</b></li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;{% trans 'Available' %}: <b>{{ range_data.4 }}</b></li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <a href="{% url 'products:add_product_js' %}" class="btn btn-primary">
+                        {% trans 'Add product' %}
+                    </a>
+                </div>
+                <div class="row">
+                    <p style="margin-top: 10px;">{% trans 'Allocate a new barcode from the Active Prefix' %}</p>
+                </div>
+                <div class="row">
+                    <a href="{% url 'products:products_list' %}"
+                       class="btn btn-gs1ie-orange">{% trans 'View Products' %}</a>
+                </div>
+                <div class="row">
+                    <p style="margin-top: 10px;">{% trans 'View allocated numbers from Active Prefix' %}</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        {% trans 'Global Company Prefixes and GTIN Ranges' %}
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-condensed table-striped">
+                            <thead>
+                            <tr>
+                                <th>{% trans 'Prefix Description' %}</th>
+                                <th>{% trans 'Range' %}</th>
+                                <th>{% trans 'Next number' %}</th>
+                                <th>{% trans 'Products' %}</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for prefix in prefixes %}
+                                <tr>
+                                    <td>
+                                        <a href="#" class="prefix-editable" data-type="text"
+                                           data-pk="{{ prefix.id }}"
+                                           data-url="/prefixes/ajax/"
+                                           data-title="Prefix Description"
+                                        >{% if prefix.description %}{{ prefix.description }}{% else %}
+                                            {% trans 'Block of' %} {{ prefix.get_capacity }} GTINs{% endif %}</a>
+                                    </td>
+                                    <td>
+                                        <a href="{% url 'prefixes:prefixes_list' %}?prefix={{ prefix.id }}">{% include 'prefixes/range_macros.html' with func='render_range' prefix=prefix only %}</a>
+                                    </td>
+                                    <td>{% include 'prefixes/range_macros.html' with func='render_starting_number' prefix=prefix only %}</td>
+                                    <td>{% if not prefix.products %}
+                                        {% trans 'No products' %}
+                                    {% else %}
+                                        <a href="{% url 'products:products_list' %}?prefix={{ prefix.prefix }}">{{ prefix.products }}
+                                            {% trans 'Product' %}{{ prefix.products|pluralize }}</a>
+                                    {% endif %}
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        {% trans 'Account Summary' %}
+                    </div>
+                    <div class="panel-body">
+
+                        {% if company_organisation.credit_point %}
+
+                            <h4>{% trans 'Symbol Credits' %}</h4>
+
+                            <p>{% trans 'Points balance:' %}
+                                <strong>{{ current_user.organisation.credit_points_balance }}</strong>
+                            </p>
+
+                        <p>
+                            <a href="/profile/Apply-for-Licences/">{% trans 'Purchase barcode image credits now' %}</a>
+                        </p>
+
+                        {% endif %}
+
+                        {% if uuid %}
+                            <p>{% trans 'Company ID:' %} {{ uuid }}</p>
+                        {% endif %}
+
+                        {% if company_name %}
+                            {% if  not config.LOCAL %}
+                                <p>{% trans 'Company Name:' %} {{ company_name }}</p>
+                            {% else %}
+                                <p>{% trans 'Company Name:' %} <a
+                                    href="{% url 'organisation.edit' %}">{{ company_name }}</a>
+                                </p>
+                            {% endif %}
+                        {% endif %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% else %}
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">
+                        {% trans 'Account disabled' %}
+                    </div>
+                    <div class="panel-body">
+                        <p>{% trans 'Please contact GS1 Helpdesk to enable your account.' %}</p>
+                        {% if config.LOCAL %}
+                            <hr/>
+                            <ul>
+                                <li>{% trans 'Org. account active?' %}
+                                    [{{ current_user.organisation.active }}] &xrarr;
+                                    <a href="{% url 'organisation.edit' %}">
+                                        {% trans 'Organisation Admin' %}
+                                    </a>
+                                </li>
+                                <li>{% trans 'User account active?' %} [{{ current_user.active }}] &xrarr;
+                                    <a href="{% url 'user.edit' %}">{% trans 'User Admin' %}</a>
+                                </li>
+                            </ul>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    {% endif %}
+
+{% endblock %}
+
+{% block  base_scripts %}
+    <script type='text/javascript'>
+        $(document).ready(function () {
+            $.fn.editable.defaults.mode = 'popup';
+        })
+        $(document).ready(function () {
+            $('.prefix-editable').editable({params: {csrfmiddlewaretoken: '{{ csrf_token }}'}});
+        });
+    </script>
+{% endblock base_scripts %}

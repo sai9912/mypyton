@@ -1,0 +1,71 @@
+{% load extra_templates %}
+
+{% if not order.payed %}
+
+{% if order.barcode_set.all|length %}
+    <h3>Shopping cart</h3>
+
+        <table width="99%">
+
+            <tr><th>Barcode</th><th></th></tr>
+            
+            {% for ordered_barcode in order.barcode_set.all %}
+
+                <tr class="{% cycle striped_even, striped_odd %}">
+                
+                    <td>
+                    <center>
+                        {{ ordered_barcode.symbol }}
+                        {{ ordered_barcode.gtin }}
+                    </center>
+                    </td>
+                    <td width="25%"><small><center>
+                      <a href="{{ ordered_barcode.get_absolute_url }}">Review</a> | 
+                      <a href="/unorder/{{ ordered_barcode.id }}" onclick="if (confirm('Are you sure?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);f.submit(); };return false;">Remove</a>
+                      </center></small>
+                    </td>
+                </tr>
+            
+            {% endfor %}
+            
+        </table>
+        <p><center>You have: {{ order.barcode_set.all|length }} barcode(s) in total.<br/><small>Each barcode is priced at &#36;7.00 USD or &#8364;5.00 EUR or &#165;570 JPY.<br/>Sizes and options for the barcodes can also be changed after the purchase.</small></center></p>
+        <h3>Check out</h3>
+        <div class="note">
+          <p>After the purchase you can download digital barcode images in several popular formats 
+          and resolutions to integrate resulting barcode in the product label.<br/>
+          You are purchasing the barcode images that has been developed in accordance with <u>GS1 General Specifications</u> and are of guaranteed quality.</p>
+          <p>
+          Your purchase will be processed with PayPal and files will be made available 
+          for the immediate download.</p>
+
+          <p>
+          
+          {% autoescape off %} 
+            {{ order|paypal_links:"USD" }}
+            &nbsp;|&nbsp;
+            {{ order|paypal_links:"EUR" }}
+            &nbsp;|&nbsp;
+            {{ order|paypal_links:"JPY" }}
+          {% endautoescape %} 
+
+            {% if 1 %}            
+            <form action="/paypal_test/" method="POST">
+                <input type="hidden" name="invoice" id="invoice" value="{{ order.id }}" />
+                <input type="submit" value="buy (order_id = {{ order.id }})"></input>
+            </form>
+            {% endif %}
+
+            
+          </p>
+
+          <small>Each purchase includes PostScript (vector EPS files) for Apple/Mac and Windows/PC computers and images in PNG, JPG, GIF, TIF formats with the  resolution of 300, 600, 1200, 2400, 2540 and 3200 dpi.</small>
+        </div>
+        <br/>
+
+{% else %}
+        
+        <!-- <p>Your shopping cart is currently empty.</p> -->
+        
+{% endif %}
+{% endif %}

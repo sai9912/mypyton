@@ -1,0 +1,283 @@
+{% extends 'base_bs4.html' %}
+{% load static %}
+{% load i18n %}
+{% load product_tags %}
+
+
+{# from theme("security/_macros.html") import render_field_with_errors4, render_field, render_field_with_errors4_help #}
+{# from theme("prefixes/range_macros.html") import render_range_breadcrumb, render_gtin, render_gtin13, render_package_level #}
+{% block title %}GS1 Activate: Edit product{% endblock %}
+{% block breadcrumb %}
+    <ol class="breadcrumb" style="display:inline-block">
+        <li class="d-inline-block"><a href="{% url 'users:profile' %}">{% trans 'Home' %} /</a></li>
+        <li class="d-inline-block">{% trans 'Edit product' %}</li>
+    </ol>
+    <div class="active_range col-auto ml-auto">
+        {% include 'prefixes/render_range_prefix.html' with prefix=prefix only %}
+        <a href="{% url 'prefixes:prefixes_list' %}"> [{% trans 'Change' %}]</a>
+    </div>
+{% endblock %}
+
+{% block head %}
+    <input id="bcm-gtin" type="hidden" value="{{ gtin }}">
+    {{ block.super }}
+{% endblock %}
+
+{% block site_content %}
+    <div class="site-content">
+
+        <div>
+            <h2 class="product-header">
+                {% block page_title %}{% trans 'Edit product' %}{% endblock %}
+                {% get_localized_product_field product 'description' as description_i18n %}
+                - {{ description_i18n|default:"" }}
+                <label class="badge product-status
+                 {% if product.gs1_cloud_state == 'ACTIVE' %}badge-info{% endif %}
+                 {% if product.gs1_cloud_state == 'INACTIVE' %}badge-secondary{% endif %}
+                  {% if product.gs1_cloud_state == 'OPTED_OUT' %}badge-danger{% endif %}
+                 {% if product.gs1_cloud_state == 'DRAFT' %}badge-warning{% endif %}">
+                     {{ product.gs1_cloud_state|default:"" }}
+                </label>
+            </h2>
+
+            <div style="position: absolute; right: 10px; top: 10px; text-align: right;">
+                <a href="{{ request.user.profile.member_organisation.gs1_help_url_3 }}">
+                    <b>{{ request.user.profile.member_organisation.gs1_help_label_3 }}</b>
+                    <img src="{% static 'site/img/training_button_2.png' %}" alt="{% trans 'Help' %}"
+                         style="width: auto;height: 30px;">
+                </a>
+            </div>
+        </div>
+
+        {% block page_content %}
+            <div class="site-content-padder">
+                <div class="ProductEditApp"></div>
+            </div>
+        {% endblock page_content %}
+    </div>
+
+    <!--<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="ProductAddSubs"-->
+    <!--aria-hidden="true" id="ProductAddSubs">-->
+    <!--<div class="modal-dialog modal-sm" style="width:1000px; z-index:2">-->
+    <!--<div class="modal-content">-->
+    <!--<div class="modal-header">-->
+    <!--<div class="modal-header">-->
+    <!--<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span-->
+    <!--class="sr-only">{% trans 'Close' %}</span></button>-->
+    <!--<h4 class="modal-title" id="ProductDeleteTitle">{% trans 'Add subproducts' %}</h4>-->
+    <!--</div>-->
+    <!--<div class="modal-body">-->
+    <!--<fieldset class='fieldset' id="av_subproducts_fs">-->
+    <!--<legend>{% trans 'Available subproducts' %}</legend>-->
+    <!--<div class="well">-->
+    <!--<table id="av_subproducts_tbl" class="table table-sm" style="width:100%">-->
+    <!--<thead>-->
+    <!--<tr>-->
+    <!--<th>{% trans 'GTIN' %}</th>-->
+    <!--<th>{% trans 'Package level' %}</th>-->
+    <!--<th>{% trans 'Product description' %}</th>-->
+    <!--<th/>-->
+    <!--</tr>-->
+    <!--</thead>-->
+    <!--<tbody></tbody>-->
+    <!--</table>-->
+    <!--</div>-->
+    <!--</fieldset>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="ProductDeleteModal"
+         aria-hidden="true" id="ProductDeleteModal">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                            class="sr-only">{% trans 'Close' %}</span></button>
+                        <h4 class="modal-title" id="ProductDeleteTitle">{% trans 'Product delete confirmation' %}</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>{% blocktrans %}
+                            You are about to delete one of your products. Because this action will probably create a gap
+                            in your serial numbers you must choose what to do.
+                        {% endblocktrans %}</p>
+                        <ul class="list-unstyled">
+                            <li>{% trans "Delete product and set prefix's starting GTIN to deleted product's GTIN" %}</li>
+                            <li><b>{% trans 'or' %}</b></li>
+                            <li>{% trans "Delete product and don't change the starting GTIN of this prefix" %}</li>
+                        </ul>
+                        <p>{% trans 'Keep in mind that only products that are not part of a container can be deleted.' %}</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary"
+                                data-dismiss="modal">{% trans "Don't delete product" %}</button>
+                        <a href="{% url 'products:delete_product' product_id=product_id %}?set=1"
+                           class="btn btn-warning">{% trans 'Delete and set' %}</a>
+                        <a href="{# url_for('products.delete_product', product_id=product_id) #}"
+                           class="btn btn-warning">{% trans 'Delete only' %}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="SubProductDeleteModal"
+         aria-hidden="true" id="SubProductDeleteModal">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                            class="sr-only">{% trans 'Close' %}</span></button>
+                        <h4 class="modal-title"
+                            id="SubProductDeleteTitle">{% trans 'Sub-product delete confirmation' %}</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>{% blocktrans %}
+                            You are about to delete one of sub-products. Subproduct would be kept in the database,
+                            just the link between parent and child products would be removed.
+                        {% endblocktrans %}</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="sub_product_delete" type="button" class="btn btn-primary" data-dismiss="modal">
+                            {% trans 'Delete' %}
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="MakePackModal"
+         aria-hidden="true" id="MakePackModal">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span
+                        aria-hidden="true">&times;</span><span
+                        class="sr-only">{% trans 'Close' %}</span></button>
+                    <h4 class="modal-title"
+                        style="padding: 2px 42px;text-align: center;font-size: 1.8em;font-weight: 300;">
+                        <div>{% trans 'Make a pack of trade items using' %}</div>
+                        <div>{{ gtin0 }} {# render_gtin13(gtin13, prefix.prefix|length, kind) #}
+                            {% trans 'as a base' %}
+                        </div>
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form method="get" action="{{ '/products/add/case/details' }}" enctype="multipart/form-data"
+                          id="make_pack_form">
+                        <input type="hidden" id="hidden_product_id" value="{{ product_id }}"/>
+                        <div class='row'>
+                            <div class="pull-left col-xs-9">
+                                1) {% trans 'Choose one from the available GTINs' %}:
+                            </div>
+                        </div>
+                        <table class="table table-striped table-condensed table-borderless" id="gtin-radios">
+
+                        </table>
+
+                        <hr/>
+                        <div class='row'>
+                            <div class="pull-left col-xs-6">
+                                2) {% trans 'Indicate hierarchy level' %}:
+                            </div>
+                            <div class="pull-right col-xs-6">
+                                <select class="form-control" id="pack_selection">
+                                    <option value="60"
+                                            selected> {% trans 'Pack or inner pack e.g. six pack of beer bottles' %}
+                                    </option>
+                                    <option
+                                        value="50"> {% trans 'Outer Case e.g. case of beer (bottles or packs)' %}</option>
+                                    <option value="30"> {% trans 'Pallet e.g. pallet of cases of beer' %}</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">{% trans 'Cancel' %}</button>
+                        <a href="javascript:void(0);" onclick="return submitMakePack();"
+                           class="btn btn-primary">{% trans 'Create' %}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock site_content %}
+
+{% block base_scripts %}
+    <script type="text/javascript" src="{% url 'javascript-i18n' %}"></script>
+
+    <script src="{% static 'site/js/moment.min.js' %}"></script>
+    <script src="{% static 'site/js/bootstrap-datetimepicker.min.js' %}"></script>
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" charset="utf8"
+            src="https://cdn.datatables.net/select/1.2.4/js/dataTables.select.min.js"></script>
+    <script type="text/javascript" charset="utf8"
+            src="//cdn.datatables.net/buttons/1.5.0/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" charset="utf8"
+            src="//cdn.datatables.net/buttons/1.5.0/js/buttons.flash.min.js"></script>
+    <script type="text/javascript" charset="utf8"
+            src="//cdn.datatables.net/buttons/1.5.0/js/buttons.html5.min.js"></script>
+    <script type="text/javascript" charset="utf8"
+            src="//cdn.datatables.net/buttons/1.5.0/js/buttons.print.min.js"></script>
+    <script type='text/javascript' src="{% static 'site/Editor-1.7.0/js/dataTables.editor.js' %}"></script>
+    <script type="text/html" id="FormAppData">{{ form_data_json|safe }}</script>
+
+    <script src="{% static 'site/standalone/standalone-components.js' %}"></script>
+{% endblock %}
+
+{% block base_css %}
+    <link href="{% static 'site/css/bootstrap-datetimepicker.min.css' %}?v=201610"
+          rel="stylesheet"
+          media="screen">
+    <link rel="stylesheet" href="{% static 'site/css/add_product.css' %}"/>
+    <link rel="stylesheet" href="{% static 'site/standalone/standalone-components.css' %}"/>
+    <style>
+        .fieldset > legend {
+            border: none;
+            width: auto;
+            margin-bottom: auto;
+        }
+
+        .img-align > div {
+            display: inline-table;
+        }
+
+        .img-align > div > a {
+            display: block;
+        }
+
+        fieldset.collapsible {
+            border: 1px solid #D5D8D8;
+        }
+
+        fieldset.collapsible > legend {
+            padding: 0 10px;
+        }
+
+        fieldset.collapsible > div {
+            display: none;
+        }
+        .product-header
+        {
+            display: flex;
+            align-items: center;
+            padding-right: 100px;
+        }
+        .product-status{
+            margin-left: 20px;
+            border-radius: 3px;
+            margin-bottom: 0px;
+        }
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/select/1.2.4/css/select.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'site/Editor-1.7.0/css/editor.dataTables.css' %}">
+
+{% endblock %}

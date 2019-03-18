@@ -1,0 +1,224 @@
+[
+    {
+        "model": "member_organisations.memberorganisation",
+        "pk": 4,
+        "fields": {
+            "name": "GS1 Australia",
+            "is_active": true,
+            "created": "2018-02-04T09:12:35.923Z",
+            "modified": "2018-02-04T09:12:35.928Z",
+            "slug": "gs1au"
+        }
+    },
+    {
+        "model": "member_organisations.memberorganisation",
+        "pk": 1,
+        "fields": {
+            "name": "GS1 Belgium",
+            "is_active": true,
+            "created": "2018-01-30T09:12:05.820Z",
+            "modified": "2018-03-05T20:32:33.182Z",
+            "slug": "gs1belu"
+        }
+    },
+    {
+        "model": "member_organisations.memberorganisation",
+        "pk": 15,
+        "fields": {
+            "name": "GS1 Bosnia Herzegovina",
+            "is_active": true,
+            "created": "2018-03-05T20:46:56.501Z",
+            "modified": "2018-03-05T20:47:03.193Z",
+            "slug": "gs1bih",
+            "gs1_prefix_regex": "^387",
+            "login_api_secure": true,
+            "gs1_logo_path": "/static/site/logo/gs1-logo.png",
+            "gs1_logo_width": "300px",
+            "gs1_logo_height": "105px"
+        }
+    },
+    {
+        "model": "member_organisations.memberorganisation",
+        "pk": 5,
+        "fields": {
+            "name": "GS1 Czech",
+            "is_active": true,
+            "created": "2018-02-04T09:12:35.923Z",
+            "modified": "2018-02-04T09:12:35.928Z",
+            "slug": "gs1cz"
+        }
+    },
+    {
+        "model": "member_organisations.memberorganisation",
+        "pk": 11,
+        "fields": {
+            "name": "GS1 Egypt",
+            "is_active": true,
+            "created": "2018-03-05T20:39:11.238Z",
+            "modified": "2018-03-05T20:39:19.434Z",
+            "slug": "gs1eg"
+        }
+    },
+    {
+        "model": "member_organisations.memberorganisation",
+        "pk": 9,
+        "fields": {
+            "name": "GS1 Finland",
+            "is_active": true,
+            "created": "2018-03-05T20:35:50.425Z",
+            "modified": "2018-03-05T20:36:42.500Z",
+            "slug": "gs1fi"
+        }
+    },
+    {
+        "model": "member_organisations.memberorganisation",
+        "pk": 2,
+        "fields": {
+            "name": "GS1 France",
+            "is_active": true,
+            "created": "2018-01-30T09:12:20.623Z",
+            "modified": "2018-01-30T09:12:20.626Z",
+            "slug": "gs1fr"
+        }
+    },
+    {
+        "model": "member_organisations.memberorganisation",
+        "pk": 3,
+        "fields": {
+            "name": "GS1 Germany",
+            "is_active": true,
+            "created": "2018-01-30T09:12:35.923Z",
+            "modified": "2018-01-30T09:12:35.928Z",
+            "slug": "gs1de"
+        }
+    },
+    {
+        "model": "member_organisations.memberorganisation",
+        "pk": 7,
+        "fields": {
+            "name": "GS1 GO",
+            "is_active": false,
+            "created": "2018-02-04T09:12:35.923Z",
+            "modified": "2018-03-05T20:36:19.708Z",
+            "slug": "gs1go",
+            "gs1_logo_width": "300px",
+            "gs1_logo_height": "105px"
+        }
+    },
+    {
+        "model": "member_organisations.memberorganisation",
+        "pk": 17,
+        "fields": {
+            "name": "GS1 Greece",
+            "is_active": true,
+            "created": "2018-03-08T14:02:03.896Z",
+            "modified": "2018-03-08T14:02:03.901Z",
+            "slug": "gs1gr"
+        }
+    },
+    {
+        "model": "member_organisations.memberorganisation",
+        "pk": 14,
+        "fields": {
+            "name": "GS1 Hong Kong",
+            "is_active": true,
+            "created": "2018-03-05T20:43:51.653Z",
+            "modified": "2018-03-05T20:44:41.374Z",
+            "slug": "gs1hk"
+        }
+    },
+    {
+        "model": "member_organisations.memberorganisation",
+        "pk": 16,
+        "fields": {
+            "name": "GS1 Ireland",
+            "is_active": true,
+            "created": "2018-03-08T11:19:27.828Z",
+            "modified": "2018-03-08T11:19:41.780Z",
+            "slug": "gs1ie",
+            "gs1_prefix_regex": "^539|^501|^509|^0\\d\\d",
+            "login_api_secure": true,
+            "gs1_logo_path": "/static/site/logo/gs1ie-logo.png"
+        }
+    },
+    {
+        "model": "member_organisations.memberorganisation",
+        "pk": 13,
+        "fields": {
+            "name": "GS1 Italy",
+            "is_active": true,
+            "created": "2018-03-05T20:42:03.710Z",
+            "modified": "2018-03-05T20:42:12.560Z",
+            "slug": "gs1it"
+        }
+    },
+    {
+        "model": "member_organisations.memberorganisation",
+        "pk": 18,
+        "fields": {
+            "name": "GS1 Malaysia",
+            "is_active": true,
+            "created": "2018-03-08T14:02:10.680Z",
+            "modified": "2018-03-08T14:02:10.684Z",
+            "slug": "gs1my"
+        }
+    },
+    {
+        "model": "member_organisations.memberorganisation",
+        "pk": 12,
+        "fields": {
+            "name": "GS1 South Africa",
+            "is_active": true,
+            "created": "2018-03-05T20:40:36.861Z",
+            "modified": "2018-03-05T20:40:44.661Z",
+            "slug": "gs1za"
+        }
+    },
+    {
+        "model": "member_organisations.memberorganisation",
+        "pk": 6,
+        "fields": {
+            "name": "GS1 Sweden",
+            "is_active": true,
+            "created": "2018-02-04T09:12:35.923Z",
+            "modified": "2018-03-05T20:32:54.952Z",
+            "slug": "gs1se",
+            "gs1_prefix_regex": "^73\\d|^0\\d\\d",
+            "login_api_secure": true,
+            "gs1_logo_path": "/static/site/logo/gs1se-logo.png"
+        }
+    },
+    {
+        "model": "member_organisations.memberorganisation",
+        "pk": 8,
+        "fields": {
+            "name": "GS1 Switzerland",
+            "is_active": true,
+            "created": "2018-03-05T20:34:45.191Z",
+            "modified": "2018-03-05T20:34:59.254Z",
+            "slug": "gs1ch"
+        }
+    },
+    {
+        "model": "member_organisations.memberorganisation",
+        "pk": 10,
+        "fields": {
+            "name": "GS1 UK",
+            "is_active": true,
+            "created": "2018-03-05T20:37:47.829Z",
+            "modified": "2018-03-05T20:37:58.050Z",
+            "slug": "gs1uk"
+        }
+    },
+    {
+        "model": "member_organisations.memberorganisation",
+        "pk": 19,
+        "fields": {
+            "name": "GS1 Spain",
+            "is_active": true,
+            "created": "2018-03-05T20:37:47.829Z",
+            "modified": "2018-03-05T20:37:58.050Z",
+            "slug": "gs1es"
+        }
+    }
+]

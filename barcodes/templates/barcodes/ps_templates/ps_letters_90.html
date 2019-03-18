@@ -1,0 +1,12 @@
+{% load l10n %}
+{% localize off %}
+{% autoescape off %}
+%--
+90 rotate
+{{ x }} mm {{ y }} mm moveto
+/{{ font }}  findfont {{ size }}  scalefont setfont
+save {{ ax }} mm {{ ay }} mm  /copyright glyphshow  ({{ s }})  ashow restore
+90 neg rotate
+%--
+{% endautoescape %}
+{% endlocalize %}
