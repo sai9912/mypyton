@@ -167,10 +167,10 @@ ADD ./.git                          /root/app/.git
 
 # add ssl
 ADD ./activate_gs1_org/combined-activate_gs1_org.ca-bundle /etc/ssl/certs/combined-activate_gs1_org.ca-bundle
-ADD ./activate_gs1_org/activate_gs1_org.key  /etc/ssl/private/activate_gs1_org.key
+#ADD ./activate_gs1_org/activate_gs1_org.key  /etc/ssl/private/activate_gs1_org.key
 
 ADD ./activate_gs1_org/combined-activate_gs1_org-stg.ca-bundle /etc/ssl/certs/combined-activate_gs1_org-stg.ca-bundle
-ADD ./activate_gs1_org/activate_gs1_org-stg.key  /etc/ssl/private/activate_gs1_org-stg.key
+#ADD ./activate_gs1_org/activate_gs1_org-stg.key  /etc/ssl/private/activate_gs1_org-stg.key
 
 
 # app directories
