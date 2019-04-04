@@ -157,10 +157,10 @@ ADD ./oidc_gs1                      /root/app/oidc_gs1
 ADD ./Makefile                      /root/app/Makefile
 ADD ./run.py                        /root/app/run.py
 
-ADD ./.env                          /root/app/.env
-ADD ./.env-localhost                /root/app/.env-localhost
-ADD ./.env-staging                  /root/app/.env-staging
-ADD ./.env-production               /root/app/.env-production
+#ADD ./.env                          /root/app/.env
+#ADD ./.env-localhost                /root/app/.env-localhost
+#ADD ./.env-staging                  /root/app/.env-staging
+#ADD ./.env-production               /root/app/.env-production
 
 # revision
 ADD ./.git                          /root/app/.git
